@@ -118,10 +118,11 @@ nav a {
   font-weight: 900;
   font-size: 30px;
   position: absolute;
- transition: all 1s;
+  transition: all 1s;
 
 
 }
+
 #logotipo:hover {
   -webkit-transform: rotateZ(360deg);
   transform: rotateZ(360deg);
@@ -133,7 +134,7 @@ nav a {
 }
 
 #name-usuario {
-  font-weight:900;
+  font-weight: 900;
   font-size: 24px;
   margin-left: 55px;
 }
@@ -198,4 +199,127 @@ h5 {
   font-weight: 500;
   padding-top: 2px;
   padding-bottom: 3px;
+}
+
+.bloco2 {
+  height: 100%;
+  margin-top: 10px;
+}
+
+#tituloProjetos {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.titulo {
+  margin-left: 30px;
+  margin-bottom: 50px;
+}
+
+.grid {
+  margin-left: 60px;
+  display: inline-block;
+  width: 550px;
+  text-align: start;
+  height: 550px;
+  margin-bottom: 100px;
+  background-color: rgba(0, 0, 0, 0.932);
+
+  transition: 0.3s;
+}
+
+.grid:hover {
+  background-color: #555050d8;
+  transform: translateY(-0.5%);
+  box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
+}
+
+.grid-item {
+  cursor: pointer;
+  background-image: url(./images/minha-imagem.png);
+  height: 100%;
+  background-repeat: no-repeat;
+  margin-left: 0px;
+}
+
+.card-img {
+  display: block;
+  width: 50%;
+  height: 100px;
+  background-color: #cccccc;
+}
+
+.card-content {
+  padding: 3rem;
+}
+
+.card-header {
+  font-size: 20px;
+  text-align: left;
+  margin-left: 10px;
+  margin-top: 10px;
+  font-weight: 900;
+  color: rgb(255, 255, 255);
+  margin-bottom: 1.5rem;
+}
+
+.card-text {
+  font-size: 16px;
+  letter-spacing: 0.1rem;
+  line-height: 1.7;
+  color: rgb(255, 255, 255);
+  margin-bottom: 2.5rem;
+
+}
+
+.card-btn {
+  display: block;
+  width: 100%;
+  padding: 1.5rem;
+  text-align: center;
+  background-color: #ffffff;
+  border: none;
+
+}
+
+/* rodapé */
+
+footer {
+  display: flex;
+  border-top: solid 1px rgb(199, 199, 199);
+}
+
+.footer-item {
+  margin-top: 100px;
+  margin-left: 50px;
+  width: max-content;
+  display: inline-block;
+}
+
+.footer-content {
+  margin-left: 30px;
+  display: block;
+}
+
+h3 {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.footer-texto {
+  color: rgb(128, 125, 125);
+  font-size: 1rem;
+  line-height: 1.875rem;
+  font-weight: 500;
+  padding-top: 2px;
+  padding-bottom: 3px;
+}
+
+a {
+  display: block;
+}
+
+a:hover {
+  text-decoration: underline;
 }
