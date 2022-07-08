@@ -8,6 +8,164 @@
   }
 }
 
+@media only screen and (max-width: 500px) {
+  h1 {
+    margin-top: -70px;
+    font-size: 20px;
+  }
+  
+  body {
+    display: block;
+  }
+
+  h5 {
+    color: rgb(151, 140, 140);
+    display: none;
+  }
+
+  #tituloProjetos {
+    margin-bottom: -50px;
+    display: block;
+  }
+
+  #menu {
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+  }
+
+  #minha-imagem {
+    height: 200px;
+    margin-top: -250px;
+    position: relative;
+    margin-bottom: 50px;
+    left: 40px;
+  }
+
+  #titulo {
+    margin-top: 50px;
+  }
+
+  #meu-resumo {
+    display: block;
+    width: 300px;
+    margin-right: 30%;
+    text-align: justify;
+  }
+
+  #bloco-de-texto {
+    margin-top: 0px;
+    margin-left: 0;
+    text-align: justify;
+    margin-top: -600px;
+  }
+
+  .bloco {
+    background-color: blue;
+    display: flex;
+    width: 600px;
+  }
+
+  * {
+    font-size: 13px;
+  }
+
+  label {
+    margin-left: -20px;
+  }
+
+  #name-usuario {
+    font-size: 5px;
+  }
+
+
+  /**/
+
+  #bloco2 {
+    display: block;
+    width:  300px;
+  }
+
+  #tituloProjetos {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  #titulo {
+    margin-left: 30px;
+    margin-bottom: 50px;
+  }
+
+  #grid {
+    margin-left: 60px;
+    width: 30%;
+    height: 30%;
+    margin-bottom: 100px;
+    background-color: rgba(0, 0, 0, 0.932);
+
+    transition: 0.3s;
+  }
+
+  #grid:hover {
+    background-color: #555050d8;
+    transform: translateY(-0.5%);
+    box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
+  }
+
+  #grid-item {
+    cursor: pointer;
+    height: 100px;
+    width: 200px;
+    background-repeat: no-repeat;
+    margin-left: 0px;
+  }
+
+  #imagem-card {
+    display: none;
+  }
+
+   #card-img {
+    display: block;
+    width: 90%;
+    height: 100px;
+    background-color: #cccccc;
+  }
+
+  #card-content {
+    padding: 3rem;
+  }
+
+  #card-header {
+    font-size: 20px;
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+    margin-bottom: 1.5rem;
+  }
+
+  #card-text {
+    display: none;
+
+  }
+
+  #card-btn {
+    display: block;
+    width: 100%;
+    padding: 1.5rem;
+    text-align: center;
+    background-color: #ffffff;
+    border: none;
+
+  }
+
+
+
+
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -26,13 +184,11 @@ ul {
   list-style: none;
 }
 
-
 .bloco {
   background-color: rgb(255, 255, 255);
   width: 100%;
   height: 600px;
   color: #000000;
-
 
 }
 
@@ -129,7 +285,7 @@ nav a {
 
 #logo {
   display: inline-block;
-  margin-left: 30px;
+  margin-left: 20px;
 }
 
 #name-usuario {
@@ -217,76 +373,80 @@ h5 {
   margin-bottom: 50px;
 }
 
-#grid {
-  margin-left: 60px;
-  display: inline-block;
-  width: 550px;
-  text-align: start;
-  height: 550px;
-  margin-bottom: 100px;
-  background-color: rgba(0, 0, 0, 0.932);
 
-  transition: 0.3s;
-}
+  #grid {
+    margin-left: 60px;
+    display: inline-block;
+    width: 550px;
+    text-align: start;
+    height: 550px;
+    margin-bottom: 100px;
+    background-color: rgba(0, 0, 0, 0.932);
 
-#grid:hover {
-  background-color: #555050d8;
-  transform: translateY(-0.5%);
-  box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
-}
+    transition: 0.3s;
+  }
 
-#grid-item {
-  cursor: pointer;
-  height: 100px;
-  height: 100px;
-  background-repeat: no-repeat;
-  margin-left: 0px;
-}
-#imagem-card{
-  display: block;
-  margin-top: -130px;
-  height: 700px;
-}
+  #grid:hover {
+    background-color: #555050d8;
+    transform: translateY(-0.5%);
+    box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
+  }
 
-#card-img {
-  display: block;
-  width: 50%;
-  height: 100px;
-  background-color: #cccccc;
-}
+  #grid-item {
+    cursor: pointer;
+    height: 100px;
+    width: 100%;
+    background-repeat: no-repeat;
+    margin-left: 0px;
+  }
 
-#card-content {
-  padding: 3rem;
-}
+  #imagem-card {
+    display: block;
+    width: 100%;
+    margin-top: -150px;
 
-#card-header {
-  font-size: 20px;
-  text-align: left;
-  margin-left: 10px;
-  margin-top: 10px;
-  font-weight: 900;
-  color: rgb(255, 255, 255);
-  margin-bottom: 1.5rem;
-}
+  }
 
-#card-text {
-  font-size: 16px;
-  letter-spacing: 0.1rem;
-  line-height: 1.7;
-  color: rgb(255, 255, 255);
-  margin-bottom: 2.5rem;
+  #card-img {
+    display: block;
+    width: 100%;
+    height: 100px;
+    background-color: #cccccc;
+  }
 
-}
+  #card-content {
+    margin-top: -3%;
+    padding: 3rem;
+  }
 
-#card-btn {
-  display: block;
-  width: 100%;
-  padding: 1.5rem;
-  text-align: center;
-  background-color: #ffffff;
-  border: none;
+  #card-header {
+    font-size: 20px;
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+    margin-bottom: 1.5rem;
+  }
 
-}
+  #card-text {
+    font-size: 16px;
+    letter-spacing: 0.1rem;
+    line-height: 1.7;
+    color: rgb(255, 255, 255);
+    margin-bottom: 2.5rem;
+
+  }
+
+  #card-btn {
+    display: block;
+    width: 100%;
+    padding: 1.5rem;
+    text-align: center;
+    background-color: #ffffff;
+    border: none;
+
+  }
 
 /* rodapé */
 
