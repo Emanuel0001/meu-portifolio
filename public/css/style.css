@@ -93,7 +93,6 @@
 
   #bloco2 {
     display: block;
-    width: 300px;
   }
 
   #tituloProjetos {
@@ -390,6 +389,8 @@ h5 {
 
 #bloco2 {
   height: 700px;
+  width: 500px;
+  display: block;
   margin-bottom: 100px;
   margin-top: 80px;
 }
@@ -410,7 +411,6 @@ h5 {
 
 #grid {
   display: inline-block;
-  width: max-content;
   margin-left: 10%;
   text-align: start;
   color: #ffffff;
