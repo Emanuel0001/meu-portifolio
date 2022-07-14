@@ -7,18 +7,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="./css/style.css" media="screen" />
   <title>Portifólio</title>
- 
+
 </head>
 
 <body>
   <div className="bloco">
-    <div id='menu'>
+    <div class='menu'>
       <div id="logo">
-        <div id="logotipo">
+        <div class="logotipo">
           E
         </div>
-        <label id="name-usuario">Emanuel Hitallo</label>
-        <p id="subtitulo-usuario">Front-end Developer</p>
+        <div class="name-usuario">Emanuel Hitallo</div>
+        <div id="subtitulo-usuario">Front-end Developer</div>
       </div>
 
       <label id="icone" for="check">MENU</label>
@@ -29,9 +29,15 @@
       <nav>
 
         <ul>
-          <a><div class="link">Linkedin</div></a>
-          <a><div class="link">Github</div></a>
-          <a><div class="link">Instagram</div></a>
+          <a>
+            <div class="link">Linkedin</div>
+          </a>
+          <a>
+            <div class="link">Github</div>
+          </a>
+          <a>
+            <div class="link">Instagram</div>
+          </a>
         </ul>
       </nav>
     </div>
@@ -39,11 +45,11 @@
     <div className="bloco">
       <div id="bloco-de-texto">
         <p>
-          <h5>Emanuel Hitallo soares de souza</h5>
+        <h5>Emanuel Hitallo soares de souza</h5>
         </p>
 
         <p>
-          <h1>Front-end Developer</h1>
+        <h1>Front-end Developer</h1>
         </p>
         <p id="meu-resumo">
           Lorem ipsum dolor sit amet. Qui quibusdam commodi ea cumque
@@ -55,37 +61,29 @@
       <img id="minha-imagem" src="./images/minha-imagem.png"></img>
 
     </div>
-   
+
   </div>
-  <div  id="bloco2">
+  <div id="bloco2">
     <h5 id='tituloProjetos'>Projetos selecionados</h5>
     <h1 id='titulo'>Meus Projetos</h1>
     <div id='grid'>
-      <div id='grid-item' >
-        
+      Sistema de Usuário
+      <div id='grid-item'>
+
         <div id='card'>
           <div id='card-content'>
             <h5>2022</h5>
             <h1 id='card-header'>Sistema de Usuário</h1>
-            <img id="imagem-card" src="./images/imagemSistema.png">
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <div id='grid'>
-      <div id='grid-item'>
-        <div id='card'>
-          <div id='card-content'>
-            <h5>20XX</h5>
-            <h1 id='card-header'>Nome do projeto</h1>
           </div>
+          <img id="imagem-card" src="./images/imagemSistema.png">
         </div>
       </div>
     </div>
 
   </div>
-  <div id='bloco'>
+
+  <div class='bloco-footer'>
     <footer>
       <div id='footer-item'>
         <div id='footer-content'>
@@ -96,11 +94,12 @@
           <p><strong>telefone: </strong>+55 (38) 99735-2319</p>
         </div>
       </div>
+
       <div id='footer-item'>
         <h3>Atual disponibilidade </h3>
         <p id='footer-texto'>disponibilidade</p>
       </div>
-      <div id='footer-item'>
+      <div class='footer-item'>
       </div>
       <div id='footer-item'>
         <h3>Redes Sociais </h3>
