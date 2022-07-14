@@ -236,6 +236,7 @@ ul {
 #minha-imagem {
   display: inline;
   height: 600px;
+  float: right;
   animation: animacao;
   animation-duration: 2s;
 }
@@ -354,7 +355,6 @@ label {
 #bloco-de-texto {
   width: 700px;
   height: 400px;
-  float: left;
   display: inline-block;
   margin-top: 150px;
   margin-left: 30px;
