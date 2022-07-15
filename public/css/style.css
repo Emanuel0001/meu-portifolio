@@ -231,6 +231,7 @@ ul {
   display: inline;
   height: 600px;
   float: right;
+  margin-bottom: 100px;
   animation: animacao;
   animation-duration: 2s;
 }
