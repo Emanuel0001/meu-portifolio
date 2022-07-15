@@ -8,7 +8,7 @@
   }
 }
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 650px) {
   * {
     font-size: 13px;
   }
