@@ -8,9 +8,8 @@
   }
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 350px) {
   * {
-    width: 100%;
     font-size: 13px;
   }
   h1 {
