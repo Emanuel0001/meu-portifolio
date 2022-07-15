@@ -10,6 +10,7 @@
 
 @media only screen and (max-width: 650px) {
   * {
+    width: 100%;
     font-size: 13px;
   }
   h1 {
