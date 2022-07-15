@@ -12,10 +12,6 @@
   * {
     font-size: 13px;
   }
-  #div-imagem{
-    width: 100%;
-    text-align: center;
-  }
   h1 {
     margin-top: -300px;
     font-size: 20px;
@@ -27,7 +23,7 @@
   }
 
   body {
-    width: 300px;
+    width: 100%;
     display: block;
   }
 
@@ -141,12 +137,10 @@
   }
 
   #imagem-card {
-    text-align: center;
     height: 300px;
     width: 300px;
   }
 
-    
 
   #card-img {
     display: block;
@@ -353,7 +347,7 @@ label {
 }
 
 #bloco-de-texto {
-  width: 700px;
+  width: 100%;
   height: 400px;
   display: inline-block;
   margin-top: 150px;
