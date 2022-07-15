@@ -189,7 +189,7 @@
 
   /*footer */
   footer {
-    margin-top: 300px;
+    margin-top: 600px;
     display: grid;
     text-align: center;
     border-top: solid 1px rgb(199, 199, 199);
@@ -230,8 +230,8 @@ ul {
 #minha-imagem {
   display: inline;
   height: 600px;
-  float: right;
   margin-bottom: 100px;
+  float: right;
   animation: animacao;
   animation-duration: 2s;
 }
@@ -487,6 +487,7 @@ h5 {
   text-align: center;
   background-color: #ffffff;
   border: none;
+  margin-top: 700px;
 
 }
 
