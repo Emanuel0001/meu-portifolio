@@ -8,7 +8,7 @@
   }
 }
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 500px) {
   * {
     font-size: 13px;
   }
@@ -17,19 +17,17 @@
     font-size: 20px;
   }
 
-  #bloco-de-texto {
+  #blocoDeTexto {
     width: 300px;
     display: block;
   }
 
   body {
-    width: 100%;
     display: block;
   }
 
   p {
     display: block;
-    width: 300px;
   }
 
   .logotipo {
@@ -48,9 +46,8 @@
     z-index: 1;
   }
 
-  #minha-imagem {
+  #minhaImagem {
     height: 200px;
-    position: relative;
     margin-top: -50px;
     margin-bottom: 50px;
     left: 300px;
@@ -60,12 +57,12 @@
     margin-top: 50px;
   }
 
-  #meu-resumo {
+  #meuResumo {
     margin-right: 10%;
-    text-align: center;
+    width: 450px;
   }
 
-  #bloco-de-texto {
+  #blocoDeTexto {
     margin-top: -100px;
     margin-left: 0;
     text-align: justify;
@@ -115,7 +112,6 @@
   #grid {
     margin-left: 25px;
     display: block;
-    margin-top: 50px;
     text-align: start;
     margin-bottom: 100px;
     background-color: rgba(0, 0, 0, 0.932);
@@ -137,8 +133,8 @@
   }
 
   #imagem-card {
-    height: 300px;
-    width: 300px;
+    height: 450px;
+    width: 450px;
   }
 
 
@@ -170,9 +166,7 @@
   }
 
   #card {
-    background-color: red;
-    width: 300px;
-    margin-left: -5px;
+    margin-left: -25px;
     z-index: 1;
     color: #ffffff;
   }
@@ -189,7 +183,185 @@
 
   /*footer */
   footer {
-    margin-top: 600px;
+    margin-top: 200px;
+    display: grid;
+    text-align: center;
+    border-top: solid 1px rgb(199, 199, 199);
+  }
+ 
+  .bloco-footer {
+    height: 600px;
+  }
+}
+@media only screen and (max-width: 948px) {
+  * {
+    font-size: 13px;
+  }
+  h1 {
+    margin-top: -300px;
+    font-size: 20px;
+  }
+
+  #blocoDeTexto {
+    width: 300px;
+    display: block;
+  }
+
+  body {
+    display: block;
+  }
+
+  p {
+    display: block;
+  }
+
+  .logotipo {
+    font-size: small;
+
+  }
+
+  #tituloProjetos {
+    margin-bottom: -50px;
+    display: block;
+  }
+
+  .menu {
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+  }
+
+  #minhaImagem {
+    height: 400px;
+    left: 300px;
+  }
+
+  #titulo {
+    margin-top: 50px;
+  }
+
+  #meuResumo {
+    margin-right: 10%;
+    width: 450px;
+  }
+
+  #blocoDeTexto {
+    margin-top: -100px;
+    margin-left: 0;
+    text-align: justify;
+    margin-top: -600px;
+  }
+
+  .bloco {
+    background-color: blue;
+    display: flex;
+    width: 600px;
+  }
+
+  
+
+  label {
+    margin-left: -20px;
+  }
+
+  .name-usuario {
+    font-weight: 100;
+    font-size: 100%;
+  }
+
+
+  /**/
+
+  #bloco2 {
+    display: block;
+  }
+
+  #tituloProjetos {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  #titulo {
+    margin-left: 30px;
+    margin-bottom: 50px;
+  }
+
+  
+  #grid {
+    margin-left: 25px;
+    display: block;
+    text-align: start;
+    margin-bottom: 100px;
+    background-color: rgba(0, 0, 0, 0.932);
+    transition: 0.3s;
+  }
+
+  #grid:hover {
+    background-color: #555050d8;
+    transform: translateY(-0.5%);
+    box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
+  }
+
+  #grid-item {
+    cursor: pointer;
+    height: 100px;
+    width: 200px;
+    background-repeat: no-repeat;
+    margin-left: 0px;
+  }
+
+  #imagem-card {
+    height: 450px;
+    width: 450px;
+  }
+
+
+  #card-img {
+    display: block;
+    width: 90%;
+    height: 100px;
+    background-color: #cccccc;
+  }
+
+  #card-content {
+    margin-top: -200px;
+    display: block;
+  }
+
+  #card-header {
+    font-size: 20px;
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+    margin-bottom: 1.5rem;
+  }
+
+  #card-text {
+    display: none;
+
+  }
+
+  #card {
+    margin-left: -25px;
+    z-index: 1;
+    color: #ffffff;
+  }
+
+  #card-btn {
+    display: block;
+    width: 100%;
+    padding: 1.5rem;
+    text-align: center;
+    background-color: #ffffff;
+    border: none;
+
+  }
+
+  /*footer */
+  footer {
     display: grid;
     text-align: center;
     border-top: solid 1px rgb(199, 199, 199);
@@ -227,9 +399,8 @@ ul {
   pointer-events: none;
 }
 
-#minha-imagem {
+#minhaImagem {
   display: inline;
-  height: 600px;
   margin-bottom: 100px;
   float: right;
   animation: animacao;
@@ -286,7 +457,7 @@ nav a {
   padding: 20px;
   text-align: center;
   font-family: 'Arial';
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 900;
   top: 50px;
   position: relative;
@@ -347,9 +518,8 @@ label {
 
 }
 
-#bloco-de-texto {
-  width: 700px;
-  height: 400px;
+#blocoDeTexto {
+  width: 50%;
   display: inline-block;
   margin-top: 150px;
   margin-left: 30px;
@@ -370,7 +540,7 @@ h1 {
 }
 
 h5 {
-  display: inline;
+  display: block;
   color: rgb(151, 140, 140);
   font-size: .875rem;
   font-weight: 100;
@@ -378,10 +548,10 @@ h5 {
   line-height: 1.25rem;
   text-transform: uppercase;
   padding-top: 5px;
-  padding-bottom: 5px;
+  padding-bottom: 15px;
 }
 
-#meu-resumo {
+#meuResumo {
   color: rgb(128, 125, 125);
   font-size: 1.375rem;
   line-height: 1.875rem;
@@ -414,7 +584,6 @@ h5 {
 
 #grid {
   display: inline-block;
-  margin-left: 10%;
   text-align: start;
   color: #ffffff;
   font-weight: 900;
@@ -422,7 +591,7 @@ h5 {
   text-align: center;
   margin-bottom: 100px;
   background-color: rgba(0, 0, 0, 0.932);
-
+  margin-left: 10%;
   transition: 0.3s;
 }
 
@@ -494,18 +663,17 @@ h5 {
 /* rodapé */
 
 .bloco-footer {
-  display: flex;
+  display: block;
 }
 
 footer {
   display: block;
-  height: 400px;
   border-top: solid 1px rgb(199, 199, 199);
 }
 
 #footer-item {
-  margin-top: 100px;
-  margin-right: 100px;
+  margin-top: 50px;
+  margin-right: 50px;
   display: inline-block;
 }
 
