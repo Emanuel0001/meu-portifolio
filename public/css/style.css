@@ -183,14 +183,13 @@
 
   /*footer */
   footer {
-    margin-top: 200px;
     display: grid;
     text-align: center;
     border-top: solid 1px rgb(199, 199, 199);
   }
  
   .bloco-footer {
-    height: 600px;
+    height: 500px;
   }
 }
 @media only screen and (max-width: 948px) {
@@ -561,10 +560,9 @@ h5 {
 }
 
 #bloco2 {
-  height: 700px;
+  height: 1000px;
   width: 500px;
   display: block;
-  margin-bottom: 100px;
   margin-top: 80px;
 }
 
@@ -663,23 +661,19 @@ h5 {
 /* rodapé */
 
 .bloco-footer {
-  display: block;
+ display: block;
 }
 
 footer {
-  display: block;
   border-top: solid 1px rgb(199, 199, 199);
 }
 
 #footer-item {
-  margin-top: 50px;
-  margin-right: 50px;
+  margin-top: 30px;
+  padding: 0;
   display: inline-block;
 }
 
-#footer-content {
-  margin-left: 30px;
-}
 
 h3 {
   font-size: 25px;
@@ -702,4 +696,51 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+@media only screen and (max-width: 3000px) {
+
+/* rodapé */
+
+.bloco-footer {
+  display: block;
+height: 300px; }
+ 
+ footer {
+   
+   border-top: solid 1px rgb(199, 199, 199);
+ }
+ 
+ #footer-item {
+   margin-top: 30px;
+   padding: 0;
+   margin-left: 30px;
+   margin-right: 50px;
+   float:inline-start;
+ }
+ 
+ 
+ h3 {
+   font-size: 25px;
+   color: #000000;
+   margin-bottom: 10px;
+ }
+ 
+ #footer-texto {
+   color: rgb(92, 92, 92);
+   font-size: 1rem;
+   line-height: 1.875rem;
+   font-weight: 500;
+   padding-top: 2px;
+   padding-bottom: 3px;
+ }
+ 
+ a {
+   display: block;
+ }
+ 
+ a:hover {
+   text-decoration: underline;
+ }
+ 
 }
