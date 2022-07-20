@@ -7,7 +7,183 @@
     opacity: 100%;
   }
 }
+@media only screen and (max-width: 948px) {
+  * {
+    font-size: 13px;
+  }
+  h1 {
+    margin-top: -300px;
+    font-size: 20px;
+  }
 
+  #blocoDeTexto {
+    width: 300px;
+    display: block;
+  }
+
+  body {
+    display: block;
+  }
+
+  p {
+    display: block;
+  }
+
+  .logotipo {
+    font-size: small;
+
+  }
+
+  #tituloProjetos {
+    margin-bottom: -50px;
+    display: block;
+  }
+
+  .menu {
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+  }
+
+  #minhaImagem {
+    height: 400px;
+    left: 300px;
+  }
+
+  #titulo {
+    margin-top: 50px;
+  }
+
+  #meuResumo {
+    margin-right: 10%;
+    width: 450px;
+  }
+
+  #blocoDeTexto {
+    margin-top: -100px;
+    margin-left: 0;
+    text-align: justify;
+    margin-top: -600px;
+  }
+
+  .bloco {
+    background-color: blue;
+    display: flex;
+    width: 600px;
+  }
+
+  
+
+  label {
+    margin-left: -20px;
+  }
+
+  .name-usuario {
+    font-weight: 100;
+    font-size: 100%;
+  }
+
+
+  /**/
+
+  #bloco2 {
+    display: block;
+  }
+
+  #tituloProjetos {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  #titulo {
+    margin-left: 30px;
+    margin-bottom: 50px;
+  }
+
+  
+  #grid {
+    margin-left: 25px;
+    display: block;
+    text-align: start;
+    margin-bottom: 100px;
+    background-color: rgba(0, 0, 0, 0.932);
+    transition: 0.3s;
+  }
+
+  #grid:hover {
+    background-color: #555050d8;
+    transform: translateY(-0.5%);
+    box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
+  }
+
+  #grid-item {
+    cursor: pointer;
+    height: 100px;
+    width: 200px;
+    background-repeat: no-repeat;
+    margin-left: 0px;
+  }
+
+  #imagem-card {
+    height: 550px;
+    width: 550px;
+  }
+
+
+  #card-img {
+    display: block;
+    width: 90%;
+    height: 100px;
+    background-color: #cccccc;
+  }
+
+  #card-content {
+    margin-top: -200px;
+    display: block;
+  }
+
+  #card-header {
+    font-size: 20px;
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+    margin-bottom: 1.5rem;
+  }
+
+  #card-text {
+    display: none;
+
+  }
+
+  #card {
+    margin-left: -25px;
+    z-index: 1;
+    color: #ffffff;
+  }
+
+  #card-btn {
+    display: block;
+    width: 100%;
+    padding: 1.5rem;
+    text-align: center;
+    background-color: #ffffff;
+    border: none;
+
+  }
+
+  /*footer */
+  .bloco-footer {
+    height: 550px;
+  }
+  footer {
+    display: grid;
+    text-align: center;
+    border-top: solid 1px rgb(199, 199, 199);
+  }
+}
 @media only screen and (max-width: 500px) {
   * {
     font-size: 13px;
@@ -133,8 +309,8 @@
   }
 
   #imagem-card {
-    height: 450px;
-    width: 450px;
+    height: 100%;
+    width: 100%;
   }
 
 
@@ -190,182 +366,10 @@
  
   .bloco-footer {
     height: 500px;
+    margin-block: -400px;
   }
 }
-@media only screen and (max-width: 948px) {
-  * {
-    font-size: 13px;
-  }
-  h1 {
-    margin-top: -300px;
-    font-size: 20px;
-  }
 
-  #blocoDeTexto {
-    width: 300px;
-    display: block;
-  }
-
-  body {
-    display: block;
-  }
-
-  p {
-    display: block;
-  }
-
-  .logotipo {
-    font-size: small;
-
-  }
-
-  #tituloProjetos {
-    margin-bottom: -50px;
-    display: block;
-  }
-
-  .menu {
-    width: 100%;
-    position: fixed;
-    z-index: 1;
-  }
-
-  #minhaImagem {
-    height: 400px;
-    left: 300px;
-  }
-
-  #titulo {
-    margin-top: 50px;
-  }
-
-  #meuResumo {
-    margin-right: 10%;
-    width: 450px;
-  }
-
-  #blocoDeTexto {
-    margin-top: -100px;
-    margin-left: 0;
-    text-align: justify;
-    margin-top: -600px;
-  }
-
-  .bloco {
-    background-color: blue;
-    display: flex;
-    width: 600px;
-  }
-
-  
-
-  label {
-    margin-left: -20px;
-  }
-
-  .name-usuario {
-    font-weight: 100;
-    font-size: 100%;
-  }
-
-
-  /**/
-
-  #bloco2 {
-    display: block;
-  }
-
-  #tituloProjetos {
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-
-  #titulo {
-    margin-left: 30px;
-    margin-bottom: 50px;
-  }
-
-  
-  #grid {
-    margin-left: 25px;
-    display: block;
-    text-align: start;
-    margin-bottom: 100px;
-    background-color: rgba(0, 0, 0, 0.932);
-    transition: 0.3s;
-  }
-
-  #grid:hover {
-    background-color: #555050d8;
-    transform: translateY(-0.5%);
-    box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
-  }
-
-  #grid-item {
-    cursor: pointer;
-    height: 100px;
-    width: 200px;
-    background-repeat: no-repeat;
-    margin-left: 0px;
-  }
-
-  #imagem-card {
-    height: 450px;
-    width: 450px;
-  }
-
-
-  #card-img {
-    display: block;
-    width: 90%;
-    height: 100px;
-    background-color: #cccccc;
-  }
-
-  #card-content {
-    margin-top: -200px;
-    display: block;
-  }
-
-  #card-header {
-    font-size: 20px;
-    text-align: left;
-    margin-left: 10px;
-    margin-top: 10px;
-    font-weight: 900;
-    color: rgb(255, 255, 255);
-    margin-bottom: 1.5rem;
-  }
-
-  #card-text {
-    display: none;
-
-  }
-
-  #card {
-    margin-left: -25px;
-    z-index: 1;
-    color: #ffffff;
-  }
-
-  #card-btn {
-    display: block;
-    width: 100%;
-    padding: 1.5rem;
-    text-align: center;
-    background-color: #ffffff;
-    border: none;
-
-  }
-
-  /*footer */
-  footer {
-    display: grid;
-    text-align: center;
-    border-top: solid 1px rgb(199, 199, 199);
-  }
-}
 
 * {
   margin: 0px;
@@ -385,10 +389,10 @@ ul {
   list-style: none;
 }
 
-.bloco {
+#bloco {
   background-color: rgb(255, 255, 255);
   width: 100%;
-  height: 600px;
+  height: 500px;
   color: #000000;
 
 }
@@ -548,6 +552,7 @@ h5 {
   text-transform: uppercase;
   padding-top: 5px;
   padding-bottom: 15px;
+  width: max-content;
 }
 
 #meuResumo {
@@ -561,9 +566,9 @@ h5 {
 
 #bloco2 {
   height: 1000px;
-  width: 500px;
   display: block;
   margin-top: 80px;
+  margin-right: 20px;
 }
 
 #tituloProjetos {
@@ -571,6 +576,7 @@ h5 {
   text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
+  margin-left: 30px;
 }
 
 #titulo {
@@ -704,7 +710,7 @@ a:hover {
 
 .bloco-footer {
   display: block;
-height: 300px; }
+}
  
  footer {
    
