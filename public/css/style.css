@@ -88,6 +88,8 @@
 
   #bloco2 {
     display: block;
+  height: 1000px;
+
   }
 
   #tituloProjetos {
@@ -267,7 +269,6 @@
 
   #bloco2 {
     display: block;
-    margin-bottom: 300px;
   }
 
   #tituloProjetos {
@@ -563,10 +564,10 @@ h5 {
 }
 
 #bloco2 {
-  height: 1000px;
   display: block;
   margin-top: 80px;
   margin-right: 20px;
+  height: 1000px;
 }
 
 #tituloProjetos {
