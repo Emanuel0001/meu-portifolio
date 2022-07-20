@@ -175,7 +175,7 @@
   }
 
   /*footer */
-  .bloco-footer {
+  #bloco-footer {
     height: 550px;
   }
   footer {
@@ -267,6 +267,7 @@
 
   #bloco2 {
     display: block;
+    margin-bottom: 300px;
   }
 
   #tituloProjetos {
@@ -363,9 +364,8 @@
     border-top: solid 1px rgb(199, 199, 199);
   }
  
-  .bloco-footer {
+  #bloco-footer {
     height: 500px;
-    
   }
 }
 
@@ -664,7 +664,7 @@ h5 {
 
 /* rodapé */
 
-.bloco-footer {
+#bloco-footer {
  display: block;
 }
 
@@ -706,8 +706,10 @@ a:hover {
 
 /* rodapé */
 
-.bloco-footer {
+#bloco-footer {
   display: block;
+  width: 100%;
+
 }
  
  footer {
