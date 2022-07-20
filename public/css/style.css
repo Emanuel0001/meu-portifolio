@@ -363,6 +363,7 @@
     display: grid;
     text-align: center;
     border-top: solid 1px rgb(199, 199, 199);
+    width: max-content;
   }
  
   #bloco-footer {
