@@ -69,7 +69,7 @@
   .bloco {
     background-color: blue;
     display: flex;
-    width: 600px;
+  
   }
 
   
@@ -249,7 +249,7 @@
   .bloco {
     background-color: blue;
     display: flex;
-    width: 600px;
+    height: 600px;
   }
 
   
@@ -390,10 +390,12 @@ ul {
   list-style: none;
 }
 
-.bloco {
+#bloco {
   background-color: rgb(255, 255, 255);
   width: 100%;
   color: #000000;
+  display: block;
+  margin-bottom: 300px;
 
 }
 
@@ -408,6 +410,7 @@ ul {
   float: right;
   animation: animacao;
   animation-duration: 2s;
+  margin-top: 40px;
 }
 
 #check {
@@ -422,6 +425,7 @@ ul {
   position: fixed;
   z-index: 1;
   margin-top: 10px;
+  background-color: #ffffffda;
 }
 
 #icone {
@@ -492,6 +496,7 @@ nav a {
 #logo {
   display: inline-block;
   margin-left: 20px;
+  margin-top: 5px;
 }
 
 .name-usuario {
@@ -565,7 +570,7 @@ h5 {
 }
 
 #bloco2 {
-  display: block;
+  display: inline-table;
   margin-top: 80px;
   margin-right: 20px;
   height: 1000px;
