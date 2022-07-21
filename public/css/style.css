@@ -316,7 +316,8 @@
   }
 
   #imagem-card {
-  text-align: center;
+    height: 110%;
+    width: 100%;
   }
 
 
@@ -352,6 +353,7 @@
     z-index: 1;
     color: #ffffff;
     height: 1000px;
+    width: 470px;
   }
 
   #card-btn {
