@@ -115,12 +115,6 @@
     transition: 0.3s;
   }
 
-  #grid:hover {
-    background-color: #555050d8;
-    transform: translateY(-0.5%);
-    box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
-  }
-
   #grid-item {
     cursor: pointer;
     height: 100px;
@@ -301,12 +295,6 @@
     transition: 0.3s;
   }
 
-  #grid:hover {
-    background-color: #555050d8;
-    transform: translateY(-0.5%);
-    box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
-  }
-
   #grid-item {
     cursor: pointer;
     height: 100px;
@@ -407,6 +395,7 @@ ul {
   background-color: #000000;
   color: #ffffff;
   margin-top: -40px;
+  text-decoration: none;
 }
 
 #bloco {
@@ -623,11 +612,6 @@ h5 {
   transition: 0.3s;
 }
 
-#grid:hover {
-  background-color: #555050d8;
-  transform: translateY(-0.5%);
-  box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
-}
 
 #grid-item {
   cursor: pointer;
@@ -644,15 +628,18 @@ h5 {
 
 }
 
+#imagem-card:hover {
+  box-shadow: 0 1rem 9rem rgba(0, 0, 0, 0.5);
+}
+
 #card-img {
   display: block;
   width: 100%;
   height: 100px;
-  background-color: #cccccc;
 }
 
 #card-content {
-  margin-top: -3%;
+  margin-top: -30px;
   padding: 3rem;
 }
 
