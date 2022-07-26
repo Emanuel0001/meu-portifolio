@@ -8,6 +8,55 @@
   }
 }
 
+@media only screen and (min-width: 1000) {
+
+  /* rodapé */
+
+  #bloco-footer {
+    display: block;
+    width: 100%;
+
+  }
+
+  footer {
+    width: 100%;
+    border-top: solid 1px rgb(199, 199, 199);
+  }
+
+  #footer-item {
+    margin-top: 30px;
+    width: 30%;
+    padding: 0;
+    margin-left: 30px;
+    margin-right: 50px;
+    float: inline-start;
+  }
+
+
+  h3 {
+    font-size: 25px;
+    color: #000000;
+    margin-bottom: 10px;
+  }
+
+  #footer-texto {
+    color: rgb(92, 92, 92);
+    font-size: 1rem;
+    line-height: 1.875rem;
+    font-weight: 500;
+    padding-top: 2px;
+    padding-bottom: 3px;
+  }
+
+  a {
+    display: block;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+}
 
 @media only screen and (max-width: 948px) {
   * {
@@ -71,7 +120,7 @@
   .bloco {
     display: flex;
     width: 500px;
-
+  
   }
 
 
@@ -275,7 +324,6 @@
   #bloco2 {
     display: block;
     text-align: center;
-    width: 500px;
   }
 
   #tituloProjetos {
@@ -379,7 +427,6 @@
   #bloco-footer {
     height: 500px;
   }
-
   #bloco {
     display: block;
   }
@@ -390,7 +437,6 @@
   margin: 0px;
   padding: 0px;
 }
-
 a {
   text-decoration: none;
   color: black;
@@ -411,13 +457,11 @@ ul {
   margin-top: -40px;
   text-decoration: none;
 }
-
 #testando {
   display: block;
   background-color: red;
   justify-content: center;
 }
-
 #bloco {
   width: 100%;
   color: hsl(0, 0%, 0%);
@@ -566,7 +610,6 @@ label {
 p {
   margin-bottom: 20px;
 }
-
 #divMinhaImagem {
   display: flex;
   width: 100%;
@@ -761,53 +804,21 @@ a:hover {
   color: #ffffff;
   background-color: black;
 }
-
-@media only screen and (min-width: 1000) {
-
-  /* rodapé */
-
-  #bloco-footer {
-    display: block;
-    width: 100%;
-
-  }
-
-  footer {
-    width: 100%;
-    border-top: solid 1px rgb(199, 199, 199);
-  }
-
-  #footer-item {
-    margin-top: 30px;
-    width: 30%;
-    padding: 0;
-    margin-left: 30px;
-    margin-right: 50px;
-    float: inline-start;
-  }
-
-
-  h3 {
-    font-size: 25px;
-    color: #000000;
-    margin-bottom: 10px;
-  }
-
-  #footer-texto {
-    color: rgb(92, 92, 92);
-    font-size: 1rem;
-    line-height: 1.875rem;
-    font-weight: 500;
-    padding-top: 2px;
-    padding-bottom: 3px;
-  }
-
-  a {
-    display: block;
-  }
-
-  a:hover {
-    text-decoration: underline;
-  }
-
+#blocoSkils h1 {
+  display: block;
+  margin-bottom: 10px;
+}
+#blocoSkils {
+  display: block;
+  text-align: center;
+  align-content: center;
+  background-color: #f2f2f2;
+  align-items: center;
+padding: 50px;
+}
+.imagemSkils{
+  display: inline-block;
+ text-align: center;
+ align-content: center;
+ height: 60px;
 }
