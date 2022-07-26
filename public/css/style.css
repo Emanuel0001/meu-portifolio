@@ -649,6 +649,10 @@ h5 {
   width: 100%;
 }
 
+#meuResumo:hover {
+ color: #000000; 
+}
+
 #bloco2 {
   margin-top: 30px;
   height: 900px;
@@ -821,4 +825,8 @@ padding: 50px;
  text-align: center;
  align-content: center;
  height: 60px;
+}
+.imagemSkils:hover {
+  -webkit-transform: scale(2.1);
+  transform: scale(1.1);
 }
