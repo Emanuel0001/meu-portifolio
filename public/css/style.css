@@ -368,7 +368,6 @@
     display: grid;
     text-align: center;
     border-top: solid 1px rgb(199, 199, 199);
-    width: max-content;
   }
 
   #footer-item {
@@ -704,7 +703,6 @@ h5 {
 
 #bloco-footer {
   display: block;
-  margin-top: 100px;
 }
 
 footer {
