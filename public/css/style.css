@@ -16,7 +16,7 @@
 
   h1 {
     margin-top: -300px;
-    font-size: 20px;
+    font-size: 40px;
   }
 
   #blocoDeTexto {
@@ -183,6 +183,10 @@
     border-top: solid 1px rgb(199, 199, 199);
   }
 
+  #footer-item {
+    width: 100%;
+  }
+
   #bloco {
     display: block;
   }
@@ -195,7 +199,7 @@
 
   h1 {
     margin-top: -300px;
-    font-size: 20px;
+    font-size: 30px;
   }
 
   #blocoDeTexto {
@@ -366,6 +370,10 @@
     text-align: center;
     border-top: solid 1px rgb(199, 199, 199);
     width: max-content;
+  }
+
+  #footer-item {
+    width: 100%;
   }
 
   #bloco-footer {
@@ -590,6 +598,7 @@ h5 {
   padding-bottom: 3px;
   display: flex;
   align-content: center;
+  width: 100%;
 }
 
 #bloco2 {
@@ -598,6 +607,7 @@ h5 {
   height: 900px;
   text-align: center;
   justify-content: center;
+  background-color: #f2f2f2;
 }
 
 #tituloProjetos {
@@ -694,6 +704,7 @@ h5 {
 
 #bloco-footer {
   display: block;
+  margin-top: 100px;
 }
 
 footer {
@@ -701,8 +712,10 @@ footer {
 }
 
 #footer-item {
-  padding: 0px;
-  display: inline-block;
+  display: block;
+  margin-top: 30px;
+  width: 100%;
+  text-align: center;
 }
 
 
@@ -746,7 +759,7 @@ a:hover {
   background-color: black;
 }
 
-@media only screen and (max-width: 3000px) {
+@media only screen and (min-width: 1000) {
 
   /* rodapé */
 
@@ -757,12 +770,13 @@ a:hover {
   }
 
   footer {
-
+    width: 100%;
     border-top: solid 1px rgb(199, 199, 199);
   }
 
   #footer-item {
     margin-top: 30px;
+    width: 30%;
     padding: 0;
     margin-left: 30px;
     margin-right: 50px;
