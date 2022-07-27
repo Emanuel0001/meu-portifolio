@@ -1,10 +1,8 @@
 @keyframes animacao {
   from {
-    opacity: 0%;
   }
 
   to {
-    opacity: 100%;
   }
 }
 
@@ -120,7 +118,7 @@
   .bloco {
     display: flex;
     width: 500px;
-  
+
   }
 
 
@@ -427,6 +425,7 @@
   #bloco-footer {
     height: 500px;
   }
+
   #bloco {
     display: block;
   }
@@ -437,6 +436,7 @@
   margin: 0px;
   padding: 0px;
 }
+
 a {
   text-decoration: none;
   color: black;
@@ -445,6 +445,34 @@ a {
 body {
   font-family: arial;
 }
+
+.line {
+font-weight: 800;
+color: #0f141e;
+ border-right: solid 1px black;
+ white-space: nowrap;
+ overflow: hidden;
+ display: inline-block;
+ 
+}
+.type-animation {
+   animation: piscarCursor 500ms steps(40)  infinite normal, typing 3s steps(40) 1s normal ;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 12.4em;
+  }
+}
+@keyframes piscarCursor {
+ from {
+  border-right-color: rgb(0, 0, 0) ;
+ }
+ to{ border-right-color: transparent;}
+}
+
 
 ul {
   list-style: none;
@@ -457,11 +485,13 @@ ul {
   margin-top: -40px;
   text-decoration: none;
 }
+
 #testando {
   display: block;
   background-color: red;
   justify-content: center;
 }
+
 #bloco {
   width: 100%;
   color: hsl(0, 0%, 0%);
@@ -610,6 +640,7 @@ label {
 p {
   margin-bottom: 20px;
 }
+
 #divMinhaImagem {
   display: flex;
   width: 100%;
@@ -650,7 +681,7 @@ h5 {
 }
 
 #meuResumo:hover {
- color: #000000; 
+  color: #000000;
 }
 
 #bloco2 {
@@ -808,24 +839,28 @@ a:hover {
   color: #ffffff;
   background-color: black;
 }
+
 #blocoSkils h1 {
   display: block;
   margin-bottom: 10px;
 }
+
 #blocoSkils {
   display: block;
   text-align: center;
   align-content: center;
   background-color: #f2f2f2;
   align-items: center;
-padding: 50px;
+  padding: 50px;
 }
-.imagemSkils{
+
+.imagemSkils {
   display: inline-block;
- text-align: center;
- align-content: center;
- height: 60px;
+  text-align: center;
+  align-content: center;
+  height: 60px;
 }
+
 .imagemSkils:hover {
   -webkit-transform: scale(2.1);
   transform: scale(1.1);
