@@ -256,6 +256,12 @@
     width: 500px;
   }
 
+  .scroll img {
+    position: fixed;
+    height: 50px;
+    margin-top: 130px;
+  }
+
   p {
     display: block;
   }
@@ -445,12 +451,33 @@ body {
   font-family: arial;
 }
 
+.scroll img {
+  position: fixed;
+  background-color: #ffffff70;
+  height: 50px;
+  border-radius: 5px;
+  animation: is-bouncing 1s ease-in-out alternate infinite;
+}
+
+.scroll {
+  margin-right: 100px;
+  float: right;
+  margin-top: -500px;
+}
+
+@keyframes is-bouncing {
+  to {
+    transform: translateY(30px);
+  }
+}
+
 .iconeRedeSocial {
- height: 30px;
- display: inline;
- margin-bottom: -8px;
+  height: 30px;
+  display: inline;
+  margin-bottom: -8px;
 
 }
+
 a p {
   display: inline;
 }
@@ -603,7 +630,7 @@ nav a {
 
 }
 
-#logotipo:hover {
+.logotipo:hover {
   -webkit-transform: rotateZ(360deg);
   transform: rotateZ(360deg);
 }
