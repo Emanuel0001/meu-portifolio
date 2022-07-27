@@ -1,9 +1,7 @@
 @keyframes animacao {
-  from {
-  }
+  from {}
 
-  to {
-  }
+  to {}
 }
 
 @media only screen and (min-width: 1000) {
@@ -440,37 +438,55 @@
 a {
   text-decoration: none;
   color: black;
+  margin-bottom: 5px;
 }
 
 body {
   font-family: arial;
 }
 
+.iconeRedeSocial {
+ height: 30px;
+ display: inline;
+ margin-bottom: -8px;
+
+}
+a p {
+  display: inline;
+}
+
 .line {
-font-weight: 800;
-color: #0f141e;
- border-right: solid 1px black;
- white-space: nowrap;
- overflow: hidden;
- display: inline-block;
- 
+  font-weight: 800;
+  color: #0f141e;
+  border-right: solid 2px black;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+
 }
+
 .type-animation {
-   animation: piscarCursor 500ms steps(40)  infinite normal, typing 3s steps(40) 1s normal ;
+  animation: piscarCursor 500ms steps(40) infinite normal, typing 3s steps(40) 1s normal;
 }
+
 @keyframes typing {
   from {
     width: 0;
   }
+
   to {
     width: 12.4em;
   }
 }
+
 @keyframes piscarCursor {
- from {
-  border-right-color: rgb(0, 0, 0) ;
- }
- to{ border-right-color: transparent;}
+  from {
+    border-right-color: rgb(0, 0, 0);
+  }
+
+  to {
+    border-right-color: transparent;
+  }
 }
 
 
