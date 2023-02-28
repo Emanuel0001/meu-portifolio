@@ -726,11 +726,14 @@ a {
 
 .circulo {
   margin-top: 30px;
+ 
 }
 
 .verde {
   background-color: yellowgreen;
 }
+
+
 
 .amarelo {
   background-color: yellow;
@@ -740,6 +743,21 @@ a {
   background-color: red;
 }
 
+#verde-piscar {
+  animation: piscar 500ms linear infinite;
+}
+#amarelo-piscar {
+  animation: piscar 700ms infinite;
+}
+
+#vermelho-piscar {
+  animation: piscar 900ms infinite;
+
+}
+@keyframes piscar {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
 .circulo {
   border: solid 1px rgb(112, 112, 112);
   width: 10px;
@@ -1595,3 +1613,4 @@ button img {
     justify-content: center;
   }
 }
+
