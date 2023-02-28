@@ -726,7 +726,7 @@ a {
 
 .circulo {
   margin-top: 30px;
- 
+
 }
 
 .verde {
@@ -746,6 +746,7 @@ a {
 #verde-piscar {
   animation: piscar 500ms linear infinite;
 }
+
 #amarelo-piscar {
   animation: piscar 700ms infinite;
 }
@@ -754,10 +755,17 @@ a {
   animation: piscar 900ms infinite;
 
 }
+
 @keyframes piscar {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
+
 .circulo {
   border: solid 1px rgb(112, 112, 112);
   width: 10px;
@@ -1218,11 +1226,6 @@ button img {
   width: 600px;
 }
 
-.afastamento-cards {
-  width: 10px;
-  display: inline-block;
-}
-
 @media only screen and (max-width: 1300px) {
   #sobre-none {
     display: none;
@@ -1539,8 +1542,10 @@ button img {
   }
 
   .bloco-cards-2 {
-    display: flex;
+    display: block;
     margin-left: 30px;
+    margin-bottom: 73px;
+
   }
 
   #meuResumo {
@@ -1574,13 +1579,15 @@ button img {
 
   #tituloProjetos {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 34px;
     margin-bottom: 20px;
+    display: inline-block;
   }
 
   #titulo {
     margin-left: 30px;
     margin-bottom: 50px;
+    margin-top: -25px;
   }
 
   #subtitulo-usuario {
@@ -1613,4 +1620,3 @@ button img {
     justify-content: center;
   }
 }
-
