@@ -200,6 +200,7 @@ button {
   cursor: pointer;
   font-weight: 600;
   color: rgb(255, 255, 255);
+  margin-left: 20px;
 }
 
 button:hover {
@@ -266,6 +267,44 @@ button a:link {
 
 }
 
+.menu-smartphone-sobre-mim  {
+  display: none;
+  height: 900px;
+  color: white;
+  width: 100%;
+  padding: 30px;
+  background-color: purple;
+}
+
+.menu-smartphone-sobre-mim  ul li p {
+  width: 90%;
+}
+.menu-smartphone-sobre-mim  ul li p img {
+  float: left;
+}
+.menu-smartphone-sobre-mim p img {
+  height: 40px;
+  margin-right: 10px;
+  float: left;
+}
+
+
+.menu-smartphone-sobre-mim  ol  p {
+  width: 90%;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+.bloco-skills {
+ margin-top: 50px;
+}
+
+.bloco-skills ol li {
+  margin-top: 1px;
+  font-size: 20px;
+  margin-left: 30px;
+
+ }
 .imagem-menu {
   height: 40px;
   margin-top: -11px;
@@ -1230,6 +1269,8 @@ button img {
   #sobre-none {
     display: none;
   }
+  .menu-smartphone-sobre-mim  {
+    display: block;}
 }
 
 @media only screen and (max-width: 1200px) {
@@ -1620,3 +1661,4 @@ button img {
     justify-content: center;
   }
 }
+
