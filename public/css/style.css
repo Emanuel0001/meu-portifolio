@@ -131,29 +131,117 @@ a p {
 .line {
   font-weight: 900;
   color: purple;
-  border-right: solid 2px #00e5fc;
   white-space: nowrap;
   overflow: hidden;
   display: inline-block;
-  font-size: 98px;
+  font-size: 80px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-
+  text-transform: uppercase;
+  text-shadow: -1px -1px 0px white,
+    3px 3px 0px blue,
+    6px 6px 0px black;
 }
 
 .line-down {
   font-weight: 700;
-  color: rgb(0, 0, 0);
+  color: yellow;
   white-space: nowrap;
   overflow: hidden;
   display: block;
-  font-size: 85px;
+  font-size: 130px;
   margin-top: -40px;
   width: max-content;
+  text-shadow: -1px -1px 0px white,
+    3px 3px 0px blue,
+    6px 6px 0px black;
 
 }
 
+.bloco-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  width: 10%;
+}
+
+.social-midia {
+  height: 50px;
+  display: ruby;
+}
+
+.social-midia img {
+  display: block;
+  width: 50px;
+}
+
 .type-animation {
-  animation: piscarCursor 500ms steps(49) infinite normal, typing 3s steps(25) 1s normal;
+  /*animation: piscarCursor 500ms steps(49) infinite normal, typing 3s steps(25) 1s normal;
+
+*/
+}
+
+@keyframes piscaPisca {
+  0% {
+    color: black;
+  }
+
+  10% {
+    color: black;
+  }
+
+  15% {
+    color: green;
+  }
+
+  20% {
+    color: green;
+  }
+
+  25% {
+    color: blue;
+  }
+
+  35% {
+    color: blue;
+  }
+
+  40% {
+    color: red;
+  }
+
+  45% {
+    color: red;
+  }
+
+  50% {
+    color: purple;
+  }
+
+  60% {
+    color: purple;
+  }
+
+  75% {
+    color: yellow;
+  }
+
+  85% {
+    color: yellow;
+  }
+
+  90% {
+    color: rgb(0, 128, 128);
+  }
+
+  99% {
+    color: rgb(0, 128, 128);
+  }
+
+  100% {
+    color: green;
+  }
 }
 
 @keyframes typing {
@@ -192,19 +280,21 @@ button {
   width: 200px;
   font-size: 25px;
   height: 60px;
+  border: none;
   border-radius: 10px;
-  border: solid 1px purple;
+  border-bottom: solid 1px rgb(255, 255, 255);
   text-align: center;
   display: flex;
   align-items: center;
   cursor: pointer;
   font-weight: 600;
-  color: rgb(255, 255, 255);
+  color: rgb(255, 254, 254);
   margin-left: 20px;
+  background-color: #00000000;
 }
 
 button:hover {
-  background-color: rgb(63, 1, 63);
+  background-color: rgb(211, 111, 211);
 }
 
 .img-card-button {
@@ -239,11 +329,10 @@ button a:link {
 }
 
 #minhaImagem {
-  width: 470px;
-  margin-right: 100px;
-  margin-left: 123px;
+  width: 525px;
   position: relative;
-  margin-top: 87px;
+  margin-top: 17px;
+  margin-left: -142px;
 }
 
 @keyframes is-bouncing-image {
@@ -267,7 +356,7 @@ button a:link {
 
 }
 
-.menu-smartphone-sobre-mim  {
+.menu-smartphone-sobre-mim {
   display: none;
   height: 1000;
   color: white;
@@ -275,12 +364,14 @@ button a:link {
   background-color: purple;
 }
 
-.menu-smartphone-sobre-mim  ul li p {
+.menu-smartphone-sobre-mim ul li p {
   width: 90%;
 }
-.menu-smartphone-sobre-mim  ul li p img {
+
+.menu-smartphone-sobre-mim ul li p img {
   float: left;
 }
+
 .menu-smartphone-sobre-mim p img {
   height: 40px;
   margin-right: 10px;
@@ -288,14 +379,14 @@ button a:link {
 }
 
 
-.menu-smartphone-sobre-mim  ol  p {
+.menu-smartphone-sobre-mim ol p {
   width: 90%;
   margin-left: 30px;
   margin-top: 20px;
 }
 
 .bloco-skills {
- margin-top: 50px;
+  margin-top: 50px;
 }
 
 .bloco-skills ol li {
@@ -303,7 +394,8 @@ button a:link {
   font-size: 20px;
   margin-left: 30px;
 
- }
+}
+
 .imagem-menu {
   height: 40px;
   margin-top: -11px;
@@ -315,7 +407,7 @@ button a:link {
   padding: 15px;
   font-weight: 900;
   z-index: 1;
-  color: #000000;
+  color: black;
   margin-top: -27px;
 }
 
@@ -423,11 +515,11 @@ label {
   display: inline-block;
   align-items: center;
   align-content: center;
-  margin-top: 100px;
-  padding: 60px;
-  color: rgb(0, 0, 0);
-  width: 60%;
-
+  padding: 30px;
+  color: white;
+  width: 62%;
+  margin-bottom: 4px;
+  margin-top: 150px;
 }
 
 p {
@@ -436,7 +528,7 @@ p {
 
 h5 {
   display: inline;
-  color: rgb(252, 252, 252);
+  color: rgb(5, 5, 5);
   font-size: .875rem;
   font-weight: 100;
   letter-spacing: .2rem;
@@ -453,7 +545,6 @@ h5 {
 }
 
 .meuResumo {
-  color: rgb(0, 0, 0);
   display: flex;
   align-content: center;
   font-size: 1.005rem;
@@ -463,6 +554,7 @@ h5 {
   margin-top: 40px;
   text-transform: uppercase;
   text-align: justify;
+  color: black;
 }
 
 #bloco2 {
@@ -478,7 +570,7 @@ h5 {
   margin-top: 20px;
   margin-bottom: 20px;
   margin-left: 30px;
-  color: #ffffff;
+  color: rgb(253, 252, 253);
 }
 
 #titulo {
@@ -487,7 +579,7 @@ h5 {
   margin-bottom: 100px;
   text-align: center;
   font-weight: 800;
-  color: #fafafa;
+  color: rgb(255, 255, 255);
 }
 
 /* rodapé */
@@ -689,7 +781,7 @@ h6 {
 }
 
 .titulo-nome-bloco1 {
-  color: rgb(0, 0, 0);
+  padding: auto;
 }
 
 #portifolio {
@@ -709,7 +801,36 @@ h6 {
   border-top: solid 1px black;
   margin-top: -18px;
 }
+.bubble {
+  background-color: black;
+  border: 2px solid black;
+  border-radius: 5px;
+  color: white;
+  display: inline-block;
+  font: 16px/24px sans-serif;
+  padding: 12px 24px;
+  position: relative;
+}
 
+.bubble.active:after,
+.bubble.active:before {
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid black;
+    bottom: -15px;
+    content: '';
+    left: 50%;
+    margin-left: -15px;
+    position: absolute;
+}
+.bubble.active:before {
+  border-left: 18px solid transparent;
+  border-right: 18px solid transparent;
+  border-top: 18px solid;
+  border-top-color: inherit;
+  bottom: -18px;
+  margin-left: -18px;
+}
 #portifolio div {
   margin-top: 3px;
 }
@@ -870,10 +991,6 @@ a {
   color: #ffffff;
 }
 
-
-button {
-  background-color: purple;
-}
 
 .botao-left {
   height: 100%;
@@ -1264,12 +1381,20 @@ button img {
   width: 600px;
 }
 
+.resume-file {
+  height: 400px;
+  width: 100%;
+  background-color: black;
+}
+
 @media only screen and (max-width: 1300px) {
   #sobre-none {
     display: none;
   }
-  .menu-smartphone-sobre-mim  {
-    display: block;}
+
+  .menu-smartphone-sobre-mim {
+    display: block;
+  }
 }
 
 @media only screen and (max-width: 1200px) {
@@ -1363,8 +1488,10 @@ button img {
 }
 
 @media only screen and (max-width: 948px) {
+
+
   #line {
-    font-size: 75px;
+    font-size: 55px;
     height: 96px;
   }
 
@@ -1464,6 +1591,7 @@ button img {
   .meuResumo {
     width: 500px;
   }
+
 }
 
 @media only screen and (max-width: 550px) {
@@ -1476,8 +1604,34 @@ button img {
     width: 300px;
   }
 
+  #bloco {
+    color: hsl(0, 0%, 0%);
+    display: block;
+  }
+
   .meuResumo {
     width: 430px;
+  }
+
+  .bloco-links {
+    display: inline-block;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    text-align: initial;
+    width: 100%;
+    margin-top: 180px;
+    margin-bottom: -400px;
+    margin-left: 30px;
+  }
+
+  #blocoDeTexto {
+    margin-top: -27px;
+  }
+
+  #line {
+    font-size: 45px;
+    height: 67px;
   }
 }
 
@@ -1660,4 +1814,3 @@ button img {
     justify-content: center;
   }
 }
-
