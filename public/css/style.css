@@ -1671,6 +1671,7 @@ button img {
   }
 
   #blocoDeTexto {
+    margin-top: 100px;
     display: block;
     align-items: center;
     align-content: center;
