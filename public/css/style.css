@@ -1383,7 +1383,6 @@ button img {
 
 .resume-file {
   height: 400px;
-  width: 100%;
   background-color: black;
 }
 
@@ -1620,9 +1619,10 @@ button img {
     flex-direction: column;
     text-align: initial;
     width: 100%;
-    margin-top: 250px;
+    margin-top: 150px;
     margin-bottom: -400px;
     margin-left: 30px;
+    height: 100%;
   }
 
   #blocoDeTexto {
@@ -1647,7 +1647,6 @@ button img {
 
   .line-down {
     font-weight: 700;
-    color: rgb(0, 0, 0);
     white-space: nowrap;
     overflow: hidden;
     display: block;
