@@ -1672,7 +1672,6 @@ button img {
 
   #blocoDeTexto {
     display: block;
-    display: inline-block;
     align-items: center;
     align-content: center;
     color: rgb(102, 95, 95);
