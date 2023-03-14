@@ -88,7 +88,7 @@
 
     <div class="grid-container">
       <a href="https://sistemadeusuario.netlify.app/" target="_blank">
-        <div class="container">
+        <div class="container " data-anime="left" >
           <div class="circulos">
             <div class="circulo verde"></div>
             <div class="circulo amarelo"></div>
@@ -111,7 +111,7 @@
       </a>
 
 
-      <div class="container">
+      <div class="container" data-anime="right">
         <a href="https://financecontrolapp.netlify.app/" target="_blank">
           <div class="circulos">
             <div class="circulo verde"></div>
@@ -136,7 +136,7 @@
 
     <div class="grid-container">
       <a href="https://buscas-cep.netlify.app/" target="_blank">
-        <div class="container">
+        <div class="container" data-anime="left">
           <div class="circulos">
             <div class="circulo verde"></div>
             <div class="circulo amarelo"></div>
@@ -156,7 +156,7 @@
         </div>
       </a>
       <a href="https://calculadoraimconline.netlify.app/" target="_blank">
-        <div class="container">
+        <div class="container" data-anime="right">
           <div class="circulos">
             <div class="circulo verde"></div>
             <div class="circulo amarelo"></div>
@@ -591,6 +591,21 @@
       divJavascript.style = "display: none"
       divReact.style = "display: none"
     }
+
+    const target = document.querySelectorAll('[data-anime]');
+    const animationClass = 'animate';
+
+    function animeScroll() {
+     const windowTop = window.pageYOffset + (window.innerHeight *3) / 4;
+     target.forEach(function(element){
+      if((windowTop) > element.offsetTop){
+        element.classList.add(animationClass)
+      }
+     })
+    }
+    window.addEventListener('scroll', function(){
+      animeScroll();
+    })
   </script>
 </body>
 
