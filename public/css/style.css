@@ -1605,24 +1605,12 @@ button img {
 
   #bloco {
     color: hsl(0, 0%, 0%);
-    display: block;
   }
 
   .meuResumo {
     width: 430px;
   }
 
-  .bloco-links {
-    display: inline-block;
-    flex-wrap: wrap;
-    justify-content: center;
-    flex-direction: column;
-    text-align: initial;
-    margin-top: 150px;
-    margin-bottom: -400px;
-    margin-left: 30px;
-    height: 100%;
-  }
 
   #blocoDeTexto {
     margin-top: -27px;
@@ -1635,10 +1623,6 @@ button img {
 }
 
 @media only screen and (max-width: 500px) {
-  .bloco-links {
-  display: inline-flex;
-  position:relative;
-  }
 
   h1 {
     font-size: 30px;
@@ -1672,15 +1656,6 @@ button img {
     font-size: 50px;
     width: max-content;
 
-  }
-
-  #blocoDeTexto {
-    margin-top: 100px;
-    display: block;
-    align-items: center;
-    align-content: center;
-    color: rgb(102, 95, 95);
-    padding: 30px;
   }
 
   body {
@@ -1750,8 +1725,7 @@ button img {
   }
 
   #blocoDeTexto {
-    text-align: justify;
-    width: 500p;
+    width: 500px;
   }
 
 
