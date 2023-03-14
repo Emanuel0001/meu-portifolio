@@ -168,7 +168,7 @@ a p {
 
 .social-midia {
   height: 50px;
-  display: ruby;
+  display: inline-block;
 }
 
 .social-midia img {
@@ -801,6 +801,7 @@ h6 {
   border-top: solid 1px black;
   margin-top: -18px;
 }
+
 .bubble {
   background-color: black;
   border: 2px solid black;
@@ -814,15 +815,16 @@ h6 {
 
 .bubble.active:after,
 .bubble.active:before {
-    border-left: 15px solid transparent;
-    border-right: 15px solid transparent;
-    border-top: 15px solid black;
-    bottom: -15px;
-    content: '';
-    left: 50%;
-    margin-left: -15px;
-    position: absolute;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 15px solid black;
+  bottom: -15px;
+  content: '';
+  left: 50%;
+  margin-left: -15px;
+  position: absolute;
 }
+
 .bubble.active:before {
   border-left: 18px solid transparent;
   border-right: 18px solid transparent;
@@ -831,6 +833,7 @@ h6 {
   bottom: -18px;
   margin-left: -18px;
 }
+
 #portifolio div {
   margin-top: 3px;
 }
@@ -1613,7 +1616,7 @@ button img {
   }
 
   .bloco-links {
-    display: inline-flex;
+    display: inline-block;
     flex-wrap: wrap;
     justify-content: center;
     flex-direction: column;
@@ -1622,8 +1625,14 @@ button img {
     margin-bottom: -400px;
     margin-left: 30px;
     height: 100%;
+    width: 80%;
+    text-align: center;
   }
 
+  .social-midia img {
+  display: block;
+  width: 70px;
+}
   #blocoDeTexto {
     margin-top: -27px;
   }
