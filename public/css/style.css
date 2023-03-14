@@ -1658,7 +1658,7 @@ button img {
     white-space: nowrap;
     overflow: hidden;
     display: block;
-    font-size: 50px;
+    font-size: 70px;
     margin-top: -30px;
     display: block;
     width: max-content;
@@ -1674,13 +1674,13 @@ button img {
     font-size: 110px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     height: 150px;
-    font-size: 50px;
+    font-size: 70px;
     width: max-content;
 
   }
 
   #blocoDeTexto {
-    margin-top: 50px;
+    margin-top: 5px;
     display: block;
     align-items: center;
     align-content: center;
