@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,7 +12,6 @@
   <link rel="icon" href="./images/logo-Portifolio-2.png">
   <link rel="stylesheet" type="text/css" href="./css/style.css" media="screen" />
 </head>
-
 <body>
   <div class="bloco">
     <div class='menu' id="menu">
@@ -56,36 +54,36 @@
         <a target="_blank" href="https://github.com/Emanuel0001">
           <div class="social-midia"><img src="./images/iconeGithub.png"></div>
         </a>
+        <a id="baixar" onclick="downloadResume()"> <img id="img-resume-file" src="./images/resume-file.png"></a>
       </div>
-      <div id="blocoDeTexto">
+      <div id="blocoDeTexto" >
         <span class="bubble active">It's me</span>
         <p>
         <h5 class="titulo-nome-bloco1">Emanuel Hitallo soares de souza</h5>
         </p>
         <p>
-        <h1 class="line type-animation" id="line">Desenvolvedor</h1>
-        <h1 class="line-down" id="line-down">Full Stack.</h1>
+        <h1 class="line type-animation" id="line" > Desenvolvedor</h1>
+        <h1 class="line-down" id="line-down" > Full Stack.</h1>
         </p>
         <div class="meuResumo" id="meuResumo">
           Olá, seja bem vindo! Sou um desenvolvedor full stack Júnior este é o meu portifólio.
         </div>
+       <a href="http://localhost:3000/download" target="_blank"></a>
+        <div id="baixar" class="resume-file" ></div>
       </div>
-      <div id="divMinhaImagem">
+      <div id="divMinhaImagem" >
         <img id="minhaImagem" src="./images/minha-imagem.png">
       </div>
     </div>
   </div>
   <div class="ajustar-bacgraund">
     <div class="centraliza-Imagem-Smartphone">
-
       <img class="imagem-Smartphone" src="./images/minha-imagem.png"></img>
     </div>
   </div>
-
   <div id="bloco2" class="bloco2">
-    <h5 id='tituloProjetos'>Projetos selecionados</h5>
-    <h1 id='titulo'>Meus Projetos</h1>
-
+    <h5 id='tituloProjetos'> Projetos selecionados</h5>
+    <h1 id='titulo'> Meus Projetos</h1>
     <div class="grid-container">
       <a href="https://sistemadeusuario.netlify.app/" target="_blank">
         <div class="container " data-anime="left" >
@@ -106,11 +104,8 @@
           </div>
           <div class="container-link">
           </div>
-
         </div>
       </a>
-
-
       <div class="container" data-anime="right">
         <a href="https://financecontrolapp.netlify.app/" target="_blank">
           <div class="circulos">
@@ -130,10 +125,8 @@
           </div>
           <div class="container-link">
           </div>
-
       </div></a>
     </div>
-
     <div class="grid-container">
       <a href="https://buscas-cep.netlify.app/" target="_blank">
         <div class="container" data-anime="left">
@@ -152,7 +145,6 @@
           <div class="container-imagem">
             <img id="buscadorDeCep" src="./images/buscadorDeCep(2).png">
           </div>
-
         </div>
       </a>
       <a href="https://calculadoraimconline.netlify.app/" target="_blank">
@@ -178,7 +170,6 @@
         </div>
       </a>
     </div>
-
   </div>
   </div>
   <div class="bloco3">
@@ -232,7 +223,6 @@
             <li>postgreSQL</li>
             <li>APIs</li>
             <li>linux</li>
-
           </ol>
         </div>
     </div>
@@ -257,7 +247,6 @@
           </li>
         </ul>
       </div>
-
       <div class="cont1 conteudo-principal-sobre ">
         <ul>
           <li class="conteudo-sobre sobre-mim fullColors" id="sobre-mim">
@@ -300,7 +289,6 @@
               </li>
             </ol>
           </li>
-
           <li style="display: none" class="conteudo-sobre minha-formacao" id="minha-formacao">
             <p>
             <h1>Minha Formação.</h1>
@@ -312,7 +300,6 @@
               <p style="font-weight: bold;">Ano inicio: 2016 Ano término: 2019</p>
             </ol>
           </li>
-
           <li class="conteudo-sobre habilidade-sobre-mim" id="habilidade-sobre-mim">
             <p>
             <h1>Minhas Habilidades.</h1>
@@ -331,7 +318,6 @@
           </li>
         </ul>
       </div>
-
       <div class="cont1 Imagem-ilustrativa">
         <img class="avatar-style" src="./images/avatar1.png" id="avatar1">
         <img class="avatar-style" src="./images/avatar2.png" id="avatar2" style="display: none">
@@ -340,14 +326,9 @@
         <div class="shadow-avatar-sltyle" id="shadow-avatar"></div>
         <div class="shadow-avatar-sltyle" id="shadow-avatar2"></div>
         <div class="shadow-avatar-sltyle" id="shadow-avatar3"></div>
-
       </div>
     </div>
   </div>
-  <div class="resume-file">
-
-  </div>
-
   </div>
   <div class="resumo-das-skils">
     <div class="skils " id="html">
@@ -434,6 +415,17 @@
     </footer>
   </div>
   <script>
+
+    function downloadResume () {
+       let b = document.createElement("iframe");
+       b.setAttribute("src", "http://localhost:3000/download");
+       console.log(b);
+       document
+       .querySelector("#baixar")
+       .appendChild(b)
+       .setAttribute("style" , "display:none")
+    } 
+
     function scrollProjetos() {
       window.scrollTo(0, 700);
       var barra = document.getElementsById('barra');
@@ -454,13 +446,9 @@
     ScrollReveal().reveal('.bloco3', { delay: 400 });
     ScrollReveal().reveal('.bloco-footer', { delay: 400 });
     ScrollReveal().reveal('.container', { delay: 600 });
-
-
     var divShadow = document.getElementById('shadow-avatar');
     var divShadow2 = document.getElementById('shadow-avatar2');
     var divShadow3 = document.getElementById('shadow-avatar3');
-
-
     var divSobre = document.getElementById('sobre-mim');
     var divAvatar1 = document.getElementById('avatar1');
     var divObjetivos = document.getElementById('meus-objetivos');
@@ -473,7 +461,6 @@
     divObjetivos.style = "display: none"
     divFormacao.style = "display: none"
     divSkils.style = "display: none"
-
     divShadow2.style = "display: none"
     divShadow3.style = "display: none"
 
@@ -482,12 +469,10 @@
       divAvatar3.style = "display: none"
       divAvatar2.style = "display: none"
       divAvatar1.style = "display: block"
-
       divSobre.style = "display:  block"
       divObjetivos.style = "display: none"
       divFormacao.style = "display: none"
       divSkils.style = "display: none"
-
       divShadow.style = "display: block"
       divShadow2.style = "display: none"
       divShadow3.style = "display: none"
@@ -506,8 +491,6 @@
       divShadow.style = "display: block"
       divShadow2.style = "display: none"
       divShadow3.style = "display: none"
-
-
     }
     function abrirFormacao() {
       divAvatar4.style = "display: none"
@@ -521,7 +504,6 @@
       divShadow.style = "display: none"
       divShadow2.style = "display: block"
       divShadow3.style = "display: none"
-
 
     }
     function abrirSkils() {
@@ -537,9 +519,6 @@
       divShadow.style = "display: none"
       divShadow2.style = "display: none"
       divShadow3.style = "display: block"
-
-
-
     }
 
 
@@ -600,6 +579,9 @@
      target.forEach(function(element){
       if((windowTop) > element.offsetTop){
         element.classList.add(animationClass)
+      } else {
+        element.classList.remove(animationClass)
+
       }
      })
     }
