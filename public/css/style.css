@@ -1711,7 +1711,7 @@ button img {
   }
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 500px) {
 
   .container-imagem {
     height: 70%;
@@ -1843,6 +1843,7 @@ button img {
 
   p {
     display: block;
+    font-size: 13px;
   }
 
   .logotipo {
@@ -1895,6 +1896,15 @@ button img {
   #img-resume-file {
     width: 68px;
     margin-bottom: -19px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  #footer-texto {
+    color: #2e2e2e;
+    font-size: 13px;
   }
 
   #blocoDeTexto {
