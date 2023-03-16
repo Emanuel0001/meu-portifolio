@@ -1713,12 +1713,27 @@ button img {
 
 @media only screen and (max-width: 375px) {
 
-  h1 {
-    font-size: 30px;
+  .container-imagem {
+    height: 70%;
+    width: 99%;
   }
 
-  #meuResumo {
-    font-size: 15px;
+  #line {
+    font-size: 32px;
+    height: 67px;
+  }
+
+  #line-down {
+    font-size: 50px;
+  }
+
+  .imagem-Smartphone {
+    display: block;
+    width: 370px;
+  }
+
+  h1 {
+    font-size: 30px;
   }
 
   .line-down {
@@ -1746,6 +1761,7 @@ button img {
     width: max-content;
 
   }
+
   .container {
     width: 335px;
     display: inline-block;
@@ -1756,32 +1772,59 @@ button img {
     color: #000000;
     cursor: pointer;
     box-shadow: 0 5px 15px rgb(0 0 0);
-}
+    height: 390px;
+  }
 
-.container-2 .card-2 {
-  position: relative;
-  width: 100px;
-  height: 175px;
-  background-color: #fff;
-  margin: 0 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 4px;
-  box-shadow: 0 5px 15px #000000;
-  transition: 0.5s;
-  overflow: hidden;
-  transform-style: preserve-3d;
-  z-index: 0;
-  cursor: pointer;
-}
+  .skils {
+    width: 334px;
+    height: 218px;
+    background-color: #f0f0f0;
+    color: purple;
+    border-radius: 15px;
+    box-shadow: 1px 2px 11px black;
+    font-size: 10px;
+  }
+
+  #javascript p {
+    font-size: 14px;
+  }
+
+  #css p {
+    font-size: 16px;
+  }
+
+  #html p {
+    font-size: 16px;
+  }
+
+  .arrow-down {
+    display: none;
+  }
+
+  .container-2 .card-2 {
+    position: relative;
+    width: 100px;
+    height: 175px;
+    background-color: #fff;
+    margin: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    box-shadow: 0 5px 15px #000000;
+    transition: 0.5s;
+    overflow: hidden;
+    transform-style: preserve-3d;
+    z-index: 0;
+    cursor: pointer;
+  }
+
   #blocoDeTexto {
     margin-top: 5px;
     display: block;
     align-items: center;
     align-content: center;
     color: rgb(102, 95, 95);
-    padding: 10px;
   }
 
   body {
@@ -1845,13 +1888,17 @@ button img {
   }
 
   #meuResumo {
-    margin-right: 10%;
-    width: 400px;
+    text-align: center;
+    width: 137%;
+  }
+
+  #img-resume-file {
+    width: 68px;
+    margin-bottom: -19px;
   }
 
   #blocoDeTexto {
     text-align: justify;
-    width: 500p;
   }
 
 
