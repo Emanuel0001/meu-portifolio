@@ -72,13 +72,13 @@
         <div id="baixar" class="resume-file" ></div>
       </div>
       <div id="divMinhaImagem" >
-        <img id="minhaImagem" src="./images/minha-imagem.png">
+        <img id="minhaImagem" src="./images/avatar2.png">
       </div>
     </div>
   </div>
   <div class="ajustar-bacgraund">
     <div class="centraliza-Imagem-Smartphone">
-      <img class="imagem-Smartphone" src="./images/minha-imagem.png"></img>
+      <img class="imagem-Smartphone" src="./images/avatar2.png"></img>
     </div>
   </div>
   <div id="bloco2" class="bloco2">
@@ -183,7 +183,7 @@
           <p data-anime="left">
             Formado em Sistemas de Informação com apenas 22 anos, sigo minha tragetória
             buscando aprimorar meus conhecimentos na area que mais amo que é desenvolvimento
-            front-end. além de ser desenvolvedor eu amo jogar bola, treinar entre outras
+            de software. além de ser desenvolvedor eu amo jogar bola, treinar entre outras
             atividades fisicas que eu tenho prazer em praticar.
           </p>
           <p data-anime="left">
@@ -197,7 +197,7 @@
           </p>
         </li>
         <br>
-        <div data-anime="left">
+        <div>
           <p>
             <img src="./images/icons8-capelo-60.png">
           <h1 data-anime="left" >Minha Formação.</h1>
@@ -213,7 +213,7 @@
             <img src="./images/icons8-habilidade-de-experiência-48.png">
           <h1 style="font-weight: 700; font-size: 35px; " data-anime="left"> Minhas Habilidades.</h1>
           </p>
-          <ol class="habilidade-ol" data-anime="left">
+          <ul class="habilidade-ul" data-anime="left">
             <li>JavaScript</li>
             <li>Html5</li>
             <li>CSS</li>
@@ -223,7 +223,7 @@
             <li>postgreSQL</li>
             <li>APIs</li>
             <li>linux</li>
-          </ol>
+          </ul>
         </div>
     </div>
     <div class="sobre" id="sobre-none">
@@ -256,7 +256,7 @@
             <p>
               Formado em Sistemas de Informação com apenas 22 anos, sigo minha tragetória
               buscando aprimorar meus conhecimentos na area que mais amo que é desenvolvimento
-              front-end. além de ser desenvolvedor eu amo jogar bola, treinar entre outras
+              de software. além de ser desenvolvedor eu amo jogar bola, treinar entre outras
               atividades fisicas que eu tenho prazer em praticar.
             </p>
             <p>
@@ -319,13 +319,7 @@
         </ul>
       </div>
       <div class="cont1 Imagem-ilustrativa">
-        <img class="avatar-style" src="./images/avatar1.png" id="avatar1">
-        <img class="avatar-style" src="./images/avatar2.png" id="avatar2" style="display: none">
-        <img class="avatar-style" src="./images/avatar3.png" id="avatar3" style="display: none">
-        <img class="avatar-style" src="./images/avatar5.png" id="avatar4" style="display: none">
-        <div class="shadow-avatar-sltyle" id="shadow-avatar"></div>
-        <div class="shadow-avatar-sltyle" id="shadow-avatar2"></div>
-        <div class="shadow-avatar-sltyle" id="shadow-avatar3"></div>
+        <img class="avatar-style" src="./images/minha-imagem.png" >
       </div>
     </div>
   </div>
@@ -446,11 +440,8 @@
     ScrollReveal().reveal('.bloco3', { delay: 400 });
     ScrollReveal().reveal('.bloco-footer', { delay: 400 });
     ScrollReveal().reveal('.container', { delay: 600 });
-    var divShadow = document.getElementById('shadow-avatar');
-    var divShadow2 = document.getElementById('shadow-avatar2');
-    var divShadow3 = document.getElementById('shadow-avatar3');
+   
     var divSobre = document.getElementById('sobre-mim');
-    var divAvatar1 = document.getElementById('avatar1');
     var divObjetivos = document.getElementById('meus-objetivos');
     var divAvatar2 = document.getElementById('avatar2');
     var divFormacao = document.getElementById("minha-formacao")
@@ -461,64 +452,35 @@
     divObjetivos.style = "display: none"
     divFormacao.style = "display: none"
     divSkils.style = "display: none"
-    divShadow2.style = "display: none"
-    divShadow3.style = "display: none"
+   
 
     function abrirSobreMim() {
-      divAvatar4.style = "display: none"
-      divAvatar3.style = "display: none"
-      divAvatar2.style = "display: none"
-      divAvatar1.style = "display: block"
       divSobre.style = "display:  block"
       divObjetivos.style = "display: none"
       divFormacao.style = "display: none"
       divSkils.style = "display: none"
-      divShadow.style = "display: block"
-      divShadow2.style = "display: none"
-      divShadow3.style = "display: none"
-
 
     }
     function abrirObjetivos() {
-      divAvatar4.style = "display: none"
-      divAvatar3.style = "display: none"
-      divAvatar2.style = "display: block"
-      divAvatar1.style = "display: none"
       divSkils.style = "display: none"
       divSobre.style = "display:  none"
       divObjetivos.style = "display: block"
       divFormacao.style = "display: none"
-      divShadow.style = "display: block"
-      divShadow2.style = "display: none"
-      divShadow3.style = "display: none"
     }
     function abrirFormacao() {
-      divAvatar4.style = "display: none"
-      divAvatar3.style = "display: block"
-      divAvatar2.style = "display: none"
-      divAvatar1.style = "display: none"
       divSobre.style = "display:  none"
       divObjetivos.style = "display: none"
       divFormacao.style = "display: block"
       divSkils.style = "display: none"
-      divShadow.style = "display: none"
-      divShadow2.style = "display: block"
-      divShadow3.style = "display: none"
-
+ 
     }
     function abrirSkils() {
       divHabilidade = document.getElementById('habilidade-img');
-      divAvatar4.style = "display: block"
-      divAvatar3.style = "display: none"
-      divAvatar2.style = "display: none"
-      divAvatar1.style = "display: none"
       divSobre.style = "display:  none"
       divObjetivos.style = "display: none"
       divFormacao.style = "display: none"
       divSkils.style = "display: block"
-      divShadow.style = "display: none"
-      divShadow2.style = "display: none"
-      divShadow3.style = "display: block"
+
     }
 
 
