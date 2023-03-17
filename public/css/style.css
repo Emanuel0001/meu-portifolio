@@ -398,6 +398,7 @@ button a:link {
 
 #minhaImagem {
   width: 458px;
+  position: relative;
   margin-top: 54px;
   margin-left: -181px;
 }
@@ -432,8 +433,7 @@ button a:link {
 }
 
 .menu-smartphone-sobre-mim ul li p {
-  width: 100%;
-  text-align: center;
+  width: 90%;
 }
 
 .menu-smartphone-sobre-mim ul li p img {
@@ -448,17 +448,19 @@ button a:link {
 
 
 .menu-smartphone-sobre-mim ol p {
-  width: 100%;
-  text-align: center;
+  width: 90%;
+  margin-left: 30px;
+  margin-top: 20px;
 }
 
 .bloco-skills {
   margin-top: 50px;
 }
 
-.bloco-skills ul li {
-  width: 100%;
-  text-align: center;
+.bloco-skills ol li {
+  margin-top: 1px;
+  font-size: 20px;
+  margin-left: 30px;
 
 }
 
@@ -1332,6 +1334,17 @@ button img {
   background-color: #000000;
 }
 
+#avatar1 {
+  margin-left: -50px;
+}
+
+#avatar3 {
+  margin-left: -50px;
+}
+
+#avatar4 {
+  margin-left: -50px;
+}
 
 .habilidade-img {
   margin-top: -620px;
@@ -1461,7 +1474,6 @@ button img {
 
   .imagem-Smartphone {
     display: block;
-    width: 400px;
   }
 
   #minhaImagem {
@@ -1607,7 +1619,6 @@ button img {
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
-    width: 100%;
   }
 
   #titulo {

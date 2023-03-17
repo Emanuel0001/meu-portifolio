@@ -9,7 +9,7 @@
   <meta name="keywords" content="portifolio, html, front-end, desenvolvimento, css, javascript">
   <script src="https://unpkg.com/scrollreveal"></script>
   <title>Portifólio | Emanuel H.</title>
-  <link rel="icon" href="./images/logo-Portifolio-2.png">
+  <link rel="icon" href="./images/logo-Portifolio-1.png">
   <link rel="stylesheet" type="text/css" href="./css/style.css" media="screen" />
 </head>
 <body>
@@ -183,7 +183,7 @@
           <p data-anime="left">
             Formado em Sistemas de Informação com apenas 22 anos, sigo minha tragetória
             buscando aprimorar meus conhecimentos na area que mais amo que é desenvolvimento
-            de software. além de ser desenvolvedor eu amo jogar bola, treinar entre outras
+            front-end. além de ser desenvolvedor eu amo jogar bola, treinar entre outras
             atividades fisicas que eu tenho prazer em praticar.
           </p>
           <p data-anime="left">
@@ -197,7 +197,7 @@
           </p>
         </li>
         <br>
-        <div>
+        <div data-anime="left">
           <p>
             <img src="./images/icons8-capelo-60.png">
           <h1 data-anime="left" >Minha Formação.</h1>
@@ -213,7 +213,7 @@
             <img src="./images/icons8-habilidade-de-experiência-48.png">
           <h1 style="font-weight: 700; font-size: 35px; " data-anime="left"> Minhas Habilidades.</h1>
           </p>
-          <ul class="habilidade-ul" data-anime="left">
+          <ol class="habilidade-ol" data-anime="left">
             <li>JavaScript</li>
             <li>Html5</li>
             <li>CSS</li>
@@ -223,7 +223,7 @@
             <li>postgreSQL</li>
             <li>APIs</li>
             <li>linux</li>
-          </ul>
+          </ol>
         </div>
     </div>
     <div class="sobre" id="sobre-none">
@@ -256,7 +256,7 @@
             <p>
               Formado em Sistemas de Informação com apenas 22 anos, sigo minha tragetória
               buscando aprimorar meus conhecimentos na area que mais amo que é desenvolvimento
-              de software. além de ser desenvolvedor eu amo jogar bola, treinar entre outras
+              front-end. além de ser desenvolvedor eu amo jogar bola, treinar entre outras
               atividades fisicas que eu tenho prazer em praticar.
             </p>
             <p>
@@ -455,6 +455,7 @@
    
 
     function abrirSobreMim() {
+      divAvatar1.style = "display: block"
       divSobre.style = "display:  block"
       divObjetivos.style = "display: none"
       divFormacao.style = "display: none"
