@@ -401,7 +401,9 @@ button a:link {
   position: relative;
   margin-top: 54px;
   margin-left: -181px;
+  animation: bouncing 1s ease-in-out alternate infinite;
 }
+
 
 @keyframes is-bouncing-image {
   to {
@@ -1710,12 +1712,12 @@ button img {
   }
 
   #line {
-    font-size: 32px;
+    font-size: 43px;
     height: 67px;
   }
 
   #line-down {
-    font-size: 50px;
+    font-size: 70px;
   }
 
   .imagem-Smartphone {
