@@ -197,6 +197,27 @@ a p {
   }
 }
 
+.sup-bloco {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  background-color: purple;
+  margin-top: 100px;
+}
+
+.bloco2 p {
+  display: block;
+  align-items: center;
+  text-align: center;
+  color: purple;
+}
+
+.bloco2 {
+  margin-top: -200px;
+}
+
 .line-down {
   font-weight: 700;
   color: yellow;
@@ -494,8 +515,12 @@ button a:link {
   position: fixed;
   transition: all .2s linear;
   right: -40%;
-  z-index: 0;
+  z-index: 1;
   backdrop-filter: blur(5px);
+}
+
+#baixar {
+  cursor: pointer;
 }
 
 nav {
@@ -624,14 +649,22 @@ h5 {
   margin-top: 40px;
   text-transform: uppercase;
   text-align: justify;
-  color: black;
+  color: purple;
 }
 
 #bloco2 {
   height: 100%;
   text-align: center;
   justify-content: center;
-  background-color: purple;
+  background-color: white;
+  margin-left: 50px;
+  margin-right: 50px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.bloco3 {
+  margin-top: 100px;
 }
 
 #tituloProjetos {
@@ -640,7 +673,7 @@ h5 {
   margin-top: 20px;
   margin-bottom: 20px;
   margin-left: 30px;
-  color: rgb(253, 252, 253);
+  color: rgb(247, 6, 247);
 }
 
 #titulo {
@@ -650,6 +683,7 @@ h5 {
   text-align: center;
   font-weight: 800;
   color: rgb(255, 255, 255);
+  padding: 30px;
 }
 
 /* rodapé */
@@ -1449,7 +1483,115 @@ button img {
   margin-top: -50px;
 }
 
+
+.container-main {
+  height: 500px;
+  white-space: nowrap;
+  display: flex;
+}
+
+.container-card {
+  width: 100%;
+  height: 100%;
+  display: contents;
+}
+
+.container-image {
+  display: inline-block;
+  width: 50%;
+  margin-left: 0;
+
+}
+
+.container-image img {
+  display: inline-block;
+}
+
+.imagem-pc {
+  height: 350px;
+  margin-top: 50px;
+}
+
+.imagem-cell {
+  width: 151px;
+  margin-left: -150px;
+  margin-bottom: -5px;
+}
+
+.container-description {
+  width: 50%;
+  display: inline-block;
+  height: 100%;
+  margin-left: 0;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+.container-description h1 {
+  width: 100%;
+  font-size: 40px;
+  text-align: start;
+  color: purple;
+}
+
+
+.container-description p {
+  font-size: 16px;
+  text-align: left;
+  display: block;
+  white-space: break-spaces;
+  margin-top: 30px;
+}
+
+.container-description a {
+  display: inline-block;
+}
+
+.link-acess {
+  display: block;
+  text-align: initial;
+}
+
+.proj2 img{
+  display: block;
+width: 50px;
+margin-top: 20px;
+}
+.button-link {
+  background: purple;
+  width: 100px;
+  text-align: center;
+  height: 17px;
+  color: white;
+  font-size: 15px;
+  border-radius: 20px;
+  font-weight: 800;
+  padding: 10px;
+  box-shadow: 1px 39px 18px -10px purple;
+}
+
+.resumo-container {
+  width: 80%;
+}
+
+.number-project {
+  width: 36px;
+  background: purple;
+  height: 24px;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 20px;
+  font-weight: 800;
+  color: white;
+  margin-left: 10px;
+
+}
 @media only screen and (max-width: 1300px) {
+  .container-title {
+    color: purple;
+    font-size: 16px;
+  }
+
   #sobre-none {
     display: none;
   }
@@ -1457,9 +1599,17 @@ button img {
   .menu-smartphone-sobre-mim {
     display: block;
   }
+
+  .imagem-pc {
+    height: 360px;
+  }
+  
 }
 
 @media only screen and (max-width: 1200px) {
+  .imagem-pc {
+    height: 300px;
+  }
 
   .imagem-fundo {
     display: none;
@@ -1476,6 +1626,7 @@ button img {
 
   .imagem-Smartphone {
     display: block;
+    width: 400px;
   }
 
   #minhaImagem {
@@ -1503,35 +1654,32 @@ button img {
     width: 100%;
     justify-content: center;
   }
+  .imagem-cell {
+    width: 125px;
+    margin-left: -126px;
+    margin-bottom: -5px;
+  }
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (max-width: 1000px) {
 
-  /* rodapé */
+  .imagem-pc {
+    height: 270px;
+  }
+
+  .container-description p {
+    font-size: 13px;
+  }
+
+  .container-title {
+    color: purple;
+    font-size: 15px;
+  }
+
+
   .fita-centralizada {
     width: 70%;
   }
-
-  #bloco-footer {
-    display: block;
-    width: 100%;
-
-  }
-
-  footer {
-    width: 100%;
-    border-top: groove 5px rgb(201, 199, 199);
-  }
-
-  #footer-item {
-    margin-top: 30px;
-    width: 30%;
-    padding: 0;
-    margin-left: 30px;
-    margin-right: 50px;
-    float: inline-start;
-  }
-
 
   h3 {
     font-size: 25px;
@@ -1539,18 +1687,17 @@ button img {
     margin-bottom: 10px;
   }
 
-  s #footer-texto {
-    color: rgb(92, 92, 92);
-    font-size: 1rem;
-    line-height: 1.875rem;
-    font-weight: 500;
-    padding-top: 2px;
-    padding-bottom: 3px;
-  }
 }
 
 @media only screen and (max-width: 948px) {
+  .imagem-pc {
+    height: 260px;
+  }
 
+  .imagem-cell {
+    width: 128px;
+    margin-left: -115px;
+  }
 
   #line {
     font-size: 55px;
@@ -1561,16 +1708,7 @@ button img {
     font-size: 75px;
   }
 
-  h1 {
-    font-size: 40px;
-    font-family: lorem;
-  }
-
   #blocoDeTexto {
-    display: block;
-  }
-
-  body {
     display: block;
   }
 
@@ -1583,10 +1721,6 @@ button img {
 
   }
 
-  #tituloProjetos {
-    margin-bottom: -50px;
-    display: block;
-  }
 
   .menu {
     width: 100%;
@@ -1599,23 +1733,16 @@ button img {
     width: 450px;
   }
 
-  label {
-    margin-left: -20px;
-  }
-
-  .name-usuario {
-    font-weight: 100;
-    font-size: 100%;
-  }
-
 
   /**/
+
 
   #bloco2 {
     display: block;
     height: max-content;
 
   }
+
 
   #tituloProjetos {
     text-align: center;
@@ -1629,23 +1756,31 @@ button img {
   }
 
   /*footer */
-  #bloco-footer {
-    height: 550px;
-  }
 
-  footer {
-    display: grid;
-    text-align: center;
-    border-top: solid 1px rgb(199, 199, 199);
-  }
-
-  #footer-item {
-    width: 100%;
-  }
 
 }
 
+@media only screen and (max-width: 888px) {
+  .imagem-pc {
+    height: 200px;
+  }
+
+  .imagem-cell {
+    width: 103px;
+    margin-left: -115px;
+  }
+}
+
 @media only screen and (max-width: 678px) {
+  .imagem-pc {
+    height: 200px;
+  }
+
+  .imagem-cell {
+    width: 128px;
+    margin-left: -115px;
+  }
+
   .line {
     font-size: 40px;
   }
@@ -1654,9 +1789,70 @@ button img {
     width: 500px;
   }
 
+  #bloco2 {
+    display: block;
+    text-align: center;
+    height: max-content;
+    margin-left: 0px;
+    margin-right: 0px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  .container-main {
+    height: 396px;
+    white-space: nowrap;
+    display: table;
+  }
+
+  .container-title {
+    color: purple;
+    font-size: 15px;
+  }
+
+  .container-title {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: purple;
+    margin-top: 50px;
+    font-size: 20px;
+  }
+
+  .container-image {
+    display: contents;
+  }
+
+  .imagem-pc {
+    height: 200px;
+  }
+
+  .imagem-cell {
+    width: 92px;
+    margin-left: -88px;
+    height: 165px;
+    margin-top: -27px;
+  }
+
+  .container-description {
+    width: 90%;
+    line-height: 13px;
+    text-align: start;
+    margin-left: 24px;
+    margin-top: 22px;
+    display: block;
+  }
+
+  .container-description h2 {
+    width: 100%;
+    font-size: 21px;
+    color: purple;
+    font-weight: 700;
+  }
+
 }
 
 @media only screen and (max-width: 550px) {
+ 
   .line {
     font-size: 35px;
     height: 60px;
@@ -1691,7 +1887,7 @@ button img {
 
   .social-midia img {
     display: block;
-    width: 70px;
+    width: 54px;
   }
 
   #blocoDeTexto {
@@ -1921,6 +2117,10 @@ button img {
     display: block;
     text-align: center;
     height: max-content;
+    margin-left: -20px;
+    margin-right: -20px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
   }
 
   #tituloProjetos {

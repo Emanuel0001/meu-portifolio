@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,6 +13,7 @@
   <link rel="icon" href="./images/logo-Portifolio-1.png">
   <link rel="stylesheet" type="text/css" href="./css/style.css" media="screen" />
 </head>
+
 <body>
   <div class="bloco">
     <div class='menu' id="menu">
@@ -49,29 +51,29 @@
     <div id="bloco" class="bloco1">
       <div class="bloco-links">
         <a target="_blank" href="https://www.linkedin.com/in/emanuel-hitallo-06690a16b/">
-          <div class="social-midia"><img src="./images/iconeLinkedin.png"></div>
+          <div class="social-midia"><img src="./imagem-projetos/linkdlin.png"></div>
         </a>
         <a target="_blank" href="https://github.com/Emanuel0001">
-          <div class="social-midia"><img src="./images/iconeGithub.png"></div>
+          <div class="social-midia"><img src="./imagem-projetos/link-github.png"></div>
         </a>
-        <a id="baixar" onclick="downloadResume()"> <img id="img-resume-file" src="./images/resume-file.png"></a>
+        <a id="baixar" onclick="downloadResume()"> <img id="img-resume-file" src="./imagem-projetos/download.png"></a>
       </div>
-      <div id="blocoDeTexto" >
+      <div id="blocoDeTexto">
         <span class="bubble active">It's me</span>
         <p>
         <h5 class="titulo-nome-bloco1">Emanuel Hitallo soares de souza</h5>
         </p>
         <p>
-        <h1 class="line type-animation" id="line" > Desenvolvedor</h1>
-        <h1 class="line-down" id="line-down" > Full Stack.</h1>
+        <h1 class="line type-animation" id="line"> Desenvolvedor</h1>
+        <h1 class="line-down" id="line-down"> Full Stack.</h1>
         </p>
         <div class="meuResumo" id="meuResumo">
           Olá, seja bem vindo! Sou um desenvolvedor full stack Júnior este é o meu portifólio.
         </div>
-       <a href="https://emanuelhitallo.netlify.app/download" target="_blank"></a>
-        <div id="baixar" class="resume-file" ></div>
+        <a href="https://emanuelhitallo.netlify.app/download" target="_blank"></a>
+        <div id="baixar" class="resume-file"></div>
       </div>
-      <div id="divMinhaImagem" >
+      <div id="divMinhaImagem">
         <img id="minhaImagem" src="./images/avatar2.png">
       </div>
     </div>
@@ -81,104 +83,111 @@
       <img class="imagem-Smartphone" src="./images/avatar2.png"></img>
     </div>
   </div>
-  <div id="bloco2" class="bloco2">
-    <h5 id='tituloProjetos'> Projetos selecionados</h5>
+  <div class="sup-bloco">
     <h1 id='titulo'> Meus Projetos</h1>
-    <div class="grid-container">
-      <a href="https://sistemadeusuario.netlify.app/" target="_blank">
-        <div class="container " data-anime="left" >
-          <div class="circulos">
-            <div class="circulo verde"></div>
-            <div class="circulo amarelo"></div>
-            <div class="circulo vermelho"></div>
-            <div class="ifem"></div>
-          </div>
-          <div class="container-titulo">
-            <h2 class="titulo-container">Sistema de Usuário</h2>
-            <p class="verProjeto">
-            <div id="seta"></div>
-            </p>
-          </div>
-          <div class="container-imagem">
-            <img src="./images/ImagemSistema3.png">
-          </div>
-          <div class="container-link">
-          </div>
-        </div>
-      </a>
-      <div class="container" data-anime="left">
-        <a href="https://financecontrolapp.netlify.app/" target="_blank">
-          <div class="circulos">
-            <div class="circulo verde"></div>
-            <div class="circulo amarelo"></div>
-            <div class="circulo vermelho"></div>
-            <div class="ifem"></div>
-          </div>
-          <div class="container-titulo">
-            <h2 class="titulo-container">Finance Control</h2>
-            <p class="verProjeto">
-            <div id="seta"></div>
-            </p>
-          </div>
-          <div class="container-imagem">
-            <img src="./images/finance.png">
-          </div>
-          <div class="container-link">
-          </div>
-      </div></a>
-    </div>
-    <div class="grid-container">
-      <a href="https://buscas-cep.netlify.app/" target="_blank">
-        <div class="container" data-anime="left">
-          <div class="circulos">
-            <div class="circulo verde"></div>
-            <div class="circulo amarelo"></div>
-            <div class="circulo vermelho"></div>
-            <div class="ifem"></div>
-          </div>
-          <div class="container-titulo">
-            <h2 class="titulo-container">Buscador de CEP</h2>
-            <p class="verProjeto">
-            <div id="seta"></div>
-            </p>
-          </div>
-          <div class="container-imagem">
-            <img id="buscadorDeCep" src="./images/buscadorDeCep(2).png">
-          </div>
-        </div>
-      </a>
-      <a href="https://calculadoraimconline.netlify.app/" target="_blank">
-        <div class="container" data-anime="left">
-          <div class="circulos">
-            <div class="circulo verde"></div>
-            <div class="circulo amarelo"></div>
-            <div class="circulo vermelho"></div>
-            <div class="ifem"></div>
-          </div>
-          <div class="container-titulo">
-            <h2 class="titulo-container">Calculadora IMC</h2>
-            <p class="verProjeto">
-            <div id="seta"></div>
-            </p>
-          </div>
-          <div class="container-imagem ">
-            <img src="./images/calculadora2.png">
-          </div>
-          <div class="container-link">
-            <a target="_blank">Não disponível</a>
-          </div>
-        </div>
-      </a>
-    </div>
   </div>
+  <div class="bloco2" id="bloco2">
+    <h5 id='tituloProjetos'> Projetos selecionados</h5>
+    <section class="container-main" data-anime="left">
+      <div class="number-project">1</div>
+      <div class="container-card">
+        <div class="container-image">
+          <img src="./imagem-projetos/portifolio/mobile.png" class="imagem-pc">
+          <img src="./imagem-projetos/portifolio/mobile (1).png" class="imagem-cell">
+        </div>
+        <div class="container-description">
+          <h1>Portifólio.com</h1>
+          <div class="resumo-container">
+           <p>Este portifolio foi desenvolvido por mim, para servir como forma de apresentação e também mostrar minhas habilidades, as tecnologias utilizadas nele, foram HTML, CSS, JS, utilizei também um framework ScrollReveal para deixar o site com uma animação ao escrolar a pagina, ele conta um pouco sobre meus objetivos e metas.</p>
+          </div>
+          <div class="link-acess">
+            <a target="_blank" href="https://github.com/Emanuel0001">
+              <div class="social-midia proj2"><img src="./imagem-projetos/link-github.png"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container-main" data-anime="left">
+      <div class="number-project">2</div>
+      <div class="container-card">
+        <div class="container-description">
+          <h1>Finance.com</h1>
+          <div class="resumo-container">
+            <p>finance Control ou controle financeiro, é um sistema criado ustilizando como tecnologia proncipal o React.js, projeto com uma interface simples de usar. nele foi utilizado outras tecnologias como postgreSQL, Api fetch, express entre outras...</p>
+          </div>
+          <div class="link-acess">
+            <a target="_blank" class="button-link" href="https://financecontrolapp.netlify.app/">
+              View Site
+            </a>
+            <a target="_blank" href="https://github.com/Emanuel0001/finance-control">
+              <div class="social-midia proj2"><img src="./imagem-projetos/link-github.png"></div>
+            </a>
+          </div>
+        </div>
+        <div class="container-image">
+          <img src="./imagem-projetos/projetoFinance/finance-pc.png" class="imagem-pc">
+          <img src="./imagem-projetos/projetoFinance/Finance-cel.png" class="imagem-cell">
+        </div>
+      </div>
+    </section>
+
+    <section class="container-main" data-anime="left">
+      <div class="number-project">3</div>
+      <div class="container-card">
+        <div class="container-image">
+          <img src="./imagem-projetos/sistemaUsuario/sistemaUsuario-pc.png" class="imagem-pc">
+          <img src="./imagem-projetos/sistemaUsuario/sistemaUsuario-cell.png" class="imagem-cell">
+        </div>
+        <div class="container-description">
+          <h1>sistema.com</h1>
+          <div class="resumo-container">
+            <p>Sistema de usuario conta com cadastro de usuários e com uma tela dashboard onde é possível ver uma lista com todos usuários do sistema. Nele também é possivel adcionar uma foto de perfil, as tecnologias utilizadas principais foram: html, css, javascript, react, react-Cookie, express, API's, react-router etc...</p>
+          </div>
+          <div class="link-acess">
+            <a target="_blank" class="button-link" href="https://sistemadeusuario.netlify.app/">
+              View Site
+            </a>
+            <a target="_blank" href="https://github.com/Emanuel0001/sistema-de-usuario">
+              <div class="social-midia proj2"><img src="./imagem-projetos/link-github.png"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container-main" data-anime="left">
+      <div class="number-project">4</div>
+      <div class="container-card">
+        <div class="container-description">
+          <h1>PizzApp.com</h1>
+          <div class="resumo-container">
+            <p>PizzApp é um sistema de pedidos delivery, esté sistema está em fase de desenvolvimento mas o objetivo é uma plataforma de pedidos online que conta com menu de facil usabilidade. as tecnologias usadas até o momento é: react, react-router, react-icons,html, css, javascript..</p>
+          </div>
+          <div class="link-acess">
+            <a target="_blank" class="button-link" href="https://sistema-pizzaria-food.netlify.app/">
+              View Site
+            </a>
+            <a target="_blank" href="https://github.com/Emanuel0001/sistema-pizzaria">
+              <div class="social-midia proj2"><img src="./imagem-projetos/link-github.png"></div>
+            </a>
+          </div>
+        </div>
+        <div class="container-image">
+          <img src="./imagem-projetos/pizzaria/pizzaria-pc.png" class="imagem-pc">
+          <img src="./imagem-projetos/pizzaria/pizzaria-cell.png" class="imagem-cell">
+        </div>
+      </div>
+    </section>
   </div>
   <div class="bloco3">
-    <div class="menu-smartphone-sobre-mim " >
+    <div class="menu-smartphone-sobre-mim ">
       <ul>
         <li>
           <p>
             <img src="./images/icons8-me.png">
-          <h1 data-anime="left" >Sobre mim!</h1>
+          <h1 data-anime="left">Sobre mim!</h1>
           </p>
           <p data-anime="left">
             Formado em Sistemas de Informação com apenas 22 anos, sigo minha tragetória
@@ -200,7 +209,7 @@
         <div data-anime="left">
           <p>
             <img src="./images/icons8-capelo-60.png">
-          <h1 data-anime="left" >Minha Formação.</h1>
+          <h1 data-anime="left">Minha Formação.</h1>
           </p>
           <ol data-anime="left">
             <p style="font-weight: 700; font-size: 15px;">Curso superior - Concluído</p>
@@ -319,7 +328,7 @@
         </ul>
       </div>
       <div class="cont1 Imagem-ilustrativa">
-        <img class="avatar-style" src="./images/minha-imagem.png" >
+        <img class="avatar-style" src="./images/minha-imagem.png">
       </div>
     </div>
   </div>
@@ -410,15 +419,15 @@
   </div>
   <script>
 
-    function downloadResume () {
-       let b = document.createElement("iframe");
-       b.setAttribute("src", "http://localhost:3000/download");
-       console.log(b);
-       document
-       .querySelector("#baixar")
-       .appendChild(b)
-       .setAttribute("style" , "display:none")
-    } 
+    function downloadResume() {
+      let b = document.createElement("iframe");
+      b.setAttribute("src", "http://localhost:3000/download");
+      console.log(b);
+      document
+        .querySelector("#baixar")
+        .appendChild(b)
+        .setAttribute("style", "display:none")
+    }
 
     function scrollProjetos() {
       window.scrollTo(0, 700);
@@ -436,11 +445,11 @@
 
     ScrollReveal({ reset: true });
     ScrollReveal().reveal('.bloco', { delay: 400 });
-    ScrollReveal().reveal('.bloco2', { delay: 400 });
+    ScrollReveal().reveal('.bloco2', { delay: 100 });
     ScrollReveal().reveal('.bloco3', { delay: 400 });
     ScrollReveal().reveal('.bloco-footer', { delay: 400 });
     ScrollReveal().reveal('.container', { delay: 600 });
-   
+
     var divSobre = document.getElementById('sobre-mim');
     var divObjetivos = document.getElementById('meus-objetivos');
     var divAvatar2 = document.getElementById('avatar2');
@@ -452,7 +461,7 @@
     divObjetivos.style = "display: none"
     divFormacao.style = "display: none"
     divSkils.style = "display: none"
-   
+
 
     function abrirSobreMim() {
       divAvatar1.style = "display: block"
@@ -473,7 +482,7 @@
       divObjetivos.style = "display: none"
       divFormacao.style = "display: block"
       divSkils.style = "display: none"
- 
+
     }
     function abrirSkils() {
       divHabilidade = document.getElementById('habilidade-img');
@@ -538,17 +547,17 @@
     const animationClass = 'animate';
 
     function animeScroll() {
-     const windowTop = window.pageYOffset + (window.innerHeight *3) / 4;
-     target.forEach(function(element){
-      if((windowTop) > element.offsetTop){
-        element.classList.add(animationClass)
-      } else {
-        element.classList.remove(animationClass)
+      const windowTop = window.pageYOffset + (window.innerHeight * 3) / 4;
+      target.forEach(function (element) {
+        if ((windowTop) > element.offsetTop) {
+          element.classList.add(animationClass)
+        } else {
+          element.classList.remove(animationClass)
 
-      }
-     })
+        }
+      })
     }
-    window.addEventListener('scroll', function(){
+    window.addEventListener('scroll', function () {
       animeScroll();
     })
   </script>
