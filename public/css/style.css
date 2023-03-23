@@ -2266,6 +2266,7 @@ textarea {
 
   body {
     display: block;
+    width: 500px;
   }
 
   .scroll {
