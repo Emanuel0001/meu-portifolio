@@ -616,7 +616,6 @@ label {
 }
 
 h5 {
-  display: inline;
   color: purple;
   font-size: .875rem;
   font-weight: 100;
@@ -1715,7 +1714,8 @@ textarea {
   margin-top: 10px;
   border-radius: 20px;
   font-size: 19px;
-  border: solid 4px white;
+  border: solid 4px purple;
+color: purple;
 }
 
 
@@ -2181,7 +2181,8 @@ textarea {
     font-size: 70px;
     margin-top: -30px;
     display: block;
-    width: max-content;
+    width: 150%;
+    text-align: center;
   }
 
   .line {
@@ -2329,6 +2330,7 @@ textarea {
   #meuResumo {
     text-align: center;
     width: 137%;
+    margin-top: 30px;
   }
 
   #img-resume-file {
@@ -2400,9 +2402,6 @@ textarea {
     width: 100%;
   }
 
-  #bloco-footer {
-    height: 500px;
-  }
 
   #bloco {
     display: block;
