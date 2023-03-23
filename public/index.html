@@ -32,17 +32,22 @@
         <ul>
           <label id="label" for="check">
             <a for="check">
-              <div onclick="scrollProjetos()" class="link">Meus projetos</div>
+              <div onclick="scrollProjetos()" class="link">Projetos</div>
             </a>
           </label>
           <label id="label" for="check">
             <a for="check">
-              <div onclick="scrollSobreMim()" class="link">Sobre mim</div>
+              <div onclick="scrollSkills()" class="link">Skills</div>
             </a>
           </label>
           <label id="label" for="check">
             <a for="check">
-              <div onclick="scrollRodape()" class="link">Informações</div>
+              <div onclick="scrollSobreMim()" class="link">Sobre</div>
+            </a>
+          </label>
+          <label id="label" for="check">
+            <a for="check">
+              <div onclick="scrollRodape()" class="link">Contato</div>
             </a>
           </label>
         </ul>
@@ -59,7 +64,7 @@
         <a id="baixar" onclick="downloadResume()"> <img id="img-resume-file" src="./imagem-projetos/download.png"></a>
       </div>
       <div id="blocoDeTexto">
-        <span class="bubble active">It's me</span>
+        <p id="bubble"><span class="bubble active">It's me</span></p>
         <p>
         <h5 class="titulo-nome-bloco1">Emanuel Hitallo soares de souza</h5>
         </p>
@@ -68,7 +73,7 @@
         <h1 class="line-down" id="line-down"> Full Stack.</h1>
         </p>
         <div class="meuResumo" id="meuResumo">
-          Olá, seja bem vindo! Sou um desenvolvedor full stack Júnior este é o meu portifólio.
+          Nos últimos anos, dediquei a minha vida em estudos, Meu objetivo é trabalhar em empresas e startups promissoras para ajudá-las a atingir todo o seu potencial e atrair novos clientes.
         </div>
         <a href="https://emanuelhitallo.netlify.app/download" target="_blank"></a>
         <div id="baixar" class="resume-file"></div>
@@ -98,9 +103,12 @@
         <div class="container-description">
           <h1>Portifólio.com</h1>
           <div class="resumo-container">
-           <p>Este portifolio foi desenvolvido por mim, para servir como forma de apresentação e também mostrar minhas habilidades, as tecnologias utilizadas nele, foram HTML, CSS, JS, utilizei também um framework ScrollReveal para deixar o site com uma animação ao escrolar a pagina, ele conta um pouco sobre meus objetivos e metas.</p>
+            <p>Este portifolio foi desenvolvido por mim, para servir como forma de apresentação e também mostrar minhas habilidades, as tecnologias utilizadas nele, foram HTML, CSS, JS, utilizei também um framework ScrollReveal para deixar o site com uma animação ao escrolar a pagina, ele conta um pouco sobre meus objetivos e metas.</p>
           </div>
           <div class="link-acess">
+            <a target="_blank" class="button-link">
+              Este Site
+            </a>
             <a target="_blank" href="https://github.com/Emanuel0001">
               <div class="social-midia proj2"><img src="./imagem-projetos/link-github.png"></div>
             </a>
@@ -132,7 +140,6 @@
         </div>
       </div>
     </section>
-
     <section class="container-main" data-anime="left">
       <div class="number-project">3</div>
       <div class="container-card">
@@ -141,7 +148,7 @@
           <img src="./imagem-projetos/sistemaUsuario/sistemaUsuario-cell.png" class="imagem-cell">
         </div>
         <div class="container-description">
-          <h1>sistema.com</h1>
+          <h1>Usuários.com</h1>
           <div class="resumo-container">
             <p>Sistema de usuario conta com cadastro de usuários e com uma tela dashboard onde é possível ver uma lista com todos usuários do sistema. Nele também é possivel adcionar uma foto de perfil, as tecnologias utilizadas principais foram: html, css, javascript, react, react-Cookie, express, API's, react-router etc...</p>
           </div>
@@ -181,239 +188,99 @@
       </div>
     </section>
   </div>
-  <div class="bloco3">
-    <div class="menu-smartphone-sobre-mim ">
-      <ul>
-        <li>
-          <p>
-            <img src="./images/icons8-me.png">
-          <h1 data-anime="left">Sobre mim!</h1>
-          </p>
-          <p data-anime="left">
-            Formado em Sistemas de Informação com apenas 22 anos, sigo minha tragetória
-            buscando aprimorar meus conhecimentos na area que mais amo que é desenvolvimento
-            front-end. além de ser desenvolvedor eu amo jogar bola, treinar entre outras
-            atividades fisicas que eu tenho prazer em praticar.
-          </p>
-          <p data-anime="left">
-            Nascido e criado em berço mineiro tenho meu modo calmo ativado por natureza, Apaixonado
-            por pão de queijo, eu vivo uma vida tranquila na pequena Cidade do norte de Minas chamada - Santo
-            Antônio do Retiro.
-          </p>
-          <p data-anime="left">
-            Sou um cristão Adventista do Sétimo Dia, Meu versiculo favorito é
-            “Eis que estou convosco todos os dias, até o fim dos tempos.” (Mt 28,20)
-          </p>
-        </li>
-        <br>
-        <div data-anime="left">
-          <p>
-            <img src="./images/icons8-capelo-60.png">
-          <h1 data-anime="left">Minha Formação.</h1>
-          </p>
-          <ol data-anime="left">
+  <div class="container-skills" data-anime="left">
+    <div class="container-left">
+      <div class="circulos espaco" id="circulos">
+        <div class="circulo verde" id="verde-piscar"></div>
+        <div class="circulo amarelo" id="amarelo-piscar"></div>
+        <div class="circulo vermelho" id="vermelho-piscar"></div>
+      </div>
+      <div class="ifem"></div>
+      <section>
+        <table>
+          <tr>
+            <td><img src="./imagem-projetos/skills/html.png"></td>
+            <td><img src="./imagem-projetos/skills/css.png"></td>
+            <td><img src="./imagem-projetos/skills/js.png"></td>
+          </tr>
+          <tr>
+            <td><img src="./imagem-projetos/skills/git.png"></td>
+            <td><img src="./imagem-projetos/skills/react.png"></td>
+            <td><img src="./imagem-projetos/skills/node.png"></td>
+          </tr>
+          <tr>
+            <td><img src="./imagem-projetos/skills/postgre.png"></td>
+            <td><img src="./imagem-projetos/skills/cofee.png"></td>
+            <td><img src="./imagem-projetos/skills/linux.png"></td>
+          </tr>
+        </table>
+      </section>
+    </div>
+    <div class="container-right-title">
+      <h1>Aqui estão minhas <span style="color: yellow">{Skills}</span></h1>
+    </div>
+  </div>
+
+  <div class="container-skills" data-anime="left">
+    <div class="container-right-title">
+      <h1>Um pouco sobre <span style="color: yellow">{Mim}</span></h1>
+    </div>
+    <div class="container-left box-shadow">
+      <div class="circulos espaco" id="circulos">
+        <div class="circulo verde" id="verde-piscar"></div>
+        <div class="circulo amarelo" id="amarelo-piscar"></div>
+        <div class="circulo vermelho" id="vermelho-piscar"></div>
+      </div>
+      <div class="ifem"></div>
+      <section>
+        <p class="texto">
+          Formado em Sistemas de Informação com apenas 22 anos, sigo minha tragetória
+          buscando aprimorar meus conhecimentos na area que mais amo que é desenvolvimento
+          de software. Além de ser desenvolvedor eu amo jogar bola, treinar entre outras
+          atividades fisicas que eu tenho prazer em praticar.
+
+        <div class="texto-formacao">
+          <ol>
+            <h1>Formação.</h1>
             <p style="font-weight: 700; font-size: 15px;">Curso superior - Concluído</p>
             <p style="font-size: 15px;">Graduação em Sistemas de Informação</p>
             <p style="font-size: 15px;">FAVENORTE - Instituto Superior de Educação Verde</p>
           </ol>
         </div>
-        <div class="bloco-skills">
-          <p>
-            <img src="./images/icons8-habilidade-de-experiência-48.png">
-          <h1 style="font-weight: 700; font-size: 35px; " data-anime="left"> Minhas Habilidades.</h1>
-          </p>
-          <ol class="habilidade-ol" data-anime="left">
-            <li>JavaScript</li>
-            <li>Html5</li>
-            <li>CSS</li>
-            <li>Git</li>
-            <li>React.js</li>
-            <li>Node</li>
-            <li>postgreSQL</li>
-            <li>APIs</li>
-            <li>linux</li>
-          </ol>
-        </div>
+        </p>
+      </section>
     </div>
-    <div class="sobre" id="sobre-none">
-      <div class="cont1 selecionadores fullColors">
-        <ul>
-          <li onclick="abrirSobreMim()">
-            <img class="icones-objetivos" src="./images/icons8-me.png">
-            <a>Sobre Mim</a>
-          </li>
-          <li onclick="abrirObjetivos()">
-            <img class="icones-objetivos" src="./images/icons8-objetivo-50.png">
-            <a>Objetivos</a>
-          </li>
-          <li onclick="abrirFormacao()">
-            <img class="icones-objetivos" src="./images/icons8-capelo-60.png">
-            <a>Formação</a>
-          </li>
-          <li onclick="abrirSkils()">
-            <img class="icones-objetivos" src="./images/icons8-habilidade-de-experiência-48.png">
-            <a>Skils</a>
-          </li>
-        </ul>
-      </div>
-      <div class="cont1 conteudo-principal-sobre ">
-        <ul>
-          <li class="conteudo-sobre sobre-mim fullColors" id="sobre-mim">
-            <p>
-            <h1>Olá, sou o emanuel!</h1>
-            </p>
-            <p>
-              Formado em Sistemas de Informação com apenas 22 anos, sigo minha tragetória
-              buscando aprimorar meus conhecimentos na area que mais amo que é desenvolvimento
-              front-end. além de ser desenvolvedor eu amo jogar bola, treinar entre outras
-              atividades fisicas que eu tenho prazer em praticar.
-            </p>
-            <p>
-              Nascido e criado em berço mineiro tenho meu modo calmo ativado por natureza, Apaixonado
-              por pão de queijo, eu vivo uma vida tranquila na pequena Cidade do norte de Minas chamada - Santo
-              Antônio do Retiro.
-            </p>
-            <p>
-              Sou um cristão Adventista do Sétimo Dia, Meu versiculo favorito é
-              “Eis que estou convosco todos os dias, até o fim dos tempos.” (Mt 28,20)
-            </p>
-          </li>
+  </div>
+  <div class="contate-me">
+    <div class="contate-title">
+      <h6>Contato!</h6>
+      <h1>Vamos lá?!</h1>
+    </div>
+    <form  action="https://formsubmit.co/hitallosoares1@gmail.com" method="post" onsubmit="submitForm()">
+      <input class="input" name="name" placeholder="Digite seu nome" autocomplete="off" required>
+      <input class="input" name="email" placeholder="Digite seu email" autocomplete="off" required>
+      <input class="input" type="text" placeholder="Assunto">
+      <textarea id="subject" id="mensagem"  name="message" cols="30" rows="10" placeholder="Digite sua mensagem" required ></textarea>
+      <button type="submit" id="button-enviar">Enviar</button>
+      <input type="hidden" name="_captcha" value="false">
+    </form>
+  </div>
 
-          <li style="display: none" class="conteudo-sobre meus-objetivos" id="meus-objetivos">
-            <p>
-            <h1>Lista de Objetivos</h1>
-            </p>
-            <ol>
-              <li>
-                <p>O meu objetivo profissional é trabalhar como Desenvolvedor front-end.</p>
-              </li>
-              <li>
-                <p>Após concluir o meu curso superior, estou a procura da minha primeira oportunidade de trabalho. Sou
-                  auto
-                  motivado e tenho boa capacidade de concentração. Desejo colocar
-                  em prática o que aprendi na graduação. Acredito que posso crescer junto com a empresa.</p>
-              </li>
-              <li>
-                <p>Busco mudanças em minha vida profissional e encarar novos desafios, que me levem ao crescimento.</p>
-              </li>
-            </ol>
-          </li>
-          <li style="display: none" class="conteudo-sobre minha-formacao" id="minha-formacao">
-            <p>
-            <h1>Minha Formação.</h1>
-            </p>
-            <ol>
-              <p style="font-weight: 700; font-size: 24px;">Curso superior - Concluído</p>
-              <p style="font-size: 18px;">Graduação em Sistemas de Informação</p>
-              <p style="font-size: 18px;">FAVENORTE - Instituto Superior de Educação Verde</p>
-              <p style="font-weight: bold;">Ano inicio: 2016 Ano término: 2019</p>
-            </ol>
-          </li>
-          <li class="conteudo-sobre habilidade-sobre-mim" id="habilidade-sobre-mim">
-            <p>
-            <h1>Minhas Habilidades.</h1>
-            </p>
-            <ol class="habilidade-ol">
-              <li>JavaScript</li>
-              <li>Html5</li>
-              <li>CSS</li>
-              <li>Git</li>
-              <li>React.js</li>
-              <li>Node</li>
-              <li>postgreSQL</li>
-              <li>APIs</li>
-              <li>linux</li>
-            </ol>
-          </li>
-        </ul>
-      </div>
-      <div class="cont1 Imagem-ilustrativa">
-        <img class="avatar-style" src="./images/minha-imagem.png">
-      </div>
-    </div>
-  </div>
-  </div>
-  <div class="resumo-das-skils">
-    <div class="skils " id="html">
-      <h1>HTML</h1>
-      <p>O HTML é o componente básico da web,
-        ele permite inserir o conteúdo e estabelecer
-        a estrutura básica de um website. </p>
-      <div class="arrow-down" style="margin-left: 55px"></div>
-    </div>
-    <div class="skils" id="css">
-      <h1>CSS</h1>
-      <p>Ele foi criado porque o HTML não era capaz de compreender todas as
-        necessidades que um programador tinha para criar padrões de formatação nas
-        páginas.</p>
-      <div class="arrow-down" style="margin-top: 46px; margin-left: 220px"></div>
-    </div>
-    <div class="skils" id="javascript">
-      <h1>Javascript</h1>
-      <p>JavaScript é a linguagem de programação usada para adicionar interatividade ao seu site
-        (por exemplo: jogos, respostas quando
-        botões são pressionados ou dados são inseridos em formulários, estilo dinâmico, animações).</p>
-      <div class="arrow-down" style="margin-top: 20px; margin-left: 380px"></div>
-    </div>
-  </div>
-  <div>
-    <div class="container-2">
-      <div class="card-2" onclick="abrirHtml()">
-        <h1>
-          <div id="blocoSkils">
-            <img src="./images/iconeHtml.png" class="imagemSkils">
-          </div>
-      </div>
-      </h1>
-      <div class="card-2" onclick="abriCss()">
-        <h1>
-          <div id="blocoSkils">
-            <img src="./images/iconeCss.png" class="imagemSkils">
-          </div>
-        </h1>
-      </div>
-      <div class="card-2" onclick="abrirJavascript()">
-        <h1>
-          <div id="blocoSkils">
-            <img src="./images/iconeJavaScript.png" class="imagemSkils">
-          </div>
-        </h1>
-      </div>
-    </div>
-  </div>
   <div class="bloco-footer" id='bloco-footer'>
     <footer>
       <div id='footer-item'>
-        <h3>Informações de Contato</h3>
-        <p id='footer-texto'>Sinta-se à vontade para entrar em contato comigo a qualquer momento.
-        </p>
-        <p><img src="./images/iconeEmail.png" class="iconeRedeSocial">
-          <strong>E-mail:</strong> hitallosoares1@gmail.com
-        </p>
-        <p><img src="./images/iconeTelefone.png" class="iconeRedeSocial">
-          <strong>telefone: </strong>+55 (38) 99735-2319
-        </p>
-      </div>
-      <div id='footer-item'>
-        <h3>Atual disponibilidade </h3>
-        <p id='footer-texto'>Início Imediato</p>
-      </div>
-      <div id='footer-item'>
-        <h3>Siga-me:</h3>
         <a href="https://www.linkedin.com/in/emanuel-hitallo-06690a16b/" target="_blank">
-          <img src="./images/iconeLinkedin.png" class="iconeRedeSocial">Linkedin
+          <img src="./images/iconeLinkedin.png" class="iconeRedeSocial">
         </a>
         <a href="https://github.com/Emanuel0001">
           <img src="./images/iconeGithub.png" class="iconeRedeSocial">
-          Github
         </a>
         <a href="https://www.instagram.com/emanuel_hitallo/" target="_blank">
           <img src="./images/iconsInstagram.png" class="iconeRedeSocial">
-          Instagram
         </a>
       </div>
       <div id="footerCopyRight">
-        <p> Copyright © 2022</p>
+        <p>© Todos os Diretos Reservados - Emanuel H.</p>
       </div>
     </footer>
   </div>
@@ -434,13 +301,18 @@
       var barra = document.getElementsById('barra');
       barra.style = "transform: translateX(-100%);"
     }
+    function scrollSkills() {
+      window.scrollTo(0, 3200);
+      var barra = document.getElementsById('barra');
+      barra.style = "display= none"
+    }
     function scrollSobreMim() {
-      window.scrollTo(0, 2000);
+      window.scrollTo(0, 3900);
       var barra = document.getElementsById('barra');
       barra.style = "display= none"
     }
     function scrollRodape() {
-      window.scrollTo(0, 3200);
+      window.scrollTo(0, 4800);
     }
 
     ScrollReveal({ reset: true });
@@ -450,98 +322,6 @@
     ScrollReveal().reveal('.bloco-footer', { delay: 400 });
     ScrollReveal().reveal('.container', { delay: 600 });
 
-    var divSobre = document.getElementById('sobre-mim');
-    var divObjetivos = document.getElementById('meus-objetivos');
-    var divAvatar2 = document.getElementById('avatar2');
-    var divFormacao = document.getElementById("minha-formacao")
-    var divAvatar3 = document.getElementById('avatar3');
-    var divSkils = document.getElementById('habilidade-sobre-mim')
-    var divAvatar4 = document.getElementById('avatar4');
-
-    divObjetivos.style = "display: none"
-    divFormacao.style = "display: none"
-    divSkils.style = "display: none"
-
-
-    function abrirSobreMim() {
-      divAvatar1.style = "display: block"
-      divSobre.style = "display:  block"
-      divObjetivos.style = "display: none"
-      divFormacao.style = "display: none"
-      divSkils.style = "display: none"
-
-    }
-    function abrirObjetivos() {
-      divSkils.style = "display: none"
-      divSobre.style = "display:  none"
-      divObjetivos.style = "display: block"
-      divFormacao.style = "display: none"
-    }
-    function abrirFormacao() {
-      divSobre.style = "display:  none"
-      divObjetivos.style = "display: none"
-      divFormacao.style = "display: block"
-      divSkils.style = "display: none"
-
-    }
-    function abrirSkils() {
-      divHabilidade = document.getElementById('habilidade-img');
-      divSobre.style = "display:  none"
-      divObjetivos.style = "display: none"
-      divFormacao.style = "display: none"
-      divSkils.style = "display: block"
-
-    }
-
-
-    var divHtml = document.getElementById('html');
-    var divCss = document.getElementById('css');
-    var divJavascript = document.getElementById('javascript');
-    var divGithub = document.getElementById('github');
-    divCss.style = "display: none"
-    divJavascript.style = "display: none"
-
-    function abrirHtml() {
-      var divHtml = document.getElementById('html');
-      divHtml.style = "display: block"
-      divCss.style = "display: none"
-      divJavascript.style = "display: none"
-      divReact.style = "display: none"
-    }
-
-    function abriCss() {
-      var divCss = document.getElementById('css');
-      divCss.style = "display: block"
-      divHtml.style = "display: none"
-      divJavascript.style = "display: none"
-      divReact.style = "display: none"
-    }
-
-    function abrirJavascript() {
-      var divJavascript = document.getElementById('javascript');
-      divJavascript.style = "display: block"
-      divHtml.style = "display: none"
-      divCss.style = "display: none"
-      divReact.style = "display: none"
-    }
-
-    function abrirReact() {
-      var divReact = document.getElementById('react');
-      divReact.style = "display: block"
-      divHtml.style = "display: none"
-      divCss.style = "display: none"
-      divJavascript.style = "display: none"
-
-    }
-
-    function abrirGithub() {
-      var divGithub = document.getElementById('github');
-      divGithub.style = "display: block"
-      divHtml.style = "display: none"
-      divCss.style = "display: none"
-      divJavascript.style = "display: none"
-      divReact.style = "display: none"
-    }
 
     const target = document.querySelectorAll('[data-anime]');
     const animationClass = 'animate';

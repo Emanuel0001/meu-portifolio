@@ -5,7 +5,7 @@
 }
 
 .espaco {
-  width: 150px;
+  width: 110px;
   margin-left: 30px;
 }
 
@@ -20,8 +20,7 @@
 
 .bloco,
 .bloco2,
-.bloco3,
-.bloco-footer {
+.bloco3 {
   visibility: hidden;
 }
 
@@ -111,7 +110,7 @@ body {
 }
 
 .iconeRedeSocial {
-  height: 30px;
+  height: 50px;
   display: inline;
   margin-bottom: -8px;
 
@@ -204,7 +203,6 @@ a p {
   align-items: center;
   height: 400px;
   background-color: purple;
-  margin-top: 100px;
 }
 
 .bloco2 p {
@@ -264,11 +262,11 @@ a p {
   width: 50px;
 }
 
-.type-animation {
-  /*animation: piscarCursor 500ms steps(49) infinite normal, typing 3s steps(25) 1s normal;
+/*.type-animation {
+ animation: piscarCursor 500ms steps(49) infinite normal, typing 3s steps(25) 1s normal;
 
-*/
 }
+*/
 
 @keyframes piscaPisca {
   0% {
@@ -511,10 +509,10 @@ button a:link {
 .barra {
   background-color: #80008082;
   height: 100%;
-  width: 40%;
+  width: 100%;
   position: fixed;
   transition: all .2s linear;
-  right: -40%;
+  right: -100%;
   z-index: 1;
   backdrop-filter: blur(5px);
 }
@@ -614,16 +612,12 @@ label {
   color: white;
   width: 62%;
   margin-bottom: 4px;
-  margin-top: 150px;
-}
-
-p {
-  margin-bottom: 20px;
+  margin-top: 170px;
 }
 
 h5 {
   display: inline;
-  color: rgb(5, 5, 5);
+  color: purple;
   font-size: .875rem;
   font-weight: 100;
   letter-spacing: .2rem;
@@ -642,12 +636,10 @@ h5 {
 .meuResumo {
   display: flex;
   align-content: center;
-  font-size: 1.005rem;
+  font-size: 15px;
   font-weight: 200;
   letter-spacing: .2rem;
-  font-weight: 600;
-  margin-top: 40px;
-  text-transform: uppercase;
+  font-weight: 500;
   text-align: justify;
   color: purple;
 }
@@ -657,8 +649,8 @@ h5 {
   text-align: center;
   justify-content: center;
   background-color: white;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
@@ -690,7 +682,8 @@ h5 {
 
 #bloco-footer {
   display: block;
-  border-top: groove 5px rgb(201, 199, 199);
+  background: yellow;
+  height: 200px;
 }
 
 footer {
@@ -727,6 +720,8 @@ h3 {
   text-align: center;
   margin-top: 20px;
   font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 #footerCopyRight {
@@ -737,8 +732,6 @@ h3 {
   text-align: center;
   margin-top: 50px;
   color: #000000;
-  ;
-  background-color: rgb(255, 255, 255);
 }
 
 #blocoSkils h1 {
@@ -906,11 +899,16 @@ h6 {
   margin-top: -18px;
 }
 
+#bubble {
+  margin-top: -20px;
+  margin-bottom: 20px;
+}
+
 .bubble {
-  background-color: black;
-  border: 2px solid black;
+  background-color: yellow;
+  border: 2px solid yellow;
   border-radius: 5px;
-  color: white;
+  color: black;
   display: inline-block;
   font: 16px/24px sans-serif;
   padding: 12px 24px;
@@ -921,7 +919,7 @@ h6 {
 .bubble.active:before {
   border-left: 15px solid transparent;
   border-right: 15px solid transparent;
-  border-top: 15px solid black;
+  border-top: 15px solid yellow;
   bottom: -15px;
   content: '';
   left: 50%;
@@ -983,7 +981,7 @@ a {
 }
 
 .ifem {
-  width: 320px;
+  width: 69%;
   background-color: #a09f9f;
   height: 1px;
   display: inline-block;
@@ -1276,7 +1274,6 @@ button img {
   display: flex;
   width: 100%;
   background-color: #ffffff;
-  box-shadow: 0px 3px 14px black;
   margin-bottom: 100px;
 }
 
@@ -1475,7 +1472,7 @@ button img {
 }
 
 .meuResumo {
-  width: 600px;
+  width: 800px;
 }
 
 .resume-file {
@@ -1483,11 +1480,12 @@ button img {
   margin-top: -50px;
 }
 
-
 .container-main {
   height: 500px;
   white-space: nowrap;
   display: flex;
+  margin-top: 50px;
+
 }
 
 .container-card {
@@ -1519,12 +1517,13 @@ button img {
 }
 
 .container-description {
-  width: 50%;
+  width: 40%;
   display: inline-block;
   height: 100%;
   margin-left: 0;
   margin-top: 50px;
   margin-left: 50px;
+  margin-right: -50px;
 }
 
 .container-description h1 {
@@ -1552,11 +1551,12 @@ button img {
   text-align: initial;
 }
 
-.proj2 img{
+.proj2 img {
   display: block;
-width: 50px;
-margin-top: 20px;
+  width: 50px;
+  margin-top: 20px;
 }
+
 .button-link {
   background: purple;
   width: 100px;
@@ -1570,30 +1570,160 @@ margin-top: 20px;
   box-shadow: 1px 39px 18px -10px purple;
 }
 
+.button-link:hover {
+  color: yellow;
+}
+
 .resumo-container {
   width: 80%;
 }
 
 .number-project {
-  width: 36px;
+  width: 25px;
   background: purple;
   height: 24px;
-  padding: 10px;
+  padding: 3px;
   border-radius: 50%;
   font-size: 20px;
   font-weight: 800;
   color: white;
-  margin-left: 10px;
+  margin-left: 36px;
+}
+
+.container-skills {
+  height: 700px;
+  display: flex;
+}
+
+.container-left {
+  width: 600px;
+  background: white;
+  height: 550px;
+  margin-left: 100px;
+  border-radius: 20px;
+  display: inline-block;
+  margin-top: 100px;
+  border: solid 1px silver;
+  box-shadow: -22px 27px 20px -8px purple;
+}
+
+.box-shadow {
+  box-shadow: 27px 27px 20px -8px purple;
+}
+
+.container-right-title {
+  width: 40%;
+  height: 550px;
+  display: inline-block;
+  margin-top: 50px;
+  margin-left: 50px;
+  text-align: center;
+}
+
+.container-right-title h1 {
+  width: 100px;
+  margin-top: 164px;
+  display: block;
+  margin-left: 30%;
+  color: purple;
+  font-size: 40px;
+}
+
+#circulos {
+  display: inline-block;
+}
+
+table {
+  width: 90%;
+  height: 400px;
+  margin-left: 50px;
+  margin-top: 30px;
+}
+
+table tr td {
+  padding: 5px 39px;
 
 }
+
+table tr td img {
+  width: 65px;
+  background: #8000804d;
+}
+
+.texto {
+  padding: 63px;
+  color: purple;
+  font-size: 21px;
+}
+
+.texto-formacao {
+  color: purple;
+  margin-top: -100px;
+  padding: 60px;
+}
+
+.texto-formacao h1 {
+  margin-bottom: 10px;
+}
+
+.contate-me {
+  height: 500px;
+  background-color: purple;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.contate-me h6 {
+  margin-top: -30px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: yellow;
+}
+
+.contate-me h1 {
+  text-align: center;
+  color: white;
+}
+
+form {
+  width: 500px;
+  margin-left: 50px;
+}
+
+input[type=text],
+[type=email],[type=name],
+textarea, .input {
+  display: block;
+  width: 100%;
+  height: 40px;
+  margin-bottom: 20px;
+  padding: 5px;
+  font-size: 18px;
+}
+
+textarea {
+  height: 100px;
+}
+
+#button-enviar {
+  display: block;
+  width: 350px;
+  height: 40px;
+  background: yellow;
+  margin-top: 10px;
+  border-radius: 20px;
+  font-size: 19px;
+  border: solid 4px white;
+}
+
+
+
 @media only screen and (max-width: 1300px) {
   .container-title {
     color: purple;
     font-size: 16px;
-  }
-
-  #sobre-none {
-    display: none;
   }
 
   .menu-smartphone-sobre-mim {
@@ -1603,7 +1733,7 @@ margin-top: 20px;
   .imagem-pc {
     height: 360px;
   }
-  
+
 }
 
 @media only screen and (max-width: 1200px) {
@@ -1654,6 +1784,7 @@ margin-top: 20px;
     width: 100%;
     justify-content: center;
   }
+
   .imagem-cell {
     width: 125px;
     margin-left: -126px;
@@ -1725,7 +1856,7 @@ margin-top: 20px;
   .menu {
     width: 100%;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
   }
 
   #meuResumo {
@@ -1761,6 +1892,11 @@ margin-top: 20px;
 }
 
 @media only screen and (max-width: 888px) {
+  .container-skills {
+    height: 100%;
+    display: block;
+  }
+
   .imagem-pc {
     height: 200px;
   }
@@ -1769,9 +1905,80 @@ margin-top: 20px;
     width: 103px;
     margin-left: -115px;
   }
+
+  .contate-me {
+    height: 500px;
+    background-color: purple;
+    display: block;
+  }
+  form {
+    width: 600px;
+    margin-left: 15%;
+  }
+  .contate-me h6 {
+    margin-top: 0px;
+    display: block;
+    padding: 10px;
+  }
+  #button-enviar {
+    display: block;
+    width: 450px;}
+
+  .contate-me h1 {
+    display: block;
+    padding: 19px;
+  }
+
+  .contate-me {
+    height: 550px;
+    background-color: purple;
+    display: block;
+  }
 }
 
+
 @media only screen and (max-width: 678px) {
+  .contate-me h6 {
+    margin-top: 0px;
+    display: block;
+    padding: 10px;
+  }
+  #button-enviar {
+    display: block;
+    width: 250px;}
+
+  .contate-me h1 {
+    display: block;
+    padding: 19px;
+  }
+
+  .contate-me {
+    height: 550px;
+    background-color: purple;
+    display: block;
+  }
+
+  form {
+    width: 400px;
+    margin-left: 20%;
+  }
+
+  .container-left {
+    width: 500px;
+    margin-left: 40px;
+  }
+
+  .ifem {
+    width: 60%;
+  }
+
+  table {
+    width: 100%;
+    height: 500px;
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+
   .imagem-pc {
     height: 200px;
   }
@@ -1798,10 +2005,12 @@ margin-top: 20px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
   }
+
   .container-main {
     height: 396px;
     white-space: nowrap;
     display: table;
+    border-bottom: solid 50px white;
   }
 
   .container-title {
@@ -1852,7 +2061,42 @@ margin-top: 20px;
 }
 
 @media only screen and (max-width: 550px) {
- 
+  .contate-me {
+    height: 550px;
+  }
+
+  form {
+    width: 400px;
+    margin-left: 10%;
+  }
+
+  .container-right-title {
+    width: 40%;
+    height: 0px;
+  }
+
+  .texto {
+    padding: 49px;
+  }
+
+  .container-left {
+    width: 450px;
+    margin-left: 30px;
+    height: 500px;
+    margin-bottom: -100px;
+  }
+
+  .ifem {
+    width: 60%;
+  }
+
+  table {
+    width: 100%;
+    height: 450px;
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+
   .line {
     font-size: 35px;
     height: 60px;
@@ -2048,7 +2292,7 @@ margin-top: 20px;
   .menu {
     width: 100%;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
   }
 
   .imagem-Smartphone {
@@ -2083,8 +2327,8 @@ margin-top: 20px;
   }
 
   #img-resume-file {
-    width: 68px;
-    margin-bottom: -19px;
+    width: 54px;
+    margin-bottom: -5px;
   }
 
   h3 {
