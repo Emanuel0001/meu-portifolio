@@ -624,7 +624,6 @@ h5 {
   text-transform: uppercase;
   padding-top: 5px;
   padding-bottom: 15px;
-  width: max-content;
 }
 
 #titulo-marcado {
@@ -2062,7 +2061,7 @@ color: purple;
 
 @media only screen and (max-width: 550px) {
   table tr td {
-    padding: 1px 37px;
+    padding: 1px 16px;
   }
   .contate-me {
     height: 550px;
@@ -2082,9 +2081,22 @@ color: purple;
     padding: 49px;
     font-size: 16px;
   }
-
+  .texto-formacao {
+    color: purple;
+    margin-top: -60px;
+    padding: 30px;
+  }
+  .texto-formacao h1{display: none;}
+  input[type=text], [type=email], [type=name], textarea, .input {
+    display: block;
+    width: auto;
+  
+  }
+  #subject {
+    width: 300px;
+  }
   .container-left {
-    width: 421px;
+    width: 300px;
     margin-left: 30px;
     height: 450px;
     margin-bottom: -100px;
@@ -2156,7 +2168,7 @@ color: purple;
   }
 
   #line {
-    font-size: 45px;
+    font-size: 35px;
     height: 67px;
   }
 
@@ -2267,7 +2279,7 @@ color: purple;
 
   body {
     display: block;
-    width: 500px;
+    width: auto;
   }
 
   .scroll {
