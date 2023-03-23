@@ -2361,8 +2361,8 @@ textarea {
     display: block;
     text-align: center;
     height: max-content;
-    margin-left: -20px;
-    margin-right: -20px;
+    margin-left: 0px;
+    margin-right: 0px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
   }
