@@ -2061,7 +2061,7 @@ color: purple;
 
 @media only screen and (max-width: 550px) {
   table tr td {
-    padding: 1px 16px;
+    padding: 1px 39px;
   }
   .contate-me {
     height: 550px;
@@ -2096,10 +2096,9 @@ color: purple;
     width: 300px;
   }
   .container-left {
-    width: 300px;
+    width: 434px;
     margin-left: 30px;
     height: 450px;
-    margin-bottom: -100px;
   }
 
   .ifem {
@@ -2168,7 +2167,7 @@ color: purple;
   }
 
   #line {
-    font-size: 35px;
+    font-size: 65px;
     height: 67px;
   }
 
