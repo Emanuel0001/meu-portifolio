@@ -253,12 +253,11 @@ a p {
 }
 
 .social-midia {
-  height: 50px;
+  height: 60px;
   display: inline-block;
 }
 
 .social-midia img {
-  display: block;
   width: 50px;
 }
 
@@ -911,6 +910,7 @@ h6 {
   font: 16px/24px sans-serif;
   padding: 12px 24px;
   position: relative;
+  margin-top: 10px;
 }
 
 .bubble.active:after,
@@ -1550,9 +1550,9 @@ button img {
 }
 
 .proj2 img {
-  display: block;
-  width: 50px;
-  margin-top: 20px;
+  display: inline-block;
+  width: 59px;
+  margin-bottom: -27px;
 }
 
 .button-link {
@@ -2143,7 +2143,7 @@ color: purple;
 
   .social-midia img {
     display: block;
-    width: 54px;
+    width: 74px;
   }
 
   #blocoDeTexto {
@@ -2342,8 +2342,8 @@ color: purple;
   }
 
   #img-resume-file {
-    width: 54px;
-    margin-bottom: -5px;
+    width: 74px;
+    margin-bottom: -25px;
   }
 
   h3 {
