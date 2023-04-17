@@ -8,6 +8,11 @@
   width: 110px;
   margin-left: 30px;
 }
+.sobre-mim-h1 {
+  color: purple;
+  padding: 62px;
+  margin-bottom: -105px;
+}
 
 .amarelo {
   background-color: yellow;
@@ -2081,10 +2086,10 @@ color: purple;
     padding: 49px;
     font-size: 16px;
   }
-  .texto-formacao {
+   .texto-formacao {
     color: purple;
     margin-top: -60px;
-    padding: 30px;
+    padding: 46px;
   }
   .texto-formacao h1{display: none;}
   input[type=text], [type=email], [type=name], textarea, .input {
@@ -2176,6 +2181,7 @@ color: purple;
     display: block;
     width: 470px;
   }
+  
 
   h1 {
     font-size: 30px;
