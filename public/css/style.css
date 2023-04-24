@@ -452,9 +452,9 @@ button a:link {
 }
 
 #minhaImagem {
-  width: 458px;
+  width: 419px;
   position: relative;
-  margin-top: 54px;
+  margin-top: 83px;
   margin-left: -181px;
   animation: bouncing 1s ease-in-out alternate infinite;
 }
