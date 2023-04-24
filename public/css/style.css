@@ -8,6 +8,7 @@
   width: 110px;
   margin-left: 30px;
 }
+
 .sobre-mim-h1 {
   color: purple;
   padding: 62px;
@@ -72,8 +73,8 @@
   display: none;
 }
 
-.list-itens li{
-  
+.list-itens li {
+
   float: right;
   margin-right: 25px;
   width: 120px;
@@ -84,17 +85,21 @@
   font-weight: 800;
   cursor: pointer;
 }
+
 #contato {
   border-bottom: solid 2px purple;
-border-radius: 15px;
- background-color: purple;
- color: white;
- width: 150px;
-}
-.contato:hover {
+  border-radius: 15px;
   background-color: purple;
   color: white;
+  border: solid 2px yellow;
+  width: 150px;
 }
+
+#contato:hover {
+  background-color: purple;
+  color: yellow;
+}
+
 .vertical:hover {
   border-radius: 550px;
 }
@@ -1723,8 +1728,10 @@ form {
 }
 
 input[type=text],
-[type=email],[type=name],
-textarea, .input {
+[type=email],
+[type=name],
+textarea,
+.input {
   display: block;
   width: 100%;
   height: 40px;
@@ -1746,7 +1753,7 @@ textarea {
   border-radius: 20px;
   font-size: 19px;
   border: solid 4px purple;
-color: purple;
+  color: purple;
 }
 
 
@@ -1776,6 +1783,7 @@ color: purple;
   .list-itens {
     display: none;
   }
+
   .imagem-pc {
     height: 300px;
   }
@@ -1950,18 +1958,22 @@ color: purple;
     background-color: purple;
     display: block;
   }
+
   form {
     width: 600px;
     margin-left: 15%;
   }
+
   .contate-me h6 {
     margin-top: 0px;
     display: block;
     padding: 10px;
   }
+
   #button-enviar {
     display: block;
-    width: 450px;}
+    width: 450px;
+  }
 
   .contate-me h1 {
     display: block;
@@ -1982,9 +1994,11 @@ color: purple;
     display: block;
     padding: 10px;
   }
+
   #button-enviar {
     display: block;
-    width: 250px;}
+    width: 250px;
+  }
 
   .contate-me h1 {
     display: block;
@@ -2103,6 +2117,7 @@ color: purple;
   table tr td {
     padding: 1px 39px;
   }
+
   .contate-me {
     height: 550px;
   }
@@ -2121,17 +2136,26 @@ color: purple;
     padding: 49px;
     font-size: 16px;
   }
-   .texto-formacao {
+
+  .texto-formacao {
     color: purple;
     margin-top: -60px;
     padding: 46px;
   }
-  .texto-formacao h1{display: none;}
-  input[type=text], [type=email], [type=name], textarea, .input {
-    display: block;
-  
+
+  .texto-formacao h1 {
+    display: none;
   }
-  
+
+  input[type=text],
+  [type=email],
+  [type=name],
+  textarea,
+  .input {
+    display: block;
+
+  }
+
   .container-left {
     width: 434px;
     margin-left: 30px;
@@ -2216,7 +2240,7 @@ color: purple;
     display: block;
     width: 470px;
   }
-  
+
 
   h1 {
     font-size: 30px;
@@ -2462,5 +2486,3 @@ color: purple;
     justify-content: center;
   }
 }
-
-
