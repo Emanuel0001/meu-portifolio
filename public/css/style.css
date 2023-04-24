@@ -68,6 +68,33 @@
   margin-bottom: 25px;
 }
 
+#icone {
+  display: none;
+}
+
+.list-itens li{
+  
+  float: right;
+  margin-right: 50px;
+  width: 120px;
+  text-align: center;
+  color: purple;
+  padding: 5px;
+  font-size: 15px;
+  font-weight: 800;
+  cursor: pointer;
+}
+#contato {
+  border-bottom: solid 2px purple;
+border-radius: 15px;
+ background-color: purple;
+ color: white;
+ width: 150px;
+}
+.contato:hover {
+  background-color: purple;
+  color: white;
+}
 .vertical:hover {
   border-radius: 550px;
 }
@@ -443,7 +470,7 @@ button a:link {
   width: 100%;
   height: 60px;
   float: right;
-  position: fixed;
+  position: absolute;
   margin-top: 10px;
   z-index: 2;
 
@@ -1741,6 +1768,14 @@ color: purple;
 }
 
 @media only screen and (max-width: 1200px) {
+
+  #icone {
+    display: block;
+  }
+
+  .list-itens {
+    display: none;
+  }
   .imagem-pc {
     height: 300px;
   }
