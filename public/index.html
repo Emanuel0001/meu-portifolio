@@ -28,8 +28,7 @@
         <li  onclick="scrollProjetos()" >Projetos</li>
         <li onclick="scrollSobreMim()" >Sobre</li>
         <li onclick="scrollSkills()" >Skills</li>
-
-        <li>Home</li>
+        <li onclick="scrollHome()">Home</li>
       </ul>
       </div>
       <label id="icone" for="check">
@@ -134,7 +133,7 @@
         <div class="container-description">
           <h1>Finance.com</h1>
           <div class="resumo-container">
-            <p>finance Control ou controle financeiro, é um sistema criado ustilizando como tecnologia proncipal o React.js, projeto com uma interface simples de usar. nele foi utilizado outras tecnologias como postgreSQL, Api fetch, express entre outras...</p>
+            <p>finance Control ou controle financeiro, é um sistema criado utilizando como tecnologia principal o React.js, projeto com uma interface simples de usar. nele foi utilizado outras tecnologias como postgreSQL, Api fetch, express entre outras...</p>
           </div>
           <div class="link-acess">
             <a target="_blank" class="button-link" href="https://financecontrolapp.netlify.app/">
@@ -329,6 +328,11 @@
         .querySelector("#baixar")
         .appendChild(b)
         .setAttribute("style", "display:none")
+    }
+    function scrollHome() {
+      window.scrollTo(0, 0);
+      var barra = document.getElementsById('barra');
+      barra.style = "transform: translateX(-100%);"
     }
 
     function scrollProjetos() {
