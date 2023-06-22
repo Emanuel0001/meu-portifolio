@@ -1,3 +1,6 @@
+
+![alt text](./public/imagem-projetos/mobile%20(2).gif)
+
 ## <center> Projeto
 **Nome:**  
 Portifólio 
