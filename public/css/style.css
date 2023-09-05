@@ -2015,8 +2015,8 @@ td img:hover {
   #bloco {
     display: grid;
     grid-template-columns: repeat(1, 2fr);
-    padding: 0 1.3rem;
-  }
+    padding: 0px 0.5rem;
+}
 
   .line {
     font-family: "Helvetica Now Display DW", sans-serif;
@@ -2025,12 +2025,12 @@ td img:hover {
     font-size: 3.6em;
     width: 100%;
   }
-
+  
   .bloco-links {
     display: grid;
     grid-template-columns: repeat(3, 2fr);
-    padding: 0.5rem 0.5rem;
-  }
+    padding: 0;
+}
   .social-midia {
     display: inline-block;
     width: 100px;
@@ -2039,13 +2039,12 @@ td img:hover {
     border-radius: 2px;
     font-weight: 100;
     color: white;
-    margin: -19px;
-    margin-top: 10px;
+
   }
   .meuResumo {
     padding-top: 10px;
     padding-bottom: 60px;
-    width: 90%;
+    width: 100%;
   }
   .bloco {
     height: 100%;
@@ -2097,5 +2096,14 @@ td img:hover {
 #minhaImagem {
   margin-top: 0px;
   width: 100%;
+}
+.links-cards a {
+  padding: 25px;
+  background-color: #ffffff14;
+  font-size: 17px;
+  font-weight: 100;
+  display: inline-block;
+  width: 70px;
+  text-align: center;
 }
 }
