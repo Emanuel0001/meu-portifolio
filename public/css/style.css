@@ -2098,6 +2098,6 @@ td img:hover {
 }
 #minhaImagem {
   margin-top: 0px;
-  margin-left: -56px;
+  width: 100%;
 }
 }
