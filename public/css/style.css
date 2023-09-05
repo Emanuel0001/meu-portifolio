@@ -1,7 +1,17 @@
 * {
-  margin: 0px;
-  padding: 0px;
-  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  font-family: "Anton", sans-serif;
+  vertical-align: baseline;
+}
+.container-pg {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 1500px;
 }
 
 .espaco {
@@ -11,40 +21,33 @@
 }
 
 .list-itens {
-  display: inline-block;
-  float: right;
+  display: none;
   padding: 22px;
+  margin-right: 40px;
 }
 
 .sobre-mim-h1 {
-  color: purple;
+  color: white;
   padding: 62px;
   margin-bottom: -105px;
 }
 
 .amarelo {
-  background-color: yellow;
+  background-color: black;
   width: 150px;
   height: 25px;
   margin-top: 40px;
   display: inline-block;
   margin-left: 20px;
-}
-
-.bloco,
-.bloco2,
-.bloco3 {
-  visibility: hidden;
 }
 
 .verde {
-  background-color: green;
+  background-color: black;
   width: 150px;
   height: 25px;
   margin-left: 20px;
   margin-top: 40px;
   display: inline-block;
-
 }
 
 .roxo {
@@ -54,17 +57,15 @@
   margin-left: 20px;
   margin-top: 40px;
   display: inline-block;
-
 }
 
 .vermelho {
-  background-color: red;
+  background-color: black;
   width: 350px;
   height: 25px;
   margin-left: 20px;
   margin-top: 40px;
   display: block;
-
 }
 
 .vertical {
@@ -77,34 +78,48 @@
 }
 
 #icone {
-  display: none;
+  display: blco;
 }
 
 .list-itens li {
-
-  float: right;
-  margin-right: 25px;
-  width: 120px;
+  display: inline-block;
+  width: 130px;
   text-align: center;
-  color: purple;
-  padding: 5px;
-  font-size: 15px;
-  font-weight: 800;
+  color: #0f141e;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 200;
   cursor: pointer;
 }
-
+.list-itens li:hover {
+  color: #986dff;
+  animation: borderFuncion 4s infinite;
+}
+@keyframes borderFuncion {
+  from {
+    border-width: 0%;
+    border-bottom: 1px solid #986dff;
+  }
+  to {
+    border-width: 100%;
+    border-bottom: 1px solid #986dff;
+  }
+}
 #contato {
   border-bottom: solid 2px purple;
   border-radius: 15px;
   background-color: purple;
-  color: white;
-  border: solid 2px yellow;
+  color: #0f141e;
+  border: solid 2px white;
   width: 150px;
 }
 
 #contato:hover {
   background-color: purple;
-  color: yellow;
+  color: #0f141e;
+}
+#minhaImagem {
+  margin-top: 70px;
 }
 
 .vertical:hover {
@@ -117,8 +132,7 @@
 }
 
 .bloco {
-  height: 683px;
-  background-color: #ffffff;
+  height: 700px;
 }
 
 a {
@@ -127,7 +141,7 @@ a {
 }
 
 body {
-  font-family: arial;
+  color: #0f141e;
 }
 
 .scroll img {
@@ -157,7 +171,6 @@ body {
   height: 50px;
   display: inline;
   margin-bottom: -8px;
-
 }
 
 a p {
@@ -174,7 +187,6 @@ a p {
 [data-anime] {
   opacity: 0;
   transition: 3s;
-
 }
 
 [data-anime="left"] {
@@ -191,20 +203,15 @@ a p {
 }
 
 .line {
-  font-weight: 900;
-  color: purple;
-  white-space: nowrap;
-  overflow: hidden;
-  display: inline-block;
-  font-size: 80px;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  text-transform: uppercase;
-  text-shadow: -1px -1px 0px white,
-    3px 3px 0px blue,
-    6px 6px 0px black;
-  animation: titleAnimation 4s;
+  font-family: "Helvetica Now Display DW", sans-serif;
+  letter-spacing: -0.01em;
+  color: #0f141e;
+  font-size: 4.4em;
 }
 
+strong {
+  font-weight: 900;
+}
 @keyframes titleAnimation {
   from {
     opacity: 0;
@@ -216,7 +223,6 @@ a p {
     transform: translate3d(0px, 0px, 0px);
   }
 }
-
 
 @keyframes treme {
   0% {
@@ -241,12 +247,12 @@ a p {
 }
 
 .sup-bloco {
-  display: flex;
+  display: block;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 400px;
-  background-color: purple;
+  height: 300px;
+  background-color: #111;
 }
 
 .bloco2 p {
@@ -256,23 +262,16 @@ a p {
   color: purple;
 }
 
-.bloco2 {
-  margin-top: -200px;
-}
-
 .line-down {
   font-weight: 700;
-  color: yellow;
+  color: white;
   white-space: nowrap;
   overflow: hidden;
   display: block;
   font-size: 130px;
   margin-top: -40px;
   width: max-content;
-  text-shadow: -1px -1px 0px white,
-    3px 3px 0px blue,
-    6px 6px 0px black;
-  animation: titleAnimationSub 4s;
+  text-shadow: -1px -1px 0px white, 3px 3px 0px blue, 6px 6px 0px black;
 }
 
 @keyframes titleAnimationSub {
@@ -288,21 +287,41 @@ a p {
 }
 
 .bloco-links {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(3, 3fr);
+  padding: 4.5rem 0.5rem;
+}
+div.social-midia {
   text-align: center;
-  width: 10%;
 }
 
 .social-midia {
-  height: 60px;
   display: inline-block;
+  width: 170px;
+  background: #0f141e;
+  padding: 15px 10px;
+  font-size: 20px;
+  border-radius: 2px;
+  font-weight: 100;
+  color: white;
+}
+.social-midia:hover {
+  background: #111721dc;
+  -webkit-transform: scale(0.3);
+  -ms-transform: scale(0.3);
+  transform: scale(1.02);
+}
+@keyframes largo {
+  from {
+    width: 170px;
+  }
+  to {
+    width: 175px;
+  }
 }
 
 .social-midia img {
-  width: 50px;
+  width: 70px;
 }
 
 /*.type-animation {
@@ -393,15 +412,8 @@ a p {
   }
 }
 
-
 ul {
   list-style: none;
-}
-
-/*cards*/
-.bloco-cards {
-  margin-bottom: 20px;
-  margin-top: 20px;
 }
 
 #img-resume-file {
@@ -444,28 +456,20 @@ button a:link {
 /* */
 #testando {
   display: block;
-  background-color: red;
+
   justify-content: center;
 }
 
 #bloco {
-  color: hsl(0, 0%, 0%);
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  padding: 0 2.3rem;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
-
-#minhaImagem {
-  width: 419px;
-  position: relative;
-  margin-top: 83px;
-  margin-left: -181px;
-  animation: bouncing 1s ease-in-out alternate infinite;
-}
-
 
 @keyframes is-bouncing-image {
   to {
@@ -475,17 +479,15 @@ button a:link {
 
 #check {
   display: none;
-
 }
 
 .menu {
   width: 100%;
   height: 60px;
-  float: right;
+  display: flex;
   position: absolute;
-  margin-top: 10px;
   z-index: 2;
-
+  justify-content: space-between;
 }
 
 .menu-smartphone-sobre-mim {
@@ -510,7 +512,6 @@ button a:link {
   float: left;
 }
 
-
 .menu-smartphone-sobre-mim ol p {
   width: 90%;
   margin-left: 30px;
@@ -525,36 +526,32 @@ button a:link {
   margin-top: 1px;
   font-size: 20px;
   margin-left: 30px;
-
 }
 
 .imagem-menu {
   height: 40px;
-  margin-top: -11px;
 }
 
 #icone {
-  float: right;
   cursor: pointer;
   padding: 15px;
   font-weight: 900;
   z-index: 1;
   color: black;
-  margin-top: -27px;
 }
 
 .conteudo-Menu {
-  float: left;
-  margin-right: 5px;
+  display: none;
   color: white;
+  text-align: center;
 }
 
 .barra {
-  background-color: #80008082;
+  background: #0f141ec0;
   height: 100%;
   width: 100%;
   position: fixed;
-  transition: all .2s linear;
+  transition: all 0.2s linear;
   right: -100%;
   z-index: 1;
   backdrop-filter: blur(5px);
@@ -568,7 +565,6 @@ nav {
   width: 100%;
   position: absolute;
   top: 60px;
-
 }
 
 nav a {
@@ -579,15 +575,13 @@ nav a {
 .link {
   padding: 20px;
   text-align: center;
-  font-family: 'Arial';
+  font-family: "Arial";
   font-size: 25px;
   font-weight: 900;
   top: 50px;
   position: relative;
-  transition: all .2s linear;
+  transition: all 0.2s linear;
   color: rgb(255, 255, 255);
-  border-bottom: 2px solid rgb(255, 255, 255);
-
 }
 
 .logotipo img {
@@ -600,7 +594,6 @@ nav a {
   font-weight: 900;
   position: absolute;
   transition: all 1s;
-
 }
 
 #logo {
@@ -619,20 +612,20 @@ nav a {
 #subtitulo-usuario {
   font-weight: 800;
   margin-left: 65px;
-  letter-spacing: .01rem;
+  letter-spacing: 0.01rem;
   color: white;
 }
 
 .link:hover {
   background-color: rgb(255, 255, 255);
-  color: purple;
+  color: #0f141e;
 }
 
-#check:checked~.barra {
+#check:checked ~ .barra {
   transform: translateX(-100%);
 }
 
-#check2:checked~.barra {
+#check2:checked ~ .barra {
   transform: translateX(-100%);
 }
 
@@ -644,25 +637,23 @@ nav a {
 label {
   float: right;
   margin-right: 10px;
-
 }
 
 #blocoDeTexto {
   display: inline-block;
   align-items: center;
   align-content: center;
-  padding: 30px;
+  padding: 0px 100px;
   color: white;
-  width: 62%;
   margin-bottom: 4px;
   margin-top: 170px;
+  width: 90%;
 }
-
 h5 {
-  color: purple;
-  font-size: .875rem;
+  color: #878a8f;
+  font-size: 0.875rem;
   font-weight: 100;
-  letter-spacing: .2rem;
+  letter-spacing: 0.2rem;
   line-height: 1.25rem;
   text-transform: uppercase;
   padding-top: 5px;
@@ -677,21 +668,18 @@ h5 {
 .meuResumo {
   display: flex;
   align-content: center;
-  font-size: 15px;
+  font-size: 20px;
   font-weight: 200;
-  letter-spacing: .2rem;
+  letter-spacing: 0.09rem;
   font-weight: 500;
   text-align: justify;
-  color: purple;
+  color: #878a8f;
 }
 
 #bloco2 {
   height: 100%;
   text-align: center;
   justify-content: center;
-  background-color: white;
-  margin-left: 10px;
-  margin-right: 10px;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
@@ -706,38 +694,38 @@ h5 {
   margin-top: 20px;
   margin-bottom: 20px;
   margin-left: 30px;
-  color: rgb(247, 6, 247);
+  font-size: 20px;
 }
 
 #titulo {
-  display: block;
+  display: none;
   margin-left: 30px;
   margin-bottom: 100px;
   text-align: center;
-  font-weight: 800;
+  font-weight: 900;
   color: rgb(255, 255, 255);
   padding: 30px;
+  font-size: 40px;
+  text-shadow: -1px -1px 0px white, 3px 3px 0px blue, 6px 6px 0px black;
 }
 
 /* rodapé */
 
 #bloco-footer {
   display: block;
-  background: yellow;
-  height: 200px;
+  background: #0f141e;
 }
 
 footer {
-  border-top: solid 1px rgb(199, 199, 199);
+  border-top: solid 1px #0f141e;
 }
 
 #footer-item {
-  display: block;
+  display: none;
   margin-top: 30px;
   width: 100%;
   text-align: center;
   color: #252525;
-  ;
 }
 .sectionPlus {
   width: 100%;
@@ -772,12 +760,10 @@ footer {
 h3 {
   font-size: 25px;
   color: #2b2b2b;
-  ;
   margin-bottom: 10px;
 }
 
 #footer-texto {
-  color: #2e2e2e;
   font-size: 1rem;
   line-height: 1.875rem;
   font-weight: 500;
@@ -788,19 +774,19 @@ h3 {
 #footerCopyRight p {
   text-align: center;
   margin-top: 20px;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 20px;
-  font-weight: 600;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 15px;
+  font-weight: 100;
 }
 
 #footerCopyRight {
   width: 100%;
-  height: 60px;
+  height: 30px;
+  font-size: 25px;
   margin-bottom: 0px;
-  float: inline-end;
   text-align: center;
-  margin-top: 50px;
-  color: #000000;
+  color: white;
+  background-color: #0f141e;
 }
 
 #blocoSkils h1 {
@@ -814,7 +800,6 @@ h3 {
   align-content: center;
   align-items: center;
   padding: 11px 1px;
-
 }
 
 .imagemSkils {
@@ -836,7 +821,6 @@ h3 {
   color: purple;
   border-radius: 15px;
   box-shadow: 1px 2px 11px black;
-
 }
 
 .skils h1 {
@@ -910,7 +894,6 @@ h3 {
   text-align: center;
 }
 
-
 .titulo-das-skils div {
   width: 100%;
   height: 10px;
@@ -960,7 +943,6 @@ h6 {
   border-radius: 5px;
   height: 43px;
   font-weight: 200;
-
 }
 
 .linha {
@@ -974,8 +956,8 @@ h6 {
 }
 
 .bubble {
-  background-color: yellow;
-  border: 2px solid yellow;
+  background-color: white;
+  border: 2px solid white;
   border-radius: 5px;
   color: black;
   display: inline-block;
@@ -989,9 +971,9 @@ h6 {
 .bubble.active:before {
   border-left: 15px solid transparent;
   border-right: 15px solid transparent;
-  border-top: 15px solid yellow;
+  border-top: 15px solid white;
   bottom: -15px;
-  content: '';
+  content: "";
   left: 50%;
   margin-left: -15px;
   position: absolute;
@@ -1032,7 +1014,6 @@ h6 {
   color: white;
   font-size: 20px;
   font-weight: 800;
-
 }
 
 #seta {
@@ -1060,21 +1041,18 @@ a {
 
 .circulo {
   margin-top: 30px;
-
 }
 
 .verde {
-  background-color: yellowgreen;
+  background-color: black;
 }
 
-
-
 .amarelo {
-  background-color: yellow;
+  background-color: black;
 }
 
 .vermelho {
-  background-color: red;
+  background-color: black;
 }
 
 #verde-piscar {
@@ -1087,7 +1065,6 @@ a {
 
 #vermelho-piscar {
   animation: piscar 900ms infinite;
-
 }
 
 @keyframes piscar {
@@ -1102,8 +1079,8 @@ a {
 
 .circulo {
   border: solid 1px rgb(112, 112, 112);
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 15px;
   margin-left: 5px;
   border-radius: 50%;
   margin-right: 5px;
@@ -1140,13 +1117,11 @@ a {
 .container-imagem {
   height: 80%;
   width: 99, 9%;
-
 }
 
 .container-imagem img {
   width: 100%;
   height: 100%;
-
 }
 
 .container-imagem img:hover {
@@ -1165,7 +1140,6 @@ a {
   width: 50%;
   color: #ffffff;
 }
-
 
 .botao-left {
   height: 100%;
@@ -1189,7 +1163,6 @@ a {
   height: 100%;
   border: none;
   background-color: #ffffff00;
-
 }
 
 .botao-right button {
@@ -1233,7 +1206,14 @@ button img {
   height: 300px;
   position: relative;
   align-content: center;
-  background: linear-gradient(0deg, purple, 0%, purple 50%, #fff 50%, #fff 100%);
+  background: linear-gradient(
+    0deg,
+    purple,
+    0%,
+    purple 50%,
+    #fff 50%,
+    #fff 100%
+  );
   transform-style: preserve-3d;
   margin-top: 100px;
 }
@@ -1296,7 +1276,7 @@ button img {
 
 .fita:before,
 .fita:after {
-  content: '';
+  content: "";
   line-height: 0;
   border-style: solid;
   border-width: 20px;
@@ -1319,7 +1299,7 @@ button img {
 .conteudo:before,
 .conteudo:after {
   position: absolute;
-  content: '';
+  content: "";
   height: 0;
   line-height: 1px;
   border-style: solid;
@@ -1398,7 +1378,7 @@ button img {
 .conteudo-principal-sobre ul li p {
   margin-top: 5px;
   font-size: 19px;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   text-align: justify;
   color: purple;
 }
@@ -1465,7 +1445,6 @@ button img {
 .imagem-fundo {
   display: inline-block;
   margin-top: 100px;
-
 }
 
 /*
@@ -1511,9 +1490,11 @@ button img {
 }
 
 @keyframes animacao {
-  from {}
+  from {
+  }
 
-  to {}
+  to {
+  }
 }
 
 .fita-centralizada {
@@ -1527,22 +1508,8 @@ button img {
   display: none;
 }
 
-.bloco-cards-2 {
-  display: none;
-}
-
-
-/*cards*/
-.bloco-cards {
-  display: flex;
-}
-
 .fita {
   width: 400px;
-}
-
-.meuResumo {
-  width: 800px;
 }
 
 .resume-file {
@@ -1555,7 +1522,6 @@ button img {
   white-space: nowrap;
   display: flex;
   margin-top: 50px;
-
 }
 
 .container-card {
@@ -1568,7 +1534,6 @@ button img {
   display: inline-block;
   width: 50%;
   margin-left: 0;
-
 }
 
 .container-image img {
@@ -1600,16 +1565,17 @@ button img {
   width: 100%;
   font-size: 40px;
   text-align: start;
-  color: purple;
+  color: #986dff;
+  text-shadow: -1px -1px 0px white, 2px 2px 0px blue, 6px 6px 0px black;
 }
 
-
 .container-description p {
-  font-size: 16px;
-  text-align: left;
+  font-size: 20px;
+  text-align: justify;
   display: block;
   white-space: break-spaces;
   margin-top: 30px;
+  color: white;
 }
 
 .container-description a {
@@ -1624,24 +1590,23 @@ button img {
 .proj2 img {
   display: inline-block;
   width: 59px;
-  margin-bottom: -27px;
+  margin-bottom: -23px;
 }
 
 .button-link {
-  background: purple;
-  width: 100px;
+  background: #986dff;
+  width: 163px;
   text-align: center;
-  height: 17px;
   color: white;
-  font-size: 15px;
-  border-radius: 20px;
+  font-size: 20px;
+  border-radius: 34px;
   font-weight: 800;
-  padding: 10px;
-  box-shadow: 1px 39px 18px -10px purple;
+  padding: 11px;
+  box-shadow: 1px 36px 13px -21px #986dff;
 }
 
 .button-link:hover {
-  color: yellow;
+  color: wheat;
 }
 
 .resumo-container {
@@ -1650,7 +1615,7 @@ button img {
 
 .number-project {
   width: 25px;
-  background: purple;
+  background: #986dff;
   height: 24px;
   padding: 3px;
   border-radius: 50%;
@@ -1663,22 +1628,20 @@ button img {
 .container-skills {
   height: 700px;
   display: flex;
+  margin-bottom: 30px;
 }
 
-.container-left {
-  width: 600px;
-  background: white;
-  height: 550px;
-  margin-left: 100px;
-  border-radius: 20px;
+.section-skill {
+  width: 100%;
+  background: #0f141e;
+  height: 90%;
   display: inline-block;
-  margin-top: 100px;
   border: solid 1px silver;
-  box-shadow: -22px 27px 20px -8px purple;
+  margin: 66px;
 }
 
 .box-shadow {
-  box-shadow: 27px 27px 20px -8px purple;
+  box-shadow: 27px 27px 20px -8px #986dff;
 }
 
 .container-right-title {
@@ -1695,7 +1658,7 @@ button img {
   margin-top: 164px;
   display: block;
   margin-left: 30%;
-  color: purple;
+  color: #986dff;
   font-size: 40px;
 }
 
@@ -1704,30 +1667,25 @@ button img {
 }
 
 table {
-  width: 90%;
-  height: 400px;
-  margin-left: 50px;
-  margin-top: 30px;
+  width: 100%;
 }
 
 table tr td {
-  padding: 5px 39px;
-
+  padding: 54px 134px;
 }
 
 table tr td img {
-  width: 65px;
-  background: #8000804d;
+  width: 100px;
 }
 
 .texto {
   padding: 63px;
-  color: purple;
+  color: #986dff;
   font-size: 21px;
 }
 
 .texto-formacao {
-  color: purple;
+  color: #986dff;
   margin-top: -100px;
   padding: 60px;
 }
@@ -1736,64 +1694,289 @@ table tr td img {
   margin-bottom: 10px;
 }
 
-.contate-me {
-  height: 500px;
-  background-color: purple;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 100px;
-}
-
-.contate-me h6 {
-  margin-top: -30px;
-  margin-bottom: 10px;
-  text-align: center;
-  color: yellow;
-}
-
-.contate-me h1 {
-  text-align: center;
+span {
   color: white;
 }
 
-form {
-  width: 500px;
-  margin-left: 50px;
+.container-projetos {
+  display: grid;
+  grid-template-columns: repeat(2, 3fr);
+  padding: 0 2.5rem;
+
+  height: 100%;
 }
 
-input[type=text],
-[type=email],
-[type=name],
-textarea,
-.input {
-  display: block;
+.card {
+  width: 90%;
+  height: 650px;
+}
+.pj1 {
+  background-color: #0f141e;
+  margin: 30px;
+  background-image: url(../imagem-projetos/portifolio/geraisnetMobile.png);
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position-x: 230px;
+  background-position-y: 80px;
+  background-blend-mode: saturation;
+}
+.pj1:hover {
+  background-size: 60%;
+  animation: zoom-size 2s;
+}
+@keyframes zoom-size {
+  from {
+    background-size: 50%;
+  }
+  to {
+    background-size: 60%;
+  }
+}
+
+.pj2 {
+  background-color: #0f141e;
+  margin: 30px;
+  background-image: url(../imagem-projetos/pizzaria/pizzaria-pc.png);
+  background-size: 200%;
+  background-repeat: no-repeat;
+  background-position-x: 130px;
+  background-position-y: 80px;
+  background-blend-mode: saturation;
+}
+.pj2:hover {
+  background-size: 220%;
+  animation: zoom-size2 2s;
+}
+@keyframes zoom-size2 {
+  from {
+    background-size: 200%;
+  }
+  to {
+    background-size: 220%;
+  }
+}
+.pj3 {
+  background-color: #0f141e;
+  margin: 30px;
+  background-image: url(../imagem-projetos/projetoFinance/finance-pc.png);
+  background-size: 200%;
+  background-repeat: no-repeat;
+  background-position-x: -490px;
+  background-position-y: 180px;
+  background-blend-mode: saturation;
+}
+.pj3:hover {
+  background-size: 220%;
+  animation: zoom-size3 2s;
+}
+@keyframes zoom-size3 {
+  from {
+    background-size: 200%;
+  }
+  to {
+    background-size: 220%;
+  }
+}
+.pj4 {
+  background-color: #0f141e;
+  margin: 30px;
+  background-image: url(../imagem-projetos/sistemaUsuario/sistemaUsuario-cell.png);
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position-x: 300px;
+  background-position-y: 80px;
+  background-blend-mode: saturation;
+}
+
+.pj4:hover {
+  background-size: 60%;
+  animation: zoom-size4 2s;
+}
+@keyframes zoom-size4 {
+  from {
+    background-size: 50%;
+  }
+  to {
+    background-size: 60%;
+  }
+}
+td img:hover {
+  animation-name: zoom;
+  animation-duration: 500ms;
+}
+
+@keyframes zoom {
+  from {
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  to {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+.card:hover {
+  background-color: #171c25;
+}
+
+.sub-title {
+  justify-content: space-between;
+  display: flex;
+}
+.card-item {
+  padding: 30px;
+}
+
+.title-card {
+  padding: 0px 30px 20px;
+}
+.title-card h1 {
+  line-height: 2.5rem;
+  padding-top: 3px;
+  padding-bottom: 2px;
+  font-size: 43px;
+  font-weight: bold;
+}
+
+.resume-card {
+  padding: 0px 30px 0px;
+  font-size: 17px;
+  text-align: justify;
+}
+
+.fnt-color {
+  color: white;
+}
+
+.links-cards {
+  padding: 10px 30px;
   width: 100%;
-  height: 40px;
-  margin-bottom: 20px;
-  padding: 5px;
-  font-size: 18px;
 }
 
-textarea {
-  height: 100px;
+.links-cards a {
+  padding: 25px;
+  background-color: #ffffff14;
+  font-size: 17px;
+  font-weight: 100;
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+}
+#link-after:hover {
+  -webkit-transform: scale(0.3);
+  -ms-transform: scale(0.3);
+  transform: scale(1.02);
+  background-color: #ffffff2f;
 }
 
-#button-enviar {
-  display: block;
-  width: 350px;
-  height: 40px;
-  background: yellow;
-  margin-top: 10px;
-  border-radius: 20px;
-  font-size: 19px;
-  border: solid 4px purple;
-  color: purple;
+.new {
+  width: 55px;
+  height: 50px;
+  top: 20px;
+  right: 20px;
+  z-index: 3;
+  pointer-events: none;
+  color: #fff;
+  text-align: center;
+  font-size: 0.925rem;
+  line-height: 3.2rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-style: normal;
+  border: 3px solid #ffffff14;
+  border-radius: 50%;
+  transition: all 0.2s linear;
+  background-color: #ffffff14;
 }
 
+#h1-card-year {
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: 100;
+}
 
+.container-sobre-mim {
+  display: grid;
+  grid-template-columns: repeat(1, 3fr);
+  padding: 30px 4.1rem;
+}
+.section-principal-sobre-mim {
+  height: 500px;
+}
 
+.container-img-sobre-mim {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.container-img-sobre-mim img {
+  background-color: #0f141e;
+  width: 150px;
+  border-radius: 50%;
+}
+
+.container-texto-sobre-mim {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: #0f141e;
+}
+
+.container-texto-sobre-mim p {
+  text-align: center;
+  max-width: 800px;
+  padding: 30px 100px;
+  font-size: 25px;
+  color: #0f141e;
+  font-weight: 100;
+  line-height: 2.5rem;
+}
+.container-rows {
+  display: grid;
+  grid-template-columns: repeat(4, 4fr);
+  padding: 10px 5rem;
+  text-align: center;
+}
+
+.row {
+  width: 260px;
+  height: 200px;
+  margin: 10px;
+  border: solid 4px white;
+  box-shadow: 0 0.125rem 0.35rem #0f141e2e !important;
+}
+.row img {
+  width: 40px;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+.row h1 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #0f141e;
+  padding: 10px 0px;
+  text-transform: uppercase;
+}
+.row h3 {
+  color: #0f141e;
+  font-size: 0.775rem;
+  font-weight: 100;
+  letter-spacing: 0.1rem;
+  line-height: 1.25rem;
+  padding-top: 5px;
+  padding-bottom: 15px;
+}
 @media only screen and (max-width: 1300px) {
+  #bloco {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+  }
   .container-title {
     color: purple;
     font-size: 16px;
@@ -1806,718 +1989,114 @@ textarea {
   .imagem-pc {
     height: 360px;
   }
-
-}
-
-@media only screen and (max-width: 1200px) {
-
-  #icone {
-    display: block;
-  }
-
-  .list-itens {
-    display: none;
-  }
-
-  .imagem-pc {
-    height: 300px;
-  }
-
-  .imagem-fundo {
-    display: none;
-  }
-
-  #divMinhaImagem {
-    display: none;
-  }
-
-  #minhaImagem {
-    left: 300px;
-    display: none;
-  }
-
-  .imagem-Smartphone {
-    display: block;
-    width: 400px;
-  }
-
-  #minhaImagem {
-    display: none;
-  }
-
-  .bloco-cards {
-    display: none;
-  }
-
-  .bloco-cards-2 {
-    display: flex;
-    margin-left: 30px;
-    justify-content: center;
-    height: 100px;
-  }
-
-  #cards2 {
-    color: white;
-    border: SOLID 2PX purple;
-  }
-
-  .centraliza-Imagem-Smartphone {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-  }
-
-  .imagem-cell {
-    width: 125px;
-    margin-left: -126px;
-    margin-bottom: -5px;
-  }
-}
-
-@media only screen and (max-width: 1000px) {
-
-  .imagem-pc {
-    height: 270px;
-  }
-
-  .container-description p {
-    font-size: 13px;
-  }
-
-  .container-title {
-    color: purple;
-    font-size: 15px;
-  }
-
-
-  .fita-centralizada {
-    width: 70%;
-  }
-
-  h3 {
-    font-size: 25px;
-    color: #000000;
-    margin-bottom: 10px;
-  }
-
-}
-
-@media only screen and (max-width: 948px) {
-  .imagem-pc {
-    height: 260px;
-  }
-
-  .imagem-cell {
-    width: 128px;
-    margin-left: -115px;
-  }
-
-  #line {
-    font-size: 55px;
-    height: 96px;
-  }
-
-  #line-down {
-    font-size: 75px;
-  }
-
-  #blocoDeTexto {
-    display: block;
-  }
-
-  p {
-    display: block;
-  }
-
-  .logotipo {
-    font-size: small;
-
-  }
-
-
-  .menu {
-    width: 100%;
-    position: fixed;
-    z-index: 2;
-  }
-
-  #meuResumo {
-    margin-right: 10%;
-    width: 450px;
-  }
-
-
-  /**/
-
-
-  #bloco2 {
-    display: block;
-    height: max-content;
-
-  }
-
-
-  #tituloProjetos {
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-
-  #titulo {
-    margin-left: 30px;
-    margin-bottom: 50px;
-  }
-
-  /*footer */
-
-
-}
-
-@media only screen and (max-width: 888px) {
-  .container-skills {
-    height: 100%;
-    display: block;
-  }
-
-  .imagem-pc {
-    height: 200px;
-  }
-
-  .imagem-cell {
-    width: 103px;
-    margin-left: -115px;
-  }
-
-  .contate-me {
-    height: 500px;
-    background-color: purple;
-    display: block;
-  }
-
-  form {
-    width: 600px;
-    margin-left: 15%;
-  }
-
-  .contate-me h6 {
-    margin-top: 0px;
-    display: block;
-    padding: 10px;
-  }
-
-  #button-enviar {
-    display: block;
-    width: 450px;
-  }
-
-  .contate-me h1 {
-    display: block;
-    padding: 19px;
-  }
-
-  .contate-me {
-    height: 550px;
-    background-color: purple;
-    display: block;
-  }
-}
-
-
-@media only screen and (max-width: 678px) {
-  .contate-me h6 {
-    margin-top: 0px;
-    display: block;
-    padding: 10px;
-  }
-
-  #button-enviar {
-    display: block;
-    width: 250px;
-  }
-
-  .contate-me h1 {
-    display: block;
-    padding: 19px;
-  }
-
-  .contate-me {
-    height: 550px;
-    background-color: purple;
-    display: block;
-  }
-
-  form {
-    width: 400px;
-    margin-left: 20%;
-  }
-
-  .container-left {
-    width: 500px;
-    margin-left: 40px;
-  }
-
-  .ifem {
-    width: 60%;
-  }
-
-  table {
-    width: 100%;
-    height: 500px;
-    margin-left: 0px;
-    margin-top: 0px;
-  }
-
-  .imagem-pc {
-    height: 200px;
-  }
-
-  .imagem-cell {
-    width: 128px;
-    margin-left: -115px;
-  }
-
-  .line {
-    font-size: 40px;
-  }
-
-  .meuResumo {
-    width: 500px;
-  }
-
-  #bloco2 {
-    display: block;
-    text-align: center;
-    height: max-content;
-    margin-left: 0px;
-    margin-right: 0px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-  }
-
-  .container-main {
-    height: 396px;
-    white-space: nowrap;
-    display: table;
-    border-bottom: solid 50px white;
-  }
-
-  .container-title {
-    color: purple;
-    font-size: 15px;
-  }
-
-  .container-title {
-    display: block;
-    width: 100%;
-    height: 100%;
-    color: purple;
-    margin-top: 50px;
-    font-size: 20px;
-  }
-
-  .container-image {
-    display: contents;
-  }
-
-  .imagem-pc {
-    height: 200px;
-  }
-
-  .imagem-cell {
-    width: 92px;
-    margin-left: -88px;
-    height: 165px;
-    margin-top: -27px;
-  }
-
-  .container-description {
-    width: 90%;
-    line-height: 13px;
-    text-align: start;
-    margin-left: 24px;
-    margin-top: 22px;
-    display: block;
-  }
-
-  .container-description h2 {
-    width: 100%;
-    font-size: 21px;
-    color: purple;
-    font-weight: 700;
-  }
-
-}
-
-@media only screen and (max-width: 550px) {
-  table tr td {
-    padding: 1px 39px;
-  }
-
-  .contate-me {
-    height: 550px;
-  }
-
-  form {
-    width: 400px;
-    margin-left: 10%;
-  }
-
-  .container-right-title {
-    width: 40%;
-    height: 0px;
-  }
-
-  .texto {
-    padding: 49px;
-    font-size: 16px;
-  }
-
-  .texto-formacao {
-    color: purple;
-    margin-top: -60px;
-    padding: 46px;
-  }
-
-  .texto-formacao h1 {
-    display: none;
-  }
-
-  input[type=text],
-  [type=email],
-  [type=name],
-  textarea,
-  .input {
-    display: block;
-
-  }
-
-  .container-left {
-    width: 434px;
-    margin-left: 30px;
-    height: 450px;
-  }
-
-  .ifem {
-    width: 60%;
-  }
-
-  table {
-    width: 100%;
-    height: 394px;
-    margin-left: 0px;
-    margin-top: 0px;
-  }
-
-  .line {
-    font-size: 35px;
-    height: 60px;
-  }
-
-  .fita {
-    width: 300px;
-  }
-
-  #bloco {
-    color: hsl(0, 0%, 0%);
-    display: block;
-  }
-
-  .meuResumo {
-    width: 430px;
-  }
-
-  .bloco-links {
-    display: inline-block;
-    flex-wrap: wrap;
-    justify-content: center;
-    flex-direction: column;
-    text-align: initial;
-    margin-top: 150px;
-    margin-bottom: -400px;
-    margin-left: 30px;
-    height: 100%;
-    width: 80%;
-    text-align: center;
-  }
-
-  .social-midia img {
-    display: block;
-    width: 74px;
-  }
-
-  #blocoDeTexto {
-    margin-top: -27px;
-  }
-
-  #line {
-    font-size: 45px;
-    height: 67px;
-  }
 }
 
 @media only screen and (max-width: 500px) {
+  #blocoDeTexto {
+    width: 100%;
+}
+  .container-projetos {
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+    padding: 0 0rem;
+  }
 
+  .card {
+    width: 90%;
+    height: 650px;
+    margin: 20px;
+  }
   .container-imagem {
     height: 70%;
     width: 99%;
   }
-
-  #line {
-    font-size: 45px;
-    height: 67px;
+  #blocoDeTexto {
+    padding: 0px 0px;
   }
-
-  #line-down {
-    font-size: 60px;
-  }
-
-  .imagem-Smartphone {
-    display: block;
-    width: 470px;
-  }
-
-
-  h1 {
-    font-size: 30px;
-  }
-
-  .line-down {
-    font-weight: 700;
-    white-space: nowrap;
-    overflow: hidden;
-    display: block;
-    font-size: 70px;
-    margin-top: -30px;
-    display: block;
-    width: 150%;
-    text-align: center;
+  #bloco {
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+    padding: 0 1.3rem;
   }
 
   .line {
-    font-weight: 900;
-    color: purple;
-    border-right: solid 2px purple;
-    white-space: nowrap;
-    overflow: hidden;
-    display: block;
-    font-size: 110px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    height: 150px;
-    font-size: 70px;
-    width: max-content;
-
-  }
-
-  .container {
-    width: 335px;
-    display: inline-block;
-    margin-bottom: 10px;
-    margin-right: 15px;
-    border-radius: 25px;
-    background-color: #ffffff;
-    color: #000000;
-    cursor: pointer;
-    box-shadow: 0 5px 15px rgb(0 0 0);
-    height: 390px;
-  }
-
-  .skils {
-    width: 334px;
-    height: 218px;
-    background-color: #f0f0f0;
-    color: purple;
-    border-radius: 15px;
-    box-shadow: 1px 2px 11px black;
-    font-size: 10px;
-  }
-
-  #javascript p {
-    font-size: 14px;
-  }
-
-  #css p {
-    font-size: 16px;
-  }
-
-  #html p {
-    font-size: 16px;
-  }
-
-  .arrow-down {
-    display: none;
-  }
-
-  .container-2 .card-2 {
-    position: relative;
-    width: 100px;
-    height: 175px;
-    background-color: #fff;
-    margin: 0 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 4px;
-    box-shadow: 0 5px 15px #000000;
-    transition: 0.5s;
-    overflow: hidden;
-    transform-style: preserve-3d;
-    z-index: 0;
-    cursor: pointer;
-  }
-
-  #blocoDeTexto {
-    margin-top: 5px;
-    display: block;
-    align-items: center;
-    align-content: center;
-    color: rgb(102, 95, 95);
-  }
-
-  body {
-    display: block;
-    width: 500px;
-  }
-
-  .scroll {
-    display: block;
-  }
-
-  .scroll img {
-    position: fixed;
-    height: 50px;
-    float: right;
-  }
-
-  p {
-    display: block;
-    font-size: 13px;
-  }
-
-  .logotipo {
-    font-size: small;
-
-  }
-
-  #tituloProjetos {
-    margin-bottom: -50px;
-    display: block;
-  }
-
-  .menu {
+    font-family: "Helvetica Now Display DW", sans-serif;
+    letter-spacing: -0.01em;
+    color: #0f141e;
+    font-size: 3.6em;
     width: 100%;
-    position: fixed;
-    z-index: 2;
   }
 
-  .imagem-Smartphone {
-    display: block;
-    margin-top: -100px;
-  }
-
-  #minhaImagem {
-    display: none;
-    margin-bottom: 50px;
-    left: 300px;
-  }
-
-  #titulo {
-    margin-top: 50px;
-  }
-
-  .bloco-cards {
-    display: none;
-  }
-
-  .bloco-cards-2 {
-    display: block;
-    margin-left: 30px;
-    margin-bottom: 73px;
-
-  }
-
-  #meuResumo {
-    text-align: center;
-    width: 137%;
-    margin-top: 30px;
-  }
-
-  #img-resume-file {
-    width: 74px;
-    margin-bottom: -25px;
-  }
-
-  h3 {
-    font-size: 18px;
-  }
-
-  #footer-texto {
-    color: #2e2e2e;
-    font-size: 13px;
-  }
-
-  #blocoDeTexto {
-    text-align: justify;
-  }
-
-
-  label {
-    margin-left: -20px;
-  }
-
-  .name-usuario {
-    font-weight: 800;
-    width: 100px;
-    font-size: 20px;
-  }
-
-  /**/
-
-  #bloco2 {
-    display: block;
-    text-align: center;
-    height: max-content;
-    margin-left: 0px;
-    margin-right: 0px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-  }
-
-  #tituloProjetos {
-    text-align: center;
-    margin-top: 34px;
-    margin-bottom: 20px;
-    display: inline-block;
-  }
-
-  #titulo {
-    margin-left: 30px;
-    margin-bottom: 50px;
-    margin-top: -25px;
-  }
-
-  #subtitulo-usuario {
-    display: none;
-  }
-
-  /*footer */
-  footer {
+  .bloco-links {
     display: grid;
-    text-align: center;
-    border-top: solid 1px rgb(199, 199, 199);
+    grid-template-columns: repeat(3, 2fr);
+    padding: 0.5rem 0.5rem;
+  }
+  .social-midia {
+    display: inline-block;
+    width: 100px;
+    background: #0f141e;
+    font-size: 16px;
+    border-radius: 2px;
+    font-weight: 100;
+    color: white;
+    margin: -19px;
+    margin-top: 10px;
+  }
+  .meuResumo {
+    padding-top: 10px;
+    padding-bottom: 60px;
+    width: 90%;
+  }
+  .bloco {
+    height: 100%;
+  }
+  .container-skills {
+    height: 100%;
+    display: flex;
+    margin-bottom: 30px;
+  }
+  .section-skill {
+    width: 90%;
+    background: #0f141e;
+    height: 56%;
+    display: inline-block;
+    border: solid 1px silver;
+    margin: 19px;
   }
 
-  #footer-item {
-    width: 100%;
+  table tr td img {
+    width: 60px;
   }
 
-
-  #bloco {
-    display: block;
+  table tr td {
+    padding: 29px 28px;
   }
 
-  .grid-container {
-    display: block;
-    align-items: center;
-    justify-content: center;
-  }
+  .container-sobre-mim {
+    display: grid;
+    grid-template-columns: repeat(1, 3fr);
+    padding: 14px 0.1rem;
+}
+
+.container-texto-sobre-mim p {
+  text-align: center;
+  max-width: 800px;
+  padding: 26px 20px;
+  font-size: 23px;
+  color: #0f141e;
+  font-weight: 100;
+  line-height: 1.5rem;
+}
+
+.container-rows {
+  display: grid;
+  grid-template-columns: repeat(1, 4fr);
+  padding: 0px 3.6rem;
+  text-align: center;
+}
+#minhaImagem {
+  margin-top: 0px;
+  margin-left: -56px;
+}
 }

@@ -12,23 +12,26 @@
   <title>Portifólio | Emanuel H.</title>
   <link rel="icon" href="./images/logo-Portifolio-1.png">
   <link rel="stylesheet" type="text/css" href="./css/style.css" media="screen" />
+  
 </head>
 
 <body>
-  <div class="bloco">
+  <div class="container-pg">
+   <div class="bloco">
     <div class='menu' id="menu">
       <div class="circulos espaco">
         <div class="circulo verde" id="verde-piscar"></div>
         <div class="circulo amarelo" id="amarelo-piscar"></div>
         <div class="circulo vermelho" id="vermelho-piscar"></div>
+      
       </div>
       <div class="list-itens">
-        <ul>
-        <li onclick="scrollRodape()" id="contato">Meu Contato</li>
+        <ul>        
+        <li onclick="scrollHome()">Home</li>
         <li  onclick="scrollProjetos()" >Projetos</li>
         <li onclick="scrollSobreMim()" >Sobre</li>
         <li onclick="scrollSkills()" >Skills</li>
-        <li onclick="scrollHome()">Home</li>
+        <li onclick="scrollRodape()" >Contato</li>
       </ul>
       </div>
       <label id="icone" for="check">
@@ -62,201 +65,157 @@
         </ul>
       </nav>
     </div>
-    <div id="bloco" class="bloco1">
-      <div class="bloco-links">
-        <a target="_blank" href="https://www.linkedin.com/in/emanuel-hitallo-06690a16b/">
-          <div class="social-midia"><img src="./imagem-projetos/linkdlin.png"></div>
-        </a>
-        <a target="_blank" href="https://github.com/Emanuel0001">
-          <div class="social-midia"><img src="./imagem-projetos/link-github.png"></div>
-        </a>
-        <a target="_blank" onclick="downloadResume()">
-          <div class="social-midia"><img src="./imagem-projetos/download.png"></a></div>
-      </div>
+    <div id="bloco">
       <div id="blocoDeTexto">
-        <p id="bubble"><span class="bubble active">It's me</span></p>
         <p>
-        <h5 class="titulo-nome-bloco1">Emanuel Hitallo soares de souza</h5>
+        <h5 class="titulo-nome-bloco1">Engenheiro frontend e backend</h5>
         </p>
         <p>
-        <h1 class="line type-animation" id="line"> Desenvolvedor</h1>
-        <h1 class="line-down" id="line-down"> Full Stack.</h1>
+        <h1 class="line " id="line">Olá, meu o nome é <strong>Emanuel.</strong> </h1>
         </p>
         <div class="meuResumo" id="meuResumo">
-          Nos últimos anos, dediquei a minha vida em estudos, Meu objetivo é trabalhar em empresas e startups promissoras para ajudá-las a atingir todo o seu potencial e atrair novos clientes.
+          Sou um desenvolvedor criativo que busca ajudar empresas e startups emergentes a atingir seu pleno potencial e atrair novos clientes.
         </div>
         <a href="https://emanuelhitallo.netlify.app/download" target="_blank"></a>
         <div id="baixar" class="resume-file"></div>
+        <div class="bloco-links">
+          <a target="_blank" href="https://www.linkedin.com/in/emanuel-hitallo-06690a16b/">
+            <div class="social-midia">
+             Linkedin
+            </div>
+          </a>
+          <a target="_blank" href="https://github.com/Emanuel0001">
+            <div class="social-midia">Github</div>
+          </a>
+          <a target="_blank" onclick="downloadResume()">
+            <div class="social-midia">Download Cv </div>
+          </a>
+          </div>
       </div>
       <div id="divMinhaImagem">
-        <img id="minhaImagem" src="./images/avatar2.png">
+        <img id="minhaImagem" src="./images/minha-imagem.png">
       </div>
     </div>
-  </div>
-  <div class="ajustar-bacgraund">
-    <div class="centraliza-Imagem-Smartphone">
-      <img class="imagem-Smartphone" src="./images/avatar3.png"></img>
-    </div>
-  </div>
-  <div class="sup-bloco">
-    <h1 id='titulo'> Meus Projetos</h1>
   </div>
   <div class="bloco2" id="bloco2">
-    <h5 id='tituloProjetos'> Projetos selecionados</h5>
-    <section class="container-main" data-anime="left">
-      <div class="number-project">1</div>
-      <div class="container-card">
-        <div class="container-image">
-          <img src="./imagem-projetos/portifolio/mobile.png" class="imagem-pc">
-          <img src="./imagem-projetos/portifolio/mobile (1).png" class="imagem-cell">
-        </div>
-        <div class="container-description">
-          <h1>Portifólio.com</h1>
-          <div class="resumo-container">
-            <p>Este portifolio foi desenvolvido por mim, para servir como forma de apresentação e também mostrar minhas habilidades, as tecnologias utilizadas nele, foram HTML, CSS, JS, utilizei também um framework ScrollReveal para deixar o site com uma animação ao escrolar a pagina, ele conta um pouco sobre meus objetivos e metas.</p>
-          </div>
-          <div class="link-acess">
-            <a target="_blank" class="button-link">
-              Este Site
-            </a>
-            <a target="_blank" href="https://github.com/Emanuel0001">
-              <div class="proj2"><img src="./imagem-projetos/link-github.png"></div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="container-main" data-anime="left">
-      <div class="number-project">2</div>
-      <div class="container-card">
-        <div class="container-description">
-          <h1>Finance.com</h1>
-          <div class="resumo-container">
-            <p>finance Control ou controle financeiro, é um sistema criado utilizando como tecnologia principal o React.js, projeto com uma interface simples de usar. nele foi utilizado outras tecnologias como postgreSQL, Api fetch, express entre outras...</p>
-          </div>
-          <div class="link-acess">
-            <a target="_blank" class="button-link" href="https://financecontrolapp.netlify.app/">
-              View Site
-            </a>
-            <a target="_blank" href="https://github.com/Emanuel0001/finance-control">
-              <div class="proj2"><img src="./imagem-projetos/link-github.png"></div>
-            </a>
-          </div>
-        </div>
-        <div class="container-image">
-          <img src="./imagem-projetos/projetoFinance/finance-pc.png" class="imagem-pc">
-          <img src="./imagem-projetos/projetoFinance/Finance-cel.png" class="imagem-cell">
-        </div>
-      </div>
-    </section>
-    <section class="container-main" data-anime="left">
-      <div class="number-project">3</div>
-      <div class="container-card">
-        <div class="container-image">
-          <img src="./imagem-projetos/sistemaUsuario/sistemaUsuario-pc.png" class="imagem-pc">
-          <img src="./imagem-projetos/sistemaUsuario/sistemaUsuario-cell.png" class="imagem-cell">
-        </div>
-        <div class="container-description">
-          <h1>Usuários.com</h1>
-          <div class="resumo-container">
-            <p>Sistema de usuario conta com cadastro de usuários e com uma tela dashboard onde é possível ver uma lista com todos usuários do sistema. Nele também é possivel adcionar uma foto de perfil, as tecnologias utilizadas principais foram: html, css, javascript, react, react-Cookie, express, API's, react-router etc...</p>
-          </div>
-          <div class="link-acess">
-            <a target="_blank" class="button-link" href="https://sistemadeusuario.netlify.app/">
-              View Site
-            </a>
-            <a target="_blank" href="https://github.com/Emanuel0001/sistema-de-usuario">
-              <div class="proj2"><img src="./imagem-projetos/link-github.png"></div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="container-main" data-anime="left">
-      <div class="number-project">4</div>
-      <div class="container-card">
-        <div class="container-description">
-          <h1>PizzApp.com</h1>
-          <div class="resumo-container">
-            <p>PizzApp é um sistema de pedidos delivery, esté sistema está em fase de desenvolvimento mas o objetivo é uma plataforma de pedidos online que conta com menu de facil usabilidade. as tecnologias usadas até o momento é: react, react-router, react-icons,html, css, javascript..</p>
-          </div>
-          <div class="link-acess">
-            <a target="_blank" class="button-link" href="https://sistema-pizzaria-food.netlify.app/">
-              View Site
-            </a>
-            <a target="_blank" href="https://github.com/Emanuel0001/sistema-pizzaria">
-              <div class="proj2"><img src="./imagem-projetos/link-github.png"></div>
-            </a>
-          </div>
-        </div>
-        <div class="container-image">
-          <img src="./imagem-projetos/pizzaria/pizzaria-pc.png" class="imagem-pc">
-          <img src="./imagem-projetos/pizzaria/pizzaria-cell.png" class="imagem-cell">
-        </div>
-      </div>
-    </section>
-    <section class="container-main" data-anime="left">
-      <div class="number-project">5</div>
-      <div class="container-card">
-        <div class="container-image">
-          <img src="./imagem-projetos/precato/pc.png" class="imagem-pc">
-          <img src="./imagem-projetos/precato/mobile.png" class="imagem-cell">
-        </div>
-        <div class="container-description">
-          <h1>Precato.com</h1>
-          <div class="resumo-container">
-            <p>Pagina criada tendo como base o figma, esté projeto é um desafio front-end que tem como objetivo demonstrar minhas habilidades com html e css..</p>
-          </div>
-          <div class="link-acess">
-            <a target="_blank" class="button-link" href="https://desafio-frontend-21.netlify.app/">
-              View Site
-            </a>
-            <a target="_blank" href="https://github.com/Emanuel0001/desafio-frontend">
-              <div class="proj2"><img src="./imagem-projetos/link-github.png"></div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="container-main" >
-      <div class="number-project">6</div>
-      <div class="container-card">
-        <div class="container-image">
-          <img src="./imagem-projetos/Beatsapp/mobile (7).png" class="imagem-pc">
-          <img src="./imagem-projetos/Beatsapp/mobile (6).png" class="imagem-cell">
-        </div>
-        <div class="container-description">
-          <h1>BeatsApp.com</h1>
-          <div class="resumo-container">
-            <p>Plataforma de venda de beats, este projeto esta em fase de desenvolvimento conta com uma pagina dashboard, pagina de controle do administrador onde é possivel apagar e cadastrar novos beats no sistema.
-            </p>
-          </div>
-          <div class="link-acess">
-            <a target="_blank" class="button-link" href="https://teal-halva-dec162.netlify.app/">
-              View Site
-            </a>
-            <a target="_blank" href="https://github.com/Emanuel0001/preoject-beatsApp">
-              <div class="proj2"><img src="./imagem-projetos/link-github.png"></div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
+    <h5 id='tituloProjetos'> Projetos selecionados</h5>   
   </div>
-  <div class="container-skills" data-anime="left">
-    <div class="container-left">
-      <div class="circulos espaco" id="circulos">
-        <div class="circulo verde" id="verde-piscar"></div>
-        <div class="circulo amarelo" id="amarelo-piscar"></div>
-        <div class="circulo vermelho" id="vermelho-piscar"></div>
+  <div class="container-projetos">
+    <div class="card pj1">
+      <div class="card-img">
+        <div class="sub-title">
+          <div class="card-item fnt-color">
+            <h1 id="h1-card-year">2023</h1>
+          </div>
+          <div class="card-item fnt-color" >
+            <h1 class="new">New</h1></div>
+        </div>
+        <div class="title-card">
+          <h1 class="fnt-color">GeraisNet - Site de Marketing Digital </h1>
+        </div>
+        <div class="resume-card">
+          <p class="fnt-color">
+            GeraisNet é um projeto freelancer, O projeto feito para um 
+            provedor de internet, conta com um layout moderno e com menu simples. 
+            tendo central do assinante, uma seção de ofertas de planos de internet e um 
+            formulario de contato.</p>
+        </div>
+        <div class="links-cards">
+          <a class="fnt-color" id="link-after">View Site</a>
+          <a class="fnt-color" id="link-after">Open Code </a>
+        </div>
+    </div>
+    </div>
+
+
+    <div class="card pj2">
+      <div class="sub-title">
+        <div class="card-item fnt-color">
+          <h1 id="h1-card-year">2023</h1>
+        </div>
+        <div class="card-item fnt-color" >
+          <h1 class="new">New</h1></div>
       </div>
-      <div class="ifem"></div>
+      <div class="title-card">
+        <h1 class="fnt-color">PizzaApp - Site de Cardápio Digital </h1>
+      </div>
+      <div class="resume-card">
+        <p class="fnt-color">
+            Projeto freelancer que foi vendido, o objetivo
+           desse projeto é que o cliente leia o QrCode e acesse um cardapio 
+           online com menu simples sem precissar de cardapio convencional.
+           As tecnologias: react, react-router, 
+           react-icons,html, css, javascript.</p>
+      </div>
+      <div class="links-cards">
+        <a class="fnt-color" id="link-after" href="https://sistema-pizzaria-food.netlify.app/">View Site</a>
+        <a class="fnt-color" id="link-after">Open Code </a>
+      </div>
+    </div>
+
+    <div class="card pj3" id="pj3">
+      <div class="sub-title">
+        <div class="card-item fnt-color">
+          <h1 id="h1-card-year">2023</h1>
+        </div>
+        <div class="card-item fnt-color" >
+          <h1 class="new">New</h1></div>
+      </div>
+      <div class="title-card">
+        <h1 class="fnt-color">Finance.com - Site Próprio </h1>
+      </div>
+      <div class="resume-card">
+        <p class="fnt-color">
+          finance Control ou controle financeiro, é um sistema criado
+           utilizando como tecnologia principal o React.js, projeto com
+            uma interface simples de usar. nele foi utilizado outras tecnologias 
+          como postgreSQL, Api fetch, express entre outras.
+        </p>
+      </div>
+      <div class="links-cards">
+        <a class="fnt-color" id="link-after" href="https://sistema-pizzaria-food.netlify.app/">View Site</a>
+        <a class="fnt-color" id="link-after">Open Code </a>
+      </div>
+    </div>
+    
+
+    <div class="card pj4">
+      <div class="sub-title">
+        <div class="card-item fnt-color">
+          <h1 id="h1-card-year">2023</h1>
+        </div>
+        <div class="card-item fnt-color" >
+          <h1 class="new">New</h1></div>
+      </div>
+      <div class="title-card">
+        <h1 class="fnt-color">Sistema de Usuários - Site Próprio </h1>
+      </div>
+      <div class="resume-card">
+        <p class="fnt-color">
+          Sistema de usuario conta com cadastro de usuários e com 
+          uma tela dashboard onde é possível ver uma lista com todos 
+          usuários do sistema. Nele também é possivel adcionar uma foto 
+          de perfil.
+        </p>
+      </div>
+      <div class="links-cards">
+        <a class="fnt-color" id="link-after" href="https://sistema-pizzaria-food.netlify.app/">View Site</a>
+        <a class="fnt-color" id="link-after">Open Code </a>
+      </div>
+    </div>
+
+</div>
+<div class="bloco2" id="bloco2">
+  <h5 id='tituloProjetos'> Minhas Habilidades</h5>   
+</div>
+  <div class="container-skills" >
+    <div class="section-skill">
       <section>
         <table>
           <tr>
-            <td><img src="./imagem-projetos/skills/html.png"></td>
+            <td>
+              <img src="./imagem-projetos/skills/html.png">
+            </td>
             <td><img src="./imagem-projetos/skills/css.png"></td>
             <td><img src="./imagem-projetos/skills/js.png"></td>
           </tr>
@@ -273,57 +232,48 @@
         </table>
       </section>
     </div>
-    <div class="container-right-title">
-      <h1>Aqui estão minhas <span style="color: yellow">{Skills}</span></h1>
-    </div>
   </div>
-
-  <div class="container-skills" data-anime="left">
-    <div class="container-right-title">
-      <h1>Um pouco sobre <span style="color: yellow">{Mim}</span></h1>
-    </div>
-    <div class="container-left box-shadow">
-      <div class="circulos espaco" id="circulos">
-        <div class="circulo verde" id="verde-piscar"></div>
-        <div class="circulo amarelo" id="amarelo-piscar"></div>
-        <div class="circulo vermelho" id="vermelho-piscar"></div>
-      </div>
-      <div class="ifem"></div>
+  <div class="bloco2" id="bloco2">
+    <h5 id='tituloProjetos'> Sobre Mim</h5>   
+  </div>
+  <div class="container-sobre-mim" >
+    <div class="section-principal-sobre-mim">
       <section>
-        <h1 class="sobre-mim-h1">Sobre Mim!</h1>
-        <p class="texto">
-          Formado em Sistemas de Informação com apenas 22 anos, sigo minha tragetória
+        <div class="container-img-sobre-mim">
+          <img src="./images/avatar3.png">
+        </div>
+        <div class="container-texto-sobre-mim">
+          <p>
+         " Formado em Sistemas de Informação com apenas 22 anos, sigo minha tragetória
           buscando aprimorar meus conhecimentos na area que mais amo que é desenvolvimento
           de software. Além de ser desenvolvedor eu amo jogar bola, treinar entre outras
-          atividades fisicas que eu tenho prazer em praticar.
-
-        <div class="texto-formacao">
-          <ol>
-            <h1>Formação.</h1>
-            <p style="font-weight: 700; font-size: 15px;">Curso superior - Concluído</p>
-            <p style="font-size: 15px;">Graduação em Sistemas de Informação</p>
-            <p style="font-size: 15px;">FAVENORTE - Instituto Superior de Educação Verde</p>
-          </ol>
+          atividades fisicas que eu tenho prazer em praticar. "</p>
         </div>
-        </p>
       </section>
     </div>
   </div>
-  <div class="contate-me">
-    <div class="contate-title">
-      <h6>Contato!</h6>
-      <h1>Vamos lá?!</h1>
-    </div>
-    <form  action="https://formsubmit.co/hitallosoares1@gmail.com" method="post" onsubmit="submitForm()">
-      <input class="input" name="name" placeholder="Digite seu nome" autocomplete="off" required>
-      <input class="input" name="email" placeholder="Digite seu email" autocomplete="off" required>
-      <input class="input" type="text" placeholder="Assunto">
-      <textarea id="subject" id="mensagem"  name="message" cols="30" rows="10" placeholder="Digite sua mensagem" required ></textarea>
-      <button type="submit" id="button-enviar">Enviar</button>
-      <input type="hidden" name="_captcha" value="false">
-    </form>
+  <div class="container-rows">
+      <div class="row">
+        <img src="./images/localizacao.png">
+        <h1>LOCALIZAÇÃO</h1>
+        <h3>Montes Claros, Minas Gerais</h3>
+      </div>
+      <div class="row">
+        <img src="./images/iphone.png">
+        <h1>TEL E WHATSAPP</h1>
+        <h3>38 99735 2319</h3>
+      </div>
+      <div class="row">
+        <img src="./images/www.png">
+        <h1>WEBSITE</h1>
+        <h3>www.emanueldeveloper.com</h3>
+      </div>
+      <div class="row">
+        <img src="./images/e-mail.png">
+        <h1>EMAIL</h1>
+        <h3>hitallosoares59@gmail.com</h3>
+      </div>
   </div>
-
   <div class="bloco-footer" id='bloco-footer'>
     <footer>
       <div id='footer-item'>
@@ -344,6 +294,7 @@
   </div>
   <script>
 
+    document.getElementById("radio"+count).checked = true;
     function downloadResume() {
       let b = document.createElement("iframe");
       b.setAttribute("src", "http://localhost:3000/download");
@@ -379,10 +330,7 @@
     }
 
     ScrollReveal({ reset: true });
-    ScrollReveal().reveal('.bloco', { delay: 400 });
-    ScrollReveal().reveal('.bloco2', { delay: 100 });
-    ScrollReveal().reveal('.bloco3', { delay: 400 });
-    ScrollReveal().reveal('.container', { delay: 600 });
+  
 
 
     const target = document.querySelectorAll('[data-anime]');
@@ -408,6 +356,7 @@
       animeScroll();
     })
   </script>
+  </div>
 </body>
 
 </html>
