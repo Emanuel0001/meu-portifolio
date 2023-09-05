@@ -2002,10 +2002,11 @@ td img:hover {
   }
 
   .card {
-    width: 90%;
+    width: 98%;
     height: 650px;
-    margin: 20px;
-  }
+    margin: 14px;
+    margin-left: 3px;
+}
   .container-imagem {
     height: 70%;
     width: 99%;
