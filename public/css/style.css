@@ -1998,6 +1998,7 @@ td img:hover {
   .container-projetos {
     display: grid;
     grid-template-columns: repeat(1, 2fr);
+    padding: 0 0.5rem;
   }
 
   .card {
@@ -2103,7 +2104,6 @@ td img:hover {
   font-size: 17px;
   font-weight: 100;
   display: inline-block;
-  width: 70px;
   text-align: center;
 }
 }
