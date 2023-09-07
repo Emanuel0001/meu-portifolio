@@ -1701,8 +1701,6 @@ span {
 .container-projetos {
   display: grid;
   grid-template-columns: repeat(2, 3fr);
-  padding: 0 2.5rem;
-
   height: 100%;
 }
 
@@ -1991,20 +1989,36 @@ td img:hover {
   }
 }
 
+@media only screen and (max-width: 1200px){
+  #blocoDeTexto {
+    display: inline-block;
+    align-items: center;
+    align-content: center;
+    padding: 0px 30px;
+    color: white;
+    margin-bottom: 4px;
+    margin-top: 170px;
+    width: 90%;
+  }
+}
+
 @media only screen and (max-width: 500px) {
   #blocoDeTexto {
     width: 100%;
 }
   .container-projetos {
     display: grid;
-    grid-template-columns: repeat(1, 2fr);
-    padding: 0 0.5rem;
+    grid-template-columns: repeat(1, 0fr);
   }
 
   .card {
-    height: 650px;
-    margin: 2px;
-    margin-left: 0px;
+    background: #0f141e;
+    display: list-item;
+    padding: 17px;
+    width: 94%;
+}
+.testcard {
+  width: 100%;
 }
   .container-imagem {
     height: 70%;
@@ -2012,41 +2026,49 @@ td img:hover {
   }
   #blocoDeTexto {
     padding: 0px 0px;
-  }
+}
   #bloco {
     display: grid;
     grid-template-columns: repeat(1, 2fr);
     padding: 0px 0.5rem;
 }
 
-  .line {
-    font-family: "Helvetica Now Display DW", sans-serif;
-    letter-spacing: -0.01em;
-    color: #0f141e;
-    font-size: 3.6em;
-    width: 100%;
-  }
-  
-  .bloco-links {
-    display: grid;
-    grid-template-columns: repeat(3, 2fr);
-    padding: 0;
+.line {
+  font-family: "Helvetica Now Display DW", sans-serif;
+  letter-spacing: -0.01em;
+  color: #0f141e;
+  font-size: 2.6em;
+  width: 100%;
+  text-align: center;
 }
-  .social-midia {
-    display: inline-block;
-    width: 100px;
-    background: #0f141e;
-    font-size: 16px;
-    border-radius: 2px;
-    font-weight: 100;
-    color: white;
 
-  }
-  .meuResumo {
-    padding-top: 10px;
-    padding-bottom: 60px;
-    width: 100%;
-  }
+.titulo-nome-bloco1 {
+  width: 100%;
+  text-align: center;
+}
+  
+.bloco-links {
+  display: grid;
+  grid-template-columns: repeat(3, 3fr);
+  justify-content: center;
+  padding: 0.5rem 0.5rem;
+}
+
+.social-midia {
+  font-size: 15px;
+  display: inline-block;
+  background: #0f141e;
+  border-radius: 2px;
+  font-weight: 100;
+  color: white;
+  width: 92px;
+}
+.meuResumo {
+  width: 100%;
+  text-align: center;
+  height: 200px;
+  margin-top: 30px;
+}
   .bloco {
     height: 100%;
   }
@@ -2105,5 +2127,13 @@ td img:hover {
   font-weight: 100;
   display: inline-block;
   text-align: center;
+}
+  #tituloProjetos {
+    display: none;
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    font-size: 20px;
 }
 }
