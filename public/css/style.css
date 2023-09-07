@@ -1701,6 +1701,7 @@ span {
 .container-projetos {
   display: grid;
   grid-template-columns: repeat(2, 3fr);
+  padding: 0px 3.5rem;
   height: 100%;
 }
 
@@ -2009,6 +2010,7 @@ td img:hover {
   .container-projetos {
     display: grid;
     grid-template-columns: repeat(1, 0fr);
+    padding: 0;
   }
 
   .card {
