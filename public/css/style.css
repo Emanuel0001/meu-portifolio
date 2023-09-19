@@ -1708,6 +1708,7 @@ span {
 .card {
   width: 90%;
   height: 650px;
+  margin: 10px;
 }
 .pj1 {
   background-color: #0f141e;
