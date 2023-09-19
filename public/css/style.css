@@ -1711,7 +1711,6 @@ span {
 }
 .pj1 {
   background-color: #0f141e;
-  margin: 30px;
   background-image: url(../imagem-projetos/portifolio/geraisnetMobile.png);
   background-size: 50%;
   background-repeat: no-repeat;
@@ -1734,7 +1733,6 @@ span {
 
 .pj2 {
   background-color: #0f141e;
-  margin: 30px;
   background-image: url(../imagem-projetos/pizzaria/pizzaria-pc.png);
   background-size: 200%;
   background-repeat: no-repeat;
@@ -1756,7 +1754,6 @@ span {
 }
 .pj3 {
   background-color: #0f141e;
-  margin: 30px;
   background-image: url(../imagem-projetos/projetoFinance/finance-pc.png);
   background-size: 200%;
   background-repeat: no-repeat;
@@ -1778,7 +1775,6 @@ span {
 }
 .pj4 {
   background-color: #0f141e;
-  margin: 30px;
   background-image: url(../imagem-projetos/sistemaUsuario/sistemaUsuario-cell.png);
   background-size: 50%;
   background-repeat: no-repeat;
@@ -1851,7 +1847,6 @@ td img:hover {
 
 .links-cards {
   padding: 10px 30px;
-  width: 100%;
 }
 
 .links-cards a {
@@ -2015,9 +2010,9 @@ td img:hover {
 
   .card {
     background: #0f141e;
-    display: list-item;
-    padding: 17px;
-    width: 94%;
+    padding: 0px;
+    width: 114%;
+    margin: 5px;
 }
 .testcard {
   width: 100%;
