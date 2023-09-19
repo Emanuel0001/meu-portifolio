@@ -2011,8 +2011,8 @@ td img:hover {
   .card {
     background: #0f141e;
     padding: 0px;
-    width: 114%;
-    margin: 5px;
+    width: 100%;
+    margin: 25px;
 }
 .testcard {
   width: 100%;
