@@ -14,6 +14,82 @@
   max-width: 1500px;
 }
 
+.logo {
+  width: 200px;
+  margin-top: -55px;
+  margin-left: 30px;
+}
+
+.logo-contacts {
+  width: 100px;
+}
+.logo-rodape {
+  width: 200px;
+  height: 200px;
+}
+
+.icon-list {
+  display: inline-block;
+  width: 40px;
+  padding: 60px 15px 22px;
+}
+.icon-list:hover {
+  -moz-transform: scale(1);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+.copy-list {
+  padding: 30px 0px;
+}
+
+.rodape {
+  width: 100%;
+  height: 150px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 3rem 0rem;
+}
+.footer-contacts {
+  display: flex;
+}
+.footer-contacts h1,
+h2,
+h3 {
+  display: inline-block;
+  font-size: 25px;
+  color: #0f141e;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px 30px;
+}
+.logo-contacts {
+  margin: 30px;
+  color: #0f141e;
+  font-weight: 800;
+  font-size: 35px;
+  width: 100%;
+}
+.footer-list h1 {
+  color: #0f141e;
+  font-weight: 800;
+  font-size: 25px;
+  width: 100%;
+  padding: 30px 0px;
+}
+ul li {
+  color: #0f141e;
+  font-size: 0.975rem;
+  font-weight: 100;
+  letter-spacing: 0.1rem;
+  line-height: 1.25rem;
+  padding-top: 5px;
+  padding-bottom: 15px;
+}
+ul li:Hover{
+  font-weight: 800;
+  cursor: pointer;
+}
+
 .espaco {
   width: 110px;
   margin-left: 30px;
@@ -711,22 +787,6 @@ h5 {
 
 /* rodapé */
 
-#bloco-footer {
-  display: block;
-  background: #0f141e;
-}
-
-footer {
-  border-top: solid 1px #0f141e;
-}
-
-#footer-item {
-  display: none;
-  margin-top: 30px;
-  width: 100%;
-  text-align: center;
-  color: #252525;
-}
 .sectionPlus {
   width: 100%;
   display: none;
@@ -755,38 +815,6 @@ footer {
   100% {
     color: purple;
   }
-}
-
-h3 {
-  font-size: 25px;
-  color: #2b2b2b;
-  margin-bottom: 10px;
-}
-
-#footer-texto {
-  font-size: 1rem;
-  line-height: 1.875rem;
-  font-weight: 500;
-  padding-top: 2px;
-  padding-bottom: 3px;
-}
-
-#footerCopyRight p {
-  text-align: center;
-  margin-top: 20px;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 15px;
-  font-weight: 100;
-}
-
-#footerCopyRight {
-  width: 100%;
-  height: 30px;
-  font-size: 25px;
-  margin-bottom: 0px;
-  text-align: center;
-  color: white;
-  background-color: #0f141e;
 }
 
 #blocoSkils h1 {
@@ -1632,7 +1660,6 @@ button img {
 }
 
 .section-skill {
-  width: 100%;
   background: #0f141e;
   height: 90%;
   display: inline-block;
@@ -1701,7 +1728,7 @@ span {
 .container-projetos {
   display: grid;
   grid-template-columns: repeat(2, 3fr);
-  padding: 0px 5.0rem;
+  padding: 0px 5rem;
   height: 100%;
 }
 
@@ -1894,10 +1921,11 @@ td img:hover {
 }
 
 .container-sobre-mim {
-  display: grid;
-  grid-template-columns: repeat(1, 3fr);
-  padding: 30px 4.1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 .section-principal-sobre-mim {
   height: 500px;
 }
@@ -1967,6 +1995,7 @@ td img:hover {
   padding-top: 5px;
   padding-bottom: 15px;
 }
+
 @media only screen and (max-width: 1300px) {
   #bloco {
     display: grid;
@@ -1986,7 +2015,7 @@ td img:hover {
   }
 }
 
-@media only screen and (max-width: 1200px){
+@media only screen and (max-width: 1200px) {
   #blocoDeTexto {
     display: inline-block;
     align-items: center;
@@ -1995,14 +2024,68 @@ td img:hover {
     color: white;
     margin-bottom: 4px;
     margin-top: 170px;
-    width: 90%;
+  }
+}
+@media only screen and (max-width: 1050px) {
+  .container-projetos {
+    display: grid;
+    grid-template-columns: repeat(2, 0fr);
+    padding: 0 5rem;
+  }
+  .card {
+    width: 400px;
+    height: 650px;
+    margin-left: 10%;
+    margin-right: 40px;
+    margin-bottom: 30px;
+  }
+
+  table tr td img {
+    width: 100px;
+  }
+  table tr td {
+    padding: 54px 120px;
+  }
+
+  .container-texto-sobre-mim p {
+    text-align: center;
+    padding: 25px 90px;
+    font-size: 25px;
+    color: #0f141e;
+    font-weight: 100;
+    line-height: 2.5rem;
+  }
+
+  .container-rows {
+    display: grid;
+    grid-template-columns: repeat(2, 4fr);
+    padding: 0px 3.6rem;
+    text-align: center;
+  }
+
+  .row {
+    width: 500px;
+    height: 300px;
+    margin: 10px;
+    border: solid 4px white;
+    box-shadow: 0 0.125rem 0.35rem #0f141e2e !important;
+  }
+
+  .container-texto-sobre-mim p {
+    text-align: center;
+    max-width: 800px;
+    padding: 26px 20px;
+    font-size: 23px;
+    color: #0f141e;
+    font-weight: 100;
+    line-height: 2.5rem;
   }
 }
 
 @media only screen and (max-width: 500px) {
   #blocoDeTexto {
     width: 100%;
-}
+  }
   .container-projetos {
     display: grid;
     grid-template-columns: repeat(1, 0fr);
@@ -2014,59 +2097,59 @@ td img:hover {
     padding: 0px;
     width: 100%;
     margin: 25px;
-}
-.testcard {
-  width: 100%;
-}
+  }
+  .testcard {
+    width: 100%;
+  }
   .container-imagem {
     height: 70%;
     width: 99%;
   }
   #blocoDeTexto {
     padding: 0px 0px;
-}
+  }
   #bloco {
     display: grid;
     grid-template-columns: repeat(1, 2fr);
     padding: 0px 0.5rem;
-}
+  }
 
-.line {
-  font-family: "Helvetica Now Display DW", sans-serif;
-  letter-spacing: -0.01em;
-  color: #0f141e;
-  font-size: 2.6em;
-  width: 100%;
-  text-align: center;
-}
+  .line {
+    font-family: "Helvetica Now Display DW", sans-serif;
+    letter-spacing: -0.01em;
+    color: #0f141e;
+    font-size: 2.6em;
+    width: 100%;
+    text-align: center;
+  }
 
-.titulo-nome-bloco1 {
-  width: 100%;
-  text-align: center;
-}
-  
-.bloco-links {
-  display: grid;
-  grid-template-columns: repeat(3, 3fr);
-  justify-content: center;
-  padding: 0.5rem 0.5rem;
-}
+  .titulo-nome-bloco1 {
+    width: 100%;
+    text-align: center;
+  }
 
-.social-midia {
-  font-size: 15px;
-  display: inline-block;
-  background: #0f141e;
-  border-radius: 2px;
-  font-weight: 100;
-  color: white;
-  width: 92px;
-}
-.meuResumo {
-  width: 100%;
-  text-align: center;
-  height: 200px;
-  margin-top: 30px;
-}
+  .bloco-links {
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    justify-content: center;
+    padding: 0.5rem 0.5rem;
+  }
+
+  .social-midia {
+    font-size: 15px;
+    display: inline-block;
+    background: #0f141e;
+    border-radius: 2px;
+    font-weight: 100;
+    color: white;
+    width: 92px;
+  }
+  .meuResumo {
+    width: 100%;
+    text-align: center;
+    height: 200px;
+    margin-top: 30px;
+  }
   .bloco {
     height: 100%;
   }
@@ -2092,40 +2175,34 @@ td img:hover {
     padding: 29px 28px;
   }
 
-  .container-sobre-mim {
+  .container-texto-sobre-mim p {
+    text-align: center;
+    max-width: 800px;
+    padding: 26px 20px;
+    font-size: 23px;
+    color: #0f141e;
+    font-weight: 100;
+    line-height: 1.5rem;
+  }
+
+  .container-rows {
     display: grid;
-    grid-template-columns: repeat(1, 3fr);
-    padding: 14px 0.1rem;
-}
-
-.container-texto-sobre-mim p {
-  text-align: center;
-  max-width: 800px;
-  padding: 26px 20px;
-  font-size: 23px;
-  color: #0f141e;
-  font-weight: 100;
-  line-height: 1.5rem;
-}
-
-.container-rows {
-  display: grid;
-  grid-template-columns: repeat(1, 4fr);
-  padding: 0px 3.6rem;
-  text-align: center;
-}
-#minhaImagem {
-  margin-top: 0px;
-  width: 100%;
-}
-.links-cards a {
-  padding: 25px;
-  background-color: #ffffff14;
-  font-size: 17px;
-  font-weight: 100;
-  display: inline-block;
-  text-align: center;
-}
+    grid-template-columns: repeat(1, 4fr);
+    padding: 0px 3.6rem;
+    text-align: center;
+  }
+  #minhaImagem {
+    margin-top: 0px;
+    width: 100%;
+  }
+  .links-cards a {
+    padding: 25px;
+    background-color: #ffffff14;
+    font-size: 17px;
+    font-weight: 100;
+    display: inline-block;
+    text-align: center;
+  }
   #tituloProjetos {
     display: none;
     text-align: center;
@@ -2133,5 +2210,12 @@ td img:hover {
     margin-bottom: 20px;
     margin-left: 30px;
     font-size: 20px;
-}
+  }
+  .row {
+    width: 260px;
+    height: 200px;
+    margin: 10px;
+    border: solid 4px white;
+    box-shadow: 0 0.125rem 0.35rem #0f141e2e !important;
+  }
 }
