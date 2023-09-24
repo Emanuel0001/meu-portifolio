@@ -41,6 +41,9 @@
 .copy-list {
   padding: 30px 0px;
 }
+ .copy-list:hover {
+  font-weight: 100;
+ }
 
 .rodape {
   width: 100%;
@@ -52,6 +55,7 @@
 .footer-contacts {
   display: flex;
 }
+
 .footer-contacts h1,
 h2,
 h3 {
@@ -1656,15 +1660,17 @@ button img {
 .container-skills {
   height: 700px;
   display: flex;
+  justify-content: center;
   margin-bottom: 30px;
 }
 
 .section-skill {
   background: #0f141e;
-  height: 90%;
+  height: 79%;
   display: inline-block;
   border: solid 1px silver;
-  margin: 66px;
+  margin: 77px;
+  width: 60%;
 }
 
 .box-shadow {
@@ -1694,11 +1700,11 @@ button img {
 }
 
 table {
-  width: 100%;
+  width: 77%;
 }
 
 table tr td {
-  padding: 54px 134px;
+  padding: 34px 82px;
 }
 
 table tr td img {
@@ -2080,9 +2086,21 @@ td img:hover {
     font-weight: 100;
     line-height: 2.5rem;
   }
+  .rodape {
+    width: 100%;
+    height: 150px;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    padding: 3rem 2rem;
+  }
 }
 
 @media only screen and (max-width: 500px) {
+  .logo {
+    width: 200px;
+    margin-top: -55px;
+    margin-left: -10px;
+}
   #blocoDeTexto {
     width: 100%;
   }
@@ -2096,7 +2114,7 @@ td img:hover {
     background: #0f141e;
     padding: 0px;
     width: 100%;
-    margin: 25px;
+    margin: 16px;
   }
   .testcard {
     width: 100%;
@@ -2217,5 +2235,12 @@ td img:hover {
     margin: 10px;
     border: solid 4px white;
     box-shadow: 0 0.125rem 0.35rem #0f141e2e !important;
+  }
+  .rodape {
+    width: 100%;
+    height: 150px;
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+    padding: 3rem 2rem;
   }
 }
