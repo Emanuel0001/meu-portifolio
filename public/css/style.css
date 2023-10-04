@@ -17,6 +17,40 @@
 .tag-a-color {
   color: white;
 }
+
+p {
+  margin: 10px;
+}
+#mais {
+ display: none;
+}
+#mais2 {
+  display: none;
+ }
+#pontos { display: inline;}
+
+#bnt-leia-mais {
+  background-color: white;
+  color: #0c0c0c;
+  margin: 10px 35px;
+  width: 100px;
+  height: 40px;
+
+}
+#bnt-leia-mais2 {
+  background-color: white;
+  color: #0c0c0c;
+  margin: 10px 35px;
+  width: 100px;
+  height: 40px;
+
+}
+#bnt-leia-mais:hover {
+  font-weight: 900;
+}
+#bnt-leia-mais2:hover {
+  font-weight: 900;
+}
 .logo {
   width: 200px;
   margin-top: -55px;
@@ -503,24 +537,7 @@ ul {
   width: 49px;
 }
 
-button {
-  float: inline-end;
-  margin-right: 80px;
-  margin-top: -50px;
-  width: 60px;
-  border: none;
-  border-bottom-color: currentcolor;
-  border-bottom-style: none;
-  border-bottom-width: medium;
-  border-bottom: solid 1px rgb(255, 255, 255);
-  text-align: center;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  font-weight: 600;
-  color: rgb(255, 254, 254);
-  margin-left: 20px;
-}
+
 
 .img-card-button {
   height: 100%;
@@ -2005,6 +2022,94 @@ td img:hover {
   padding-bottom: 15px;
 }
 
+.chatboot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px;
+}
+.container-chatboot {
+  height: 88%;
+}
+.chat {
+  width: 550px;
+  height: 550px;
+  background-color: #0f141e;
+  border-radius: 25px;
+}
+.chat-line {
+  padding: 10px;
+  margin: 10px;
+}
+.chat-line p{
+  height: 20px;
+  background-color: white;
+  color: #0f141e;
+  font-size: 17px;
+  display: inline;
+  margin: 1px;
+  border-radius: 20px;
+  padding: 10px 10px;
+}
+#chat-right {
+  display: flex;
+  justify-content: end;
+  height: 50px;
+  font-size: 17px;
+}
+#chat-right p{ background-color: blue; color: white; }
+
+.text-chat {
+  display: block;
+  height: 100px;
+  background-color: white;
+  color: #0f141e;
+  font-size: 17px;
+  margin: 1px;
+  border-radius: 20px;
+  padding: 10px 10px;
+}
+#nome-d {
+  color: #0f141e;
+
+}
+.form-chatboot {
+  background-color: white;
+  border-radius: 15px;
+  width: 90%;
+  margin-left: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-chat {
+  width: 80%;
+  height: 20px;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.button-send {
+  width: 60px;
+  height: 30px;
+  font-size: 15px;
+  border-radius: 15px;
+  color: white;
+  background-color: blue;
+}
+
+.init-hidden {
+  opacity: 0;
+  transition: opacity 500ms linear ;
+}
+.hidden-before {
+  opacity: 0;
+}
+
+.init-hidden-off {
+ 
+}
 @media only screen and (max-width: 1300px) {
   #bloco {
     display: grid;

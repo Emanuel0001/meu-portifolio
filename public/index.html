@@ -115,8 +115,16 @@
             GeraisNet é um projeto freelancer, O projeto feito para um 
             provedor de internet, conta com um layout moderno e com menu simples. 
             tendo central do assinante, uma seção de ofertas de planos de internet e um 
-            formulario de contato.</p>
+            formulario de contato<span id="pontos">...</span>
+          </p>
+          <p class="fnt-color" id="mais">
+           Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+           Ducimus maxime natus, quibusdam minima illum dolorem ratione 
+           sit sequi earum nisi, eum repellendus distinctio 
+           commodi iusto voluptatibus eaque. Minus, laudantium earum.
+          </p>
         </div>
+        <button onclick="leiaMais()" id="bnt-leia-mais">Leia mais</button>
         <div class="links-cards">
           <a 
           class="fnt-color" 
@@ -150,8 +158,16 @@
            desse projeto é que o cliente leia o QrCode e acesse um cardapio 
            online com menu simples sem precissar de cardapio convencional.
            As tecnologias: react, react-router, 
-           react-icons,html, css, javascript.</p>
+           react-icons,html, css, javascript. <span id="pontos2">...</span>
+        </p>
+        <p class="fnt-color" id="mais2">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+          Ducimus maxime natus, quibusdam minima illum dolorem ratione 
+          sit sequi earum nisi, eum repellendus distinctio 
+          commodi iusto voluptatibus eaque. Minus, laudantium earum.
+         </p>
       </div>
+      <button onclick="leiaMais2()" id="bnt-leia-mais2">Leia mais</button>
       <div class="links-cards">
         <a 
         class="fnt-color" 
@@ -265,22 +281,39 @@
     </div>
   </div>
   <div class="bloco2" id="bloco2">
-    <h5 id='tituloProjetos'> Sobre Mim</h5>   
+    <h5 id='tituloProjetos'>Mini chatboot</h5>   
   </div>
-  <div class="container-sobre-mim" >
-    <div class="section-principal-sobre-mim">
-      <section>
-        <div class="container-img-sobre-mim">
-          <img src="./images/avatar3.png">
-        </div>
-        <div class="container-texto-sobre-mim">
-          <p>
-         " Formado em Sistemas de Informação com apenas 22 anos, sigo minha tragetória
-          buscando aprimorar meus conhecimentos na area que mais amo que é desenvolvimento
-          de software. Além de ser desenvolvedor eu amo jogar bola, treinar entre outras
-          atividades fisicas que eu tenho prazer em praticar. "</p>
-        </div>
-      </section>
+  <div class="chatboot">
+    <div class="chat">
+      <div class="container-chatboot">
+      <div class="chat-line init-hidden" id="ln1">
+        <p>Olá !!!</p>
+      </div>
+      <div class="chat-line init-hidden" id="ln2">
+        <p>Como você se chama?</p>
+      </div>
+      <div class="chat-line hidden-before"  id="chat-right">
+        <p id="ln6">{nome}</p>
+      </div>
+      <div class="chat-line hidden-before" id="ln3">
+        <p>Oi <span id="nome-d"></span>, seja bem vindo(a) ao meu portifólio.</p>
+      </div>
+      <div class="chat-line hidden-before" id="ln4">
+        <span class="text-chat ">
+        Sou formado em Sistemas de Informação, Minha maior 
+        Habilidade é ser criativo. Geralmente desenho as coisas
+        que vou desenvolver. Pois amo ver na prática oque imaginei, 
+        bem como diz Pablo Picasso "Tudo o que você pode imaginar é real".
+       </span>
+      </div>
+      <div class="chat-line hidden-before" id="ln5">
+        <p>Estou feliz por sua visita, Volte Sempre! :) </p>
+      </div>
+    </div>
+      <div class="form-chatboot">
+        <input class="input-chat" type="text" name="name" id="name" placeholder="digite seu Nome...">
+        <input class="button-send" type="button" value="Enviar" onclick="salvaNome()">
+      </div>
     </div>
   </div>
   <div class="container-rows">
@@ -356,6 +389,100 @@
   </div>
   </div>
   <script>
+    var ln1 = document.getElementById('ln1');
+    var ln2 = document.getElementById('ln2');
+    var ln3 = document.getElementById('ln3');
+    var ln4 = document.getElementById('ln4');
+    var ln5 = document.getElementById('ln5');
+    var ln6 = document.getElementById('ln6');
+    
+    const observer = new IntersectionObserver( entries => {
+      console.log(entries)
+      entries[0].target.classList.add('init-hidden-off')
+     
+      setTimeout(() => { 
+      ln1.style.display="block";
+      ln1.style.opacity="1";
+      }, 1500);
+      
+      setTimeout(() => { 
+      ln2.style.display="block";
+      ln2.style.opacity="1";
+      }, 2500);
+    },{
+      
+    }) 
+    Array.from(document.querySelectorAll('.init-hidden')).forEach( element => {
+      observer.observe(element)
+    })
+    
+    function salvaNome() {
+      var input = document.querySelector("#name");
+      var chatright = document.getElementById('chat-right');
+    var ln6 = document.getElementById('ln6');
+
+      var texto = input.value;
+      let key = texto;
+      localStorage.setItem(key, texto);
+      console.log(key);
+      ln6.innerHTML = key
+      
+      chatright.style.opacity="1";
+      if(key.length>0){
+        setTimeout(() => { 
+         var nome2 = document.getElementById('nome-d')
+         nome2.innerHTML = key
+      ln3.style.display="block";
+      ln3.style.opacity="1";
+      }, 500);
+
+      setTimeout(() => { 
+      ln4.style.display="block";
+      ln4.style.opacity="1";
+      }, 1500);
+
+      setTimeout(() => { 
+      ln5.style.display="block";
+      ln5.style.opacity="1";
+      }, 2500);
+      }
+    }
+     
+
+    function leiaMais() {
+      var pontos = document.getElementById('pontos')
+      var maisTexto = document.getElementById('mais')
+      var btnLeiaMais = document.getElementById('bnt-leia-mais')
+     
+      if(pontos.style.display === "none") {
+         pontos.style.display="inline";
+         maisTexto.style.display="none";
+         btnLeiaMais.innerHTML = "Leia mais"
+
+      } else {
+        pontos.style.display="none";
+         maisTexto.style.display="inline";
+         btnLeiaMais.innerHTML = "Leia menos"
+      }
+    }
+
+    function leiaMais2() {
+      var pontos2 = document.getElementById('pontos2')
+      var maisTexto2 = document.getElementById('mais2')
+      var btnLeiaMais2 = document.getElementById('bnt-leia-mais2')
+     
+      if(pontos2.style.display === "none") {
+         pontos2.style.display="inline";
+         maisTexto2.style.display="none";
+         btnLeiaMais2.innerHTML = "Leia mais"
+
+      } else {
+        pontos2.style.display="none";
+         maisTexto2.style.display="inline";
+         btnLeiaMais2.innerHTML = "Leia menos"
+      }
+    }
+
 
     document.getElementById("radio"+count).checked = true;
     function downloadResume() {
@@ -377,6 +504,8 @@
       window.scrollTo(0, 700);
       var barra = document.getElementsById('barra');
       barra.style = "transform: translateX(-100%);"
+
+
     }
     function scrollSkills() {
       window.scrollTo(0, 2200);
@@ -394,30 +523,6 @@
 
     ScrollReveal({ reset: true });
   
-
-
-    const target = document.querySelectorAll('[data-anime]');
-    const animationClass = 'animate';
-    function abrirProjetos() {
-      var pag = document.getElementById('sectionPlus');
-      var button = document.getElementById('see');
-      pag.style = "display: block"
-      button.style = "display: none"
-    }
-    function animeScroll() {
-      const windowTop = window.pageYOffset + (window.innerHeight * 3) / 4;
-      target.forEach(function (element) {
-        if ((windowTop) > element.offsetTop) {
-          element.classList.add(animationClass)
-        } else {
-          element.classList.remove(animationClass)
-
-        }
-      })
-    }
-    window.addEventListener('scroll', function () {
-      animeScroll();
-    })
   </script>
   </div>
 </body>
