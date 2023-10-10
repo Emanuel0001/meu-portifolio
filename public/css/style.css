@@ -24,7 +24,14 @@ p {
 #mais {
  display: none;
 }
+
 #mais2 {
+  display: none;
+ }
+ #mais3 {
+  display: none;
+ }
+ #mais4 {
   display: none;
  }
 #pontos { display: inline;}
@@ -45,10 +52,34 @@ p {
   height: 40px;
 
 }
+
+#bnt-leia-mais3 {
+  background-color: white;
+  color: #0c0c0c;
+  margin: 10px 35px;
+  width: 100px;
+  height: 40px;
+
+}
+
+#bnt-leia-mais4 {
+  background-color: white;
+  color: #0c0c0c;
+  margin: 10px 35px;
+  width: 100px;
+  height: 40px;
+
+}
 #bnt-leia-mais:hover {
   font-weight: 900;
 }
 #bnt-leia-mais2:hover {
+  font-weight: 900;
+}
+#bnt-leia-mais3:hover {
+  font-weight: 900;
+}
+#bnt-leia-mais4:hover {
   font-weight: 900;
 }
 .logo {
@@ -2033,7 +2064,7 @@ td img:hover {
 }
 .chat {
   width: 550px;
-  height: 550px;
+  height: 650px;
   background-color: #0f141e;
   border-radius: 25px;
 }
@@ -2045,7 +2076,7 @@ td img:hover {
   height: 20px;
   background-color: white;
   color: #0f141e;
-  font-size: 17px;
+  font-size: 15px;
   display: inline;
   margin: 1px;
   border-radius: 20px;
@@ -2061,11 +2092,11 @@ td img:hover {
 
 .text-chat {
   display: block;
-  height: 100px;
+  height: 120px;
   background-color: white;
   color: #0f141e;
-  font-size: 17px;
-  margin: 1px;
+  font-size: 15px;
+  margin: -10px;
   border-radius: 20px;
   padding: 10px 10px;
 }
@@ -2105,6 +2136,27 @@ td img:hover {
 }
 .hidden-before {
   opacity: 0;
+}
+#ln3 {
+  display: block;
+  height: 68px;
+  background-color: white;
+  color: #0f141e;
+  font-size: 15px;
+  margin: 10px;
+  border-radius: 20px;
+  padding: 2px;
+}
+
+#ln5 {
+  display: block;
+  height: 100px;
+  background-color: white;
+  color: #0f141e;
+  font-size: 15px;
+  margin: 10px;
+  border-radius: 20px;
+  padding: 2px;
 }
 
 .init-hidden-off {
