@@ -448,7 +448,8 @@ div.social-midia {
 .social-midia {
   display: inline-block;
   width: 170px;
-  background: #0f141e;
+  background: rgb(0,83,207);
+  background: linear-gradient(90deg, rgba(0,83,207,1) 0%, rgba(0,83,207,1) 18%, rgba(15,20,30,1) 74%);
   padding: 15px 10px;
   font-size: 20px;
   border-radius: 2px;
@@ -456,7 +457,8 @@ div.social-midia {
   color: white;
 }
 .social-midia:hover {
-  background: #111721dc;
+  background: rgb(15,20,30);
+  background: linear-gradient(90deg, rgba(15,20,30,1) 0%, rgba(15,20,30,1) 18%, rgba(0,83,207,1) 74%);
   -webkit-transform: scale(0.3);
   -ms-transform: scale(0.3);
   transform: scale(1.02);
@@ -2162,36 +2164,42 @@ td img:hover {
 }
 
 #btnTraduzir {
- width: 70px;
+ width: 60px;
  height: 40px;
  background-color: #0f141e;
  font-size: 17px;
  color: white;
- font-weight: 800;
+ font-weight: 100;
  border: solid 1px #0f141e;
- border-radius: 10px;
+ border-top-right-radius: 15px;
+ border-bottom-right-radius: 15px;
  float: inline-end;
  position: fixed;
  margin-top: 90vh;
- margin-left: -50px;
+ margin-left: -40px;
+ cursor: pointer;
 }
 
 #btnTraduzirpt
 {
-  width: 70px;
+  cursor: pointer;
+  width: 60px;
   height: 40px;
-  background-color: #0f141e;
+  background-color: white;
   font-size: 17px;
-  color: white;
-  font-weight: 800;
+  color: #0f141e;
+  font-weight: 100;
   border: solid 1px #0f141e;
-  border-radius: 10px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
   float: inline-end;
   position: fixed;
   margin-top: 90vh;
-  margin-left: -120px;
-  opacity: 0;
+  margin-left: -40px;
+  display: none;
  }
+
+ 
 @media only screen and (max-width: 1300px) {
   #bloco {
     display: grid;
