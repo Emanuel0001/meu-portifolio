@@ -22,15 +22,6 @@
       <div class="logo">
         <img id="logojpg" src="./images/Emanuel .jpg">
       </div>
-      <div class="list-itens">
-        <ul>        
-        <li onclick="scrollHome()">Home</li>
-        <li  onclick="scrollProjetos()" >Projetos</li>
-        <li onclick="scrollSobreMim()" >Sobre</li>
-        <li onclick="scrollSkills()" >Skills</li>
-        <li onclick="scrollRodape()" >Contato</li>
-      </ul>
-      </div>
       <label id="icone" for="check">
         <div class="conteudo-Menu">MENU </div><img class="imagem-menu" src="./images/iconeMenu.png">
       </label>
@@ -40,8 +31,8 @@
       <nav>
         <ul>
           <label id="label" for="check">
-            <a for="check">
-              <div onclick="scrollProjetos()" class="link">Projetos</div>
+            <a for="check" >
+              <div onclick="scrollProjetos()" class="link" id="projet-list">Projetos</div>
             </a>
           </label>
           <label id="label" for="check">
@@ -51,12 +42,12 @@
           </label>
           <label id="label" for="check">
             <a for="check">
-              <div onclick="scrollSobreMim()" class="link">Sobre</div>
+              <div onclick="scrollSobreMim()" class="link" id="about">Sobre</div>
             </a>
           </label>
           <label id="label" for="check">
             <a for="check">
-              <div onclick="scrollRodape()" class="link">Contato</div>
+              <div onclick="scrollRodape()" class="link" id="contact">Contato</div>
             </a>
           </label>
         </ul>
@@ -93,6 +84,7 @@
       <div id="divMinhaImagem">
         <img id="minhaImagem" src="./images/minha-imagem.png">
           <button id="btnTraduzir">en-us</button>
+          <button id="btnTraduzirpt">pt-br</button>
       </div>
     </div>
   </div>
@@ -310,8 +302,8 @@
   <div class="container-rows">
       <div class="row">
         <img src="./images/localizacao.png">
-        <h1>LOCALIZAÇÃO</h1>
-        <h3>Montes Claros, Minas Gerais</h3>
+        <h1 id="row-h1-localizacao">LOCALIZAÇÃO</h1>
+        <h3 id="row-h1-localizacao2">Montes Claros, Minas Gerais</h3>
       </div>
       <div class="row">
         <img src="./images/iphone.png">
@@ -331,7 +323,8 @@
   </div>
   <div class="rodape">
     <div className="footer-contacts">
-      <div class="logo-contacts"><img class="logo-rodape" src="./images/logoEmanuel.png"></div>
+      <div class="logo-contacts">
+      <img id="logojpg" src="./images/Emanuel .jpg"></div>
       
     </div>
    
@@ -339,13 +332,13 @@
       <ul>
         <h1>Menu</h1>
         <li>Home</li>
-        <li>Projetos</li>
-        <li>Habilidades</li>
+        <li id="projet-list">Projetos</li>
+        <li id="skills-list">Habilidades</li>
       </ul>
     </div>
     <div class="footer-list">
       <ul>
-        <h1>Ultimos Projetos</h1>
+        <h1 id="last-projects">Ultimos Projetos</h1>
         <li>
           <a 
             href="https://geraisnet.com.br/" 
@@ -383,6 +376,8 @@
       // Função para traduzir o texto
       function traduzirParaIngles() {
           // Mapeie os IDs dos elementos que você deseja traduzir
+          const btnTraduzir = document.getElementById("btnTraduzir");
+          btnTraduzir.style.display= "none"
           const traducoes = {
               "texto": "This is the text in English.",
               "title1": "FRONTEND AND BACKEND ENGINEER",
@@ -417,12 +412,29 @@
               "txt3": "Firstly, I would like to express my sincere thanks for visiting my portfolio. It's a pleasure to have you here and share some of my work and passion for software development.",
               "txt4": "For those who don't know me yet, I'm a frontend and backend developer, with a degree in Information Systems. My journey in the world of programming has provided me with knowledge in several technologies, including React, Next.js, HTML, CSS, JavaScript, Node.js, Git, GitHub, Express, and PostgreSQL. I am an active developer and passionate about challenges, always working on projects that allow me to expand my knowledge and improve my skills.",
               "txt5": "Finally, thank you again for your visit and I hope you feel free to explore my website and learn more about my work. Feel free to get in touch if you have any questions or would like to collaborate on a project. I look forward to sharing more experiences and knowledge with you in the future.",
+              
+              // rows
+              "row-h1-localizacao": "LOCATION",
+              "row-h1-localizacao2": "Montes Claros, Brazil state of Minas",
+
+              // rodape
+              "projet-list":"Projects",
+              "skills-list":"skills",
+              "last-projects":"Latest Projects",
+
+              // menu
+              "about": "About",
+              "contact": "Contact",
+              
+              "btnTraduzir": "pt-br"
 
 
           };
+          
 
           // Percorra o objeto de traduções e atualize o texto
           for (const id in traducoes) {
+            
               if (traducoes.hasOwnProperty(id)) {
                   const elemento = document.getElementById(id);
                   if (elemento) {
@@ -430,15 +442,26 @@
                   }
               }
           }
+          const btnTraduzirpt = document.getElementById("btnTraduzirpt");
+          btnTraduzirpt.style.opacity= "1"
+
       }
 
       // Adicione um evento de clique ao botão para chamar a função de tradução
       const btnTraduzir = document.getElementById("btnTraduzir");
       if (btnTraduzir) {
           btnTraduzir.addEventListener("click", traduzirParaIngles);
+          
       }
-
-
+      const btnTraduzirpt = document.getElementById("btnTraduzirpt");
+      function atualizarPagina() {
+      location.reload();
+      }
+      if(btnTraduzirpt) {
+          btnTraduzirpt.addEventListener("click", atualizarPagina);
+        
+      }
+      
     var ln1 = document.getElementById('ln1');
     var ln2 = document.getElementById('ln2');
     var ln3 = document.getElementById('ln3');

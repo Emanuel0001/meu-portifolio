@@ -667,7 +667,7 @@ button a:link {
 
 #icone {
   cursor: pointer;
-  padding: 15px;
+  padding: 30px;
   font-weight: 900;
   z-index: 1;
   color: black;
@@ -2164,9 +2164,10 @@ td img:hover {
 #btnTraduzir {
  width: 70px;
  height: 40px;
- background-color:white;
+ background-color: #0f141e;
  font-size: 17px;
- color: #0f141e;
+ color: white;
+ font-weight: 800;
  border: solid 1px #0f141e;
  border-radius: 10px;
  float: inline-end;
@@ -2174,6 +2175,23 @@ td img:hover {
  margin-top: 90vh;
  margin-left: -50px;
 }
+
+#btnTraduzirpt
+{
+  width: 70px;
+  height: 40px;
+  background-color: #0f141e;
+  font-size: 17px;
+  color: white;
+  font-weight: 800;
+  border: solid 1px #0f141e;
+  border-radius: 10px;
+  float: inline-end;
+  position: fixed;
+  margin-top: 90vh;
+  margin-left: -90px;
+  opacity: 0;
+ }
 @media only screen and (max-width: 1300px) {
   #bloco {
     display: grid;
@@ -2270,8 +2288,10 @@ td img:hover {
 @media only screen and (max-width: 500px) {
   .logo {
     width: 200px;
-    margin-top: -55px;
-    margin-left: -10px;
+    margin-top: 0;
+}
+#logojpg {
+  width: 140px;
 }
   #blocoDeTexto {
     width: 100%;
