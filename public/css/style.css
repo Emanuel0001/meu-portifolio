@@ -2189,7 +2189,7 @@ td img:hover {
   float: inline-end;
   position: fixed;
   margin-top: 90vh;
-  margin-left: -90px;
+  margin-left: -120px;
   opacity: 0;
  }
 @media only screen and (max-width: 1300px) {
