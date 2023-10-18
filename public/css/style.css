@@ -84,10 +84,12 @@ p {
 }
 .logo {
   width: 200px;
-  margin-top: -55px;
   margin-left: 30px;
 }
 
+#logojpg {
+  width: 200px;
+}
 .logo-contacts {
   width: 100px;
 }
@@ -2080,7 +2082,7 @@ td img:hover {
   display: inline;
   margin: 1px;
   border-radius: 20px;
-  padding: 10px 10px;
+  padding: 2px 9px;
 }
 #chat-right {
   display: flex;
@@ -2139,7 +2141,7 @@ td img:hover {
 }
 #ln3 {
   display: block;
-  height: 80px;
+  height: 93px;
   background-color: white;
   color: #0f141e;
   font-size: 15px;
@@ -2159,8 +2161,18 @@ td img:hover {
   padding: 2px;
 }
 
-.init-hidden-off {
- 
+#btnTraduzir {
+ width: 70px;
+ height: 40px;
+ background-color:white;
+ font-size: 17px;
+ color: #0f141e;
+ border: solid 1px #0f141e;
+ border-radius: 10px;
+ float: inline-end;
+ position: fixed;
+ margin-top: 90vh;
+ margin-left: -50px;
 }
 @media only screen and (max-width: 1300px) {
   #bloco {
