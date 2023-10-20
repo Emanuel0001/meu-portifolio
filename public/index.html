@@ -12,7 +12,21 @@
   <title>Portifólio | Emanuel H.</title>
   <link rel="icon" href="./images/logo-Portifolio-1.png">
   <link rel="stylesheet" type="text/css" href="./css/style.css" media="screen" />
-  
+  <script>
+    function toggleAcao() {
+        var fooCheckbox = document.getElementById("foo");
+        var statusParagraph = document.getElementById("status");
+
+        if (fooCheckbox.checked) {
+            // Ação quando o botão está ativado
+            traduzirParaIngles()
+        } else {
+            // Ação quando o botão está desativado
+            atualizarPagina()
+            // Execute ação desejada aqui quando o botão está desativado
+        }
+    }
+</script>
 </head>
 
 <body>
@@ -85,8 +99,16 @@
         <img id="minhaImagem" src="./images/minha-imagem.png">
           <button id="btnTraduzir">en-us</button>
           <button id="btnTraduzirpt">pt-br</button>
+          <div class="button-toggle">
+            <div class="toggle">
+            <input type="checkbox" id="foo" onchange="toggleAcao()">
+            <label  for="foo" class="toggle"></label>
+            <p id="status"></p>
+          </div>
+    </div>
       </div>
     </div>
+    
   </div>
   <div class="bloco2" id="bloco2">
     <h5 id='tituloProjetos'> Projetos selecionados</h5>   
@@ -128,8 +150,6 @@
         </div>
     </div>
     </div>
-
-
     <div class="card pj2">
       <div class="sub-title">
         <div class="card-item fnt-color">
@@ -376,8 +396,7 @@
       // Função para traduzir o texto
       function traduzirParaIngles() {
           // Mapeie os IDs dos elementos que você deseja traduzir
-          const btnTraduzir = document.getElementById("btnTraduzir");
-          btnTraduzir.style.display= "none"
+         
           const traducoes = {
               "texto": "This is the text in English.",
               "title1": "FRONTEND AND BACKEND ENGINEER",
@@ -431,6 +450,27 @@
 
           };
           
+          function toggleAcao() {
+            var fooCheckbox = document.getElementById("foo");
+            var statusParagraph = document.getElementById("status");
+
+            if (fooCheckbox.checked) {
+             
+                statusParagraph.textContent = "Botão está ativado";
+                // Execute ação desejada aqui
+                 traduzirParaIngles()
+                  const selectElement = document.querySelector(".toggle");
+                  const result = document.querySelector(".result");
+                  selectElement.addEventListener("change", (event) => {
+                  result.textContent = `You like ${event.target.value}`;
+});
+
+            } else {
+              atualizarPagina() 
+                statusParagraph.textContent = "Botão está desativado";
+                // Execute ação desejada aqui
+            }
+        }
 
           // Percorra o objeto de traduções e atualize o texto
           for (const id in traducoes) {
