@@ -11,6 +11,7 @@ app.get('/download', (req, res) => {
   res.download(__dirname + `/public/pdf/file.pdf`)
 })
 app.listen(port, () => {
+  
   console.log(`Servidor web em execução: http://localhost:${port}`);
 });
 
