@@ -437,8 +437,8 @@ strong {
 }
 
 .bloco-links {
-  display: grid;
-  grid-template-columns: repeat(3, 3fr);
+  display: flex;
+  justify-content: space-between;
   padding: 4.5rem 0.5rem;
 }
 div.social-midia {
@@ -456,16 +456,21 @@ div.social-midia {
   font-weight: 100;
   transition: 2500ms linear; 
   color: white;
+  margin: 5px
 
 }
+
 .social-midia:hover {
-  
   background: rgb(15,20,30);
   background: linear-gradient(90deg, rgba(15,20,30,1) 0%, rgba(15,20,30,1) 18%, rgba(0,83,207,1) 74%);
   -webkit-transform: scale(0.3);
   -ms-transform: scale(0.3);
   transform: scale(1.02);
   
+}
+
+@keyframes alternaCor {
+
 }
 .button-toggle {
  display: flex;
