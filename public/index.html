@@ -22,7 +22,7 @@
             traduzirParaIngles()
         } else {
             // Ação quando o botão está desativado
-            atualizarPagina()
+            traduzirParaPortugues()
             // Execute ação desejada aqui quando o botão está desativado
         }
     }
@@ -391,6 +391,71 @@
   </div>
   </div>
   <script>
+     function traduzirParaPortugues() {
+          // Mapeie os IDs dos elementos que você deseja traduzir
+         
+          const traducoes = {
+              "texto": "Este é o texto em inglês.",
+              "title1": "ENGENHEIRO DE FRONTEND E BACKEND",
+              "line": "Olá meu nome é",
+              "meuResumo":"Sou um desenvolvedor criativo que busca ajudar empresas emergentes e startups a atingirem seu pleno potencial e atrair novos clientes.",
+              "name": "Emanuel",
+              "tituloProjetos": "Projetos selecionados",
+              
+              // traducao projeto 1
+              "title-card-1": "GeraisNet – Site de Marketing Digital",
+              "p-menos": "The 'O projeto da GeraisNet foi uma colaboração direta entre mim, como desenvolvedor, e o proprietário da empresa provedora de internet. Iniciamos o projeto com uma comunicação aberta e frequente, o que nos permitiu compreender plenamente as necessidades e exigências do local. Um dos principais desafios foi apresentar os preços dos planos de internet de forma clara e acessível aos visitantes do site. Com base nessas discussões, conseguimos criar um site que atendesse às necessidades específicas da empresa e oferecesse uma experiência de usuário intuitiva",
+              "mais": "Quanto às tecnologias utilizadas, optou-se por construir o site ‘GeraisNet’ com Next.js, aproveitando as suas vantagens de renderização server-side e desempenho otimizado. Além disso, incorporamos JavaScript, HTML e CSS para criar recursos interativos e um design atraente. Também cuidei do registro de domínio, o que incluiu a seleção do nome de domínio apropriado e sua compra, garantindo que o site fosse acessível online a todos os usuários em potencial. O resultado foi um site eficiente e funcional que atendeu às expectativas da empresa e de seus clientes.",
+              
+              // traducao projeto 2
+              "title-card-2": "PizzaApp - Site do Cardápio Digital",
+              "p-menos2": "The 'O projeto PizzaApp foi desenvolvido em estreita colaboração com o proprietário de uma pizzaria local, com o objetivo de criar um menu online inovador. A comunicação direta com o proprietário da empresa desempenhou um papel fundamental para nos permitir compreender as suas necessidades e requisitos específicos. Uma das principais exigências era proporcionar uma experiência de acesso mais fácil aos clientes e, para isso, implementámos a funcionalidade QR code, permitindo aos clientes digitalizar facilmente o código para aceder ao menu online, simplificando assim a sua experiência.",
+              "mais2": "Quanto às tecnologias utilizadas, optamos por construir o ‘PizzaApp’ com ReactJS, aproveitando sua flexibilidade e eficiência no desenvolvimento de interfaces de usuário dinâmicas. Além disso, incorporamos JavaScript, HTML e CSS para criar uma interface amigável e atraente para os clientes. Para manter os custos baixos, não optamos por registrar um domínio personalizado, mas sim por um domínio gratuito para garantir que o menu online fosse acessível a todos. O resultado foi um projeto de sucesso que atendeu às necessidades dos clientes da pizzaria e ofereceu uma experiência conveniente ao cliente.",
+
+              // traducao projeto 3
+              "title-card-3": "Finance.com - Site próprio",
+              "p-menos3": "No projeto ‘Controle Financeiro’, como desenvolvedor, priorizei a implementação de um sistema de controle de despesas robusto e seguro. Para isso, integrei uma base de dados online que permitiu a cada utilizador ter o seu próprio login e armazenar os seus dados de forma segura. Essa abordagem garantiu que os usuários pudessem acessar suas informações financeiras pessoais de qualquer lugar, mantendo seus dados seguros e organizados.",
+               "mais3": "Quanto às tecnologias utilizadas no projeto, optei pelo ReactJS, aproveitando sua capacidade de criar interfaces de usuário dinâmicas e responsivas. Além disso, utilizei JavaScript, HTML e CSS para criar uma experiência de usuário amigável e atrativa. Para hospedar o site, optei pelo Netlify, uma opção econômica que permitiu que o projeto estivesse disponível online sem a necessidade de aquisição de um domínio pago. Essa abordagem tornou o 'Controle Financeiro' acessível a um público amplo, proporcionando uma solução eficaz para o controle de despesas pessoais.",
+
+              // traducao projeto 4
+              "title-card-4": "Sistema do Usuário – Site Próprio",
+              "p-menos4": "O projeto 'User Systems' foi uma experiência de estágio significativa para o meu desenvolvimento como programador. Durante este estágio, fui orientado por dois programadores experientes que me ensinaram as nuances do desenvolvimento de aplicações web utilizando tecnologias como ReactJS, Express, JavaScript, CSS, Git e GitHub. Tive a oportunidade de participar de reuniões diárias nas quais discutíamos o que estava estudando e aplicavamos em tempo real, o que proporcionou um aprendizado prático e eficaz",
+              "mais4": "Quanto às características do projeto, este abrange uma série de funcionalidades essenciais para a gestão de utilizadores. O sistema inclui um registro de usuário e uma página de login para autenticação segura. No painel principal, há um dashboard que exibe uma lista completa de todos os usuários do sistema, e adicionar uma foto de perfil para cada usuário é um dos recursos de destaque. Esses recursos proporcionam uma experiência abrangente ao usuário e demonstram as habilidades aprendidas durante o estágio de forma prática e funcional.",
+
+              // chatboot
+              "txt1":"ei",
+              "txt2": "Qual o seu nome?",
+              "txt3": "Primeiramente gostaria de expressar meus sinceros agradecimentos pela visita ao meu portfólio. É um prazer ter você aqui e compartilhar um pouco do meu trabalho e paixão pelo desenvolvimento de software.",
+              "txt4": "Para quem ainda não me conhece, sou desenvolvedor frontend e backend, formado em Sistemas de Informação. Minha jornada no mundo da programação me proporcionou conhecimento em diversas tecnologias, incluindo React, Next.js, HTML, CSS, JavaScript, Node.js, Git, GitHub, Express e PostgreSQL. Sou um desenvolvedor ativo e apaixonado por desafios, sempre trabalhando em projetos que me permitam ampliar meus conhecimentos e aprimorar minhas habilidades.",
+              "txt5": "Por fim, mais uma vez obrigado pela sua visita e espero que você se sinta à vontade para explorar meu site e conhecer mais sobre meu trabalho. Sinta-se à vontade para entrar em contato se tiver alguma dúvida ou quiser colaborar em um projeto. Estou ansioso para compartilhar mais experiências e conhecimentos com você no futuro.",
+              
+              // rows
+              "row-h1-localizacao": "LOCATION",
+              "row-h1-localizacao2": "Montes Claros, Minas Gerais",
+
+              // rodape
+              "projet-list":"Projetos",
+              "skills-list":"Habilidades",
+              "last-projects":"Ultimos Projetos",
+
+              // menu
+              "about": "Sobre",
+              "contact": "Contato",
+              
+
+
+          };
+          // Percorra o objeto de traduções e atualize o texto
+          for (const id in traducoes) {
+            
+              if (traducoes.hasOwnProperty(id)) {
+                  const elemento = document.getElementById(id);
+                  if (elemento) {
+                      elemento.textContent = traducoes[id];
+                  }
+              }
+          }
+        }
       // Função para traduzir o texto
       function traduzirParaIngles() {
           // Mapeie os IDs dos elementos que você deseja traduzir
@@ -448,27 +513,7 @@
 
           };
           
-          function toggleAcao() {
-            var fooCheckbox = document.getElementById("foo");
-            var statusParagraph = document.getElementById("status");
-
-            if (fooCheckbox.checked) {
-             
-                statusParagraph.textContent = "Botão está ativado";
-                // Execute ação desejada aqui
-                 traduzirParaIngles()
-                  const selectElement = document.querySelector(".toggle");
-                  const result = document.querySelector(".result");
-                  selectElement.addEventListener("change", (event) => {
-                  result.textContent = `You like ${event.target.value}`;
-});
-
-            } else {
-              atualizarPagina() 
-                statusParagraph.textContent = "Botão está desativado";
-                // Execute ação desejada aqui
-            }
-        }
+         
 
           // Percorra o objeto de traduções e atualize o texto
           for (const id in traducoes) {
