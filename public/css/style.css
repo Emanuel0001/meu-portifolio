@@ -285,6 +285,10 @@ ul li:Hover{
   height: 700px;
 }
 
+#divMinhaImagem {
+  display: flex;
+  justify-content: space-between;
+}
 a {
   text-decoration: none;
   margin-bottom: 5px;
@@ -456,8 +460,12 @@ div.social-midia {
   font-weight: 100;
   transition: 2500ms linear; 
   color: white;
-  margin: 5px
+  margin: 5px;
 
+  -webkit-transition: background 0.2s linear;
+  -moz-transition: background 0.2s linear;
+  -o-transition: background 0.2s linear;
+  transition: background 0.2s linear;
 }
 
 .social-midia:hover {
@@ -473,15 +481,13 @@ div.social-midia {
 
 }
 .button-toggle {
- display: flex;
+  display: inline;
+  width: 100%;
 }
 .toggle {
-  margin-bottom: 10px;
-    margin-top: -30px;
-    margin-left: 190px;
-    display: flex;
-    justify-content: end;
-    position: fixed;
+  display: flex;
+  justify-content: center;
+  margin-top: -50px;
 }
 
 .toggle > input {
@@ -489,8 +495,7 @@ div.social-midia {
 }
 
 .toggle > label {
-  position: relative;
-  display: block;
+  position: fixed;
   height: 28px;
   width: 52px;
   background-color: #000144;
@@ -503,7 +508,6 @@ div.social-midia {
   position: absolute;
   left: 1px;
   top: 1px;
-  display: block;
   width: 26px;
   height: 26px;
   border-radius: 100px;
@@ -892,7 +896,7 @@ h5 {
 #tituloProjetos {
   display: inline-block;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 120px;
   margin-bottom: 20px;
   margin-left: 30px;
   font-size: 20px;
