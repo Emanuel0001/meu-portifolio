@@ -2297,18 +2297,32 @@ td img:hover {
     display: inline-block;
     align-items: center;
     align-content: center;
-    padding: 0px 30px;
+    padding: 0px 13px;
     color: white;
     margin-bottom: 4px;
     margin-top: 170px;
-  }
+}
 }
 @media only screen and (max-width: 1050px) {
   .container-projetos {
     display: grid;
     grid-template-columns: repeat(2, 0fr);
-    padding: 0 5rem;
+    padding: 0 6rem;
   }
+  #bloco {
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+    padding: 0px 7.5rem;
+}
+
+#divMinhaImagem {
+  display: flex;
+  justify-content: center;
+}
+
+.bloco {
+  height: 100%;
+}
   .card {
     width: 400px;
     height: 650px;
@@ -2320,9 +2334,11 @@ td img:hover {
   table tr td img {
     width: 100px;
   }
+ 
   table tr td {
-    padding: 54px 120px;
-  }
+    padding: 37px 90px;
+}
+
 
   .container-texto-sobre-mim p {
     text-align: center;
@@ -2364,9 +2380,51 @@ td img:hover {
     grid-template-columns: repeat(2, 2fr);
     padding: 3rem 2rem;
   }
+
+  .section-skill {
+    background: #0f141e;
+    height: 79%;
+    display: inline-block;
+    border: solid 1px silver;
+    margin: 77px;
+    width: 100%;
+}
+}
+
+@media only screen and (max-width: 800px) {
+  #tituloProjetos {
+   width: 100%;
+   text-align: center;
+  }
+  .card {
+    width: 500px;
+    height: 650px;
+    margin-left: 10%;
+    margin-right: 40px;
+    margin-bottom: 30px;
+}
+.container-projetos {
+  display: grid;
+  grid-template-columns: repeat(1, 0fr);
+  padding: 0 15rem;
+}
 }
 
 @media only screen and (max-width: 500px) {
+
+  .title-card h1 {
+    line-height: 2.5rem;
+    padding-top: 3px;
+    padding-bottom: 2px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+  .resume-card {
+    padding: 0px 0px 0px;
+    font-size: 17px;
+    text-align: justify;
+}
   .logo {
     width: 200px;
     margin-top: 0;
@@ -2374,9 +2432,16 @@ td img:hover {
 #logojpg {
   width: 140px;
 }
-  #blocoDeTexto {
-    width: 100%;
-  }
+#blocoDeTexto {
+  display: inline-block;
+  align-items: center;
+  align-content: center;
+  padding: 0px 6px;
+  color: white;
+  margin-bottom: 4px;
+  margin-top: 170px;
+}
+
   .container-projetos {
     display: grid;
     grid-template-columns: repeat(1, 0fr);
@@ -2386,9 +2451,10 @@ td img:hover {
   .card {
     background: #0f141e;
     padding: 0px;
+    margin: 31px;
     width: 100%;
-    margin: 16px;
-  }
+    height: 94%;
+}
   .testcard {
     width: 100%;
   }
@@ -2396,9 +2462,7 @@ td img:hover {
     height: 70%;
     width: 99%;
   }
-  #blocoDeTexto {
-    padding: 0px 0px;
-  }
+  
   #bloco {
     display: grid;
     grid-template-columns: repeat(1, 2fr);
@@ -2429,7 +2493,6 @@ td img:hover {
   .social-midia {
     font-size: 15px;
     display: inline-block;
-    background: #0f141e;
     border-radius: 2px;
     font-weight: 100;
     color: white;
@@ -2450,21 +2513,17 @@ td img:hover {
     margin-bottom: 30px;
   }
   .section-skill {
-    width: 90%;
+    width: 106%;
     background: #0f141e;
     height: 56%;
     display: inline-block;
     border: solid 1px silver;
-    margin: 19px;
-  }
+}
 
-  table tr td img {
-    width: 60px;
-  }
 
-  table tr td {
-    padding: 29px 28px;
-  }
+table tr td {
+  padding: 25px 12px;
+}
 
   .container-texto-sobre-mim p {
     text-align: center;
@@ -2495,7 +2554,6 @@ td img:hover {
     text-align: center;
   }
   #tituloProjetos {
-    display: none;
     text-align: center;
     margin-top: 70px;
     margin-bottom: 20px;
@@ -2503,12 +2561,12 @@ td img:hover {
     font-size: 20px;
   }
   .row {
-    width: 260px;
+    width: 240px;
     height: 200px;
     margin: 10px;
     border: solid 4px white;
     box-shadow: 0 0.125rem 0.35rem #0f141e2e !important;
-  }
+}
   .rodape {
     width: 100%;
     height: 150px;
@@ -2516,4 +2574,10 @@ td img:hover {
     grid-template-columns: repeat(1, 2fr);
     padding: 3rem 2rem;
   }
+  .chatboot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 11px;
+}
 }
