@@ -1,0 +1,220 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* menu*/
+nav {
+  color: #fff;
+  padding: 30px;
+  padding-left: 100px;
+  padding-right: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin-left: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#nameTitle {
+  color: var(--White, #fff);
+  font-family: Space Grotesk;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px; /* 100% */
+  letter-spacing: -0.444px;
+}
+body {
+  background: var(--Black, #151515);
+}
+
+/* Sobre Mim*/
+.sobre-mim {
+  display: flex;
+  padding-left: 100px;
+  padding-right: 100px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.conteudo {
+  width: 706px;
+  height: 303px;
+  flex-shrink: 0;
+}
+
+.texto {
+  color: var(--White, #fff);
+  font-feature-settings: "clig" off, "liga" off;
+  /* Heading (XL) */
+  font-family: Space Grotesk;
+  font-size: 88px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 88px; /* 100% */
+  letter-spacing: -2.5px;
+}
+
+.resumo {
+  width: 445px;
+  color: var(--Grey, #d9d9d9);
+  font-feature-settings: "clig" off, "liga" off;
+  /* Body */
+  font-family: Space Grotesk;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px; /* 155.556% */
+  letter-spacing: 0px;
+}
+
+.foto img{
+  width: 445px;
+  flex-shrink: 0;
+  background-color: #ffffff07;
+}
