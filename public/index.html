@@ -68,6 +68,39 @@
           <img src="./assets/images/yyy.png" alt="Minha Foto" />
         </div>
       </section>
+
+      <section class="habilidades">
+        <div class="container-skills">
+          <ul id="lista">
+          </ul>
+        </div>
+      </section>
     </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+      // Array de objetos com itens e descrições
+      const listaDeItens = [
+        { item: 'React', descricao: '1 ano de experiência' },
+        { item: 'Typescript', descricao: 'Aprimorando habilidades' },
+        { item: 'Javascript', descricao: '1 ano de experiência' },
+        { item: 'SASS', descricao: 'Aprimorando habilidades' },
+        { item: 'HTML', descricao: '1 ano de experiência' },
+        { item: 'CSS', descricao: '1 ano de experiência' },
+        { item: 'Express', descricao: '1 ano de experiência' },
+        { item: 'PostgreSql', descricao: '1 ano de experiência' },
+      ];
+
+      // Seleciona a lista ul
+      const listaUl = document.getElementById('lista');
+
+      // Utiliza a função map para criar os itens da lista
+      const itensHTML = listaDeItens.map(function(item) {
+        return `<li class="item"><h1>${item.item}</h1>: <p>${item.descricao}</p></li>`;
+      });
+
+      // Adiciona os itens à lista ul
+      listaUl.innerHTML = itensHTML.join('');
+    });
+    </script>
   </body>
 </html>
