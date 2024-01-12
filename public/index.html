@@ -54,12 +54,11 @@
             </div>
             <div class="resumo">
               <p>
-                Based in the UK, I’m a front-end developer passionate about
-                building accessible web apps that users love.
+                Based in the BR, I’m a fullstack developer passionate about building accessible web apps that users love.
               </p>
             </div>
             <div class="conteudo-links">
-              <a class="link">DOWNLOAD CV</a>
+              <a class="link download">DOWNLOAD CV</a>
             </div>
           </div>
         </div>
@@ -71,36 +70,152 @@
 
       <section class="habilidades">
         <div class="container-skills">
-          <ul id="lista">
-          </ul>
+          <ul id="lista"></ul>
         </div>
       </section>
+
+      <section class="containerProjetos">
+        <div class="titlesProjetos">
+          <h1>Projects</h1>
+          <div class="conteudo-links">
+            <!-- <a class="link">CONTACT ME</a> -->
+          </div>
+        </div>
+        <div class="Projetos">
+
+          <div class="card">
+            <div class="container">
+              <div class="links">
+                <a href="#" class="link"> VIEW PROJECT</a>
+                <a href="#" class="link"> VIEW CODE</a>
+              </div>
+            </div>
+            <h2 class="titulo">Portifolio</h2>
+            <p class="informacoes">html css</p>
+            <div class="links-hidden">
+              <a href="#" class="link"> VIEW PROJECT</a>
+              <a href="#" class="link"> VIEW CODE</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="container">
+              <div class="links">
+                <a href="#" class="link"> VIEW PROJECT</a>
+                <a href="#" class="link"> VIEW CODE</a>
+              </div>
+            </div>
+            <h2 class="titulo">Portifolio</h2>
+            <p class="informacoes">html css</p>
+            <div class="links-hidden">
+              <a href="#" class="link"> VIEW PROJECT</a>
+              <a href="#" class="link"> VIEW CODE</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="container">
+              <div class="links">
+                <a href="#" class="link"> VIEW PROJECT</a>
+                <a href="#" class="link"> VIEW CODE</a>
+              </div>
+            </div>
+            <h2 class="titulo">Portifolio</h2>
+            <p class="informacoes">html css</p>
+            <div class="links-hidden">
+              <a href="#" class="link"> VIEW PROJECT</a>
+              <a href="#" class="link"> VIEW CODE</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="container">
+              <div class="links">
+                <a href="#" class="link"> VIEW PROJECT</a>
+                <a href="#" class="link"> VIEW CODE</a>
+              </div>
+            </div>
+            <h2 class="titulo">Portifolio</h2>
+            <p class="informacoes">html css</p>
+            <div class="links-hidden">
+              <a href="#" class="link"> VIEW PROJECT</a>
+              <a href="#" class="link"> VIEW CODE</a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="contato-section">
+        <div class="contato-info">
+          <h2>Contact</h2>
+          <p>
+            I would love to hear about your project
+             and how I could help. Please fill in the form, and I’ll get back to you as soon as possible.
+          </p>
+        </div>
+    
+        <div class="formulario">
+          <form action="#" method="post">
+            <input type="text" id="nome" name="nome" placeholder="Name" required>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+            <textarea id="mensagem" name="mensagem" rows="4" placeholder="message" required></textarea>
+    
+            <button type="submit">SEND MESSAGE</button>
+          </form>
+        </div>
+      </section>
+
+      <footer>
+        <div class="footer-content">
+          <div class="footer-title">
+            <h2>emanuel</h2>
+          </div>
+          <div class="footer-links">
+            <ul>
+              <li>
+                <a href="#"><img src="./assets/images/icon-github.svg" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="./assets/images/icon-frontend-mentor.svg" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="./assets/images/icon-linkedin.svg" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="./assets/images/icon-twitter.svg" /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    
     </div>
     <script>
-      document.addEventListener('DOMContentLoaded', function() {
-      // Array de objetos com itens e descrições
-      const listaDeItens = [
-        { item: 'React', descricao: '1 ano de experiência' },
-        { item: 'Typescript', descricao: 'Aprimorando habilidades' },
-        { item: 'Javascript', descricao: '1 ano de experiência' },
-        { item: 'SASS', descricao: 'Aprimorando habilidades' },
-        { item: 'HTML', descricao: '1 ano de experiência' },
-        { item: 'CSS', descricao: '1 ano de experiência' },
-        { item: 'Express', descricao: '1 ano de experiência' },
-        { item: 'PostgreSql', descricao: '1 ano de experiência' },
-      ];
+      document.addEventListener("DOMContentLoaded", function () {
+        // Array de objetos com itens e descrições
+        const listaDeItens = [
+          { item: "React", descricao: "1 year of experience" },
+          { item: "Typescript", descricao: "Improving skill" },
+          { item: "Javascript", descricao: "1 year of experience" },
+          { item: "SASS", descricao: "Improving skill" },
+          { item: "HTML", descricao: "1 year of experience" },
+          { item: "CSS", descricao: "1 year of experience" },
+          { item: "Express", descricao: "1 year of experience" },
+          { item: "PostgreSql", descricao: "1 year of experience" },
+        ];
 
-      // Seleciona a lista ul
-      const listaUl = document.getElementById('lista');
+        // Seleciona a lista ul
+        const listaUl = document.getElementById("lista");
 
-      // Utiliza a função map para criar os itens da lista
-      const itensHTML = listaDeItens.map(function(item) {
-        return `<li class="item"><h1>${item.item}</h1>: <p>${item.descricao}</p></li>`;
+        // Utiliza a função map para criar os itens da lista
+        const itensHTML = listaDeItens.map(function (item) {
+          return `<li class="item"><h1>${item.item}</h1>: <p>${item.descricao}</p></li>`;
+        });
+
+        // Adiciona os itens à lista ul
+        listaUl.innerHTML = itensHTML.join("");
       });
-
-      // Adiciona os itens à lista ul
-      listaUl.innerHTML = itensHTML.join('');
-    });
     </script>
   </body>
 </html>
