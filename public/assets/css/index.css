@@ -505,6 +505,10 @@ li p {
   line-height: 28px; /* 155.556% */
 }
 @media screen and (max-width: 750px) {
+  .item {
+    margin-right: 30px;
+    padding-bottom: 40px;
+}
   .habilidades {
     width: 100%;
   }
@@ -552,10 +556,7 @@ li p {
     margin-top: -20px;
   }
 
-  .item {
-    margin: 0px;
-    height: 87px;
-  }
+
 }
 
 /* laout Projetos*/
@@ -656,6 +657,12 @@ li p {
 }
 
 @media screen and (max-width: 665px) {
+  .container {
+    position: relative;
+    width: 350PX;
+    height: 350px;
+    background: url(../images/thumbnail-project-1-large.webp) center/cover;
+}
   .containerProjetos {
     margin-left: 10px;
     margin-top: 50px;
@@ -667,14 +674,12 @@ li p {
     flex-wrap: wrap;
     gap: 30px;
     padding: 0px;
-    margin-left: 10px;
   }
 
   .titlesProjetos {
     display: flex;
     justify-content: space-between;
-    width: 100%;
-    margin-left: 20px;
+
   }
 
   .containerProjetos h1 {
@@ -821,6 +826,10 @@ button[type="submit"] {
   margin-left: 283px;
 }
 
+#submitButton:hover{
+  color: #4ee1a0;
+}
+
 
 /* footer container*/
 
@@ -921,4 +930,59 @@ footer {
   padding: 30px;
   margin-top: 30px;
 }
+}
+
+@media screen and (max-width: 567px) {
+
+
+  button[type="submit"] {
+    background-color: transparent;
+    color: var(--White, #fff);
+    font-family: Space Grotesk;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 2.286px;
+    border: 0;
+    border-bottom: solid 2px var(--Green, #4ee1a0);
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 96px;
+    width: 200px;
+}
+
+li {
+  margin-left: 0px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+  border-top: 1px solid white;
+  padding: 20px;
+}
+
+.footer-title {
+  color: var(--White, #FFF);
+  font-family: Space Grotesk;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.444px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.formulario {
+  width: 80%;
+  box-sizing: border-box;
+  margin-left: 10%;
+  padding: 0px;
+  margin-top: 30px;
+}
+
 }
