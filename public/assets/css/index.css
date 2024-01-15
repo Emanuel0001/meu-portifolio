@@ -128,6 +128,13 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+/* container pg*/
+
+.container-pg {
+  max-width: 1480px;
+  margin: 0 auto;
+
+}
 
 /* menu*/
 nav {
@@ -197,6 +204,11 @@ body {
 
 .conteudo-titles {
   padding-bottom: 50px;
+}
+
+.conteudo-titles h1 {
+  margin: 0;
+  display: block ruby;
 }
 
 .texto {
@@ -620,6 +632,29 @@ li p {
   background: url("../images/thumbnail-project-1-large.webp") center/cover;
 }
 
+.Thumbnail1 {
+  background: url("../images/Thumbnail-GN-1.png") center/cover;
+}
+
+.Thumbnail2 {
+  background: url("../images/Thumbnail-pizzaApp.png") center/cover;
+}
+
+.Thumbnail3 {
+  background: url("../images/Thumbnail-2-SistemaUsuarios.png") center/cover;
+}
+
+.Thumbnail4 {
+  background: url("../images/Thumnail-finance.png") center/cover;
+}
+
+
+.Thumbnail5 {
+  background: url("../images/Thumnail-finance.png") center/cover;
+}
+
+
+
 .links {
   position: absolute;
   top: 50%;
@@ -857,7 +892,6 @@ footer {
 .footer-links a {
   color: #fff;
   text-decoration: none;
-  margin-left: 10px;
 }
 
 @media screen and (max-width: 1067px) {
