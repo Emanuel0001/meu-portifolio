@@ -686,7 +686,6 @@ li p {
 @media screen and (max-width: 665px) {
   .container {
     position: relative;
-    width: 350px;
     height: 350px;
   }
   .containerProjetos {
