@@ -609,17 +609,15 @@ li p {
   text-transform: uppercase;
   margin-top: 10px;
 }
-
 .informacoes {
   color: var(--Grey, #d9d9d9);
   font-feature-settings: "clig" off, "liga" off;
-  /* Body */
   font-family: Space Grotesk;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
-  line-height: 28px; /* 155.556% */
-  text-transform: uppercase;
+  line-height: 28px;
+  letter-spacing: 0.1rem;
 }
 .card {
   margin-top: 10px;
