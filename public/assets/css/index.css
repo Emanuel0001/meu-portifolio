@@ -475,7 +475,6 @@ span {
 }
 
 .item {
-  height: 60px;
   padding: 20px;
 }
 
@@ -672,19 +671,47 @@ h5 {
   color: #878a8f;
 }
 .Thumbnail1 {
-  background: url("../images/TumbnailPrj1.jpg") center/cover;
+  background: url("../images/Projects/TumbnailPrj1.jpg") center/cover;
+  transition: background-size 4s;
+
 }
+
+.Thumbnail1:hover {
+  background-size: 103%; 
+ 
+} 
+
 
 .Thumbnail2 {
-  background: url("../images/ThumbnailPrj2.png") center/cover;
+  background: url("../images/Projects/ThumbnailPrj2.png") center/cover;
+  transition: background-size 4s;
+
 }
+
+.Thumbnail2:hover {
+  background-size: 103%; 
+}
+
 
 .Thumbnail3 {
-  background: url("../images/ThumbnailSistemaUsuario.png") center/cover;
+  background: url("../images/Projects/ThumbnailSistemaUsuario.png") center/cover;
+  transition: background-size 4s;
+
 }
 
+.Thumbnail3:hover {
+  background-size: 103%; 
+}
+
+
 .Thumbnail4 {
-  background: url("../images/ThumnailFinanceControl.png") center/cover;
+  background: url("../images/Projects/ThumnailFinanceControl.png") center/cover;
+  transition: background-size 4s;
+
+}
+
+.Thumbnail4:hover {
+  background-size: 103%; 
 }
 
 .Thumbnail5 {
@@ -1102,7 +1129,7 @@ footer {
   position: absolute;
   z-index: 1;
   margin: 7px;
-  width: calc(60% - 14px);
+  width: calc(80% - 14px);
   padding: 30px;
 }
 .conteudo-titles {
@@ -1125,4 +1152,144 @@ a {
 .footer-title {
   display: none;
 }
+}
+
+
+
+
+
+/* section about me*/
+
+.about-me {
+  padding-top: 50px;
+  width: 100%;
+  height: 100%;
+}
+.conteudoTitleAbout {
+ display: block;
+ width: 100%;
+}
+.conteudoTitleAbout h1 {
+    color: var(--White, #fff);
+    font-feature-settings: "clig" off, "liga" off;
+    font-family: Space Grotesk;
+    font-size: 88px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 88px;
+    letter-spacing: -2.5px;
+    padding-left: 10%;
+}
+
+.container-about  {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.containerAbout {
+  position: relative;
+  width: 350px;
+  height: 600px;
+  background-color: black;
+  
+  
+}
+
+.containerAbout:hover .tituloAboutMe{
+  color: white;
+
+}
+
+.containerAbout:hover .links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  opacity: 0.75;
+  background: rgba(15,20,30,.9);
+  opacity: 1;
+  transition: 100ms;
+}
+
+.containerAbout:hover .more p {
+  animation: go-back 500ms linear;
+}
+@keyframes go-back {
+  0% {
+      transform: translateY(20px);
+  }
+  100% {
+      transform: translateY(0);
+  }
+}
+
+.more p {
+  color: white;
+}
+
+.cardAbout {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tituloAboutMe {
+  font-feature-settings: "clig" off, "liga" off;
+  /* Heading (M) */
+  font-family: Space Grotesk;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px; /* 133.333% */
+  text-transform: uppercase;
+  margin-top: 10px;
+  font-size: 1.75rem;
+  line-height: 2.1875rem;
+  padding-top: 2px;
+  padding-bottom: 3px;
+}
+
+.containerInfoAbout {
+  position: absolute;
+  z-index: 1;
+  margin: 7px;
+  width: calc(80% - 14px);
+  padding: 30px;
+}
+.containerAbout:hover .more {
+  opacity: 1;
+}
+
+.ThumbnailAboutMe1 {
+  background: url("../images/AboutMe/thumbnail\(camp\).jpg") center/cover; 
+  transition: background-size 0.5s;
+}
+
+
+.ThumbnailAboutMe2 {
+  background: url("../images/AboutMe/programer.jpg") center/cover; 
+  transition: background-size 0.5s;
+
+}
+
+.ThumbnailAboutMe3 {
+  background: url("../images/AboutMe/metas.jpg") center/cover; 
+  transition: background-size 0.5s;
+
+}
+
+
+.icons {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-top: 30px;
+  width: 100%;
+
 }
