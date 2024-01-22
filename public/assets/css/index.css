@@ -672,47 +672,24 @@ h5 {
 }
 .Thumbnail1 {
   background: url("../images/Projects/TumbnailPrj1.jpg") center/cover;
-  transition: background-size 4s;
 
 }
-
-.Thumbnail1:hover {
-  background-size: 103%; 
- 
-} 
 
 
 .Thumbnail2 {
   background: url("../images/Projects/ThumbnailPrj2.png") center/cover;
-  transition: background-size 4s;
-
-}
-
-.Thumbnail2:hover {
-  background-size: 103%; 
 }
 
 
 .Thumbnail3 {
   background: url("../images/Projects/ThumbnailSistemaUsuario.png") center/cover;
-  transition: background-size 4s;
-
-}
-
-.Thumbnail3:hover {
-  background-size: 103%; 
 }
 
 
 .Thumbnail4 {
   background: url("../images/Projects/ThumnailFinanceControl.png") center/cover;
-  transition: background-size 4s;
-
 }
 
-.Thumbnail4:hover {
-  background-size: 103%; 
-}
 
 .Thumbnail5 {
   background: url("../images/Thumnail-finance.png") center/cover;
