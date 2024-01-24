@@ -124,6 +124,11 @@ q:after {
   content: none;
 }
 
+body {
+  background-color: white;
+  color: #0f141e;;
+}
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -137,7 +142,6 @@ table {
 
 /* menu*/
 nav {
-  color: #fff;
   padding: 30px;
   padding-left: 100px;
   padding-right: 100px;
@@ -162,6 +166,11 @@ ul {
 li {
   margin-left: 20px;
 }
+ul li:hover {
+  transition: 100ms; 
+      transform: translateY(-5px);
+}
+
 
 a {
   text-decoration: none;
@@ -169,16 +178,12 @@ a {
 }
 
 #nameTitle {
-  color: var(--White, #fff);
   font-family: Space Grotesk;
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
   line-height: 32px; /* 100% */
   letter-spacing: -0.444px;
-}
-body {
-  background: var(--Black, #151515);
 }
 
 /* Sobre Mim*/
@@ -211,7 +216,6 @@ body {
 }
 
 .texto {
-  color: var(--White, #fff);
   font-feature-settings: "clig" off, "liga" off;
   /* Heading (XL) */
   font-family: Space Grotesk;
@@ -225,7 +229,6 @@ body {
 
 .resumo {
   width: 445px;
-  color: var(--Grey, #d9d9d9);
   font-feature-settings: "clig" off, "liga" off;
   /* Body */
   font-family: Space Grotesk;
@@ -240,7 +243,7 @@ body {
 .foto img {
   width: 400px;
   flex-shrink: 0;
-  background-color: #ffffff11;
+  background-color: #0f141ecf;
   display: flex;
   margin-top: -93px;
 }
@@ -253,13 +256,20 @@ span {
   text-align: center;
   margin-bottom: 10px;
   text-decoration: none;
-  color: #fff;
   padding: 8px 14px;
   width: 180px;
   margin-top: 20px;
+  background-color: #0f141e;
+  border-radius: 5px;
+  color: #4ee1a0;
+}
+
+.download:hover {
+  background-color: #0f141e;
+  border-radius: 5px;
+  color: white;
 }
 .link {
-  color: var(--White, #fff);
   font-family: Space Grotesk;
   font-size: 16px;
   font-style: normal;
@@ -272,13 +282,12 @@ span {
 }
 
 .link:hover {
-  color: #4ee1a0;
+  color: white;
 }
 
 /* Adaptação para telas menores usando media query */
 @media screen and (max-width: 1066px) {
   nav {
-    color: #fff;
     padding: 30px;
     /* padding-left: 100px; */
     /* padding-right: 100px; */
@@ -305,7 +314,6 @@ span {
   }
 
   .texto {
-    color: var(--White, #fff);
     font-family: Space Grotesk;
     font-size: 72px;
     font-style: normal;
@@ -325,7 +333,6 @@ span {
   }
 
   .resumo {
-    color: var(--Grey, #d9d9d9);
     font-feature-settings: "clig" off, "liga" off;
     /* Body */
     font-family: Space Grotesk;
@@ -338,7 +345,6 @@ span {
 
 @media screen and (max-width: 760px) {
   nav {
-    color: #fff;
     display: block;
     justify-content: center;
     align-items: center;
@@ -355,7 +361,6 @@ span {
   }
 
   #nameTitle {
-    color: var(--White, #fff);
     font-family: Space Grotesk;
     font-size: 32px;
     font-style: normal;
@@ -370,7 +375,6 @@ span {
 
   a {
     text-decoration: none;
-    color: #fff;
     padding: 5px;
   }
 
@@ -386,7 +390,6 @@ span {
   }
 
   .conteudo-titles {
-    color: var(--White, #fff);
     text-align: center;
     font-family: Space Grotesk;
     font-size: 40px;
@@ -402,7 +405,6 @@ span {
   }
 
   .resumo {
-    color: var(--Grey, #d9d9d9);
     text-align: center;
     font-family: Space Grotesk;
     font-size: 16px;
@@ -491,7 +493,6 @@ span {
 }
 
 li h1 {
-  color: var(--White, #fff);
   font-feature-settings: "clig" off, "liga" off;
   /* Heading (L) */
   font-family: Space Grotesk;
@@ -503,7 +504,6 @@ li h1 {
 }
 
 li p {
-  color: var(--Grey, #d9d9d9);
   font-feature-settings: "clig" off, "liga" off;
   /* Body */
   font-family: Space Grotesk;
@@ -543,7 +543,6 @@ li p {
   }
 
   li h1 {
-    color: var(--White, #fff);
     text-align: center;
     font-family: Space Grotesk;
     font-size: 32px;
@@ -554,7 +553,6 @@ li p {
   }
 
   li p {
-    color: var(--Grey, #d9d9d9);
     text-align: center;
     font-family: Space Grotesk;
     font-size: 16px;
@@ -575,7 +573,6 @@ li p {
 }
 
 .containerProjetos h1 {
-  color: var(--White, #fff);
   font-feature-settings: "clig" off, "liga" off;
   /* Heading (XL) */
   font-family: Space Grotesk;
@@ -596,7 +593,6 @@ li p {
 }
 
 .titulo {
-  color: var(--White, #fff);
   font-feature-settings: "clig" off, "liga" off;
   /* Heading (M) */
   font-family: Space Grotesk;
@@ -653,6 +649,21 @@ li p {
   width: calc(50% - 14px);
   padding: 30px;
 }
+
+.resumoProjetos {
+  color: #878a8f;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  padding-bottom: 3px;
+  font-size: 22px;
+  opacity: 0;
+  border: 0px;
+  width: 150%;
+  padding-top: 10px;
+  margin-left: 20px;
+  text-align: justify;
+}
+
 .container-info h2 {
   color: #0f141e;
 }
@@ -668,7 +679,6 @@ h5 {
   padding-bottom: 5px;
   font-weight: 400;
   letter-spacing: 0.4em;
-  color: #878a8f;
 }
 .Thumbnail1 {
   background: url("../images/Projects/TumbnailPrj1.jpg") center/cover;
@@ -709,6 +719,27 @@ h5 {
   animation: go-back 300ms linear
 }
 
+.container:hover .resumoProjetos {
+  color: #e4e5e7;
+  opacity: 1;
+  transition: 1s;
+  animation: go-left 1s linear
+}
+@keyframes go-left {
+  0% {
+      transform: translateX(50px);
+      opacity: 0;
+  }
+  50% {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  100% {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
 @keyframes go-back {
   0% {
       transform: translateY(20px);
@@ -744,7 +775,6 @@ h5 {
   text-align: center;
   margin-bottom: 10px;
   text-decoration: none;
-  color: #fff;
 }
 
 
@@ -765,6 +795,8 @@ h5 {
   width: calc(60% - 14px);
   padding: 30px;
 }
+
+
 
   .containerProjetos {
     margin-left: 10px;
@@ -808,7 +840,6 @@ h5 {
   }
 
   .informacoes {
-    color: var(--Grey, #d9d9d9);
     font-feature-settings: "clig" off, "liga" off;
     /* Body */
     font-family: Space Grotesk;
@@ -840,7 +871,6 @@ h5 {
   display: flex;
   justify-content: space-between;
   padding: 40px 100px;
-  background: var(--Dark-Grey, #242424);
   background-image: url(../images/pattern-rings.svg);
   background-size: 400px;
   background-position: bottom;
@@ -859,7 +889,6 @@ h5 {
 }
 
 .contato-info h2 {
-  color: var(--White, #fff);
   font-feature-settings: "clig" off, "liga" off;
   font-family: Space Grotesk;
   font-size: 88px;
@@ -871,7 +900,6 @@ h5 {
 }
 
 .contato-info p {
-  color: var(--Grey, #d9d9d9);
   font-feature-settings: "clig" off, "liga" off;
   font-family: Space Grotesk;
   font-size: 18px;
@@ -896,11 +924,11 @@ textarea {
   margin-bottom: 15px;
   padding: 10px;
   border: 0;
-  border-bottom: 1px solid var(--White, #fff);
+  border-bottom: 1px solid #0f141e;
   background-color: transparent;
   box-sizing: border-box;
 
-  color: var(--White, #fff);
+  color: #0f141e;
   font-family: Space Grotesk;
   font-size: 16px;
   font-style: normal;
@@ -911,8 +939,9 @@ textarea {
 }
 
 button[type="submit"] {
-  background-color: transparent;
+  background-color: #0f141e;
   color: var(--White, #fff);
+  height: 50px;
   font-family: Space Grotesk;
   font-size: 16px;
   font-style: normal;
@@ -920,10 +949,11 @@ button[type="submit"] {
   line-height: 26px;
   letter-spacing: 2.286px;
   border: 0;
-  border-bottom: solid 2px var(--Green, #4ee1a0);
+  /* border-bottom: solid 2px var(--Green, #4ee1a0); */
   cursor: pointer;
   margin-top: 20px;
   margin-left: 283px;
+  border-radius: 5px;
 }
 
 #submitButton:hover {
@@ -935,8 +965,6 @@ button[type="submit"] {
 footer {
   display: flex;
   justify-content: center;
-  background: var(--Dark-Grey, #242424);
-  color: #fff;
   padding: 30px;
 }
 
@@ -944,12 +972,11 @@ footer {
   display: flex;
   justify-content: space-between;
   width: 80%;
-  border-top: 1px solid white;
+  border-top: 1px solid #030406;
   padding: 20px;
 }
 
 .footer-title {
-  color: var(--White, #fff);
   font-family: Space Grotesk;
   font-size: 32px;
   font-style: normal;
@@ -1050,7 +1077,6 @@ footer {
   }
 
   .contato-info h2 {
-    color: var(--White, #fff);
     font-feature-settings: "clig" off, "liga" off;
     font-family: Space Grotesk;
     font-size: 48px;
@@ -1132,9 +1158,6 @@ a {
 }
 
 
-
-
-
 /* section about me*/
 
 .about-me {
@@ -1147,7 +1170,6 @@ a {
  width: 100%;
 }
 .conteudoTitleAbout h1 {
-    color: var(--White, #fff);
     font-feature-settings: "clig" off, "liga" off;
     font-family: Space Grotesk;
     font-size: 88px;
@@ -1156,6 +1178,7 @@ a {
     line-height: 88px;
     letter-spacing: -2.5px;
     padding-left: 10%;
+    margin-top: 50px;
 }
 
 .container-about  {
