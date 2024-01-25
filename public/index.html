@@ -25,30 +25,43 @@
     />
     <script></script>
   </head>
-  <header>
-    <nav>
-      <h1 id="nameTitle">emanuel</h1>
-      <ul>
-        <li>
-          <a href="https://github.com/Emanuel0001" target="_blank">
-            <img src="./assets/images/icon-github.svg" /></a>
-        </li>
-        <li>
-          <a href="https://www.frontendmentor.io/profile/Emanuel0001" target="_blank">
-            <img src="./assets/images/icon-frontend-mentor.svg" /></a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/emanuel-hitallo-06690a16b/" target="_blank">
-            <img src="./assets/images/icon-linkedin.svg" /></a>
-        </li>
-        <li>
-          <a href="#"><img src="./assets/images/icon-twitter.svg" /></a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+  
   <body>
-    <div class="container-pg">
+    <div id="loading">
+      
+      <h1 id="loading-text">
+        <div class="welcome">
+        <h4>Welcome</h4>
+      </div>Wait a Bit </h1>
+      <div class="loader">
+        <div class="dot dot1"></div>
+        <div class="dot dot2"></div>
+        <div class="dot dot3"></div>
+      </div>
+  </div>
+    <div class="container-pg" id="main-content">
+      <header>
+        <nav >
+          <h1 id="nameTitle">emanuel</h1>
+          <ul>
+            <li>
+              <a href="https://github.com/Emanuel0001" target="_blank">
+                <img src="./assets/images/icon-github.svg" /></a>
+            </li>
+            <li>
+              <a href="https://www.frontendmentor.io/profile/Emanuel0001" target="_blank">
+                <img src="./assets/images/icon-frontend-mentor.svg" /></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/emanuel-hitallo-06690a16b/" target="_blank">
+                <img src="./assets/images/icon-linkedin.svg" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./assets/images/icon-twitter.svg" /></a>
+            </li>
+          </ul>
+        </nav>
+      </header>
       <section class="sobre-mim">
         <div class="conteudo">
           <div class="texto">
@@ -293,6 +306,16 @@
     
     </div>
     <script>
+       // atraso na tela loading
+         document.getElementById('main-content').style.display = 'none';
+       
+        setTimeout(function () { 
+           document.getElementById('loading').style.display = 'none';
+            document.getElementById('main-content').style.display = 'block';
+             // Cria um item no localStorage
+        }, 3000);
+
+
       document.addEventListener("DOMContentLoaded", function () {
         // Array de objetos com itens e descrições
         const listaDeItens = [
