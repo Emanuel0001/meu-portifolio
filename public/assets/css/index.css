@@ -286,6 +286,7 @@ span {
 }
 
 /* Adaptação para telas menores usando media query */
+
 @media screen and (max-width: 1066px) {
   nav {
     padding: 30px;
@@ -320,6 +321,7 @@ span {
     font-weight: 700;
     line-height: 72px; /* 100% */
     letter-spacing: -2.045px;
+    width: 100%;
   }
 
   .conteudo {
@@ -425,10 +427,10 @@ span {
   .foto img {
     width: 302px;
     flex-shrink: 0;
-    background-color: #ffffff11;
+    background-color: #0f141e69;
     display: flex;
     margin-top: -129px;
-  }
+}
 
   .conteudo {
     flex-shrink: 0;
@@ -449,8 +451,6 @@ span {
   background-size: 400px;
   background-position: right;
   background-repeat: no-repeat;
-  margin-top: 100px;
-  margin-bottom: 100px;
   background-position-y: 200px;
   background-position-x: 990px;
 }
@@ -513,10 +513,7 @@ li p {
   line-height: 28px; /* 155.556% */
 }
 @media screen and (max-width: 750px) {
-  .item {
-    margin-right: 30px;
-    padding-bottom: 40px;
-  }
+
   .habilidades {
     width: 100%;
   }
@@ -779,6 +776,21 @@ h5 {
 
 
 @media screen and (max-width: 665px) {
+
+  .resumoProjetos {
+    color: rgb(135, 138, 143);
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    padding-bottom: 3px;
+    font-size: 19px;
+    opacity: 0;
+    border: 0px;
+    width: 112%;
+    padding-top: 10px;
+    margin-left: 0px;
+    text-align: justify;
+}
+
   .container {
     position: relative;
   }
@@ -817,14 +829,14 @@ h5 {
   }
 
   .containerProjetos h1 {
-    color: var(--White, #fff);
     font-family: Space Grotesk;
-    font-size: 40px;
+    font-size: 70px;
     font-style: normal;
     font-weight: 700;
     line-height: 40px; /* 100% */
     letter-spacing: -1.136px;
   }
+
 
   .titulo {
     color: var(--White, #fff);
@@ -1052,7 +1064,6 @@ footer {
 
 @media screen and (max-width: 567px) {
   button[type="submit"] {
-    background-color: transparent;
     color: var(--White, #fff);
     font-family: Space Grotesk;
     font-size: 16px;
@@ -1075,7 +1086,7 @@ footer {
   .contato-info h2 {
     font-feature-settings: "clig" off, "liga" off;
     font-family: Space Grotesk;
-    font-size: 48px;
+    font-size: 70px;
     font-style: normal;
     font-weight: 700;
     line-height: 88px;
@@ -1094,7 +1105,6 @@ footer {
   }
 
   .footer-title {
-    color: var(--White, #fff);
     text-align: center;
     font-family: Space Grotesk;
     font-size: 40px;
@@ -1115,6 +1125,14 @@ footer {
 
 
 @media screen and (max-width: 500px) {
+
+  .linkMore {
+    cursor: pointer;
+    color: #4ee1a0;
+    border-bottom: 1px solid var(--Green, #4ee1a0);
+    padding: 0;
+}
+
   .container {
     position: relative;
   }
@@ -1132,7 +1150,6 @@ footer {
   padding: 30px;
 }
 .conteudo-titles {
-  color: var(--White, #fff);
   text-align: center;
   font-family: Space Grotesk;
   font-size: 40px;
@@ -1288,4 +1305,10 @@ a {
   padding-top: 30px;
   width: 100%;
 
+}
+
+@media screen  and (max-width: 600px) {
+  .conteudoTitleAbout h1 {
+    font-size: 70px;
+  }
 }
