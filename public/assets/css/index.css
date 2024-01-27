@@ -286,6 +286,8 @@ span {
   color: white;
 }
 
+
+
 /* Adaptação para telas menores usando media query */
 
 @media screen and (max-width: 1066px) {
@@ -439,6 +441,24 @@ span {
     justify-content: center;
     padding-top: 25px;
   }
+}
+
+@media screen and (max-width: 500px) {
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1;
+    position: relative;
+}
+#nameTitle {
+  display: none;
+}
+.idiomas {
+  display: flex;
+  /* width: 100%; */
+  justify-content: center;
+}
 }
 
 /* conteudo habilidades */
@@ -1324,7 +1344,7 @@ a {
 
 
 .welcome h4 {
-  font-size: 60px;
+  font-size: 40px;
   font-weight: 200;
 
 }
@@ -1406,4 +1426,20 @@ a {
   .loader {
     margin-left: -100px;
   }
+}
+
+
+/*idiomas*/
+
+.idiomas {
+  display: flex;
+}
+
+.flags {
+  width: 30px;
+  padding: 0 5px;
+}
+
+#pInline {
+  display: inline;
 }

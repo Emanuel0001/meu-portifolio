@@ -1,0 +1,35 @@
+{
+    "niceToMeetYou": "Muito prazer!",
+    "apresentacao": "Eu sou ",
+    "name": "Emanuel",
+    "resume":"Baseado no BR, sou um desenvolvedor React apaixonado por construir aplicativos web acessíveis que os usuários adoram.",
+
+   
+    "projects": "Projetos",
+    "projectTitle1":"UX/UI – Site de marketing digital",
+    "projectTitle2":"Cardápio Digital — Lanchonete e Pizzaria",
+
+    "more": "view Codigo or Projeto",
+
+    "contact": "Contato",
+    "downloadCV": "BAIXAR CV",
+    "viewCode": "Ver Código",
+    "viewProject": "Ver Projeto",
+    "projectDescription": "O site GeraisNet oferece uma experiência online moderna e intuitiva, com destaque para o Portal do Cliente, que proporciona fácil acesso a informações cruciais. Com um design atrativo, a plataforma facilita a navegação e inclui uma seção de preços transparente, permitindo ao usuário escolher entre os planos disponíveis com clareza e simplicidade. No geral, o GeraisNet alia funcionalidade e estética, oferecendo ao visitante uma visão prática e envolvente dos serviços de internet disponíveis.",
+    "projectDescription2":"MenuDigital apresenta um site com design moderno, destacando fotografias vivas de produtos. Seu menu superior, intuitivo e fácil de usar permite ao usuário explorar diversos itens. Ao clicar em um item, uma seção dedicada é aberta, exibindo o conteúdo relacionado de forma atrativa e informativa. Combinando uma estética visual atraente e funcionalidade prática, o MenuDigital oferece uma experiência envolvente para os visitantes explorarem o menu de forma eficiente.",
+    "projectDescription3":"O Sistema de Gerenciamento de Usuários apresenta uma abordagem acessível e segura com suas telas distintas. A tela de login oferece autenticação fácil, enquanto a tela de cadastro permite que você se cadastre e acesse o sistema de forma eficiente. No painel, os usuários principais têm uma visão detalhada da lista completa de usuários, com a capacidade adicional de personalizar perfis adicionando imagens de preferência. Esta funcionalidade aprimorada do painel permite o gerenciamento completo e personalizado da comunidade de usuários.",
+    "projectDescription4":"O projeto FinanceControl está estruturado pensando na praticidade e eficiência. Começa com telas separadas de login e registro, proporcionando acesso seguro e rápido. Na tela principal, o usuário tem total controle sobre suas entradas e saídas financeiras, com visualização clara do saldo total. Abaixo, uma tabela detalhada mostra os itens adicionados, possibilitando a fácil remoção de lançamentos, proporcionando ao usuário uma gestão flexível e intuitiva de suas finanças. Esta abordagem direta e interativa destaca-se por simplificar a administração financeira de forma acessível.",
+
+    "lifestyle":"Adoro acampar, busco serenidade nas alturas e conexão com a natureza. À noite, o acampamento sob o céu estrelado encanta, proporcionando paz e renovando a alma. Cada subida de montanha é uma viagem única, moldando o meu amor pela simplicidade e conveniência na vida ao ar livre.",
+    "developer":"Como desenvolvedor de software, meu dia a dia é uma imersão apaixonada em linhas de código que chegam à vida digital. Todo desafio é uma oportunidade de inovação e resolução, e transformar ideias em software funcional é minha verdadeira paixão. A tecnologia não é apenas uma profissão, mas uma expressão de criatividade e dedicação. Cada linha que escrevo conta uma história de emoção no fascinante mundo da programação.",
+    "objectives":"Busco a excelência como desenvolvedor de software, visando ser reconhecido pela responsabilidade e expertise. Minha meta é, em cinco anos, trabalhar em projetos desafiadores e alcançar fluência em inglês para ampliar minha comunicação global. Minha trajetória futura é marcada pela determinação de ser um profissional respeitado e conectado globalmente, encarando cada desafio como uma oportunidade de crescimento.",
+   
+    "tituloAboutMe1":"Lifestyle",
+    "tituloAboutMe2":"Development",
+    "tituloAboutMe3":"objectives",
+   
+    "contatoH1":"Contato",
+    "resumeContact":"Eu adoraria ouvir sobre seu projeto e como posso ajudar. Preencha o formulário e entrarei em contato com você o mais breve possível."
+
+  
+  }
