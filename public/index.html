@@ -13,7 +13,7 @@
       name="keywords"
       content="portifolio, html, front-end, desenvolvimento, css, javascript"
     />
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    
     <script src="https://unpkg.com/scrollreveal"></script>
     <title>Portifólio | Emanuel H.</title>
     <link rel="icon" href="./assets/images/icon.ico" />
@@ -23,50 +23,12 @@
       href="./assets//css/index.css"
       media="screen"
     />
+    <script></script>
   </head>
-  <script>
-    // Função para aplicar traduções
-    function applyTranslations(translations) {
-      // Seleciona todos os elementos com o atributo 'data-translate'
-      var elements = document.querySelectorAll('[data-translate]');
-
-      // Itera sobre os elementos e aplica as traduções
-      elements.forEach(function(element) {
-        var key = element.getAttribute('data-translate');
-        if (translations[key]) {
-          element.innerHTML = translations[key];
-        }
-      });
-    }
-
-    // Função para carregar JSON de forma assíncrona
-    function loadJSON(file, callback) {
-      var xhr = new XMLHttpRequest();
-      xhr.overrideMimeType('application/json');
-      xhr.open('GET', file, true);
-      xhr.onreadystatechange = function () {
-        if (xhr.readyState == 4 && xhr.status == '200') {
-          callback(JSON.parse(xhr.responseText));
-        }
-      };
-      xhr.send(null);
-    }
-
-    // Função para mudar o idioma
-    function changeLanguage(languageFile) {
-      loadJSON(languageFile, function(translations) {
-        applyTranslations(translations);
-      });
-    }
-
-    // chamada inicial para inglês
-    loadJSON('idiomas/lang-en.json', function(translationsEn) {
-      applyTranslations(translationsEn);
-    });
-  </script>
   
-  <body> 
+  <body>
     <div id="loading">
+      
       <h1 id="loading-text">
         <div class="welcome">
         <h4>Welcome</h4>
@@ -81,10 +43,6 @@
       <header>
         <nav >
           <h1 id="nameTitle">emanuel</h1>
-          <div class="idiomas">
-            <a onclick="changeLanguage('idiomas/lang-en.json')"><img class="flags" src="./assets/images/Flags/us.svg"></a>
-            <a onclick="changeLanguage('idiomas/translations_pt.json')"><img class="flags" src="./assets/images/Flags/br.svg"></a>
-          </div>
           <ul>
             <li>
               <a href="https://github.com/Emanuel0001" target="_blank">
@@ -100,7 +58,6 @@
             </li>
             <li>
               <a href="#"><img src="./assets/images/icon-twitter.svg" /></a>
-            
             </li>
           </ul>
         </nav>
@@ -109,10 +66,10 @@
         <div class="conteudo">
           <div class="texto">
             <div class="conteudo-titles">
-              <h1 data-translate="niceToMeetYou">Nice to meet you!</h1>
-              <h1><p id="pInline" data-translate="apresentacao">I’m</p><span data-translate="name"> Emanuel.</span></h1>
+              <h1>Nice to meet you!</h1>
+              <h1>I’m <span>Emanuel.</span></h1>
             </div>
-            <div class="resumo" data-translate="resume">
+            <div class="resumo">
               <p>
                 Based in the BR, I’m a React developer passionate about building accessible web apps that users love.
               </p>
@@ -136,7 +93,7 @@
 
       <section class="containerProjetos">
         <div class="titlesProjetos">
-          <h1 data-translate="projects">Projects</h1>
+          <h1>Projects</h1>
           <div class="conteudo-links">
             <!-- <a class="link">CONTACT ME</a> -->
           </div>
@@ -147,13 +104,13 @@
             <div class="container Thumbnail1"> 
               <div class="container-info">
                 <h5>2023</h5>
-                <h2 class="titulo" data-translate="projectTitle1">UX/UI — Digital marketing website</h2>
+                <h2 class="titulo">UX/UI — Digital marketing website</h2>
                 <div class="with-icon">
                  <div class="more"> View 
                   <a class="linkMore">Code</a> or 
                   <a class="linkMore" href="https://geraisnet.com.br" target="_blank">Project</a> 
                  </div>
-                 <p class="resumoProjetos" data-translate="projectDescription">
+                 <p class="resumoProjetos">
                   The GeraisNet website offers a modern and intuitive online experience, with emphasis on the Customer Portal, which provides easy access to crucial information. With an attractive design, the platform facilitates navigation and includes a transparent pricing section, allowing users to choose between available plans with clarity and simplicity. Overall, GeraisNet combines functionality and aesthetics, offering visitors a practical and engaging view of available internet services.
                  </p>
                 </div>
@@ -167,13 +124,13 @@
             <div class="container Thumbnail2">
               <div class="container-info altColor">
                 <h5>2023</h5>
-                <h2 class="titulo" data-translate="projectTitle2">Digital Menu — Cafeteria & Pizzeria</h2>
+                <h2 class="titulo">Digital Menu — Cafeteria & Pizzeria"</h2>
                 <div class="with-icon">
                   <div class="more"> View 
                    <a class="linkMore" href="https://github.com/Emanuel0001/sistema-pizzaria" target="_blank">Code</a> or 
                    <a class="linkMore" href="https://sistema-pizzaria-food.netlify.app/" target="_blank">Project</a> 
                   </div>
-                  <p class="resumoProjetos" data-translate="projectDescription2">
+                  <p class="resumoProjetos">
                     MenuDigital presents a website with a modern design, highlighting vivid product photographs. Its superior, intuitive and easy-to-use menu allows users to explore different items. When clicking on an item, a dedicated section opens, displaying related content in an attractive and informative way. Combining appealing visual aesthetics and practical functionality, MenuDigital provides an engaging experience for visitors to explore the menu efficiently.
                   </p>
                  </div>
@@ -193,7 +150,7 @@
                    <a class="linkMore" href="https://github.com/Emanuel0001/sistema-de-usuario" target="_blank">Code</a> or 
                    <a class="linkMore" href="https://sistemadeusuario.netlify.app/" target="_blank">Project</a> 
                   </div>
-                  <p class="resumoProjetos" data-translate="projectDescription3">
+                  <p class="resumoProjetos">
                     The User Management System presents an accessible and secure approach with its distinct screens. The login screen offers easy authentication, while the registration screen allows you to register and access the system efficiently. On the dashboard, primary users have a detailed view of the full user list, with the added ability to customize profiles by adding preference images. This improved dashboard functionality allows complete and personalized management of the user community.
                   </p>
                 </div>
@@ -214,7 +171,7 @@
                    <a class="linkMore" href="https://github.com/Emanuel0001/frontend-finance-control-deploy" target="_blank">Code</a> or 
                    <a class="linkMore" href="https://financecontrolapp.netlify.app/" target="_blank">Project</a> 
                   </div>
-                  <p class="resumoProjetos" data-translate="projectDescription4">
+                  <p class="resumoProjetos">
                     The FinanceControl project is structured with practicality and efficiency in mind. It starts with separate login and registration screens, providing safe and quick access. On the main screen, users have full control over their financial inflows and outflows, with a clear display of the total balance. Below, a detailed table shows the added items, enabling easy removal of entries, giving the user flexible and intuitive management of their finances. This direct and interactive approach stands out for simplifying financial administration in an accessible way.
                   </p>
                 </div>
@@ -239,7 +196,7 @@
                 <h5>Photography</h5>
                 <h2 class="tituloAboutMe">Lifestyle</h2>
                 <div class="with-icon">
-                    <div class="more" data-translate="lifestyle"> 
+                    <div class="more"> 
                         <p>
                           I love camping, seeking serenity in heights and connection with nature. At night, the camp under the starry sky enchants, providing peace and renewing the soul. Each mountain climb is a unique journey, shaping my love for simplicity and convenience in outdoor living.
                         </p>
@@ -254,9 +211,9 @@
               <div class="containerAbout ThumbnailAboutMe2">
                 <div class="containerInfoAbout ">
                   <h5>Photography</h5>
-                  <h2 class="tituloAboutMe" data-translate="tituloAboutMe2">Development</h2>
+                  <h2 class="tituloAboutMe">Development</h2>
                     <div class="with-icon">
-                      <div class="more" data-translate="developer"> 
+                      <div class="more"> 
                           <p>
                             As a software developer, my day to day life is a passionate immersion in lines of code that come to digital life. Every challenge is an opportunity for innovation and resolution, and turning ideas into working software is my true passion. Technology is not just a profession, but an expression of creativity and dedication. Every line I write tells a story of excitement in the fascinating world of programming.
                           </p>
@@ -283,9 +240,9 @@
             <div class="containerAbout ThumbnailAboutMe3">
               <div class="containerInfoAbout ">
                 <h5>Photography</h5>
-                <h2 class="tituloAboutMe" data-translate="tituloAboutMe3">Goals and objectives</h2>
+                <h2 class="tituloAboutMe">Goals and objectives</h2>
                   <div class="with-icon">
-                    <div class="more" data-translate="objectives"> 
+                    <div class="more"> 
                         <p>
                           I seek excellence as a software developer, aiming to be recognized for responsibility and expertise. My goal is, in five years, to work on challenging projects and achieve fluency in English to expand my global communication. My future path is marked by the determination to be a respected and globally connected professional, facing each challenge as an opportunity for growth.
                         </p>
@@ -301,8 +258,8 @@
       </section>
       <section class="contato-section">
         <div class="contato-info">
-          <h2 data-translate="contatoH1">Contact</h2>
-          <p data-translate="resumeContact">
+          <h2>Contact</h2>
+          <p>
             I would love to hear about your project
              and how I could help. Please fill in the form, and I’ll get back to you as soon as possible.
           </p>
@@ -351,9 +308,11 @@
     <script>
        // atraso na tela loading
          document.getElementById('main-content').style.display = 'none';
+       
         setTimeout(function () { 
            document.getElementById('loading').style.display = 'none';
             document.getElementById('main-content').style.display = 'block';
+             // Cria um item no localStorage
         }, 3000);
 
 
@@ -379,25 +338,12 @@
 
         // Utiliza a função map para criar os itens da lista
         const itensHTML = listaDeItens.map(function (item) {
-<<<<<<< HEAD
-          return `<li class="item"><h1>${item.item}</h1> <br> <p>${item.descricao}</p></li>`;
-=======
           return `<li class="item"><h1>${item.item}</h1><br> <p>${item.descricao}</p></li>`;
->>>>>>> style/correcao-e-estilizacao
         });
 
         // Adiciona os itens à lista ul
         listaUl.innerHTML = itensHTML.join("");
       });
-     
-
-
-
-
-
-
-
-      
     </script>
   </body>
 </html>
