@@ -126,7 +126,7 @@ q:after {
 
 body {
   background-color: white;
-  color: #0f141e;;
+  color: #0f141e;
 }
 
 table {
@@ -167,11 +167,9 @@ li {
   margin-left: 20px;
 }
 ul li:hover {
-  transition: 100ms; 
-      transform: translateY(-5px);
-      
+  transition: 100ms;
+  transform: translateY(-5px);
 }
-
 
 a {
   text-decoration: none;
@@ -285,8 +283,6 @@ span {
 .link:hover {
   color: white;
 }
-
-
 
 /* Adaptação para telas menores usando media query */
 
@@ -433,7 +429,7 @@ span {
     background-color: #0f141e69;
     display: flex;
     margin-top: -129px;
-}
+  }
 
   .conteudo {
     flex-shrink: 0;
@@ -441,7 +437,22 @@ span {
     justify-content: center;
     padding-top: 25px;
   }
-  
+
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1;
+    position: relative;
+  }
+  #nameTitle {
+    display: none;
+  }
+  .idiomas {
+    display: flex;
+    /* width: 100%; */
+    justify-content: center;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -451,15 +462,15 @@ span {
     align-items: center;
     z-index: 1;
     position: relative;
-}
-#nameTitle {
-  display: none;
-}
-.idiomas {
-  display: flex;
-  /* width: 100%; */
-  justify-content: center;
-}
+  }
+  #nameTitle {
+    display: none;
+  }
+  .idiomas {
+    display: flex;
+    /* width: 100%; */
+    justify-content: center;
+  }
 }
 
 /* conteudo habilidades */
@@ -535,7 +546,6 @@ li p {
   line-height: 28px; /* 155.556% */
 }
 @media screen and (max-width: 750px) {
-
   .habilidades {
     width: 100%;
   }
@@ -578,7 +588,6 @@ li p {
     font-style: normal;
     font-weight: 500;
     line-height: 26px;
-    margin-top: -20px;
   }
 }
 
@@ -702,24 +711,19 @@ h5 {
 }
 .Thumbnail1 {
   background: url("../images/Projects/TumbnailPrj1.jpg") center/cover;
-
 }
-
 
 .Thumbnail2 {
   background: url("../images/Projects/ThumbnailPrj2.png") center/cover;
 }
 
-
 .Thumbnail3 {
   background: url("../images/Projects/ThumbnailSistemaUsuario.png") center/cover;
 }
 
-
 .Thumbnail4 {
   background: url("../images/Projects/ThumnailFinanceControl.png") center/cover;
 }
-
 
 .Thumbnail5 {
   background: url("../images/Thumnail-finance.png") center/cover;
@@ -727,7 +731,7 @@ h5 {
 
 .links {
   position: absolute;
- 
+
   opacity: 0;
   transition: opacity 0.3s ease;
   box-shadow: 1px 1px 15px black;
@@ -736,36 +740,36 @@ h5 {
   color: #e4e5e7;
   opacity: 1;
   transition: 1s;
-  animation: go-back 300ms linear
+  animation: go-back 300ms linear;
 }
 
 .container:hover .resumoProjetos {
   color: #e4e5e7;
   opacity: 1;
   transition: 1s;
-  animation: go-left 1s linear
+  animation: go-left 1s linear;
 }
 @keyframes go-left {
   0% {
-      transform: translateX(50px);
-      opacity: 0;
+    transform: translateX(50px);
+    opacity: 0;
   }
   50% {
     transform: translateX(50px);
     opacity: 0;
   }
   100% {
-      transform: translateX(0);
-      opacity: 1;
+    transform: translateX(0);
+    opacity: 1;
   }
 }
 
 @keyframes go-back {
   0% {
-      transform: translateY(20px);
+    transform: translateY(20px);
   }
   100% {
-      transform: translateY(0);
+    transform: translateY(0);
   }
 }
 .container:hover .titulo {
@@ -785,7 +789,7 @@ h5 {
   width: 100%;
   height: 100%;
   opacity: 0.75;
-  background: rgba(15,20,30,.9);
+  background: rgba(15, 20, 30, 0.9);
   opacity: 1;
   transition: 100ms;
 }
@@ -797,9 +801,7 @@ h5 {
   text-decoration: none;
 }
 
-
 @media screen and (max-width: 665px) {
-
   .resumoProjetos {
     color: rgb(135, 138, 143);
     font-weight: 500;
@@ -812,7 +814,7 @@ h5 {
     padding-top: 10px;
     margin-left: 0px;
     text-align: justify;
-}
+  }
 
   .container {
     position: relative;
@@ -822,16 +824,14 @@ h5 {
     width: 400px;
     height: 600px;
     background-color: black;
-}
-.container-info {
-  position: absolute;
-  z-index: 1;
-  margin: 7px;
-  width: calc(60% - 14px);
-  padding: 30px;
-}
-
-
+  }
+  .container-info {
+    position: absolute;
+    z-index: 1;
+    margin: 7px;
+    width: calc(60% - 14px);
+    padding: 30px;
+  }
 
   .containerProjetos {
     margin-left: 10px;
@@ -859,7 +859,6 @@ h5 {
     line-height: 40px; /* 100% */
     letter-spacing: -1.136px;
   }
-
 
   .titulo {
     color: var(--White, #fff);
@@ -1146,15 +1145,13 @@ footer {
   }
 }
 
-
 @media screen and (max-width: 500px) {
-
   .linkMore {
     cursor: pointer;
     color: #4ee1a0;
     border-bottom: 1px solid var(--Green, #4ee1a0);
     padding: 0;
-}
+  }
 
   .container {
     position: relative;
@@ -1164,35 +1161,34 @@ footer {
     width: 350px;
     height: 600px;
     background-color: black;
-}
-.container-info {
-  position: absolute;
-  z-index: 1;
-  margin: 7px;
-  width: calc(80% - 14px);
-  padding: 30px;
-}
-.conteudo-titles {
-  text-align: center;
-  font-family: Space Grotesk;
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 40px;
-  letter-spacing: -1.136px;
-  padding-bottom: 30px;
-}
-a {
-  text-decoration: none;
-  color: #fff;
-  padding: 10px;
-}
+  }
+  .container-info {
+    position: absolute;
+    z-index: 1;
+    margin: 7px;
+    width: calc(80% - 14px);
+    padding: 30px;
+  }
+  .conteudo-titles {
+    text-align: center;
+    font-family: Space Grotesk;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: -1.136px;
+    padding-bottom: 30px;
+  }
+  a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+  }
 
-.footer-title {
-  display: none;
+  .footer-title {
+    display: none;
+  }
 }
-}
-
 
 /* section about me*/
 
@@ -1202,22 +1198,22 @@ a {
   height: 100%;
 }
 .conteudoTitleAbout {
- display: block;
- width: 100%;
+  display: block;
+  width: 100%;
 }
 .conteudoTitleAbout h1 {
-    font-feature-settings: "clig" off, "liga" off;
-    font-family: Space Grotesk;
-    font-size: 88px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 88px;
-    letter-spacing: -2.5px;
-    padding-left: 10%;
-    margin-top: 50px;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Space Grotesk;
+  font-size: 88px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 88px;
+  letter-spacing: -2.5px;
+  padding-left: 10%;
+  margin-top: 50px;
 }
 
-.container-about  {
+.container-about {
   display: flex;
   width: 100%;
   flex-wrap: wrap;
@@ -1231,13 +1227,10 @@ a {
   width: 350px;
   height: 600px;
   background-color: black;
-  
-  
 }
 
-.containerAbout:hover .tituloAboutMe{
+.containerAbout:hover .tituloAboutMe {
   color: white;
-
 }
 
 .containerAbout:hover .links {
@@ -1248,7 +1241,7 @@ a {
   width: 100%;
   height: 100%;
   opacity: 0.75;
-  background: rgba(15,20,30,.9);
+  background: rgba(15, 20, 30, 0.9);
   opacity: 1;
   transition: 100ms;
 }
@@ -1258,10 +1251,10 @@ a {
 }
 @keyframes go-back {
   0% {
-      transform: translateY(20px);
+    transform: translateY(20px);
   }
   100% {
-      transform: translateY(0);
+    transform: translateY(0);
   }
 }
 
@@ -1303,23 +1296,19 @@ a {
 }
 
 .ThumbnailAboutMe1 {
-  background: url("../images/AboutMe/thumbnail\(camp\).jpg") center/cover; 
+  background: url("../images/AboutMe/thumbnail\(camp\).jpg") center/cover;
   transition: background-size 0.5s;
 }
 
-
 .ThumbnailAboutMe2 {
-  background: url("../images/AboutMe/programer.jpg") center/cover; 
+  background: url("../images/AboutMe/programer.jpg") center/cover;
   transition: background-size 0.5s;
-
 }
 
 .ThumbnailAboutMe3 {
-  background: url("../images/AboutMe/metas.jpg") center/cover; 
+  background: url("../images/AboutMe/metas.jpg") center/cover;
   transition: background-size 0.5s;
-
 }
-
 
 .icons {
   display: flex;
@@ -1327,10 +1316,9 @@ a {
   text-align: center;
   padding-top: 30px;
   width: 100%;
-
 }
 
-@media screen  and (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .conteudoTitleAbout h1 {
     font-size: 70px;
   }
@@ -1343,22 +1331,18 @@ a {
   font-weight: 800;
 }
 
-
 .welcome h4 {
   font-size: 40px;
   font-weight: 200;
-
 }
 
-
-
 #loading {
-    display: flex;
-    align-content: end;
-    height: 90vh;
-    justify-content: flex-start;
-    align-items: flex-end;
-    margin-left: 50px;
+  display: flex;
+  align-content: end;
+  height: 90vh;
+  justify-content: flex-start;
+  align-items: flex-end;
+  margin-left: 50px;
 }
 
 .loader {
@@ -1370,7 +1354,7 @@ a {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background-color: #0f141e;;
+  background-color: #0f141e;
   margin: 0 5px;
   opacity: 0;
   animation: loaderAnimation 1.5s infinite;
@@ -1403,11 +1387,10 @@ a {
   }
 }
 
-
-@media screen  and (max-width: 600px) {
+@media screen and (max-width: 600px) {
   #loading {
     margin-left: 20px;
-}
+  }
 
   #loading h1 {
     font-size: 50px;
@@ -1416,7 +1399,6 @@ a {
   .welcome h4 {
     font-size: 30px;
     font-weight: 200;
-  
   }
 
   .dot {
@@ -1428,7 +1410,6 @@ a {
     margin-left: -100px;
   }
 }
-
 
 /*idiomas*/
 
