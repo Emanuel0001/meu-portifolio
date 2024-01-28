@@ -13,7 +13,7 @@
       name="keywords"
       content="portifolio, html, front-end, desenvolvimento, css, javascript"
     />
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6..min.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <title>Portifólio | Emanuel H.</title>
     <link rel="icon" href="./assets/images/icon.ico" />
@@ -63,6 +63,15 @@
     loadJSON('idiomas/lang-en.json', function(translationsEn) {
       applyTranslations(translationsEn);
     });
+    function mostrarTexto() {
+  var textoMudarIdioma = document.getElementById('textoMudarIdioma');
+  textoMudarIdioma.style.display = 'block';
+}
+
+function esconderTexto() {
+  var textoMudarIdioma = document.getElementById('textoMudarIdioma');
+  textoMudarIdioma.style.display = 'none';
+}
   </script>
   
   <body> 
@@ -81,9 +90,14 @@
       <header>
         <nav >
           <h1 id="nameTitle">emanuel</h1>
-          <div class="idiomas">
+          <div class="idiomas" class="idioma" id="idiomaItem" onmouseover="mostrarTexto()" onmouseout="esconderTexto()">
+            <div>
             <a onclick="changeLanguage('idiomas/lang-en.json')"><img class="flags" src="./assets/images/Flags/us.svg"></a>
             <a onclick="changeLanguage('idiomas/translations_pt.json')"><img class="flags" src="./assets/images/Flags/br.svg"></a>
+           </div>
+           <div>
+            <div id="textoMudarIdioma" style="display: none;">Change language?</div>
+           </div> 
           </div>
           <ul>
             <li>
@@ -379,12 +393,13 @@
 
         // Utiliza a função map para criar os itens da lista
         const itensHTML = listaDeItens.map(function (item) {
-          return `<li class="item"><h1>${item.item}</h1> <p>${item.descricao}</p></li>`;
+          return `<li class="item"><h1>${item.item}</h1> <p data-translate="experiencias">${item.descricao}</p></li>`;
         });
 
         // Adiciona os itens à lista ul
         listaUl.innerHTML = itensHTML.join("");
       });
+      
     </script>
   </body>
 </html>

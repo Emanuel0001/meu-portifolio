@@ -298,10 +298,6 @@ span {
     position: relative;
   }
 
-  h1 {
-    width: 400px;
-    margin: 0;
-  }
   .sobre-mim {
     display: flex;
 
@@ -401,7 +397,6 @@ span {
   }
 
   h1 {
-    width: 340px;
     margin: 0;
   }
 
@@ -450,7 +445,6 @@ span {
   }
   .idiomas {
     display: flex;
-    /* width: 100%; */
     justify-content: center;
   }
 }
@@ -545,14 +539,8 @@ li p {
   font-weight: 500;
   line-height: 28px; /* 155.556% */
 }
-@media screen and (max-width: 750px) {
-  .habilidades {
-    width: 100%;
-  }
-  .habilidades {
-    width: 100%;
-  }
 
+@media screen and (max-width: 750px) {
   .container-skills {
     display: flex;
     width: 80%;
@@ -590,7 +578,11 @@ li p {
     line-height: 26px;
   }
 }
-
+@media screen and (max-width: 500px) {
+  .item {
+    padding: 10px;
+  }
+}
 /* laout Projetos*/
 
 .titlesProjetos {
@@ -653,7 +645,7 @@ li p {
 
 .container {
   position: relative;
-  width: 550px;
+  width: 40vw;
   height: 630px;
   background-color: black;
 }
@@ -1028,6 +1020,13 @@ footer {
 }
 
 @media screen and (max-width: 1067px) {
+  .container {
+    position: relative;
+    width: 40vw;
+    height: 730px;
+    background-color: black;
+  }
+
   .contato-section {
     display: flex;
     width: 100%;
@@ -1405,16 +1404,13 @@ footer {
     width: 10px;
     height: 10px;
   }
-
-  .loader {
-    margin-left: -100px;
-  }
 }
 
 /*idiomas*/
 
 .idiomas {
   display: flex;
+  text-align: center;
 }
 
 .flags {
@@ -1424,4 +1420,20 @@ footer {
 
 #pInline {
   display: inline;
+}
+
+#idiomaItem {
+  cursor: pointer;
+  display: block;
+}
+
+#textoMudarIdioma {
+  margin-top: -50px;
+  width: 100%;
+  margin-top: -50px;
+  width: 100%;
+  display: block;
+  font-size: 13px;
+  color: #0f141e;
+  font-weight: 900;
 }
