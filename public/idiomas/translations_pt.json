@@ -8,6 +8,8 @@
     "projects": "Projetos",
     "projectTitle1":"UX/UI – Site de marketing digital",
     "projectTitle2":"Cardápio Digital — Lanchonete e Pizzaria",
+    "projectTitle3":"Projeto Pessoal — Sistema de Gerenciamento",
+    "projectTitle4":"Projeto Pessoal — Controle de finanças",
 
     "more": "view Codigo or Projeto",
 
@@ -33,9 +35,9 @@
     "developer":"Como desenvolvedor de software, meu dia a dia é uma imersão apaixonada em linhas de código que chegam à vida digital. Todo desafio é uma oportunidade de inovação e resolução, e transformar ideias em software funcional é minha verdadeira paixão. A tecnologia não é apenas uma profissão, mas uma expressão de criatividade e dedicação. Cada linha que escrevo conta uma história de emoção no fascinante mundo da programação.",
     "objectives":"Busco a excelência como desenvolvedor de software, visando ser reconhecido pela responsabilidade e expertise. Minha meta é, em cinco anos, trabalhar em projetos desafiadores e alcançar fluência em inglês para ampliar minha comunicação global. Minha trajetória futura é marcada pela determinação de ser um profissional respeitado e conectado globalmente, encarando cada desafio como uma oportunidade de crescimento.",
    
-    "tituloAboutMe1":"Lifestyle",
-    "tituloAboutMe2":"Development",
-    "tituloAboutMe3":"objectives",
+    "tituloAboutMe1":"Estilo de Vida",
+    "tituloAboutMe2":"Como Dev",
+    "tituloAboutMe3":"Objetivos",
    
     "contatoH1":"Contato",
     "resumeContact":"Eu adoraria ouvir sobre seu projeto e como posso ajudar. Preencha o formulário e entrarei em contato com você o mais breve possível.",
