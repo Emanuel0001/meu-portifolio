@@ -676,13 +676,13 @@ li p {
   font-weight: 500;
   letter-spacing: 0.01em;
   padding-bottom: 3px;
-  font-size: 22px;
+  font-size: 1.2em;
   opacity: 0;
   border: 0px;
-  width: 150%;
-  padding-top: 10px;
-  margin-left: 20px;
+  width: 170%;
   text-align: justify;
+  line-height: 1.5rem;
+  margin: 20px;
 }
 
 .container-info h2 {
@@ -792,6 +792,7 @@ h5 {
   margin-bottom: 10px;
   text-decoration: none;
 }
+
 
 @media screen and (max-width: 665px) {
   .resumoProjetos {
@@ -1083,6 +1084,15 @@ footer {
   }
 }
 
+@media screen  and (max-width: 968px){
+  .container {
+    position: relative;
+    width: 70vw;
+    height: 630px;
+    background-color: black;
+  }
+  
+}
 @media screen and (max-width: 567px) {
   button[type="submit"] {
     color: var(--White, #fff);
@@ -1157,10 +1167,10 @@ footer {
   }
   .container {
     position: relative;
-    width: 350px;
-    height: 600px;
+    width: 90vw;
+    height: 100vh;
     background-color: black;
-  }
+}
   .container-info {
     position: absolute;
     z-index: 1;

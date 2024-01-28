@@ -1,7 +1,7 @@
 {
     "niceToMeetYou": "Muito prazer!",
     "apresentacao": "Eu sou ",
-    "name": "Emanuel",
+    "name": "Emanuel.",
     "resume":"Baseado no BR, sou um desenvolvedor React apaixonado por construir aplicativos web acessíveis que os usuários adoram.",
 
    
@@ -15,10 +15,19 @@
     "downloadCV": "BAIXAR CV",
     "viewCode": "Ver Código",
     "viewProject": "Ver Projeto",
-    "projectDescription": "O site GeraisNet oferece uma experiência online moderna e intuitiva, com destaque para o Portal do Cliente, que proporciona fácil acesso a informações cruciais. Com um design atrativo, a plataforma facilita a navegação e inclui uma seção de preços transparente, permitindo ao usuário escolher entre os planos disponíveis com clareza e simplicidade. No geral, o GeraisNet alia funcionalidade e estética, oferecendo ao visitante uma visão prática e envolvente dos serviços de internet disponíveis.",
-    "projectDescription2":"MenuDigital apresenta um site com design moderno, destacando fotografias vivas de produtos. Seu menu superior, intuitivo e fácil de usar permite ao usuário explorar diversos itens. Ao clicar em um item, uma seção dedicada é aberta, exibindo o conteúdo relacionado de forma atrativa e informativa. Combinando uma estética visual atraente e funcionalidade prática, o MenuDigital oferece uma experiência envolvente para os visitantes explorarem o menu de forma eficiente.",
-    "projectDescription3":"O Sistema de Gerenciamento de Usuários apresenta uma abordagem acessível e segura com suas telas distintas. A tela de login oferece autenticação fácil, enquanto a tela de cadastro permite que você se cadastre e acesse o sistema de forma eficiente. No painel, os usuários principais têm uma visão detalhada da lista completa de usuários, com a capacidade adicional de personalizar perfis adicionando imagens de preferência. Esta funcionalidade aprimorada do painel permite o gerenciamento completo e personalizado da comunidade de usuários.",
-    "projectDescription4":"O projeto FinanceControl está estruturado pensando na praticidade e eficiência. Começa com telas separadas de login e registro, proporcionando acesso seguro e rápido. Na tela principal, o usuário tem total controle sobre suas entradas e saídas financeiras, com visualização clara do saldo total. Abaixo, uma tabela detalhada mostra os itens adicionados, possibilitando a fácil remoção de lançamentos, proporcionando ao usuário uma gestão flexível e intuitiva de suas finanças. Esta abordagem direta e interativa destaca-se por simplificar a administração financeira de forma acessível.",
+
+    "projectDescriptionP1": "O GeraisNet destaca-se por oferecer uma experiência online moderna e intuitiva, com foco especial no Portal do Cliente. Esse portal simplifica o acesso a informações cruciais, tornando a navegação eficiente e direta para os usuários.",
+    "projectDescriptionP2":"A plataforma se destaca ainda mais pelo seu design atrativo e pela inclusão de uma seção de preços transparente. Essa abordagem permite aos usuários escolher entre os planos disponíveis com clareza e simplicidade, promovendo uma experiência de seleção de serviços mais acessível e compreensível.",
+    
+    "projectDescription2P1":"O MenuDigital se destaca com um site de design moderno, enfatizando fotografias vibrantes de seus produtos. Seu menu superior é intuitivo e fácil de usar, proporcionando aos usuários a capacidade de explorar uma variedade de itens de maneira eficaz.",
+    "projectDescription2P2":"Ao selecionar um item, uma seção dedicada se abre, apresentando o conteúdo de forma atrativa e informativa no MenuDigital. Essa fusão de estética envolvente e funcionalidade prática proporciona uma experiência eficiente e atraente para os visitantes explorarem o cardápio.",
+    
+    "projectDescription3P1":"O Sistema de Gerenciamento de Usuários adota uma abordagem acessível e segura, destacando-se por suas telas distintas. A tela de login facilita a autenticação, enquanto a tela de cadastro possibilita o registro e acesso eficientes ao sistema.",
+    "projectDescription3P2":"No painel, os usuários principais desfrutam de uma visão detalhada da lista completa de usuários, com a capacidade adicional de personalizar perfis ao adicionar imagens de preferência.",
+    
+    
+    "projectDescription4P1":"O projeto FinanceControl é estruturado para praticidade e eficiência, iniciando com telas de login e registro para acesso seguro e rápido. Na tela principal, o usuário tem controle total sobre suas finanças, com uma visualização clara do saldo e uma tabela detalhada para facilitar a gestão flexível e intuitiva.",
+    "projectDescription4P2":"Essa abordagem direta e interativa do FinanceControl destaca-se pela sua capacidade de simplificar a administração financeira, proporcionando aos usuários uma experiência acessível e eficaz.",
 
     "lifestyle":"Adoro acampar, busco serenidade nas alturas e conexão com a natureza. À noite, o acampamento sob o céu estrelado encanta, proporcionando paz e renovando a alma. Cada subida de montanha é uma viagem única, moldando o meu amor pela simplicidade e conveniência na vida ao ar livre.",
     "developer":"Como desenvolvedor de software, meu dia a dia é uma imersão apaixonada em linhas de código que chegam à vida digital. Todo desafio é uma oportunidade de inovação e resolução, e transformar ideias em software funcional é minha verdadeira paixão. A tecnologia não é apenas uma profissão, mas uma expressão de criatividade e dedicação. Cada linha que escrevo conta uma história de emoção no fascinante mundo da programação.",
