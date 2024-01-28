@@ -196,11 +196,11 @@ a {
   background-size: 400px;
   background-position: start;
   background-repeat: no-repeat;
-  background-position-x: -130px;
+  background-position-x: -230px;
 }
 
 .conteudo {
-  width: 660px;
+  width: max-content;
   height: 303px;
   flex-shrink: 0;
 }
@@ -320,7 +320,6 @@ span {
   }
 
   .conteudo {
-    width: 360px;
     height: 303px;
     flex-shrink: 0;
   }
@@ -339,7 +338,31 @@ span {
     line-height: 28px; /* 155.556% */
   }
 }
+@media screen and (max-width: 960px) {
 
+  .sobre-mim {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    background-image: url(../images/pattern-rings.svg);
+    background-size: 400px;
+    background-position: start;
+    background-repeat: no-repeat;
+}
+.conteudo {
+  height: 303px;
+  flex-shrink: 0;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+}
+
+.conteudo-links {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+}
+}
 @media screen and (max-width: 760px) {
   nav {
     display: block;
@@ -741,12 +764,35 @@ h5 {
   transition: 1s;
   animation: go-left 1s linear;
 }
+
+.container:hover #atraso {
+  animation: go-left2 2s linear;
+
+}
 @keyframes go-left {
   0% {
     transform: translateX(50px);
     opacity: 0;
   }
   50% {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes go-left2 {
+  0% {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  70% {
     transform: translateX(50px);
     opacity: 0;
   }
