@@ -28,11 +28,11 @@
     // Função para aplicar traduções
     function applyTranslations(translations) {
       // Seleciona todos os elementos com o atributo 'data-translate'
-      var elements = document.querySelectorAll('[data-translate]');
+      var elements = document.querySelectorAll("[data-translate]");
 
       // Itera sobre os elementos e aplica as traduções
-      elements.forEach(function(element) {
-        var key = element.getAttribute('data-translate');
+      elements.forEach(function (element) {
+        var key = element.getAttribute("data-translate");
         if (translations[key]) {
           element.innerHTML = translations[key];
         }
@@ -42,10 +42,10 @@
     // Função para carregar JSON de forma assíncrona
     function loadJSON(file, callback) {
       var xhr = new XMLHttpRequest();
-      xhr.overrideMimeType('application/json');
-      xhr.open('GET', file, true);
+      xhr.overrideMimeType("application/json");
+      xhr.open("GET", file, true);
       xhr.onreadystatechange = function () {
-        if (xhr.readyState == 4 && xhr.status == '200') {
+        if (xhr.readyState == 4 && xhr.status == "200") {
           callback(JSON.parse(xhr.responseText));
         }
       };
@@ -54,67 +54,89 @@
 
     // Função para mudar o idioma
     function changeLanguage(languageFile) {
-      loadJSON(languageFile, function(translations) {
+      loadJSON(languageFile, function (translations) {
         applyTranslations(translations);
       });
     }
 
     // chamada inicial para inglês
-    loadJSON('idiomas/lang-en.json', function(translationsEn) {
+    loadJSON("idiomas/lang-en.json", function (translationsEn) {
       applyTranslations(translationsEn);
     });
     function mostrarTexto() {
-  var textoMudarIdioma = document.getElementById('textoMudarIdioma');
-  textoMudarIdioma.style.display = 'block';
-}
+      var textoMudarIdioma = document.getElementById("textoMudarIdioma");
+      textoMudarIdioma.style.display = "block";
+    }
 
-function esconderTexto() {
-  var textoMudarIdioma = document.getElementById('textoMudarIdioma');
-  textoMudarIdioma.style.display = 'none';
-}
+    function esconderTexto() {
+      var textoMudarIdioma = document.getElementById("textoMudarIdioma");
+      textoMudarIdioma.style.display = "none";
+    }
   </script>
-  
-  <body> 
+
+  <body>
     <div id="loading">
       <h1 id="loading-text">
         <div class="welcome">
-        <h4>Welcome</h4>
-      </div>Wait a Bit </h1>
+          <h4>Welcome</h4>
+        </div>
+        Wait a Bit
+      </h1>
       <div class="loader">
         <div class="dot dot1"></div>
         <div class="dot dot2"></div>
         <div class="dot dot3"></div>
       </div>
-  </div>
+    </div>
     <div class="container-pg" id="main-content">
       <header>
-        <nav >
+        <nav>
           <h1 id="nameTitle">emanuel.</h1>
-          <div class="idiomas" class="idioma" id="idiomaItem" onmouseover="mostrarTexto()" onmouseout="esconderTexto()">
+          <div
+            class="idiomas"
+            class="idioma"
+            id="idiomaItem"
+            onmouseover="mostrarTexto()"
+            onmouseout="esconderTexto()"
+          >
             <div>
-            <a onclick="changeLanguage('idiomas/lang-en.json')"><img class="flags" src="./assets/images/Flags/us.svg"></a>
-            <a onclick="changeLanguage('idiomas/translations_pt.json')"><img class="flags" src="./assets/images/Flags/br.svg"></a>
-           </div>
-           <div>
-            <div id="textoMudarIdioma" style="display: none;">Change language?</div>
-           </div> 
+              <a onclick="changeLanguage('idiomas/lang-en.json')"
+                ><img class="flags" src="./assets/images/Flags/us.svg"
+              /></a>
+              <a onclick="changeLanguage('idiomas/translations_pt.json')"
+                ><img class="flags" src="./assets/images/Flags/br.svg"
+              /></a>
+            </div>
+            <div>
+              <div id="textoMudarIdioma" style="display: none">
+                alterar idioma?
+              </div>
+            </div>
           </div>
           <ul>
             <li>
               <a href="https://github.com/Emanuel0001" target="_blank">
-                <img src="./assets/images/icon-github.svg" /></a>
+                <img src="./assets/images/icon-github.svg"
+              /></a>
             </li>
             <li>
-              <a href="https://www.frontendmentor.io/profile/Emanuel0001" target="_blank">
-                <img src="./assets/images/icon-frontend-mentor.svg" /></a>
+              <a
+                href="https://www.frontendmentor.io/profile/Emanuel0001"
+                target="_blank"
+              >
+                <img src="./assets/images/icon-frontend-mentor.svg"
+              /></a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/in/emanuel-hitallo-06690a16b/" target="_blank">
-                <img src="./assets/images/icon-linkedin.svg" /></a>
+              <a
+                href="https://www.linkedin.com/in/emanuel-hitallo-06690a16b/"
+                target="_blank"
+              >
+                <img src="./assets/images/icon-linkedin.svg"
+              /></a>
             </li>
             <li>
               <a href="#"><img src="./assets/images/icon-twitter.svg" /></a>
-            
             </li>
           </ul>
         </nav>
@@ -123,22 +145,35 @@ function esconderTexto() {
         <div class="conteudo">
           <div class="texto">
             <div class="conteudo-titles">
-              <h1 data-translate="niceToMeetYou">Nice to meet you!</h1>
-              <h1><p id="pInline" data-translate="apresentacao">I’m</p><span data-translate="name"> Emanuel.</span></h1>
+              <h1 data-translate="niceToMeetYou">Muito Prazer!</h1>
+              <h1>
+                <p id="pInline" data-translate="apresentacao">Eu sou</p>
+                <span data-translate="name"> Emanuel.</span>
+              </h1>
             </div>
             <div class="resumo" data-translate="resume">
               <p>
-                Based in the BR, I’m a React developer passionate about building accessible web apps that users love.
+                Com sede no Brasil, sou um desenvolvedor React | Node.js
+                apaixonado por criar aplicativos web acessíveis que os usuários
+                adoram.
               </p>
             </div>
             <div class="conteudo-links">
-              <a class="link download" href="https://drive.google.com/uc?export=download&id=1QEfyqShZUSSWm5yaJDsw05mprJ9VUPv6" target="_blank">DOWNLOAD CV</a>
+              <a
+                class="link download"
+                href="https://drive.google.com/uc?export=download&id=1QEfyqShZUSSWm5yaJDsw05mprJ9VUPv6"
+                target="_blank"
+                >DOWNLOAD CV</a
+              >
             </div>
           </div>
         </div>
         <div class="foto">
           <!-- Substitua o caminho abaixo pela URL da sua foto -->
-          <img src="./assets/images/AboutMe/MinhaImagemSF.png" alt="Minha Foto" />
+          <img
+            src="./assets/images/AboutMe/MinhaImagemSF.png"
+            alt="Minha Foto"
+          />
         </div>
       </section>
 
@@ -150,33 +185,54 @@ function esconderTexto() {
 
       <section class="containerProjetos">
         <div class="titlesProjetos">
-          <h1 data-translate="projects">Projects</h1>
+          <h1 data-translate="projects">Projetos</h1>
           <div class="conteudo-links">
             <!-- <a class="link">CONTACT ME</a> -->
           </div>
         </div>
         <div class="Projetos">
-
           <div class="card">
-            <div class="container Thumbnail1"> 
+            <div class="container Thumbnail1">
               <div class="container-info">
                 <h5>2023</h5>
-                <h2 class="titulo" data-translate="projectTitle1">UX/UI — Digital marketing website</h2>
+                <h2 class="titulo" data-translate="projectTitle1">
+                  UX/UI — Site de marketing digital
+                </h2>
                 <div class="with-icon">
-                 <div class="more"> View 
-                  <a class="linkMore">Code</a> or 
-                  <a class="linkMore" href="https://geraisnet.com.br" target="_blank">Project</a> 
-                 </div>
-                 <p class="resumoProjetos" data-translate="projectDescriptionP1" >
-                  GeraisNet stands out for offering a modern and intuitive online experience, with a special focus on the Customer Portal. This portal simplifies access to crucial information, making navigation efficient and straightforward for users.
-                 </p>
-                 <p class="resumoProjetos" data-translate="projectDescriptionP2" id="atraso">
-                  The platform stands out even more due to its attractive design and the inclusion of a transparent pricing section. This approach allows users to choose between available plans with clarity and simplicity, promoting a more accessible and understandable service selection experience.
-                </p>
+                  <div class="more">
+                    view <a class="linkMore">Code</a> or
+                    <a
+                      class="linkMore"
+                      href="https://geraisnet.com.br"
+                      target="_blank"
+                      >Project</a
+                    >
+                  </div>
+                  <p
+                    class="resumoProjetos"
+                    data-translate="projectDescriptionP1"
+                  >
+                    GeraisNet se destaca por oferecer uma experiência online
+                    moderna e intuitiva, com um foco especial no Portal do
+                    Cliente. Este portal simplifica o acesso a informações
+                    cruciais, tornando a navegação eficiente e direta para os
+                    usuários.
+                  </p>
+                  <p
+                    class="resumoProjetos"
+                    data-translate="projectDescriptionP2"
+                    id="atraso"
+                  >
+                    A plataforma se destaca ainda mais devido ao seu design
+                    atraente e à inclusão de uma seção de preços transparente.
+                    Essa abordagem permite que os usuários escolham entre planos
+                    disponíveis com clareza e simplicidade, promovendo uma
+                    experiência de seleção de serviço mais acessível e
+                    compreensível.
+                  </p>
                 </div>
               </div>
-              <div class="links">
-              </div>
+              <div class="links"></div>
             </div>
           </div>
 
@@ -184,22 +240,50 @@ function esconderTexto() {
             <div class="container Thumbnail2">
               <div class="container-info altColor">
                 <h5>2023</h5>
-                <h2 class="titulo" data-translate="projectTitle2">Digital Menu — Cafeteria & Pizzeria</h2>
+                <h2 class="titulo" data-translate="projectTitle2">
+                  Menu Digital — Cafeteria & Pizzaria
+                </h2>
                 <div class="with-icon">
-                  <div class="more"> View 
-                   <a class="linkMore" href="https://github.com/Emanuel0001/sistema-pizzaria" target="_blank">Code</a> or 
-                   <a class="linkMore" href="https://sistema-pizzaria-food.netlify.app/" target="_blank">Project</a> 
+                  <div class="more">
+                    View
+                    <a
+                      class="linkMore"
+                      href="https://github.com/Emanuel0001/sistema-pizzaria"
+                      target="_blank"
+                      >Code</a
+                    >
+                    or
+                    <a
+                      class="linkMore"
+                      href="https://sistema-pizzaria-food.netlify.app/"
+                      target="_blank"
+                      >Project</a
+                    >
                   </div>
-                  <p class="resumoProjetos" data-translate="projectDescription2P1">
-                    MenuDigital stands out with a modern website design, emphasizing vibrant photographs of its products. Its top menu is intuitive and easy to use, providing users with the ability to explore a variety of items effectively.
+                  <p
+                    class="resumoProjetos"
+                    data-translate="projectDescription2P1"
+                  >
+                    MenuDigital se destaca com um design de site moderno,
+                    enfatizando fotografias vibrantes de seus produtos. Seu menu
+                    superior é intuitivo e fácil de usar, proporcionando aos
+                    usuários a capacidade de explorar uma variedade de itens de
+                    forma eficaz.
                   </p>
-                  <p class="resumoProjetos" data-translate="projectDescription2P2"  id="atraso">
-                    When selecting an item, a dedicated section opens, presenting the content in an attractive and informative way in MenuDigital. This fusion of engaging aesthetics and practical functionality provides an efficient and engaging experience for visitors to explore the menu.
+                  <p
+                    class="resumoProjetos"
+                    data-translate="projectDescription2P2"
+                    id="atraso"
+                  >
+                    Ao selecionar um item, uma seção dedicada se abre,
+                    apresentando o conteúdo de forma atraente e informativa no
+                    MenuDigital. Essa fusão de estética envolvente e
+                    funcionalidade prática oferece uma experiência eficiente e
+                    envolvente para os visitantes explorarem o menu.
                   </p>
-                 </div>
+                </div>
               </div>
-              <div class="links">
-              </div>
+              <div class="links"></div>
             </div>
           </div>
 
@@ -207,140 +291,193 @@ function esconderTexto() {
             <div class="container Thumbnail3">
               <div class="container-info altColor">
                 <h5>2023</h5>
-                <h2 class="titulo" data-translate="projectTitle3">Personal project — User management system</h2>
+                <h2 class="titulo" data-translate="projectTitle3">
+                  Projeto Pessoal — Sistema de Gerenciamento de Usuários
+                </h2>
                 <div class="with-icon">
-                  <div class="more"> View 
-                   <a class="linkMore" href="https://github.com/Emanuel0001/sistema-de-usuario" target="_blank">Code</a> or 
-                   <a class="linkMore" href="https://sistemadeusuario.netlify.app/" target="_blank">Project</a> 
+                  <div class="more">
+                    View
+                    <a
+                      class="linkMore"
+                      href="https://github.com/Emanuel0001/sistema-de-usuario"
+                      target="_blank"
+                      >Code</a
+                    >
+                    ou
+                    <a
+                      class="linkMore"
+                      href="https://sistemadeusuario.netlify.app/"
+                      target="_blank"
+                      >Project</a
+                    >
                   </div>
-                  <p class="resumoProjetos" data-translate="projectDescription3P1">
-                    The User Management System adopts an accessible and secure approach, standing out for its distinct screens. The login screen facilitates authentication, while the registration screen enables efficient registration and access to the system.
+                  <p
+                    class="resumoProjetos"
+                    data-translate="projectDescription3P1"
+                  >
+                    O Sistema de Gerenciamento de Usuários adota uma abordagem
+                    acessível e segura, destacando-se por suas telas distintas.
+                    A tela de login facilita a autenticação, enquanto a tela de
+                    registro permite um registro eficiente e acesso ao sistema.
                   </p>
-                  <p class="resumoProjetos" data-translate="projectDescription3P2" id="atraso">
-                    From the dashboard, primary users enjoy a detailed view of the full user list, with the added ability to customize profiles by adding preference images.
+                  <p
+                    class="resumoProjetos"
+                    data-translate="projectDescription3P2"
+                    id="atraso"
+                  >
+                    No painel de controle, os usuários principais desfrutam de
+                    uma visão detalhada da lista completa de usuários, com a
+                    capacidade adicional de personalizar perfis adicionando
+                    imagens de preferência.
                   </p>
                 </div>
               </div>
-              <div class="links">
-              </div>
+              <div class="links"></div>
             </div>
-            
           </div>
 
           <div class="card">
             <div class="container Thumbnail4">
-              <div class="container-info ">
-                <h5>2023</h5>
-                <h2 class="titulo" data-translate="projectTitle4">Personal project — Finance control</h2>
-                <div class="with-icon">
-                  <div class="more"> View 
-                   <a class="linkMore" href="https://github.com/Emanuel0001/frontend-finance-control-deploy" target="_blank">Code</a> or 
-                   <a class="linkMore" href="https://financecontrolapp.netlify.app/" target="_blank">Project</a> 
-                  </div>
-                  <p class="resumoProjetos" data-translate="projectDescription4P1">
-                    The FinanceControl project is structured for practicality and efficiency, starting with login and registration screens for secure and quick access. On the main screen, the user has full control over their finances, with a clear view of the balance and a detailed table to facilitate flexible and intuitive management.
-                  </p>
-                  <p class="resumoProjetos" data-translate="projectDescription4P2" id="atraso">
-                    This direct and interactive approach to FinanceControl stands out for its ability to simplify financial administration, providing users with an accessible and effective experience.
-                  </p>
+                <div class="container-info">
+                    <h5>2023</h5>
+                    <h2 class="titulo" data-translate="projectTitle4">Projeto Pessoal — Controle Financeiro</h2>
+                    <div class="with-icon">
+                        <div class="more">
+                            View 
+                            <a class="linkMore" href="https://github.com/Emanuel0001/frontend-finance-control-deploy" target="_blank">Code</a> or 
+                            <a class="linkMore" href="https://financecontrolapp.netlify.app/" target="_blank">Project</a> 
+                        </div>
+                        <p class="resumoProjetos" data-translate="projectDescription4P1">
+                            O projeto FinanceControl é estruturado para praticidade e eficiência, começando com telas de login e registro para acesso seguro e rápido. Na tela principal, o usuário tem controle total sobre suas finanças, com uma visualização clara do saldo e uma tabela detalhada para facilitar a gestão flexível e intuitiva.
+                        </p>
+                        <p class="resumoProjetos" data-translate="projectDescription4P2" id="atraso">
+                            Essa abordagem direta e interativa do FinanceControl se destaca por sua capacidade de simplificar a administração financeira, fornecendo aos usuários uma experiência acessível e eficaz.
+                        </p>
+                    </div>
                 </div>
-              </div>
-              <div class="links">
-              </div>
+                <div class="links"></div>
             </div>
-          </div>
-
         </div>
+        
       </section>
 
       <section class="about-me">
         <div class="conteudoTitleAbout">
-        <h1>About me</h1>
+          <h1>About me</h1>
         </div>
+       
         <div class="container-about">
-          
           <div class="cardAbout">
             <div class="containerAbout ThumbnailAboutMe1">
-              <div class="containerInfoAbout ">
-                <h5>Photography</h5>
-                <h2 class="tituloAboutMe" data-translate="tituloAboutMe1">Lifestyle</h2>
-                <div class="with-icon">
-                    <div class="more" data-translate="lifestyle"> 
-                        <p>
-                          I love camping, seeking serenity in heights and connection with nature. At night, the camp under the starry sky enchants, providing peace and renewing the soul. Each mountain climb is a unique journey, shaping my love for simplicity and convenience in outdoor living.
-                        </p>
-                    </div>
-                </div>
-              </div>
-              <div class="links"></div>
-            </div>
-          </div>
-            
-            <div class="cardAbout">
-              <div class="containerAbout ThumbnailAboutMe2">
-                <div class="containerInfoAbout ">
-                  <h5>Photography</h5>
-                  <h2 class="tituloAboutMe" data-translate="tituloAboutMe2">Development</h2>
+                <div class="containerInfoAbout">
+                    <h5>Fotografia</h5>
+                    <h2 class="tituloAboutMe" data-translate="tituloAboutMe1">
+                        Estilo de vida
+                    </h2>
                     <div class="with-icon">
-                      <div class="more" data-translate="developer"> 
-                          <p>
-                            As a software developer, my day to day life is a passionate immersion in lines of code that come to digital life. Every challenge is an opportunity for innovation and resolution, and turning ideas into working software is my true passion. Technology is not just a profession, but an expression of creativity and dedication. Every line I write tells a story of excitement in the fascinating world of programming.
-                          </p>
-                          <div class="icons">
-                            <ul>
-                              <li>
-                                <a href="https://github.com/Emanuel0001" target="_blank">
-                                  <img src="./assets/images/icon-github.svg" /></a>
-                              </li>
-                              <li>
-                                <a href="https://www.linkedin.com/in/emanuel-hitallo-06690a16b/" target="_blank">
-                                  <img src="./assets/images/icon-linkedin.svg" /></a>
-                              </li>
-                            </ul>
-                          </div>
-                      </div>
+                        <div class="more" data-translate="lifestyle">
+                            <p>
+                                Adoro acampar, buscando serenidade em alturas e conexão com a natureza. À noite, o acampamento sob o céu estrelado encanta, proporcionando paz e renovando a alma. Cada escalada de montanha é uma jornada única, moldando meu amor pela simplicidade e conveniência na vida ao ar livre.
+                            </p>
+                        </div>
                     </div>
                 </div>
                 <div class="links"></div>
-              </div>
             </div>
+        </div>
+        
 
-          <div class="cardAbout">
-            <div class="containerAbout ThumbnailAboutMe3">
-              <div class="containerInfoAbout ">
-                <h5>Photography</h5>
-                <h2 class="tituloAboutMe" data-translate="tituloAboutMe3">Goals and objectives</h2>
+        <div class="cardAbout">
+          <div class="containerAbout ThumbnailAboutMe2">
+              <div class="containerInfoAbout">
+                  <h5>Fotografia</h5>
+                  <h2 class="tituloAboutMe" data-translate="tituloAboutMe2">
+                      Desenvolvimento
+                  </h2>
                   <div class="with-icon">
-                    <div class="more" data-translate="objectives"> 
-                        <p>
-                          I seek excellence as a software developer, aiming to be recognized for responsibility and expertise. My goal is, in five years, to work on challenging projects and achieve fluency in English to expand my global communication. My future path is marked by the determination to be a respected and globally connected professional, facing each challenge as an opportunity for growth.
-                        </p>
-                    </div>
+                      <div class="more" data-translate="developer">
+                          <p>
+                              Como desenvolvedor de software, minha vida diária é uma imersão apaixonada em linhas de código que ganham vida digital. Cada desafio é uma oportunidade para inovação e resolução, e transformar ideias em software funcional é minha verdadeira paixão. Tecnologia não é apenas uma profissão, mas uma expressão de criatividade e dedicação. Cada linha que escrevo conta uma história de empolgação no fascinante mundo da programação.
+                          </p>
+                          <div class="icons">
+                              <ul>
+                                  <li>
+                                      <a href="https://github.com/Emanuel0001" target="_blank">
+                                          <img src="./assets/images/icon-github.svg" />
+                                      </a>
+                                  </li>
+                                  <li>
+                                      <a href="https://www.linkedin.com/in/emanuel-hitallo-06690a16b/" target="_blank">
+                                          <img src="./assets/images/icon-linkedin.svg" />
+                                      </a>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
                   </div>
               </div>
               <div class="links"></div>
-            </div>
           </div>
-
       </div>
 
+      <div class="cardAbout">
+        <div class="containerAbout ThumbnailAboutMe3">
+            <div class="containerInfoAbout">
+                <h5>Fotografia</h5>
+                <h2 class="tituloAboutMe" data-translate="tituloAboutMe3">
+                    Metas e objetivos
+                </h2>
+                <div class="with-icon">
+                    <div class="more" data-translate="objectives">
+                        <p>
+                            Busco excelência como desenvolvedor de software, visando ser reconhecido pela responsabilidade e expertise. Meu objetivo é, em cinco anos, trabalhar em projetos desafiadores e alcançar fluência em inglês para expandir minha comunicação global. Meu caminho futuro é marcado pela determinação de ser um profissional respeitado e globalmente conectado, enfrentando cada desafio como uma oportunidade de crescimento.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="links"></div>
+        </div>
+    </div>
+    
+        </div>
       </section>
       <section class="contato-section">
         <div class="contato-info">
           <h2 data-translate="contatoH1">Contact</h2>
           <p data-translate="resumeContact">
-            I would love to hear about your project
-             and how I could help. Please fill in the form, and I’ll get back to you as soon as possible.
+            I would love to hear about your project and how I could help. Please
+            fill in the form, and I’ll get back to you as soon as possible.
           </p>
         </div>
-    
+
         <div class="formulario">
-          <form action="https://formsubmit.co/emanuelhitallodev@gmail.com"  method="POST">
-            <input type="hidden" name="_captcha" value="false">
-            <input type="text" id="nome" name="name" placeholder="Name" required>
-            <input type="email" id="email" name="email" placeholder="Email" required>
-            <textarea id="mensagem" name="message" rows="4" placeholder="message" required></textarea>
-    
+          <form
+            action="https://formsubmit.co/emanuelhitallodev@gmail.com"
+            method="POST"
+          >
+            <input type="hidden" name="_captcha" value="false" />
+            <input
+              type="text"
+              id="nome"
+              name="name"
+              placeholder="Name"
+              required
+            />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email"
+              required
+            />
+            <textarea
+              id="mensagem"
+              name="message"
+              rows="4"
+              placeholder="message"
+              required
+            ></textarea>
+
             <button type="submit" id="submitButton">SEND MESSAGE</button>
           </form>
         </div>
@@ -355,15 +492,24 @@ function esconderTexto() {
             <ul>
               <li>
                 <a href="https://github.com/Emanuel0001" target="_blank">
-                  <img src="./assets/images/icon-github.svg" /></a>
+                  <img src="./assets/images/icon-github.svg"
+                /></a>
               </li>
               <li>
-                <a href="https://www.frontendmentor.io/profile/Emanuel0001" target="_blank">
-                  <img src="./assets/images/icon-frontend-mentor.svg" /></a>
+                <a
+                  href="https://www.frontendmentor.io/profile/Emanuel0001"
+                  target="_blank"
+                >
+                  <img src="./assets/images/icon-frontend-mentor.svg"
+                /></a>
               </li>
               <li>
-                <a href="https://www.linkedin.com/in/emanuel-hitallo-06690a16b/" target="_blank">
-                  <img src="./assets/images/icon-linkedin.svg" /></a>
+                <a
+                  href="https://www.linkedin.com/in/emanuel-hitallo-06690a16b/"
+                  target="_blank"
+                >
+                  <img src="./assets/images/icon-linkedin.svg"
+                /></a>
               </li>
               <li>
                 <a href="#"><img src="./assets/images/icon-twitter.svg" /></a>
@@ -372,16 +518,14 @@ function esconderTexto() {
           </div>
         </div>
       </footer>
-    
     </div>
     <script>
-       // atraso na tela loading
-         document.getElementById('main-content').style.display = 'none';
-        setTimeout(function () { 
-           document.getElementById('loading').style.display = 'none';
-            document.getElementById('main-content').style.display = 'block';
-        }, 3000);
-
+      // atraso na tela loading
+      document.getElementById("main-content").style.display = "none";
+      setTimeout(function () {
+        document.getElementById("loading").style.display = "none";
+        document.getElementById("main-content").style.display = "block";
+      }, 3000);
 
       document.addEventListener("DOMContentLoaded", function () {
         // Array de objetos com itens e descrições
@@ -411,7 +555,6 @@ function esconderTexto() {
         // Adiciona os itens à lista ul
         listaUl.innerHTML = itensHTML.join("");
       });
-      
     </script>
   </body>
 </html>
