@@ -464,11 +464,15 @@ span {
 
   .conteudo {
     flex-shrink: 0;
-    display: flex;
     justify-content: center;
     padding-top: 25px;
-  }
-
+    width: 84vw;
+}
+  .foto {
+    width: 100%;
+    text-align: center;
+    display: contents;
+}
   nav {
     display: flex;
     justify-content: space-around;
