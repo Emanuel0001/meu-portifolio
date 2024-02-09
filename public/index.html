@@ -23,6 +23,10 @@
       href="./assets//css/index.css"
       media="screen"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    
   </head>
   <script>
     // Função para aplicar traduções
@@ -89,9 +93,10 @@
       </div>
     </div>
     <div class="container-pg" id="main-content">
+      <div class="container-dashboard">
       <header>
         <nav>
-          <h1 id="nameTitle">emanuel.</h1>
+          <h1 id="nameTitle">Web Developer</h1>
           <div
             class="idiomas"
             class="idioma"
@@ -115,12 +120,12 @@
           </div>
           <ul>
             <li>
-              <a href="https://github.com/Emanuel0001" target="_blank">
+              <a id="linkSocialMidia" href="https://github.com/Emanuel0001" target="_blank">
                 <img src="./assets/images/icon-github.svg"
               /></a>
             </li>
             <li>
-              <a
+              <a id="linkSocialMidia"
                 href="https://www.frontendmentor.io/profile/Emanuel0001"
                 target="_blank"
               >
@@ -128,7 +133,7 @@
               /></a>
             </li>
             <li>
-              <a
+              <a id="linkSocialMidia"
                 href="https://www.linkedin.com/in/emanuel-hitallo-06690a16b/"
                 target="_blank"
               >
@@ -136,7 +141,7 @@
               /></a>
             </li>
             <li>
-              <a href="#"><img src="./assets/images/icon-twitter.svg" /></a>
+              <a id="linkSocialMidia" href="#"><img src="./assets/images/icon-twitter.svg" /></a>
             </li>
           </ul>
         </nav>
@@ -148,7 +153,7 @@
               <h1 data-translate="niceToMeetYou">Muito Prazer!</h1>
               <h1>
                 <p id="pInline" data-translate="apresentacao">Eu sou</p>
-                <span data-translate="name"> Emanuel.</span>
+                <span data-translate="name"> Emanuel</span>
               </h1>
             </div>
             <div class="resumo" data-translate="resume">
@@ -176,6 +181,7 @@
           />
         </div>
       </section>
+    </div>
 
       <section class="habilidades">
         <div class="container-skills">
@@ -491,12 +497,12 @@
           <div class="footer-links">
             <ul>
               <li>
-                <a href="https://github.com/Emanuel0001" target="_blank">
+                <a id="linkSocialMidia" href="https://github.com/Emanuel0001" target="_blank">
                   <img src="./assets/images/icon-github.svg"
                 /></a>
               </li>
               <li>
-                <a
+                <a id="linkSocialMidia"
                   href="https://www.frontendmentor.io/profile/Emanuel0001"
                   target="_blank"
                 >
@@ -504,7 +510,7 @@
                 /></a>
               </li>
               <li>
-                <a
+                <a id="linkSocialMidia"
                   href="https://www.linkedin.com/in/emanuel-hitallo-06690a16b/"
                   target="_blank"
                 >
@@ -512,7 +518,7 @@
                 /></a>
               </li>
               <li>
-                <a href="#"><img src="./assets/images/icon-twitter.svg" /></a>
+                <a id="linkSocialMidia" href="#"><img src="./assets/images/icon-twitter.svg" /></a>
               </li>
             </ul>
           </div>
@@ -531,14 +537,15 @@
         // Array de objetos com itens e descrições
         const listaDeItens = [
           { item: "React", descricao: "1 year of experience" },
-          { item: "Typescript", descricao: "Improving skill" },
           { item: "Javascript", descricao: "1 year of experience" },
-          { item: "SASS", descricao: "Improving skill" },
           { item: "HTML", descricao: "1 year of experience" },
           { item: "CSS", descricao: "1 year of experience" },
           { item: "Express", descricao: "1 year of experience" },
           { item: "PostgreSql", descricao: "1 year of experience" },
+          { item: "MongoDB", descricao: "1 year of experience" },
+          { item: "Axios", descricao: "1 year of experience" },
           { item: "Git", descricao: "1 year of experience" },
+          { item: "GitHub", descricao: "1 year of experience" },
           { item: "Node.js", descricao: "1 year of experience" },
           { item: "SQL", descricao: "1 year of experience" },
           { item: "APIs", descricao: "1 year of experience" },
@@ -549,7 +556,7 @@
 
         // Utiliza a função map para criar os itens da lista
         const itensHTML = listaDeItens.map(function (item) {
-          return `<li class="item"><h1>${item.item}</h1> <p data-translate="experiencias">${item.descricao}</p></li>`;
+          return `<li><h1>${item.item}</h1> <p data-translate="experiencias">${item.descricao}</p></li>`;
         });
 
         // Adiciona os itens à lista ul

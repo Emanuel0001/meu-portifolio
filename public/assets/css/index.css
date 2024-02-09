@@ -163,8 +163,8 @@ ul {
   padding: 0;
 }
 
-li {
-  margin-left: 20px;
+#linkSocialMidia {
+  padding: 0px 0px 0 20px;
 }
 ul li:hover {
   transition: 100ms;
@@ -176,13 +176,19 @@ a {
   color: #fff;
 }
 
-#nameTitle {
+#nameTitle{
   font-family: Space Grotesk;
-  font-size: 32px;
+  font-size: 23px;
   font-style: normal;
   font-weight: 700;
-  line-height: 32px; /* 100% */
+  line-height: 32px;
   letter-spacing: -0.444px;
+  background: #0f141e;
+  color: teal;
+  width: 208px;
+  text-align: center;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 5px;
 }
 
 /* Sobre Mim*/
@@ -200,15 +206,26 @@ a {
 }
 
 .conteudo {
-  width: max-content;
+  width: 50vw;
   height: 303px;
   flex-shrink: 0;
 }
 
-.conteudo-titles {
-  padding-bottom: 50px;
+.foto {
+  width: 50vw;
 }
 
+.container-dashboard {
+  height: 100vh;
+}
+.conteudo-titles {
+  padding-bottom: 50px;
+  letter-spacing: -5px;
+  display: inherit;
+}
+body {
+  text-rendering: optimizeLegibility;
+}
 .conteudo-titles h1 {
   margin: 0;
   display: block ruby;
@@ -216,18 +233,15 @@ a {
 
 .texto {
   font-feature-settings: "clig" off, "liga" off;
-  /* Heading (XL) */
-  font-family: Space Grotesk;
-  font-size: 88px;
+  font-family: "Poppins", sans-serif;
+  font-size: 71px;
   font-style: normal;
-  font-weight: 700;
-  line-height: 88px; /* 100% */
+  font-weight: 600;
   letter-spacing: -2.5px;
-  padding-left: 30px;
 }
 
 .resumo {
-  width: 445px;
+  width: 40vw;
   font-feature-settings: "clig" off, "liga" off;
   /* Body */
   font-family: Space Grotesk;
@@ -248,7 +262,7 @@ a {
 }
 
 span {
-  border-bottom: 6px solid var(--Green, #4ee1a0);
+  border-bottom: 6px solid var(--Green, teal);
 }
 .download {
   display: block;
@@ -339,7 +353,6 @@ span {
   }
 }
 @media screen and (max-width: 960px) {
-
   .sobre-mim {
     display: flex;
     flex-direction: column-reverse;
@@ -348,20 +361,20 @@ span {
     background-size: 400px;
     background-position: start;
     background-repeat: no-repeat;
-}
-.conteudo {
-  height: 303px;
-  flex-shrink: 0;
-  text-align: center;
-  justify-content: center;
-  display: flex;
-}
+  }
+  .conteudo {
+    height: 303px;
+    flex-shrink: 0;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+  }
 
-.conteudo-links {
-  text-align: center;
-  justify-content: center;
-  display: flex;
-}
+  .conteudo-links {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+  }
 }
 @media screen and (max-width: 760px) {
   nav {
@@ -523,7 +536,8 @@ span {
   margin: 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
+  gap: 30px;
 }
 
 .item {
@@ -544,12 +558,11 @@ span {
 
 li h1 {
   font-feature-settings: "clig" off, "liga" off;
-  /* Heading (L) */
-  font-family: Space Grotesk;
-  font-size: 48px;
+  font-family: poppins;
+  font-size: 42px;
   font-style: normal;
-  font-weight: 700;
-  line-height: 56px; /* 116.667% */
+  font-weight: 600;
+  line-height: 56px;
   letter-spacing: -1.5px;
 }
 
@@ -647,7 +660,6 @@ li p {
   text-transform: uppercase;
   margin-top: 10px;
   font-size: 1.75rem;
-  line-height: 2.1875rem;
   padding-top: 2px;
   padding-bottom: 3px;
 }
@@ -767,7 +779,6 @@ h5 {
 
 .container:hover #atraso {
   animation: go-left2 2s linear;
-
 }
 @keyframes go-left {
   0% {
@@ -838,7 +849,6 @@ h5 {
   margin-bottom: 10px;
   text-decoration: none;
 }
-
 
 @media screen and (max-width: 665px) {
   .resumoProjetos {
@@ -1130,14 +1140,13 @@ footer {
   }
 }
 
-@media screen  and (max-width: 968px){
+@media screen and (max-width: 968px) {
   .container {
     position: relative;
     width: 70vw;
     height: 630px;
     background-color: black;
   }
-  
 }
 @media screen and (max-width: 567px) {
   button[type="submit"] {
@@ -1216,7 +1225,7 @@ footer {
     width: 90vw;
     height: 100vh;
     background-color: black;
-}
+  }
   .container-info {
     position: absolute;
     z-index: 1;
@@ -1493,3 +1502,117 @@ footer {
   color: #0f141e;
   font-weight: 900;
 }
+
+@-moz-document url-prefix() {
+  li h1 {
+    font-feature-settings: "clig" off, "liga" off;
+    font-family: poppins;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 56px;
+    letter-spacing: -1.5px;
+  }
+}
+
+/*chrome*/
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  .texto {
+    font-feature-settings: "clig" off, "liga" off;
+    font-family: "Poppins", sans-serif;
+    font-size: 81px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: -2.5px;
+  }
+}
+/*firefox */
+@-moz-document url-prefix() {
+  .texto {
+    font-feature-settings: "clig" off, "liga" off;
+    font-family: "Poppins", sans-serif;
+    font-size: 81px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: -2.5px;
+  }
+  #nameTitle{
+    font-family: Space Grotesk;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -0.444px;
+    background: #0f141e;
+    color: teal;
+    width: 208px;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 5px;
+  }
+  .containerProjetos h1 {
+    font-feature-settings: "clig" off, "liga" off;
+    font-family: Space Grotesk;
+    font-size: 68px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 88px;
+    letter-spacing: -2.5px;
+    padding-left: 10%;
+  }
+  .titulo {
+    font-size: 1.25rem;
+  }
+  .resumoProjetos {
+    font-size: 1em;
+  }
+  .more {
+    font-size: 1rem;
+    line-height: 1.7rem;
+  }
+  .conteudoTitleAbout h1 {
+    font-feature-settings: "clig" off, "liga" off;
+    font-family: Space Grotesk;
+    font-size: 68px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 88px;
+    letter-spacing: -2.5px;
+    padding-left: 10%;
+    margin-top: 50px;
+  }
+
+  .tituloAboutMe {
+    font-feature-settings: "clig" off, "liga" off;
+    font-family: Space Grotesk;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 10px;
+    font-size: 1.3rem;
+    line-height: 2.1875rem;
+    padding-top: 2px;
+    padding-bottom: 3px;
+  }
+  .contato-info h2 {
+    font-feature-settings: "clig" off, "liga" off;
+    font-family: Space Grotesk;
+    font-size: 68px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 88px;
+    letter-spacing: -2.5px;
+    padding: 10px;
+  }
+  button[type="submit"] {
+    font-size: 12px;
+  }
+
+  .footer-title {
+    font-size: 24px;
+  }
+  .resumo {
+    font-size: 16px;
+  }
+}
+
