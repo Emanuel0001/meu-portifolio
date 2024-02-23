@@ -4,7 +4,7 @@
     "projects":"Projects",
     "resume":"Based in the BR, I’m a React | Nodejs developer passionate about building accessible web apps that users love.",
     "projectTitle1":"UX/UI — Digital marketing website",
-    "projectTitle2":"Digital Menu — Cafeteria & Pizzeria",
+    "projectTitle2":"Dude Monitor — Monitoring system",
     "projectTitle3":"Personal project — User management system",
     "projectTitle4":"Personal project — Finance control",
     
@@ -15,8 +15,8 @@
     "projectDescriptionP1":"GeraisNet stands out for offering a modern and intuitive online experience, with a special focus on the Customer Portal. This portal simplifies access to crucial information, making navigation efficient and straightforward for users.",
     "projectDescriptionP2":" The platform stands out even more due to its attractive design and the inclusion of a transparent pricing section. This approach allows users to choose between available plans with clarity and simplicity, promoting a more accessible and understandable service selection experience.",
    
-    "projectDescription2P1":"MenuDigital stands out with a modern website design, emphasizing vibrant photographs of its products. Its top menu is intuitive and easy to use, providing users with the ability to explore a variety of items effectively.",
-    "projectDescription2P2":"When selecting an item, a dedicated section opens, presenting the content in an attractive and informative way in MenuDigital. This fusion of engaging aesthetics and practical functionality provides an efficient and engaging experience for visitors to explore the menu.",
+    "projectDescription2P1":"System under development, Online network monitoring platform, which offers a complete view of the status of radio stations. With an intuitive interface and automatic fault detection system, it provides practicality in managing and solving network problems.",
+    "projectDescription2P2":"In the development phase, the system seeks efficiency in network administration with its advanced online monitoring platform. Using modern front-end and back-end technologies, such as React, Express and MongoDB, the system offers features such as an informative dashboard and automatic alerts for more effective management and quick problem resolution.",
     
     "projectDescription3P1":"The User Management System adopts an accessible and secure approach, standing out for its distinct screens. The login screen facilitates authentication, while the registration screen enables efficient registration and access to the system.",
     "projectDescription3P2":"From the dashboard, primary users enjoy a detailed view of the full user list, with the added ability to customize profiles by adding preference images.",

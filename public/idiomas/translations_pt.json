@@ -7,7 +7,7 @@
    
     "projects": "Projetos",
     "projectTitle1":"UX/UI – Site de marketing digital",
-    "projectTitle2":"Cardápio Digital — Lanchonete e Pizzaria",
+    "projectTitle2":"Dude Monitor — Sistema de Monitoramento",
     "projectTitle3":"Projeto Pessoal — Sistema de Gerenciamento",
     "projectTitle4":"Projeto Pessoal — Controle de finanças",
 
@@ -21,8 +21,8 @@
     "projectDescriptionP1": "O GeraisNet destaca-se por oferecer uma experiência online moderna e intuitiva, com foco especial no Portal do Cliente. Esse portal simplifica o acesso a informações cruciais, tornando a navegação eficiente e direta para os usuários.",
     "projectDescriptionP2":"A plataforma se destaca ainda mais pelo seu design atrativo e pela inclusão de uma seção de preços transparente. Essa abordagem permite aos usuários escolher entre os planos disponíveis com clareza e simplicidade, promovendo uma experiência de seleção de serviços mais acessível e compreensível.",
     
-    "projectDescription2P1":"O MenuDigital se destaca com um site de design moderno, enfatizando fotografias vibrantes de seus produtos. Seu menu superior é intuitivo e fácil de usar, proporcionando aos usuários a capacidade de explorar uma variedade de itens de maneira eficaz.",
-    "projectDescription2P2":"Ao selecionar um item, uma seção dedicada se abre, apresentando o conteúdo de forma atrativa e informativa no MenuDigital. Essa fusão de estética envolvente e funcionalidade prática proporciona uma experiência eficiente e atraente para os visitantes explorarem o cardápio.",
+    "projectDescription2P1":"Sistema em desenvolvimento, Plataforma de monitoramento de rede online, que oferece uma visão completa do status dos rádios. Com interface intuitiva e sistema de detecção automática de falhas, proporciona praticidade no gerenciamento e solução de problemas de rede.",
+    "projectDescription2P2":"em fase de desenvolvimento, o sistema busca eficiência na administração de redes com sua plataforma avançada de monitoramento online. Utilizando tecnologias modernas no front-end e back-end, como React, Express e MongoDB, o sistema oferece recursos como dashboard informativo e alertas automáticos para uma gestão mais eficaz e rápida resolução de problemas.",
     
     "projectDescription3P1":"O Sistema de Gerenciamento de Usuários adota uma abordagem acessível e segura, destacando-se por suas telas distintas. A tela de login facilita a autenticação, enquanto a tela de cadastro possibilita o registro e acesso eficientes ao sistema.",
     "projectDescription3P2":"No painel, os usuários principais desfrutam de uma visão detalhada da lista completa de usuários, com a capacidade adicional de personalizar perfis ao adicionar imagens de preferência.",
