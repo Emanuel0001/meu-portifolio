@@ -178,14 +178,14 @@ a {
 
 #nameTitle{
   font-family: Space Grotesk;
-  font-size: 23px;
+  font-size: 28px;
   font-style: normal;
   font-weight: 700;
-  line-height: 32px;
+  line-height: 40px;
   letter-spacing: -0.444px;
   background: #0f141e;
-  color: teal;
-  width: 208px;
+  color: white;
+  width: 250px;
   text-align: center;
   border-top-left-radius: 10px;
   border-bottom-right-radius: 5px;
@@ -1483,8 +1483,12 @@ footer {
 }
 
 .flags {
-  width: 30px;
+  width: 35px;
   padding: 0 5px;
+}
+
+.flags:hover {
+  width: 39px;
 }
 
 #pInline {

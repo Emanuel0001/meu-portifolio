@@ -113,15 +113,13 @@
               /></a>
             </div>
             <div>
-              <div id="textoMudarIdioma" style="display: none">
-                alterar idioma?
-              </div>
+              <!-- <div id="textoMudarIdioma" style="display: none"></div>-->
             </div>
           </div>
           <ul>
             <li>
               <a id="linkSocialMidia" href="https://github.com/Emanuel0001" target="_blank">
-                <img src="./assets/images/icon-github.svg"
+                <img src="./assets/images/icon-github.svg"  style="width: 30px;"
               /></a>
             </li>
             <li>
@@ -129,7 +127,7 @@
                 href="https://www.frontendmentor.io/profile/Emanuel0001"
                 target="_blank"
               >
-                <img src="./assets/images/icon-frontend-mentor.svg"
+                <img src="./assets/images/icon-frontend-mentor.svg" style="width: 30px;"
               /></a>
             </li>
             <li>
@@ -137,11 +135,13 @@
                 href="https://www.linkedin.com/in/emanuel-hitallo-06690a16b/"
                 target="_blank"
               >
-                <img src="./assets/images/icon-linkedin.svg"
+                <img src="./assets/images/icon-linkedin.svg"  style="width: 30px;"
               /></a>
             </li>
             <li>
-              <a id="linkSocialMidia" href="#"><img src="./assets/images/icon-twitter.svg" /></a>
+              <a id="linkSocialMidia" href="#">
+                <img src="./assets/images/icon-twitter.svg"  style="width: 30px;"
+                /></a>
             </li>
           </ul>
         </nav>
@@ -517,7 +517,7 @@
       setTimeout(function () {
         document.getElementById("loading").style.display = "none";
         document.getElementById("main-content").style.display = "block";
-      }, 3000);
+      }, 2000);
 
       document.addEventListener("DOMContentLoaded", function () {
         // Array de objetos com itens e descrições
@@ -535,6 +535,7 @@
           { item: "Node.js", descricao: "1 year of experience" },
           { item: "SQL", descricao: "1 year of experience" },
           { item: "APIs", descricao: "1 year of experience" },
+          { item: "Python", descricao: "Learning Linguage" },
         ];
 
         // Seleciona a lista ul
