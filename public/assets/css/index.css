@@ -133,7 +133,33 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+
+/* ---- reset ---- */
+canvas{ display: block; vertical-align: bottom; } 
+/* ---- particles.js container ---- */ 
+#particles-js
+{ z-index: -2;
+ position: absolute;
+ width: 100%;
+ height: 90vh;
+ background-color: #0f141e;
+ background-image: url(index.css);
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: 50% 50%;} 
+/* ---- stats.js ---- */ 
+.count-particles{  position: absolute; top: 48px; left: 0; width: 80px; color: #13E8E9; font-size: .8em; text-align: left; text-indent: 4px; line-height: 14px; padding-bottom: 2px; font-family: Helvetica, Arial, sans-serif; font-weight: bold; } .js-count-particles{ font-size: 1.1em; } #stats, .count-particles{ -webkit-user-select: none; margin-top: 5px; margin-left: 5px; } #stats{ border-radius: 3px 3px 0 0; overflow: hidden; } 
+.count-particles{ border-radius: 0 0 3px 3px; }
+
+
+
+
 /* container pg*/
+
+ .container-dashboard {
+  height: 100vh;
+ }
 
 .container-pg {
   max-width: 1480px;
@@ -198,11 +224,7 @@ a {
   padding-right: 100px;
   justify-content: space-evenly;
   align-items: center;
-  background-image: url(../images/pattern-rings.svg);
-  background-size: 400px;
-  background-position: start;
-  background-repeat: no-repeat;
-  background-position-x: -230px;
+ 
 }
 
 .conteudo {
@@ -213,15 +235,14 @@ a {
 
 .foto {
   width: 50vw;
+
 }
 
-.container-dashboard {
-  height: 100vh;
-}
 .conteudo-titles {
   padding-bottom: 50px;
   letter-spacing: -5px;
   display: inherit;
+  color: white;
 }
 body {
   text-rendering: optimizeLegibility;
@@ -234,7 +255,7 @@ body {
 .texto {
   font-feature-settings: "clig" off, "liga" off;
   font-family: "Poppins", sans-serif;
-  font-size: 71px;
+  font-size: 5rem;
   font-style: normal;
   font-weight: 600;
   letter-spacing: -2.5px;
@@ -251,12 +272,13 @@ body {
   line-height: 28px; /* 155.556% */
   letter-spacing: 0px;
   gap: 100px;
+  color: white;
 }
 
 .foto img {
   width: 400px;
   flex-shrink: 0;
-  background-color: #0f141ecf;
+  background-color: rgba(255, 255, 255, 0.144);
   display: flex;
   margin-top: -93px;
 }
@@ -325,7 +347,7 @@ span {
 
   .texto {
     font-family: Space Grotesk;
-    font-size: 72px;
+    font-size: 5rem;
     font-style: normal;
     font-weight: 700;
     line-height: 72px; /* 100% */
@@ -352,31 +374,18 @@ span {
     line-height: 28px; /* 155.556% */
   }
 }
-@media screen and (max-width: 960px) {
-  .sobre-mim {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    background-image: url(../images/pattern-rings.svg);
-    background-size: 400px;
-    background-position: start;
-    background-repeat: no-repeat;
-  }
-  .conteudo {
-    height: 303px;
-    flex-shrink: 0;
-    text-align: center;
-    justify-content: center;
-    display: flex;
-  }
 
-  .conteudo-links {
-    text-align: center;
-    justify-content: center;
-    display: flex;
-  }
+@media screen and (max-width: 970px) {
+  #particles-js {
+    z-index: -2;
+    position: absolute;
+    width: 100%;
+    background-color: rgb(15, 20, 30);
+    background-image: url(index.css);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
 }
-@media screen and (max-width: 760px) {
   nav {
     display: block;
     justify-content: center;
@@ -443,7 +452,7 @@ span {
     font-style: normal;
     font-weight: 500;
     line-height: 26px;
-    width: 330px;
+    width: 100%;
   }
 
   .conteudo-links {
@@ -466,7 +475,6 @@ span {
     flex-shrink: 0;
     justify-content: center;
     padding-top: 25px;
-    width: 84vw;
 }
   .foto {
     width: 100%;
@@ -525,8 +533,7 @@ span {
 .container-skills {
   display: flex;
   width: 80%;
-  border-top: solid 1px var(--White, #fff);
-  border-bottom: solid 0px var(--White, #fff);
+ 
   padding-top: 40px;
   height: 100%;
 }
@@ -584,8 +591,7 @@ li p {
   .container-skills {
     display: flex;
     width: 80%;
-    border-top: solid 1px var(--White, #fff);
-    border-bottom: solid 1px var(--White, #fff);
+ 
     padding-top: 40px;
     height: max-content;
   }
@@ -833,6 +839,9 @@ h5 {
   cursor: pointer;
   color: #4ee1a0;
   border-bottom: 1px solid var(--Green, #4ee1a0);
+}
+.container {
+  box-shadow: 0 10px 10px rgba(15, 20, 30, 0.9);
 }
 .container:hover .links {
   display: flex;
@@ -1082,8 +1091,8 @@ footer {
 
 /* Ícones das mídias sociais */
 .footer-links img {
-  width: 20px;
-  height: 20px;
+  width: 35px;
+  height: 35px;
 }
 .footer-links span {
   border-bottom:  solid 2px;
@@ -1446,17 +1455,22 @@ footer {
 /* Landing */
 
 #loading h1 {
+  color: white;
   font-size: 100px;
   font-weight: 800;
 }
 
 .welcome h4 {
+  color: white;
   font-size: 40px;
   font-weight: 200;
 }
 
 #loading {
+  color: white;
   display: flex;
+  position: absolute;
+  z-index: 10;
   align-content: end;
   height: 90vh;
   justify-content: flex-start;
@@ -1473,7 +1487,7 @@ footer {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background-color: #0f141e;
+  background-color: white;;
   margin: 0 5px;
   opacity: 0;
   animation: loaderAnimation 1.5s infinite;
@@ -1516,6 +1530,7 @@ footer {
     font-weight: 800;
   }
   .welcome h4 {
+    color: white;
     font-size: 30px;
     font-weight: 200;
   }
@@ -1579,7 +1594,7 @@ footer {
   .texto {
     font-feature-settings: "clig" off, "liga" off;
     font-family: "Poppins", sans-serif;
-    font-size: 81px;
+    font-size: 5vw;
     font-style: normal;
     font-weight: 600;
     letter-spacing: -2.5px;
@@ -1590,7 +1605,7 @@ footer {
   .texto {
     font-feature-settings: "clig" off, "liga" off;
     font-family: "Poppins", sans-serif;
-    font-size: 81px;
+    font-size: 4rem;
     font-style: normal;
     font-weight: 600;
     letter-spacing: -2.5px;
@@ -1747,3 +1762,4 @@ footer {
     transform: translateY(0);
   }
 }
+
