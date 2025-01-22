@@ -1,0 +1,93 @@
+/* Estilo geral da seção */
+.sobre-mim {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10%;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Container de conteúdo (texto e foto) */
+  .conteudo {
+    flex: 1;
+  }
+  
+  .texto {
+    max-width: 500px;
+  }
+  
+  /* Títulos estilizados */
+  .conteudo-titles h1 {
+    font-size: 4rem;
+    font-weight: bold;
+  }
+  
+  
+  /* Resumo com espaçamento e fonte leve */
+  .resumo p {
+    line-height: 1.6;
+    margin: 20px 0;
+    color: #ddd;
+  }
+  
+  
+  
+  /* Estilo da foto */
+  .foto {
+    flex: 1;
+    max-width: 40%;
+    text-align: right;
+  }
+  
+  .foto img {
+    max-width: 100%;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .foto img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Responsividade para telas menores */
+  @media (max-width: 1024px) {
+    #particles-js {
+        z-index: -2;
+        position: absolute;
+        width: 100%;
+        }
+
+    .foto {
+      margin-top: 40px;
+      text-align: center;
+    }
+    .resumo p {
+      font-size: 1rem;
+    }
+  
+    .conteudo-links .download {
+      padding: 12px 24px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .sobre-mim {
+      padding: 50px 5%;
+    }
+  
+    .conteudo-titles h1 {
+      font-size: 3rem;
+    }
+  
+    .resumo p {
+      font-size: 1rem;
+    }
+  
+    .conteudo-links .download {
+      padding: 10px 20px;
+      font-size: 0.9rem;
+    }
+  }
+
+
+  

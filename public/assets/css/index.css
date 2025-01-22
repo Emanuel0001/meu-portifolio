@@ -157,9 +157,9 @@ canvas{ display: block; vertical-align: bottom; }
 
 /* container pg*/
 
- .container-dashboard {
+ /* .container-dashboard {
   height: 100vh;
- }
+ }pg*/
 
 .container-pg {
   max-width: 1480px;
@@ -228,7 +228,6 @@ a {
 }
 
 .conteudo {
-  width: 50vw;
   height: 303px;
   flex-shrink: 0;
 }
@@ -325,60 +324,9 @@ span {
 
 /* Adaptação para telas menores usando media query */
 
-@media screen and (max-width: 1066px) {
-  nav {
-    padding: 30px;
-    /* padding-left: 100px; */
-    /* padding-right: 100px; */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 1;
-    position: relative;
-  }
 
-  .sobre-mim {
-    display: flex;
 
-    justify-content: space-around;
-    align-items: center;
-    background-image: url(../images/pattern-rings.svg);
-    background-size: 400px;
-    background-position: start;
-    background-repeat: no-repeat;
-  }
-
-  .texto {
-    font-family: Space Grotesk;
-    font-size: 5rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 72px; /* 100% */
-    letter-spacing: -2.045px;
-    width: 100%;
-  }
-
-  .conteudo {
-    height: 303px;
-    flex-shrink: 0;
-  }
-
-  .conteudo-titles {
-    padding-bottom: 20px;
-  }
-
-  .resumo {
-    font-feature-settings: "clig" off, "liga" off;
-    /* Body */
-    font-family: Space Grotesk;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 28px; /* 155.556% */
-  }
-}
-
-@media screen and (max-width: 970px) {
+@media screen and (max-width: 1029px) {
   #particles-js {
     z-index: -2;
     position: absolute;
@@ -427,7 +375,6 @@ span {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(../images/pattern-rings.svg);
     background-size: 400px;
     background-position: start;
     padding: 0;
@@ -478,6 +425,10 @@ span {
     flex-shrink: 0;
     justify-content: center;
     padding-top: 25px;
+    background: rgb(15, 20, 30);
+    width: 100vw;
+    text-align: center;
+    display: flex;
 }
   .foto {
     width: 100%;
@@ -525,12 +476,7 @@ span {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(../images/pattern-rings.svg);
-  background-size: 400px;
-  background-position: right;
-  background-repeat: no-repeat;
-  background-position-y: 200px;
-  background-position-x: 990px;
+
 }
 
 .container-skills {
@@ -579,6 +525,7 @@ li h1 {
   line-height: 56px;
   letter-spacing: -1.5px;
 }
+
 
 li p {
   font-feature-settings: "clig" off, "liga" off;
@@ -1101,21 +1048,7 @@ footer {
   border-bottom:  solid 2px;
 }
 /* Responsividade - Ajuste para telas menores */
-@media (max-width: 768px) {
-  .footer-links ul {
-      flex-direction: column; /* Organiza os links em coluna */
-      gap: 10px;
-  }
 
-  .footer-links a {
-      font-size: 14px;
-  }
-
-  .footer-links img {
-      width: 18px;
-      height: 18px;
-  }
-}
 
 @media (max-width: 480px) {
   footer {
@@ -1126,10 +1059,6 @@ footer {
       font-size: 12px;
   }
 
-  .footer-links img {
-      width: 15px;
-      height: 15px;
-  }
 }
 
 /* Estilo para a seção de copyright */
@@ -1163,6 +1092,7 @@ footer {
     background-position-x: -150px;
     background-repeat: no-repeat;
     margin-top: 100px;
+    margin-bottom: 50px;
   }
 
   .contato-info {
@@ -1253,8 +1183,6 @@ footer {
     justify-content: space-between;
     flex-direction: column;
     width: 100%;
-    border-top: 1px solid white;
-    padding: 20px;
   }
 
   .footer-title {
