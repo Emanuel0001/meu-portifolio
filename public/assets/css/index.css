@@ -297,12 +297,15 @@ span {
   background-color: #0f141e;
   border-radius: 5px;
   color: #4ee1a0;
+  border: solid 1px #4ee1a0;
 }
 
 .download:hover {
   background-color: #0f141e;
   border-radius: 5px;
   color: white;
+  border: solid 1px white;
+ 
 }
 .link {
   font-family: Space Grotesk;
