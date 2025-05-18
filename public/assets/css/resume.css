@@ -1,0 +1,89 @@
+   /* Seção Sobre Mim */
+   .section-aboutme {
+    padding: 80px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.aboutme-container {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    min-height: 600px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+.aboutme-image-container {
+    flex: 1;
+    min-width: 300px;
+    position: relative;
+    background: url('../images/AboutMe/resume.jpg') center/cover ;
+}
+
+.aboutme-name-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 40px;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+    color: white;
+}
+
+
+.aboutme-name {
+    font-size: clamp(3rem, 6vw, 5rem);
+    font-weight: 100;
+    color: white;
+}
+
+.aboutme-surname {
+    font-size: clamp(3rem, 6vw, 5rem);
+    font-weight: 100;
+    display: block;
+    color: white;
+    line-height: 0.9;
+    margin-top: 10px;
+}
+
+.aboutme-content {
+    flex: 1;
+    min-width: 300px;
+    padding: 60px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.aboutme-text {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.aboutme-highlight {
+    font-weight: 600;
+    color: #2a6fc9;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .aboutme-container {
+        flex-direction: column;
+        min-height: auto;
+    }
+    
+    .aboutme-image-container {
+        min-height: 500px;
+    }
+    
+    .aboutme-content {
+        padding: 40px 30px;
+    }
+    
+    .aboutme-name-container {
+        padding: 30px;
+    }
+}

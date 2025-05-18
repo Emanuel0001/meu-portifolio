@@ -16,24 +16,64 @@
     <script src="https://code.jquery.com/jquery-3.6..min.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <title>Portifólio | Emanuel H.</title>
-    <link rel="icon" href="./assets/images/icon.ico" />
     <link
+      rel="icon"
+      href="./assets/images/favicon/favicon.ico"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
       rel="stylesheet"
-      type="text/css"
-      href="./assets//css/index.css"
-      media="screen"
     />
     <link
-    rel="stylesheet"
-    type="text/css"
-    href="./assets//css/sobre-mim.css"
-    media="screen"
-  />
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
-    
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/android-icon-192x192.png"
+    />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
   </head>
   <script>
     // Função para aplicar traduções
@@ -86,485 +126,299 @@
   </script>
 
   <body>
-    <div id="loading">
-      <h1 id="loading-text">
-        <div class="welcome">
-          <h4>Welcome</h4>
-        </div>
-        Wait a Bit
-      </h1>
-      <div class="loader">
-        <div class="dot dot1"></div>
-        <div class="dot dot2"></div>
-        <div class="dot dot3"></div>
-      </div>
-    </div>
-     <!-- particles.js container -->  <!-- stats - count particles -->  
-     <div id="particles-js"></div>
-     <div class="count-particles"> 
-      <span class="js-count-particles"></span></div>
-       <!-- particles.js lib - https://github.com/VincentGarreau/particles.js --> <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib --> 
-     <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
-   
-     <div class="container-pg" id="main-content">
-     
-      <div class="container-dashboard">
+    <div class="container-pg" id="main-content">
       <header>
-        <nav>
-          <div id="'logo-marca">
-            <h1 id="nameTitle">Web Developer</h1>
-          </div>
-          <div
-            class="idiomas"
-            class="idioma"
-            id="idiomaItem"
-            onmouseover="mostrarTexto()"
-            onmouseout="esconderTexto()"
-          >
-            <div>
-              <a onclick="changeLanguage('idiomas/lang-en.json')"
-                ><img class="flags" src="./assets/images/Flags/us.svg"
-              /></a>
-              <a onclick="changeLanguage('idiomas/translations_pt.json')"
-                ><img class="flags" src="./assets/images/Flags/br.svg"
-              /></a>
-            </div>
-            <div>
-              <!-- <div id="textoMudarIdioma" style="display: none"></div>-->
-            </div>
-          </div>
-          <ul>
-            <li>
-              <a id="linkSocialMidia" href="https://github.com/Emanuel0001" target="_blank">
-                <img src="./assets/images/icon-github.svg"  style="width: 30px;"
-              /></a>
-            </li>
-            <li>
-              <a id="linkSocialMidia"
-                href="https://www.frontendmentor.io/profile/Emanuel0001"
-                target="_blank"
-              >
-                <img src="./assets/images/icon-frontend-mentor.svg" style="width: 30px;"
-              /></a>
-            </li>
-            <li>
-              <a id="linkSocialMidia"
-                href="https://www.linkedin.com/in/emanuel-hitallo-06690a16b/"
-                target="_blank"
-              >
-                <img src="./assets/images/icon-linkedin.svg"  style="width: 30px;"
-              /></a>
-            </li>
-            <li>
-              <a id="linkSocialMidia" href="#">
-                <img src="./assets/images/icon-twitter.svg"  style="width: 30px;"
-                /></a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-      <section class="sobre-mim">
-        <div class="conteudo">
-          <div class="texto">
-            <div class="conteudo-titles">
-              <h1 data-translate="niceToMeetYou">Muito Prazer!</h1>
-              <h1>
-                <p id="pInline" data-translate="apresentacao">Eu sou</p>
-                <span data-translate="name"> Emanuel</span>
-              </h1>
-            </div>
-            <div class="resumo" data-translate="resume">
-              <p>
-                Com sede no Brasil, sou um desenvolvedor React | Node.js
-                apaixonado por criar aplicativos web acessíveis que os usuários
-                adoram.
-              </p>
-            </div>
-            <div class="conteudo-links">
-              <a
-                class="link download"
-                href="https://drive.google.com/file/d/16zysdsGJpJkV8Gq_OluCurE7DuQoJil7/view?usp=sharing"
-                target="_blank"
-                >DOWNLOAD CV</a
-              >
-            </div>
-          </div>
+        <div class="logo"> <span>Web Developer</span></div>
+        <div class="social-links">
+          <a target="_blank" class="social-icon" href="https://www.linkedin.com/in/emanuel-hitallo-06690a16b/" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i
+          ></a>
+          <a target="_blank" href="https://github.com/Emanuel0001" aria-label="GitHub"> <i class="fab fa-github"></i></a>
+          <a target="_blank" href="#" aria-label="stackoverflow">
+            <i class="fab fa-stack-overflow"></i
+          ></a>
         </div>
-        <div class="foto">
-          <!-- Substitua o caminho abaixo pela URL da sua foto -->
+      </header>
+    
+    <div class="language-switcher">
+        <button class="language-btn active" data-lang="pt">PT</button>
+        <button class="language-btn" data-lang="en">EN</button>
+    </div>
+
+      <div class="container">
+        <!-- Left Side - Text Content -->
+        <div class="content-side">
+          <div class="header-content">
+            <h1>
+              Nice to <br />
+              meet you! <br />I'm Emanuel.
+            </h1>
+            <p class="subtitle">Frontend & Backend Developer</p>
+          </div>
+
+          <p class="bio">
+            I'm a <span class="tech-highlight">React</span> and
+            <span class="tech-highlight">Node.js</span> developer based in
+            Brazil, passionate about building accessible and performant web
+            applications.
+          </p>
+
+          <a target="_blank" href="https://drive.google.com/file/d/16zysdsGJpJkV8Gq_OluCurE7DuQoJil7/view?usp=sharing" class="download-btn">
+            <svg viewBox="0 0 24 24">
+              <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z" />
+            </svg>
+            DOWNLOAD CV
+          </a>
+        </div>
+
+        <!-- Right Side - Developer Image -->
+        <div class="image-side">
           <img
-            src="./assets/images/AboutMe/MinhaImagemSF.png"
-            alt="Minha Foto"
+            src="./assets/images/AboutMe/myImage.png"
+            alt="Developer illustration"
+            class="developer-image"
           />
         </div>
-      </section>
-    </div>
-
-      <section class="habilidades">
-        <div class="container-skills">
-          <ul id="lista"></ul>
-        </div>
-      </section>
-
-      <section class="containerProjetos">
-        <div class="titlesProjetos">
-          <h1 data-translate="projects">Projetos</h1>
-          <div class="conteudo-links">
-            <!-- <a class="link">CONTACT ME</a> -->
-          </div>
-        </div>
-        <div class="Projetos">
-          <div class="card">
-            <div class="container Thumbnail1">
-              <div class="container-info">
-                <h5>2023</h5>
-                <h2 class="titulo" data-translate="projectTitle1">
-                  UX/UI — Site de marketing digital
-                </h2>
-                <div class="with-icon">
-                  <div class="more">
-                    view
-                    <a
-                      class="linkMore"
-                      href="https://geraisnet.com.br"
-                      target="_blank"
-                      >Project</a
-                    >
-                  </div>
-                  <p
-                    class="resumoProjetos"
-                    data-translate="projectDescriptionP1"
-                  >
-                    GeraisNet se destaca por oferecer uma experiência online
-                    moderna e intuitiva, com um foco especial no Portal do
-                    Cliente. Este portal simplifica o acesso a informações
-                    cruciais, tornando a navegação eficiente e direta para os
-                    usuários.
-                  </p>
-                  <p
-                    class="resumoProjetos"
-                    data-translate="projectDescriptionP2"
-                    id="atraso"
-                  >
-                    A plataforma se destaca ainda mais devido ao seu design
-                    atraente e à inclusão de uma seção de preços transparente.
-                    Essa abordagem permite que os usuários escolham entre planos
-                    disponíveis com clareza e simplicidade, promovendo uma
-                    experiência de seleção de serviço mais acessível e
-                    compreensível.
-                  </p>
-                </div>
-              </div>
-              <div class="links"></div>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="container Thumbnail2">
-              <div class="container-info altColor">
-                <h5>2025</h5>
-                <h2 class="titulo" data-translate="projectTitle2">
-                  Dude Monitor — Sistema de monitoramento
-                </h2>
-                <div class="with-icon">
-                  <div class="more">
-                    View
-                    <a
-                      class="linkMore"
-                      href="https://github.com/Emanuel0001/DudeMonitor-Pro"
-                      target="_blank"
-                      >Code</a
-                    >
-                   
-                  </div>
-                  <p
-                    class="resumoProjetos"
-                    data-translate="projectDescription2P1"
-                  >
-                     DudeMonitor-Pro é uma plataforma em desenvolvimento de monitoramento de redes online, oferecendo uma visão completa do status dos rádios. Com interface intuitiva e sistema automático de detecção de falhas, proporciona praticidade na gestão e solução de problemas em redes.
-                  </p>
-                  <p
-                    class="resumoProjetos"
-                    data-translate="projectDescription2P2"
-                    id="atraso"
-                  >
-                     em fase de desenvolvimento, o sistema busca eficiência na administração de redes com sua plataforma avançada de monitoramento online. Utilizando tecnologias modernas no front-end e back-end, como React, Express e MongoDB, o sistema oferece recursos como dashboard informativo e alertas automáticos para uma gestão mais eficaz e rápida resolução de problemas.
-                  </p>
-                </div>
-              </div>
-              <div class="links"></div>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="container Thumbnail3">
-              <div class="container-info altColor">
-                <h5>2023</h5>
-                <h2 class="titulo" data-translate="projectTitle3">
-                  Projeto Pessoal — Sistema de Gerenciamento de Usuários
-                </h2>
-                <div class="with-icon">
-                  <div class="more">
-                    View
-                    <a
-                      class="linkMore"
-                      href="https://github.com/Emanuel0001/sistema-de-usuario"
-                      target="_blank"
-                      >Code</a
-                    >
-                    ou
-                    <a
-                      class="linkMore"
-                      href="https://sistemadeusuario.netlify.app/"
-                      target="_blank"
-                      >Project</a
-                    >
-                  </div>
-                  <p
-                    class="resumoProjetos"
-                    data-translate="projectDescription3P1"
-                  >
-                    O Sistema de Gerenciamento de Usuários adota uma abordagem
-                    acessível e segura, destacando-se por suas telas distintas.
-                    A tela de login facilita a autenticação, enquanto a tela de
-                    registro permite um registro eficiente e acesso ao sistema.
-                  </p>
-                  <p
-                    class="resumoProjetos"
-                    data-translate="projectDescription3P2"
-                    id="atraso"
-                  >
-                    No painel de controle, os usuários principais desfrutam de
-                    uma visão detalhada da lista completa de usuários, com a
-                    capacidade adicional de personalizar perfis adicionando
-                    imagens de preferência.
-                  </p>
-                </div>
-              </div>
-              <div class="links"></div>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="container Thumbnail4">
-                <div class="container-info">
-                    <h5>2023</h5>
-                    <h2 class="titulo" data-translate="projectTitle4">Projeto Pessoal — Controle Financeiro</h2>
-                    <div class="with-icon">
-                        <div class="more">
-                            View 
-                            <a class="linkMore" href="https://github.com/Emanuel0001/frontend-finance-control-deploy" target="_blank">Code</a> or 
-                            <a class="linkMore" href="https://financecontrolapp.netlify.app/" target="_blank">Project</a> 
-                        </div>
-                        <p class="resumoProjetos" data-translate="projectDescription4P1">
-                            O projeto FinanceControl é estruturado para praticidade e eficiência, começando com telas de login e registro para acesso seguro e rápido. Na tela principal, o usuário tem controle total sobre suas finanças, com uma visualização clara do saldo e uma tabela detalhada para facilitar a gestão flexível e intuitiva.
-                        </p>
-                        <p class="resumoProjetos" data-translate="projectDescription4P2" id="atraso">
-                            Essa abordagem direta e interativa do FinanceControl se destaca por sua capacidade de simplificar a administração financeira, fornecendo aos usuários uma experiência acessível e eficaz.
-                        </p>
-                    </div>
-                </div>
-                <div class="links"></div>
-            </div>
-        </div>
-        
-      </section>
-
-      <section class="about-me">
-        <div class="conteudoTitleAbout">
-          <h1>About me</h1>
-        </div>
-       
-        <div class="container-about">
-          <div class="cardAbout">
-            <div class="containerAbout ThumbnailAboutMe1">
-                <div class="containerInfoAbout">
-                    <h5>Fotografia</h5>
-                    <h2 class="tituloAboutMe" data-translate="tituloAboutMe1">
-                        Estilo de vida
-                    </h2>
-                    <div class="with-icon">
-                        <div class="more" data-translate="lifestyle">
-                            <p>
-                                Adoro acampar, buscando serenidade em alturas e conexão com a natureza. À noite, o acampamento sob o céu estrelado encanta, proporcionando paz e renovando a alma. Cada escalada de montanha é uma jornada única, moldando meu amor pela simplicidade e conveniência na vida ao ar livre.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="links"></div>
-            </div>
-        </div>
-        
-
-        <div class="cardAbout">
-          <div class="containerAbout ThumbnailAboutMe2">
-              <div class="containerInfoAbout">
-                  <h5>Fotografia</h5>
-                  <h2 class="tituloAboutMe" data-translate="tituloAboutMe2">
-                      Desenvolvimento
-                  </h2>
-                  <div class="with-icon">
-                      <div class="more" data-translate="developer">
-                          <p>
-                              Como desenvolvedor de software, minha vida diária é uma imersão apaixonada em linhas de código que ganham vida digital. Cada desafio é uma oportunidade para inovação e resolução, e transformar ideias em software funcional é minha verdadeira paixão. Tecnologia não é apenas uma profissão, mas uma expressão de criatividade e dedicação. Cada linha que escrevo conta uma história de empolgação no fascinante mundo da programação.
-                          </p>
-                          <div class="icons">
-                              <ul>
-                                  <li>
-                                      <a href="https://github.com/Emanuel0001" target="_blank">
-                                          <img src="./assets/images/icon-github.svg" />
-                                      </a>
-                                  </li>
-                                  <li>
-                                      <a href="https://www.linkedin.com/in/emanuel-hitallo-06690a16b/" target="_blank">
-                                          <img src="./assets/images/icon-linkedin.svg" />
-                                      </a>
-                                  </li>
-                              </ul>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="links"></div>
-          </div>
       </div>
 
-      <div class="cardAbout">
-        <div class="containerAbout ThumbnailAboutMe3">
-            <div class="containerInfoAbout">
-                <h5>Fotografia</h5>
-                <h2 class="tituloAboutMe" data-translate="tituloAboutMe3">
-                    Metas e objetivos
-                </h2>
-                <div class="with-icon">
-                    <div class="more" data-translate="objectives">
-                        <p>
-                            Busco excelência como desenvolvedor de software, visando ser reconhecido pela responsabilidade e expertise. Meu objetivo é, em cinco anos, trabalhar em projetos desafiadores e alcançar fluência em inglês para expandir minha comunicação global. Meu caminho futuro é marcado pela determinação de ser um profissional respeitado e globalmente conectado, enfrentando cada desafio como uma oportunidade de crescimento.
-                        </p>
-                    </div>
+      <section class="skills-section">
+        <div class="skills-grid">
+          <div class="skill-box">
+            <div class="skill-icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <h3 class="skill-title">Frontend</h3>
+            <p class="skill-description">
+              Experiência com HTML5, CSS3, JavaScript (ES6+), React.js, consumo
+              de APIs com Axios e criação de interfaces responsivas com
+              mobile-first approach.
+            </p>
+            <div class="skill-tags">
+              <span class="tag">React</span>
+              <span class="tag">Next.js</span>
+              <span class="tag">Axios</span>
+              <span class="tag">JavaScript</span>
+            </div>
+          </div>
+
+          <div class="skill-box">
+            <div class="skill-icon">
+              <i class="fas fa-server"></i>
+            </div>
+            <h3 class="skill-title">Backend</h3>
+            <p class="skill-description">
+              Conhecimento em Node.js, Express, construção de APIs RESTful,
+              integração com bancos de dados SQL e uso de ferramentas modernas
+              como Git e NPM.
+            </p>
+            <div class="skill-tags">
+              <span class="tag">Node.js</span>
+              <span class="tag">MongoDB</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">Git</span>
+              <span class="tag">NPM</span>
+              <span class="tag">JWT</span>
+            </div>
+          </div>
+
+          <div class="skill-box">
+            <div class="skill-icon">
+              <i class="fas fa-paint-brush"></i>
+            </div>
+            <h3 class="skill-title">UX/UI Design</h3>
+            <p class="skill-description">
+              Design de interfaces com foco em experiência do usuário,
+              prototipagem no Figma, design systems e microinterações.
+            </p>
+            <div class="skill-tags">
+              <span class="tag">Figma</span>
+              <span class="tag">UI/UX</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-projects">
+        <div class="container-project">
+          <h2 class="section-title">Portifólio</h2>
+
+          <div class="projects-grid">
+            <!-- Projeto 1 -->
+            <div class="project-card">
+              <img
+                src="./assets/images/Projects/geraisnet.png"
+                alt="Projeto 1"
+                class="project-image"
+              />
+              <div class="project-content">
+                <h3 class="project-title">UX/UI — Site de marketing digital</h3>
+                <p class="project-description">
+                  Design minimalista GeraisNet se destaca por oferecer uma experiência online
+                  moderna e intuitiva, com um foco especial no Portal do
+                  Cliente. Este portal simplifica o acesso a informações
+                  cruciais, tornando a navegação eficiente e direta para os
+                  usuários..
+                </p>
+                <div class="project-links">
+                  View
+                  
+                  <a
+                    class="tech-highlight-project"
+                    href="https://geraisnet.com.br"
+                    target="_blank"
+                    >Project</a
+                  >
                 </div>
+              </div>
             </div>
-            <div class="links"></div>
-        </div>
-    </div>
-    
+
+            <!-- Projeto 2 -->
+            <div class="project-card">
+              <img
+                src="./assets/images/Projects/dude.png"
+                alt="Projeto 2"
+                class="project-image"
+              />
+              <div class="project-content">
+                <h3 class="project-title">Dude Monitor — Sistema de monitoramento</h3>
+                <p class="project-description">
+                  É uma plataforma em desenvolvimento de monitoramento de redes online, oferecendo uma visão completa do status dos rádios. Com interface intuitiva e sistema automático de detecção de falhas, proporciona praticidade na gestão e solução de problemas em redes.
+                </p>
+                <div class="project-links">
+                  View
+                  <a
+                    class="tech-highlight-project"
+                    href="https://github.com/Emanuel0001/DudeMonitor-Pro"
+                    target="_blank"
+                    >Code</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Projeto 3 -->
+            <div class="project-card">
+              <img
+                src="./assets/images/Projects/pizzaapp.png"
+                alt="Projeto 3"
+                class="project-image"
+              />
+              <div class="project-content">
+                <h3 class="project-title">FastMenu — Cardápio Online</h3>
+                <p class="project-description">
+                  Loja virtual com carrinho de compras, checkout seguro e
+                  integração com pagamentos.
+                </p>
+                <div class="project-links">
+                  View
+                  <a
+                    class="tech-highlight-project"
+                    href="https://github.com/seu-usuario/projeto"
+                    target="_blank"
+                    >Code</a
+                  >
+                  or
+                  <a
+                    class="tech-highlight-project"
+                    href="https://sistema-pizzaria-food.netlify.app/"
+                    target="_blank"
+                    >Project</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
-      <section class="contato-section">
-        <div class="contato-info">
-          <h2 data-translate="contatoH1">Contact</h2>
-          <p data-translate="resumeContact">
-            I would love to hear about your project and how I could help. Please
-            fill in the form, and I’ll get back to you as soon as possible.
-          </p>
-        </div>
 
-        <div class="formulario">
-          <form
-            action="https://formsubmit.co/emanuelhitallodev@gmail.com"
-            method="POST"
+      <section class="section-aboutme">
+        <div class="aboutme-container">
+          <div class="aboutme-image-container">
+            <div class="aboutme-name-container">
+              <h1 class="aboutme-name">
+                Emanuel <br />
+                Hitallo.
+              </h1>
+            </div>
+          </div>
+
+          <div class="aboutme-content">
+            <p class="aboutme-text">
+              Designer e desenvolvedor front-end com
+              <span class="aboutme-highlight">5 anos de experiência</span>
+              criando interfaces digitais que unem estética e funcionalidade.
+            </p>
+
+            <p class="aboutme-text">
+              Minha abordagem combina
+              <span class="aboutme-highlight">sensibilidade visual</span> com
+              <span class="aboutme-highlight">soluções técnicas eficientes</span
+              >, sempre focando na experiência do usuário final.
+            </p>
+
+            <p class="aboutme-text">
+              Especializado em criar sistemas de design escaláveis e componentes
+              reutilizáveis que mantêm consistência em projetos complexos.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <footer class="container-footer">
+        <!-- Seção CTA -->
+        <div class="footer-cta">
+          <h2>Let's work <span>together</span>?</h2>
+          <a
+            href="https://mail.google.com/mail/?view=cm&to=emanuelhitallodev@gmail.com"
+            target="_blank"
+            class="footer-button"
           >
-            <input type="hidden" name="_captcha" value="false" />
-            <input
-              type="text"
-              id="nome"
-              name="name"
-              placeholder="Name"
-              required
-            />
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Email"
-              required
-            />
-            <textarea
-              id="mensagem"
-              name="message"
-              rows="4"
-              placeholder="message"
-              required
-            ></textarea>
+            Send a message
+          </a>
+        </div>
 
-            <button type="submit" id="submitButton">SEND MESSAGE</button>
-          </form>
+        <!-- Seção Redes Sociais -->
+        <div class="footer-social">
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/emanuel-hitallo-06690a16b/" target="_blank" class="social-icon">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/Emanuel0001" target="_blank" class="social-icon">
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://stackoverflow.com"
+              target="_blank"
+              class="social-icon"
+            >
+              <i class="fab fa-stack-overflow"></i>
+            </a>
+          </div>
         </div>
-      </section>
-      <footer>
-        <div class="footer-content">
-            <div class="footer-links">
-                <ul>
-                    <li>
-                        <a id="footer-midia" href="https://github.com/Emanuel0001" target="_blank">
-                            <img src="./assets/images/icon-github.svg"/>
-                        </a>
-                    </li>
-                    <li>
-                        <a id="footer-midia" href="https://www.frontendmentor.io/profile/Emanuel0001" target="_blank">
-                            <img src="./assets/images/icon-frontend-mentor.svg"/>
-                        </a>
-                    </li>
-                    <li>
-                        <a id="footer-midia" href="https://www.linkedin.com/in/emanuel-hitallo-06690a16b/" target="_blank">
-                          <img src="./assets/images/icon-linkedin.svg"/>
-                        </a>
-                    </li>
-                    <li id="footer-test">
-                        <a id="footer-midia" href="#">
-                          <img src="./assets/images/icon-twitter.svg"/>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    
-        <!-- Seção de Copyright -->
+
+        <!-- Seção Copyright -->
         <div class="footer-copyright">
-            <p>&copy; 2025 Emanuel Hitallo. Todos os direitos reservados.</p>
+          <p>© 2025 Emanuel Hitallo. All rights reserved.</p>
+          <p>This site is original and may not be copied or reproduced.</p>
         </div>
-    </footer>
+      </footer>
     </div>
     <script>
-      // atraso na tela loading
-      document.getElementById("main-content").style.display = "none";
-      setTimeout(function () {
-        document.getElementById("loading").style.display = "none";
-        document.getElementById("main-content").style.display = "block";
-      }, 2000);
-
-      document.addEventListener("DOMContentLoaded", function () {
-        // Array de objetos com itens e descrições
-        const listaDeItens = [
-          { item: "React", descricao: "2 year of experience" },
-          { item: "Javascript", descricao: "2 year of experience" },
-          { item: "HTML", descricao: "2 year of experience" },
-          { item: "CSS", descricao: "2 year of experience" },
-          { item: "Express", descricao: "2 year of experience" },
-          { item: "PostgreSql", descricao: "2 year of experience" },
-          { item: "MongoDB", descricao: "2 year of experience" },
-          { item: "Axios", descricao: "2 year of experience" },
-          { item: "Git", descricao: "2 year of experience" },
-          { item: "GitHub", descricao: "2 year of experience" },
-          { item: "Node.js", descricao: "2 year of experience" },
-          { item: "SQL", descricao: "2 year of experience" },
-          { item: "APIs", descricao: "2 year of experience" },
-          { item: "Python", descricao: "Learning Linguage" },
-        ];
-
-        // Seleciona a lista ul
-        const listaUl = document.getElementById("lista");
-
-        // Utiliza a função map para criar os itens da lista
-        const itensHTML = listaDeItens.map(function (item) {
-          return `<li> <img class="flags" src="./assets/images/icon-react.svg"
-              /><h1>${item.item}</h1> <p data-translate="experiencias">${item.descricao}</p></li>`;
+        document.querySelectorAll('.language-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                // Remove a classe active de todos os botões
+                document.querySelectorAll('.language-btn').forEach(b => b.classList.remove('active'));
+                
+                // Ativa o botão clicado
+                this.classList.add('active');
+                
+                // Obtém o idioma selecionado
+                const lang = this.getAttribute('data-lang');
+                
+                // Executa a tradução
+                translatePage(lang);
+            });
         });
-
-        // Adiciona os itens à lista ul
-        listaUl.innerHTML = itensHTML.join("");
-      });
-      particlesJS("particles-js", {"particles":{"number":{"value":80,"density":{"enable":true,"value_area":800}},"color":{"value":"#ffffff"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0.5,"random":false,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":3,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":true,"distance":150,"color":"#ffffff","opacity":0.4,"width":1},"move":{"enable":true,"speed":6,"direction":"none","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":true,"mode":"repulse"},"onclick":{"enable":true,"mode":"push"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":1}},"bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});var count_particles, stats, update; stats = new Stats; stats.setMode(0); stats.domElement.style.position = 'absolute'; stats.domElement.style.left = '0px'; stats.domElement.style.top = '0px'; document.body.appendChild(stats.domElement); count_particles = document.querySelector('.js-count-particles'); update = function() { stats.begin(); stats.end(); if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) { count_particles.innerText = window.pJSDom[0].pJS.particles.array.length; } requestAnimationFrame(update); }; requestAnimationFrame(update);;
     </script>
   </body>
 </html>

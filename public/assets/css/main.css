@@ -1,0 +1,9 @@
+/* main.scss */
+
+@import "./index.css";
+@import "./sobre-mim.css";
+@import "./section-skills.css";
+@import "./section-projects.css";
+@import "./resume.css";
+@import "./footer.css";
+@import "./language-switcher.css";

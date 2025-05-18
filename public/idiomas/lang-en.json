@@ -1,8 +1,9 @@
 {
-    "niceToMeetYou": "Nice to meet you!",
+    "niceToMeetYou": "Nice to",
+    "meetYou": "meet you!",
     "name": "Emanuel.",
     "projects":"Projects",
-    "resume":"Based in the BR, I’m a React | Nodejs developer passionate about building accessible web apps that users love.",
+    "resume":"I’m a React and Node.js developer based in Brazil, passionate about building accessible and performant web applications.",
     "projectTitle1":"UX/UI — Digital marketing website",
     "projectTitle2":"Dude Monitor — Monitoring system",
     "projectTitle3":"Personal project — User management system",
