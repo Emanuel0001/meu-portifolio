@@ -1,30 +1,41 @@
+# 💼 Portfólio - Emanuel Hitallo
 
-![alt text](./public/imagem-projetos/mobile%20(2).gif)
+Bem-vindo ao meu portfólio profissional! Este projeto foi desenvolvido para apresentar minhas habilidades como desenvolvedor **Frontend** e **Backend**, destacando projetos, experiências e meu estilo de trabalho com foco em performance e design funcional.
 
-## <center> Projeto
-**Nome:**  
-Portifólio 
+## 📸 Visão Geral
 
-## Projeto
+O portfólio apresenta:
+- Uma introdução pessoal com minha foto e resumo profissional.
+- Seções separadas para habilidades Frontend, Backend e UX/UI.
+- Galeria de projetos recentes com imagens e links.
+- Sessão sobre mim com descrição detalhada da minha abordagem.
+- Favicon e design personalizado com minhas iniciais.
+- Estilo moderno com responsividade e foco em acessibilidade.
 
- Este portifolio foi desenvolvido por mim, para servir como forma de apresentação e também mostrar minhas habilidades, as tecnologias utilizadas nele, foram HTML, CSS, JS, utilizei também um framework ScrollReveal para deixar o site com uma animação ao escrolar a pagina, ele conta um pouco sobre meus objetivos e metas.
+---
 
- Tecnologias
+## 🚀 Tecnologias Utilizadas
 
-    HTML
-    CSS
-    Netlify
-    javascript
-    ScrollReveal
-    
-    
-## Conhecimentos abordados
-    html semantico
-    efeitos no css
-    Deploy no Netlify
-    
+### 💻 Frontend
+- HTML5
+- CSS3
+- JavaScript (ES6+)
+- React
+- Axios
 
-## Link do projeto online 
+### 🔧 Backend
+- Node.js
+- Express
+- PostgreSQL
+- MongoDB
+- JWT
+- Git e NPM
 
-https://emanuelhitallo.netlify.app/
+### 🎨 UX/UI
+- Figma
+- UI/UX design focado na experiência do usuário
+
+---
+
+## 📁 Estrutura de Pastas
 
