@@ -1,6 +1,6 @@
 /* Seção de projetos */
 .section-title {
-  color: #4e89ae;
+  color: var(--primary-color);
   margin-bottom: 10px;
   font-size: 1.5rem;
   font-weight: 600;
@@ -131,4 +131,15 @@
 .tech-highlight-project:hover {
   color: #2762c3;
   font-weight: 600;
+}
+
+.project-card {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.project-card.visible {
+  opacity: 1;
+  transform: translateX(0);
 }
