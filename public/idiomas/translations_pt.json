@@ -1,49 +1,53 @@
 {
-    "niceToMeetYou": "Muito prazer!",
-    "apresentacao": "Eu sou ",
-    "name": "Emanuel.",
-    "resume":" Com sede no Brasil, sou um desenvolvedor React | Node.js apaixonado por criar aplicativos web acessíveis que os usuários adoram.",
+"greeting_title": "Prazer em conhecê-lo!<br>Sou o Emanuel.",
+"subtitle": "Desenvolvedor Frontend & Backend",
+"bio_html": "Sou um desenvolvedor <span class='tech-highlight'>React</span> e <span class='tech-highlight'>Node.js</span> no Brasil, apaixonado por criar aplicações web acessíveis e de alto desempenho.",
+"download_cv": "BAIXAR CV",
+"skills_frontend_title": "Frontend",
+"skills_frontend_text": "Experiência com HTML5, CSS3, JavaScript (ES6+), React.js, consumo de APIs com Axios e criação de interfaces responsivas com abordagem mobile-first.",
+"skills_frontend_tag_0": "React",
+"skills_frontend_tag_1": "Next.js",
+"skills_frontend_tag_2": "Axios",
+"skills_frontend_tag_3": "JavaScript",
 
-   
-    "projects": "Projetos",
-    "projectTitle1":"UX/UI – Site de marketing digital",
-    "projectTitle2":"Dude Monitor — Sistema de Monitoramento",
-    "projectTitle3":"Projeto Pessoal — Sistema de Gerenciamento",
-    "projectTitle4":"Projeto Pessoal — Controle de finanças",
+"skills_backend_title": "Backend",
+"skills_backend_text": "Conhecimento em Node.js, Express, construção de APIs RESTful, integração com bancos de dados SQL e uso de ferramentas modernas como Git e NPM.",
+"skills_backend_tag_0": "Node.js",
+"skills_backend_tag_1": "MongoDB",
+"skills_backend_tag_2": "PostgreSQL",
+"skills_backend_tag_3": "Git",
+"skills_backend_tag_4": "NPM",
+"skills_backend_tag_5": "JWT",
 
-    "more": "view Codigo or Projeto",
+"skills_design_title": "UX/UI Design",
+"skills_design_text": "Design de interfaces com foco em experiência do usuário, prototipagem no Figma, design systems e microinterações.",
+"skills_design_tag_0": "Figma",
+"skills_design_tag_1": "UI/UX",
+"projects_section_title": "Portfólio",
 
-    "contact": "Contato",
-    "downloadCV": "BAIXAR CV",
-    "viewCode": "Ver Código",
-    "viewProject": "Ver Projeto",
+"project_1_title": "UX/UI — Site de marketing digital",
+"project_1_description": "A GeraisNet oferece uma experiência moderna com design minimalista e foco na usabilidade. O Portal do Cliente centraliza informações, facilitando o acesso rápido e eficiente.",
+"project_1_link_label": "Projeto",
 
-    "projectDescriptionP1": "O GeraisNet destaca-se por oferecer uma experiência online moderna e intuitiva, com foco especial no Portal do Cliente. Esse portal simplifica o acesso a informações cruciais, tornando a navegação eficiente e direta para os usuários.",
-    "projectDescriptionP2":"A plataforma se destaca ainda mais pelo seu design atrativo e pela inclusão de uma seção de preços transparente. Essa abordagem permite aos usuários escolher entre os planos disponíveis com clareza e simplicidade, promovendo uma experiência de seleção de serviços mais acessível e compreensível.",
-    
-    "projectDescription2P1":"Sistema em desenvolvimento, Plataforma de monitoramento de rede online, que oferece uma visão completa do status dos rádios. Com interface intuitiva e sistema de detecção automática de falhas, proporciona praticidade no gerenciamento e solução de problemas de rede.",
-    "projectDescription2P2":"em fase de desenvolvimento, o sistema busca eficiência na administração de redes com sua plataforma avançada de monitoramento online. Utilizando tecnologias modernas no front-end e back-end, como React, Express e MongoDB, o sistema oferece recursos como dashboard informativo e alertas automáticos para uma gestão mais eficaz e rápida resolução de problemas.",
-    
-    "projectDescription3P1":"O Sistema de Gerenciamento de Usuários adota uma abordagem acessível e segura, destacando-se por suas telas distintas. A tela de login facilita a autenticação, enquanto a tela de cadastro possibilita o registro e acesso eficientes ao sistema.",
-    "projectDescription3P2":"No painel, os usuários principais desfrutam de uma visão detalhada da lista completa de usuários, com a capacidade adicional de personalizar perfis ao adicionar imagens de preferência.",
-    
-    
-    "projectDescription4P1":"O projeto FinanceControl é estruturado para praticidade e eficiência, iniciando com telas de login e registro para acesso seguro e rápido. Na tela principal, o usuário tem controle total sobre suas finanças, com uma visualização clara do saldo e uma tabela detalhada para facilitar a gestão flexível e intuitiva.",
-    "projectDescription4P2":"Essa abordagem direta e interativa do FinanceControl destaca-se pela sua capacidade de simplificar a administração financeira, proporcionando aos usuários uma experiência acessível e eficaz.",
+"project_2_title": "Dude Monitor — Sistema de monitoramento",
+"project_2_description": "Plataforma em desenvolvimento para monitoramento de redes, com visualização do status dos rádios em tempo real. Interface intuitiva e sistema automático de falhas otimizam a gestão e a solução de problemas.",
+"project_2_link_label": "Código",
 
-    "lifestyle":"Adoro acampar, busco serenidade nas alturas e conexão com a natureza. À noite, o acampamento sob o céu estrelado encanta, proporcionando paz e renovando a alma. Cada subida de montanha é uma viagem única, moldando o meu amor pela simplicidade e conveniência na vida ao ar livre.",
-    "developer":"Como desenvolvedor de software, meu dia a dia é uma imersão apaixonada em linhas de código que chegam à vida digital. Todo desafio é uma oportunidade de inovação e resolução, e transformar ideias em software funcional é minha verdadeira paixão. A tecnologia não é apenas uma profissão, mas uma expressão de criatividade e dedicação. Cada linha que escrevo conta uma história de emoção no fascinante mundo da programação.",
-    "objectives":"Busco a excelência como desenvolvedor de software, visando ser reconhecido pela responsabilidade e expertise. Minha meta é, em cinco anos, trabalhar em projetos desafiadores e alcançar fluência em inglês para ampliar minha comunicação global. Minha trajetória futura é marcada pela determinação de ser um profissional respeitado e conectado globalmente, encarando cada desafio como uma oportunidade de crescimento.",
-   
-    "tituloAboutMe1":"Estilo de Vida",
-    "tituloAboutMe2":"Como Dev",
-    "tituloAboutMe3":"Objetivos",
-   
-    "contatoH1":"Contato",
-    "resumeContact":"Eu adoraria ouvir sobre seu projeto e como posso ajudar. Preencha o formulário e entrarei em contato com você o mais breve possível.",
-    "experiencias":"2 anos de experiência",
-    "textoMudarIdioma":"Alterar idioma?"
+"project_3_title": "FastMenu — Cardápio Online",
+"project_3_description": "Cardápio online responsivo para pizzaria, com navegação fácil e visualização rápida de produtos, layout intuitivo e moderno.",
+"project_3_link_code": "Código",
+"project_3_link_project": "Projeto",
 
-
+  "aboutme_name": "Emanuel <br />Hitallo.",
+"aboutme_text_1": "Desenvolvedor frontend e backend com <span class='aboutme-highlight'>3 anos de experiência</span> criando interfaces digitais que unem estética e funcionalidade.",
+"aboutme_highlight_1": "3 anos de experiência",
+"aboutme_text_2": "Minha abordagem combina <span class='aboutme-highlight'>sensibilidade visual</span> com <span class='aboutme-highlight'>soluções técnicas eficientes</span>, sempre focando na experiência do usuário final.",
+"aboutme_highlight_2": "sensibilidade visual",
+"aboutme_highlight_3": "soluções técnicas eficientes",
   
-  }
+"aboutme_text_3": "Especializado em criar sistemas de design escaláveis e componentes reutilizáveis que mantêm consistência em projetos complexos.",
+"footer_cta_title": "Vamos trabalhar <span>juntos</span>?",
+"footer_cta_button": "Enviar mensagem",
+"footer_copyright_1": "© 2025 Emanuel Hitallo. Todos os direitos reservados.",
+"footer_copyright_2": "Este site é original e não pode ser copiado ou reproduzido."
+}

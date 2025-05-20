@@ -72,55 +72,6 @@
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
     <meta name="theme-color" content="#ffffff" />
   </head>
-  <script>
-    // Função para aplicar traduções
-    function applyTranslations(translations) {
-      // Seleciona todos os elementos com o atributo 'data-translate'
-      var elements = document.querySelectorAll("[data-translate]");
-
-      // Itera sobre os elementos e aplica as traduções
-      elements.forEach(function (element) {
-        var key = element.getAttribute("data-translate");
-        if (translations[key]) {
-          element.innerHTML = translations[key];
-        }
-      });
-    }
-
-    // Função para carregar JSON de forma assíncrona
-    function loadJSON(file, callback) {
-      var xhr = new XMLHttpRequest();
-      xhr.overrideMimeType("application/json");
-      xhr.open("GET", file, true);
-      xhr.onreadystatechange = function () {
-        if (xhr.readyState == 4 && xhr.status == "200") {
-          callback(JSON.parse(xhr.responseText));
-        }
-      };
-      xhr.send(null);
-    }
-
-    // Função para mudar o idioma
-    function changeLanguage(languageFile) {
-      loadJSON(languageFile, function (translations) {
-        applyTranslations(translations);
-      });
-    }
-
-    // chamada inicial para inglês
-    loadJSON("idiomas/lang-en.json", function (translationsEn) {
-      applyTranslations(translationsEn);
-    });
-    function mostrarTexto() {
-      var textoMudarIdioma = document.getElementById("textoMudarIdioma");
-      textoMudarIdioma.style.display = "block";
-    }
-
-    function esconderTexto() {
-      var textoMudarIdioma = document.getElementById("textoMudarIdioma");
-      textoMudarIdioma.style.display = "none";
-    }
-  </script>
 
   <body>
     <div class="container-pg" id="main-content">
@@ -157,14 +108,16 @@
         <!-- Left Side - Text Content -->
         <div class="content-side">
           <div class="header-content">
-            <h1>
+            <h1 data-translate="greeting_title">
               Prazer em conhecê-lo!<br />
               Sou o Emanuel.
             </h1>
-            <p class="subtitle">Frontend & Backend Developer</p>
+            <p class="subtitle" data-translate="subtitle">
+              Desenvolvedor Frontend & Backend
+            </p>
           </div>
 
-          <p class="bio">
+          <p class="bio" data-translate="bio_html">
             Sou um desenvolvedor <span class="tech-highlight">React</span> e
             <span class="tech-highlight">Node.js</span> no Brasil, apaixonado
             por criar aplicações web acessíveis e de alto desempenho.
@@ -194,56 +147,83 @@
 
       <section class="skills-section">
         <div class="skills-grid">
+          <!-- Frontend -->
           <div class="skill-box">
             <div class="skill-icon">
               <i class="fas fa-code"></i>
             </div>
-            <h3 class="skill-title">Frontend</h3>
-            <p class="skill-description">
+            <h3 class="skill-title" data-translate="skills_frontend_title">
+              Frontend
+            </h3>
+            <p class="skill-description" data-translate="skills_frontend_text">
               Experiência com HTML5, CSS3, JavaScript (ES6+), React.js, consumo
               de APIs com Axios e criação de interfaces responsivas com
               mobile-first approach.
             </p>
             <div class="skill-tags">
-              <span class="tag">React</span>
-              <span class="tag">Next.js</span>
-              <span class="tag">Axios</span>
-              <span class="tag">JavaScript</span>
+              <span class="tag" data-translate="skills_frontend_tag_0"
+                >React</span
+              >
+              <span class="tag" data-translate="skills_frontend_tag_1"
+                >Next.js</span
+              >
+              <span class="tag" data-translate="skills_frontend_tag_2"
+                >Axios</span
+              >
+              <span class="tag" data-translate="skills_frontend_tag_3"
+                >JavaScript</span
+              >
             </div>
           </div>
 
+          <!-- Backend -->
           <div class="skill-box">
             <div class="skill-icon">
               <i class="fas fa-server"></i>
             </div>
-            <h3 class="skill-title">Backend</h3>
-            <p class="skill-description">
+            <h3 class="skill-title" data-translate="skills_backend_title">
+              Backend
+            </h3>
+            <p class="skill-description" data-translate="skills_backend_text">
               Conhecimento em Node.js, Express, construção de APIs RESTful,
               integração com bancos de dados SQL e uso de ferramentas modernas
               como Git e NPM.
             </p>
             <div class="skill-tags">
-              <span class="tag">Node.js</span>
-              <span class="tag">MongoDB</span>
-              <span class="tag">PostgreSQL</span>
-              <span class="tag">Git</span>
-              <span class="tag">NPM</span>
-              <span class="tag">JWT</span>
+              <span class="tag" data-translate="skills_backend_tag_0"
+                >Node.js</span
+              >
+              <span class="tag" data-translate="skills_backend_tag_1"
+                >MongoDB</span
+              >
+              <span class="tag" data-translate="skills_backend_tag_2"
+                >PostgreSQL</span
+              >
+              <span class="tag" data-translate="skills_backend_tag_3">Git</span>
+              <span class="tag" data-translate="skills_backend_tag_4">NPM</span>
+              <span class="tag" data-translate="skills_backend_tag_5">JWT</span>
             </div>
           </div>
 
+          <!-- Design -->
           <div class="skill-box">
             <div class="skill-icon">
               <i class="fas fa-paint-brush"></i>
             </div>
-            <h3 class="skill-title">UX/UI Design</h3>
-            <p class="skill-description">
+            <h3 class="skill-title" data-translate="skills_design_title">
+              UX/UI Design
+            </h3>
+            <p class="skill-description" data-translate="skills_design_text">
               Design de interfaces com foco em experiência do usuário,
               prototipagem no Figma, design systems e microinterações.
             </p>
             <div class="skill-tags">
-              <span class="tag">Figma</span>
-              <span class="tag">UI/UX</span>
+              <span class="tag" data-translate="skills_design_tag_0"
+                >Figma</span
+              >
+              <span class="tag" data-translate="skills_design_tag_1"
+                >UI/UX</span
+              >
             </div>
           </div>
         </div>
@@ -251,7 +231,9 @@
 
       <section class="section-projects">
         <div class="container-project">
-          <h2 class="section-title">Portifólio</h2>
+          <h2 class="section-title" data-translate="projects_section_title">
+            Portfólio
+          </h2>
 
           <div class="projects-grid">
             <!-- Projeto 1 -->
@@ -262,22 +244,27 @@
                 class="project-image"
               />
               <div class="project-content">
-                <h3 class="project-title">UX/UI — Site de marketing digital</h3>
-                <p class="project-description">
+                <h3 class="project-title" data-translate="project_1_title">
+                  UX/UI — Site de marketing digital
+                </h3>
+                <p
+                  class="project-description"
+                  data-translate="project_1_description"
+                >
                   A GeraisNet oferece uma experiência moderna com design
                   minimalista e foco na usabilidade. O Portal do Cliente
                   centraliza informações, facilitando o acesso rápido e
                   eficiente.
                 </p>
                 <div class="project-links">
-                  View
-
                   <a
                     class="tech-highlight-project"
                     href="https://geraisnet.com.br"
                     target="_blank"
-                    >Project</a
+                    data-translate="project_1_link_label"
                   >
+                    Projeto
+                  </a>
                 </div>
               </div>
             </div>
@@ -290,23 +277,27 @@
                 class="project-image"
               />
               <div class="project-content">
-                <h3 class="project-title">
+                <h3 class="project-title" data-translate="project_2_title">
                   Dude Monitor — Sistema de monitoramento
                 </h3>
-                <p class="project-description">
+                <p
+                  class="project-description"
+                  data-translate="project_2_description"
+                >
                   Plataforma em desenvolvimento para monitoramento de redes, com
                   visualização do status dos rádios em tempo real. Interface
                   intuitiva e sistema automático de falhas otimizam a gestão e a
                   solução de problemas.
                 </p>
                 <div class="project-links">
-                  View
                   <a
                     class="tech-highlight-project"
                     href="https://github.com/Emanuel0001/DudeMonitor-Pro"
                     target="_blank"
-                    >Code</a
+                    data-translate="project_2_link_label"
                   >
+                    Código
+                  </a>
                 </div>
               </div>
             </div>
@@ -319,26 +310,34 @@
                 class="project-image"
               />
               <div class="project-content">
-                <h3 class="project-title">FastMenu — Cardápio Online</h3>
-                <p class="project-description">
+                <h3 class="project-title" data-translate="project_3_title">
+                  FastMenu — Cardápio Online
+                </h3>
+                <p
+                  class="project-description"
+                  data-translate="project_3_description"
+                >
                   Cardápio online responsivo para pizzaria, com navegação fácil
-                  e visualização rápida de produtos, Layout intuitivo e moderno.
+                  e visualização rápida de produtos, layout intuitivo e moderno.
                 </p>
                 <div class="project-links">
-                  View
                   <a
                     class="tech-highlight-project"
                     href="https://github.com/seu-usuario/projeto"
                     target="_blank"
-                    >Code</a
+                    data-translate="project_3_link_code"
                   >
-                  or
+                    Código
+                  </a>
+                  <span> or </span>
                   <a
                     class="tech-highlight-project"
                     href="https://sistema-pizzaria-food.netlify.app/"
                     target="_blank"
-                    >Project</a
+                    data-translate="project_3_link_project"
                   >
+                    Projeto
+                  </a>
                 </div>
               </div>
             </div>
@@ -350,7 +349,7 @@
         <div class="aboutme-container">
           <div class="aboutme-image-container">
             <div class="aboutme-name-container">
-              <h1 class="aboutme-name">
+              <h1 class="aboutme-name" data-translate="aboutme_name">
                 Emanuel <br />
                 Hitallo.
               </h1>
@@ -358,20 +357,32 @@
           </div>
 
           <div class="aboutme-content">
-            <p class="aboutme-text">
+            <p class="aboutme-text" data-translate="aboutme_text_1">
               Desenvolvedor frontend e backend com
-              <span class="aboutme-highlight">3 anos de experiência</span>
+              <span
+                class="aboutme-highlight"
+                data-translate="aboutme_highlight_1"
+                >3 anos de experiência</span
+              >
               criando interfaces digitais que unem estética e funcionalidade.
             </p>
 
-            <p class="aboutme-text">
+            <p class="aboutme-text" data-translate="aboutme_text_2">
               Minha abordagem combina
-              <span class="aboutme-highlight">sensibilidade visual</span> com
-              <span class="aboutme-highlight">soluções técnicas eficientes</span
+              <span
+                class="aboutme-highlight"
+                data-translate="aboutme_highlight_2"
+                >sensibilidade visual</span
+              >
+              com
+              <span
+                class="aboutme-highlight"
+                data-translate="aboutme_highlight_3"
+                >soluções técnicas eficientes</span
               >, sempre focando na experiência do usuário final.
             </p>
 
-            <p class="aboutme-text">
+            <p class="aboutme-text" data-translate="aboutme_text_3">
               Especializado em criar sistemas de design escaláveis e componentes
               reutilizáveis que mantêm consistência em projetos complexos.
             </p>
@@ -382,16 +393,19 @@
       <footer class="container-footer">
         <!-- Seção CTA -->
         <div class="footer-cta">
-          <h2>Vamos trabalhar <span>juntos</span>?</h2>
+          <h2 data-translate="footer_cta_title">
+            Vamos trabalhar <span>juntos</span>?
+          </h2>
           <a
             href="https://mail.google.com/mail/?view=cm&to=emanuelhitallodev@gmail.com"
             target="_blank"
             class="footer-button"
+            data-translate="footer_cta_button"
           >
             Enviar mensagem
           </a>
         </div>
-
+      
         <!-- Seção Redes Sociais -->
         <div class="footer-social">
           <div class="social-icons">
@@ -418,67 +432,98 @@
             </a>
           </div>
         </div>
-
+      
         <!-- Seção Copyright -->
         <div class="footer-copyright">
-          <p>© 2025 Emanuel Hitallo. All rights reserved.</p>
-          <p>This site is original and may not be copied or reproduced.</p>
+          <p data-translate="footer_copyright_1">
+            © 2025 Emanuel Hitallo. All rights reserved.
+          </p>
+          <p data-translate="footer_copyright_2">
+            This site is original and may not be copied or reproduced.
+          </p>
         </div>
       </footer>
+      
     </div>
     <script>
-      document.querySelectorAll(".language-btn").forEach((btn) => {
-        btn.addEventListener("click", function () {
-          // Remove a classe active de todos os botões
-          document
-            .querySelectorAll(".language-btn")
-            .forEach((b) => b.classList.remove("active"));
+      function observeOnScroll(selector) {
+        const elements = document.querySelectorAll(selector);
 
-          // Ativa o botão clicado
-          this.classList.add("active");
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+              } else {
+                entry.target.classList.remove("visible");
+              }
+            });
+          },
+          {
+            threshold: 0.1,
+          }
+        );
 
-          // Obtém o idioma selecionado
-          const lang = this.getAttribute("data-lang");
+        elements.forEach((el) => observer.observe(el));
+      }
 
-          // Executa a tradução
-          translatePage(lang);
+      // Aplicando para diferentes seções
+      observeOnScroll(".skill-box");
+      observeOnScroll(".project-card");
+
+      // Função para aplicar as traduções
+      function applyTranslations(translations) {
+        document
+          .querySelectorAll("[data-translate]")
+          .forEach(function (element) {
+            const key = element.getAttribute("data-translate");
+            if (translations[key]) {
+              element.innerHTML = translations[key];
+            }
+          });
+      }
+
+      // Função para carregar o arquivo JSON de traduções
+      function loadTranslations(filePath, callback) {
+        fetch(filePath)
+          .then((response) => {
+            if (!response.ok) {
+              throw new Error("Erro ao carregar o arquivo de idioma.");
+            }
+            return response.json();
+          })
+          .then((data) => callback(data))
+          .catch((error) => console.error(error));
+      }
+
+      // Função para mudar o idioma e aplicar as traduções
+      function changeLanguage(langCode) {
+        const filePath = `idiomas/translations_${langCode}.json`;
+        loadTranslations(filePath, function (translations) {
+          applyTranslations(translations);
+        });
+
+        // Atualiza o botão ativo
+        document.querySelectorAll(".language-btn").forEach((btn) => {
+          btn.classList.remove("active");
+        });
+        document
+          .querySelector(`.language-btn[data-lang="${langCode}"]`)
+          .classList.add("active");
+      }
+
+      // Evento para botões de idioma
+      document.querySelectorAll(".language-btn").forEach((button) => {
+        button.addEventListener("click", () => {
+          const lang = button.getAttribute("data-lang");
+          changeLanguage(lang);
         });
       });
 
-      const cards = document.querySelectorAll(".skill-box");
-
-      const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add("visible");
-            } else {
-              entry.target.classList.remove("visible");
-            }
-          });
-        },
-        {
-          threshold: 0.1, // quanto do card precisa estar visível para ativar
-        }
-      );
-
-      cards.forEach((card) => observer.observe(card));
-
-      const projectCards = document.querySelectorAll('.project-card');
-
-const observers = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
-    } else {
-      entry.target.classList.remove('visible');
-    }
-  });
-}, {
-  threshold: 0.1 // Ajusta a sensibilidade da visibilidade
-});
-
-projectCards.forEach(card => observers.observe(card));
+      // Carrega o idioma padrão (pt) ao iniciar
+      document.addEventListener("DOMContentLoaded", () => {
+        changeLanguage("pt");
+      });
     </script>
   </body>
 </html>

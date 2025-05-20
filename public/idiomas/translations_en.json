@@ -1,0 +1,53 @@
+{
+"greeting_title": "Nice to meet you!<br>I'm Emanuel.",
+"subtitle": "Frontend & Backend Developer",
+"bio_html": "I'm a <span class='tech-highlight'>React</span> and <span class='tech-highlight'>Node.js</span> developer in Brazil, passionate about building accessible and high-performance web applications.",
+"download_cv": "DOWNLOAD CV",
+
+"skills_frontend_title": "Frontend",
+"skills_frontend_text": "Experience with HTML5, CSS3, JavaScript (ES6+), React.js, API consumption with Axios, and building responsive interfaces using a mobile-first approach.",
+"skills_frontend_tag_0": "React",
+"skills_frontend_tag_1": "Next.js",
+"skills_frontend_tag_2": "Axios",
+"skills_frontend_tag_3": "JavaScript",
+  
+"skills_backend_title": "Backend",
+"skills_backend_text": "Knowledge in Node.js, Express, RESTful API development, SQL database integration, and modern tools such as Git and NPM.",
+"skills_backend_tag_0": "Node.js",
+"skills_backend_tag_1": "MongoDB",
+"skills_backend_tag_2": "PostgreSQL",
+"skills_backend_tag_3": "Git",
+"skills_backend_tag_4": "NPM",
+"skills_backend_tag_5": "JWT",
+  
+"skills_design_title": "UX/UI Design",
+"skills_design_text": "Interface design focused on user experience, prototyping with Figma, design systems, and microinteractions.",
+"skills_design_tag_0": "Figma",
+"skills_design_tag_1": "UI/UX",
+"projects_section_title": "Portfolio",
+"project_1_title": "UX/UI — Digital Marketing Website",
+"project_1_description": "GeraisNet delivers a modern experience with minimalist design and usability focus. The Client Portal centralizes information for quick and efficient access.",
+"project_1_link_label": "Project",
+      
+"project_2_title": "Dude Monitor — Monitoring System",
+"project_2_description": "A platform in development for network monitoring, with real-time status visualization of radios. Intuitive interface and automated failure system optimize management and problem resolution.",
+"project_2_link_label": "Code",
+      
+"project_3_title": "FastMenu — Online Menu",
+"project_3_description": "Responsive online menu for a pizzeria, featuring easy navigation and quick product viewing. Intuitive and modern layout.",
+"project_3_link_code": "Code",
+"project_3_link_project": "Project",
+      
+"aboutme_name": "Emanuel <br />Hitallo.",
+"aboutme_text_1": "Frontend and backend developer with <span class='aboutme-highlight'>3 years of experience</span> creating digital interfaces that combine aesthetics and functionality.",
+"aboutme_highlight_1": "3 years of experience",
+"aboutme_text_2": "My approach combines <span class='aboutme-highlight'>visual sensitivity</span> with <span class='aboutme-highlight'>efficient technical solutions</span>, always focusing on the end-user experience.",
+"aboutme_highlight_2": "visual sensitivity",
+"aboutme_highlight_3": "efficient technical solutions",
+            
+ "aboutme_text_3": "Specialized in creating scalable design systems and reusable components that maintain consistency in complex projects.",
+ "footer_cta_title": "Let's work <span>together</span>?",
+ "footer_cta_button": "Send message",
+ "footer_copyright_1": "© 2025 Emanuel Hitallo. All rights reserved.",
+ "footer_copyright_2": "This site is original and may not be copied or reproduced."
+}
